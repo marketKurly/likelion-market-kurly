@@ -689,11 +689,10 @@ table {
   justify-content: center;
 }
 .good-price-product__inner {
-  background-color: aquamarine;
   width: 1050px;
   display: flex;
   flex-flow: column wrap;
-  align-content: center;
+  align-items: center;
 }
 .good-price-product__inner__heading {
   margin-top: 40px;
@@ -704,8 +703,10 @@ table {
 .good-price-product__inner__slider {
   margin-top: 28px;
   margin-bottom: 40px;
-  background-color: purple;
-  display: block;
+  width: 1050px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 }
 
 /* 푸터 */
