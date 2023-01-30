@@ -1,0 +1,42 @@
+{
+  "name": "likelion-market-kurly",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "npx live-server client --host=localhost --port=5500 --no-browser",
+    "serve": "npx json-server server/db/data.json",
+    "all": "run-p serve start",
+    "sass": "sass ./client/scss:./client/css",
+    "watch": "npm run sass -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marketKurly/likelion-market-kurly.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "시맨틱 마크업",
+    "웹표준",
+    "함수형 프로그래밍"
+  ],
+  "author": "담당자",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marketKurly/likelion-market-kurly/issues"
+  },
+  "homepage": "https://github.com/marketKurly/likelion-market-kurly#readme",
+  "devDependencies": {
+    "@types/eslint": "^8.4.10",
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-react": "^7.32.2",
+    "json-server": "^0.17.1",
+    "live-server": "^1.2.2",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.8.3",
+    "sass": "^1.57.1"
+  }
+}
