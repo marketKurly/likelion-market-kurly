@@ -12,6 +12,12 @@
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/main.js" type="module"></script>
     <title>marketKarly</title>
@@ -91,13 +97,55 @@
       >
     </nav>
 
-    <!-- 이미지슬라이드 -->
-    <section class="imgSlide">
-      <img src="" alt="" />
-    </section>
-
     <!-- 메인 -->
-    <main class="main">메인</main>
+    <main>
+      <!-- 첫번째 swiper -->
+      <section class="Main-banner">
+        <a href="">
+          <img
+            src="./assets/main/banner05.svg"
+            alt="이 주의 특가 한눈에 보기 배너, 클릭시 특가 혜택 창으로 이동"
+          />
+        </a>
+      </section>
+
+      <!-- 두번째 swiper -->
+      <section class="today-recomend-product">
+        <div class="today-recomend-product__inner">
+          <div
+            class="today-recomend-product__inner__heading"
+          >
+            이 상품 어때요?
+          </div>
+          <div
+            class="today-recomend-product__inner__slider"
+          >
+            슬라이더
+          </div>
+        </div>
+      </section>
+
+      <!-- 10월의 퍼플피크 -->
+
+      <section class="line-banner">
+        <a href="" class="line-banner__inner">
+          이미지
+          <!-- <img src="" alt="" />  이미지 삽입 -->
+        </a>
+      </section>
+
+      <!-- 마지막 swiper -->
+      <section class="good-price-product">
+        <div class="good-price-product__inner">
+          <div class="good-price-product__inner__heading">
+            놓치면 후회할 가격
+          </div>
+          <div class="good-price-product__inner__slider">
+            슬라이더
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- 푸터 -->
     <footer class="footer">푸터</footer>

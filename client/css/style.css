@@ -602,21 +602,68 @@ table {
 }
 
 /* 이미지슬라이드 */
-.imgSlide {
-  background-color: #6b6b6b;
-  height: 400px;
+/* 메인 */
+.Main-banner {
+  width: 100%;
+  height: 370px;
+  display: flex;
+  flex-flow: row nowrap;
 }
 
-/* 메인 */
-.main {
-  height: 1920px;
+.today-recomend-product {
+  display: flex;
+  justify-content: center;
+}
+.today-recomend-product__inner {
+  background-color: yellow;
+  width: 1050px;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+}
+.today-recomend-product__inner__heading {
+  margin-top: 40px;
+}
+.today-recomend-product__inner__slider {
+  margin-top: 28px;
+  margin-bottom: 40px;
+  background-color: purple;
+  display: block;
+}
+
+.line-banner {
+  display: flex;
+  justify-content: center;
+}
+.line-banner__inner {
+  margin: 40px 0;
+  background-color: greenyellow;
+}
+
+.good-price-product {
+  display: flex;
+  justify-content: center;
+}
+.good-price-product__inner {
   background-color: aquamarine;
+  width: 1050px;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+}
+.good-price-product__inner__heading {
+  margin-top: 40px;
+}
+.good-price-product__inner__slider {
+  margin-top: 28px;
+  margin-bottom: 40px;
+  background-color: purple;
+  display: block;
 }
 
 /* 푸터 */
 .footer {
-  height: 800px;
-  background-color: beige;
+  background-color: white;
 }
 
 /* 숨김 콘텐츠 */
@@ -658,11 +705,10 @@ body {
 .header,
 .nav,
 .section,
-.main,
+main,
 .footer {
   width: 1920px;
   margin: 0 auto;
-  background-color: lightgreen;
 }
 
 /* 헤더 */

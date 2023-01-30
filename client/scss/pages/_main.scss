@@ -1,17 +1,72 @@
 /* 이미지슬라이드 */
-.imgSlide {
-  background-color: #6b6b6b;
-  height: 400px;
-}
 
 /* 메인 */
-.main {
-  height: 1920px;
-  background-color: aquamarine;
+
+$main_width: 1050px;
+
+.Main-banner {
+  width: 100%;
+  height: 370px;
+  // swiper 시 가로 나열을 위해 row nowrap 사용
+  display: flex;
+  flex-flow: row nowrap;
+  // 가운데 정렬
+  // justify-content: center;
 }
 
+.today-recomend-product {
+  display: flex;
+  justify-content: center;
+
+  &__inner {
+    background-color: yellow;
+    width: $main_width;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    &__heading {
+      margin-top: 40px;
+    }
+    &__slider {
+      margin-top: 28px;
+      margin-bottom: 40px;
+      background-color: purple;
+      display: block;
+    }
+  }
+}
+
+.line-banner {
+  display: flex;
+  justify-content: center;
+  &__inner {
+    margin: 40px 0;
+    background-color: greenyellow;
+  }
+}
+
+.good-price-product {
+  display: flex;
+  justify-content: center;
+
+  &__inner {
+    background-color: aquamarine;
+    width: $main_width;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    &__heading {
+      margin-top: 40px;
+    }
+    &__slider {
+      margin-top: 28px;
+      margin-bottom: 40px;
+      background-color: purple;
+      display: block;
+    }
+  }
+}
 /* 푸터 */
 .footer {
-  height: 800px;
-  background-color: beige;
+  background-color: white;
 }
