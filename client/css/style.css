@@ -634,6 +634,7 @@ table {
 .line-banner {
   display: flex;
   justify-content: center;
+  height: 219px;
 }
 .line-banner__inner {
   margin: 40px 0;
