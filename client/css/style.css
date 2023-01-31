@@ -552,57 +552,67 @@ table {
   border-spacing: 0;
 }
 
-:root {
-  /* -------------------------------------------------------------------------- */
-  /*                                   Primary                                  */
-  /* -------------------------------------------------------------------------- */
-  --primary: #5f0080;
-  --secondary: #bd76ff;
-  /* -------------------------------------------------------------------------- */
-  /*                                   Netural                                  */
-  /* -------------------------------------------------------------------------- */
-  --black: #000000;
-  --white: #ffffff;
-  --content: #333333;
-  --gray-50: #f9f9f9;
-  --gray-100: #e1e1e1;
-  --gray-200: #c4c4c4;
-  --gray-300: #a6a6a6;
-  --gray-400: #898989;
-  --gray-500: #6b6b6b;
-  --gray-600: #565656;
-  --gray-700: #404040;
-  --gray-800: #2b2b2b;
-  --gray-900: #151515;
-  --accent-yellow: #fa622f;
-  --blue-100: #cce0ff;
-  --blue-200: #99c2ff;
-  --blue-300: #66a3ff;
-  --blue-400: #3385ff;
-  --blue-500: #0066ff;
-  --blue-600: #0052cc;
-  --blue-700: #003d99;
-  --blue-800: #002966;
-  --blue-900: #001433;
-  --info-error: #f03f40;
-  /* -------------------------------------------------------------------------- */
-  --spacing-xs: 0.5rem; /* 8px */
-  --spacing-sm: 0.75rem; /* 12px */
-  --spacing-base: 1rem; /* 16px */
-  --spacing-md: 1.25rem; /* 20px */
-  --spacing-lg: 1.5rem; /* 24px */
-  --spacing-xl: 2rem; /* 32px */
-  --text-xs: 0.75rem; /* 12px */
-  --text-sm: 0.875rem; /* 14px */
-  --text-base: 1rem; /* 16px */
-  --text-md: 1.125rem; /* 18px */
-  --text-lg: 1.25rem; /* 20px */
-  --text-xl: 1.5rem; /* 24px */
-  --container-width: 64rem; /* 1024px */
-}
-
+/* -------------------------------------------------------------------------- */
+/*                                   Primary                                  */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                   Netural                                  */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* 8px */
+/* 12px */
+/* 16px */
+/* 20px */
+/* 24px */
+/* 32px */
+/* 12px */
+/* 14px */
+/* 16px */
+/* 18px */
+/* 20px */
+/* 24px */
+/* 1024px */
 /* 이미지슬라이드 */
 /* 메인 */
+main {
+  width: 1920px;
+  position: relative;
+}
+
+.popup-ad {
+  position: absolute;
+  width: 440px;
+  height: 672px;
+  top: 34px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 100;
+  display: flex;
+  flex-flow: column wrap;
+}
+.popup-ad a {
+  height: 586px;
+}
+.popup-ad a img {
+  border-radius: 16px 16px 0 0;
+}
+.popup-ad__buttons {
+  background-color: #ffffff;
+  height: 86px;
+  display: flex;
+  flex-flow: row nowrap;
+  border-radius: 0 0 16px 16px;
+}
+.popup-ad__buttons__button {
+  flex: 1;
+  text-align: center;
+  border: 0;
+  background-color: transparent;
+}
+.popup-ad__buttons__button1 {
+  border-right: 1px solid #e1e1e1;
+}
+
 .Main-banner {
   width: 100%;
   height: 370px;
@@ -665,7 +675,7 @@ table {
   font-weight: 400;
   margin-bottom: 8px;
   margin-top: 16px;
-  color: rgb(51, 51, 51);
+  color: #333333;
 }
 .product__info__price {
   font-size: 21.328px;
@@ -681,7 +691,6 @@ table {
 }
 .line-banner__inner {
   margin: 40px 0;
-  background-color: greenyellow;
 }
 
 .good-price-product {
@@ -748,19 +757,5 @@ body {
   font-size: 1.4rem;
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
-
-/* 레이아웃 */
-.header,
-.nav,
-.section,
-main,
-.footer {
-  width: 1920px;
-  margin: 0 auto;
-}
-
-/* 헤더 */
-/* 로고 */
-/* 네비 */
 
 /*# sourceMappingURL=style.css.map */
