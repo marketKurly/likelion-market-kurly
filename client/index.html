@@ -99,6 +99,7 @@
 
     <!-- 메인 -->
     <main>
+      <!-- ad 팝업창 -->
       <section class="popup-ad">
         <a href="">
           <img
@@ -116,6 +117,55 @@
             닫기
           </button>
         </div>
+      </section>
+
+      <!-- Add cart 팝업창 -->
+      <section class="Add-cart">
+        <ul class="add-cart__list">
+          <li class="add-cart__list__info">
+            <h3 class="add-cart__list__info__name">
+              [풀무원] 탱탱쫄면 (4개입)
+            </h3>
+            <div class="amount">
+              <div class="amount__price">4,980원</div>
+              <div class="amount__count">
+                <input
+                  class="amount__count__plus"
+                  type="button"
+                  onclick=""
+                  value="+"
+                />
+                <div class="amount__count__result">0</div>
+                <input
+                  class="amount__count__minus"
+                  type="button"
+                  onclick=""
+                  value="-"
+                />
+              </div>
+            </div>
+          </li>
+          <li class="add-cart__list__price">
+            <div class="total">
+              <div class="total__info">합계</div>
+              <div class="total__price">4,980원</div>
+            </div>
+            <div class="save">
+              <div class="save__info">적립</div>
+              <div class="save__content">
+                구매 시 5원 적립
+              </div>
+            </div>
+          </li>
+          <li class="add-cart__list__buttons">
+            <button class="add-cart__list__buttons__cancle">
+              취소
+            </button>
+            <button class="add-cart__list__buttons__put">
+              장바구니 담기
+            </button>
+          </li>
+        </ul>
       </section>
 
       <!-- 첫번째 swiper -->
