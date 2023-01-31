@@ -120,32 +120,26 @@
       </section>
 
       <!-- Add cart 팝업창 -->
-      <section class="Add-cart">
+      <section class="add-cart">
         <ul class="add-cart__list">
-          <li class="add-cart__list__info">
-            <h3 class="add-cart__list__info__name">
+          <li class="add-cart__list--info">
+            <h3 class="add-cart__list--info__name">
               [풀무원] 탱탱쫄면 (4개입)
             </h3>
             <div class="amount">
               <div class="amount__price">4,980원</div>
               <div class="amount__count">
-                <input
-                  class="amount__count__plus"
-                  type="button"
-                  onclick=""
-                  value="+"
-                />
-                <div class="amount__count__result">0</div>
-                <input
+                <button
                   class="amount__count__minus"
-                  type="button"
-                  onclick=""
-                  value="-"
-                />
+                ></button>
+                <div class="amount__count__result">0</div>
+                <button
+                  class="amount__count__plus"
+                ></button>
               </div>
             </div>
           </li>
-          <li class="add-cart__list__price">
+          <li class="add-cart__list--price">
             <div class="total">
               <div class="total__info">합계</div>
               <div class="total__price">4,980원</div>
@@ -157,11 +151,11 @@
               </div>
             </div>
           </li>
-          <li class="add-cart__list__buttons">
-            <button class="add-cart__list__buttons__cancle">
+          <li class="add-cart__list--buttons">
+            <button class="add-cart__list--buttons__cancle">
               취소
             </button>
-            <button class="add-cart__list__buttons__put">
+            <button class="add-cart__list--buttons__put">
               장바구니 담기
             </button>
           </li>
