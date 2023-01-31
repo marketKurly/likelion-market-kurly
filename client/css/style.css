@@ -723,16 +723,6 @@ main {
   background-color: white;
 }
 
-/* 숨김 콘텐츠 */
-.a11y-hidden,
-legend {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip-path: polygon(0 0, 0 0, 0 0);
-}
-
 /* 기본 스타일 */
 *,
 *::before,
@@ -740,8 +730,22 @@ legend {
   box-sizing: border-box;
 }
 
+li {
+  list-style: none;
+}
+
 html {
   font-size: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  border: 0;
+  background-color: inherit;
+  cursor: pointer;
 }
 
 /* 링크 스타일 */
@@ -750,12 +754,19 @@ a {
   text-decoration: none;
 }
 
-/* 본문 스타일 */
+/* 공통 */
 body {
-  /* em, rem 단위를 사용해보기 */
-  color: #212121;
-  font-size: 1.4rem;
-  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font: inherit;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+.a11y-hidden,
+legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
 }
 
 /*# sourceMappingURL=style.css.map */
