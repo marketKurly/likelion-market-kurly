@@ -98,70 +98,7 @@
     </nav>
 
     <!-- 메인 -->
-    <main>
-      <!-- ad 팝업창 -->
-      <section class="popup-ad">
-        <a href="">
-          <img
-            src="./assets/main-image/popup-ad.svg"
-            alt="마켓 컬리 시작하기 팝업창, 하루종일 닫을건지 그냥 닫을 건지 결정하는 팝업창"
-          />
-        </a>
-        <div class="popup-ad__buttons">
-          <button
-            class="popup-ad__buttons__button popup-ad__buttons__button1"
-          >
-            오늘 하루 안 보기
-          </button>
-          <button class="popup-ad__buttons__button">
-            닫기
-          </button>
-        </div>
-      </section>
-
-      <!-- Add cart 팝업창 -->
-      <section class="add-cart">
-        <ul class="add-cart__list">
-          <li class="add-cart__list--info">
-            <h3 class="add-cart__list--info__name">
-              [풀무원] 탱탱쫄면 (4개입)
-            </h3>
-            <div class="amount">
-              <div class="amount__price">4,980원</div>
-              <div class="amount__count">
-                <button
-                  class="amount__count__minus"
-                ></button>
-                <div class="amount__count__result">0</div>
-                <button
-                  class="amount__count__plus"
-                ></button>
-              </div>
-            </div>
-          </li>
-          <li class="add-cart__list--price">
-            <div class="total">
-              <div class="total__info">합계</div>
-              <div class="total__price">4,980원</div>
-            </div>
-            <div class="save">
-              <div class="save__info">적립</div>
-              <div class="save__content">
-                구매 시 5원 적립
-              </div>
-            </div>
-          </li>
-          <li class="add-cart__list--buttons">
-            <button class="add-cart__list--buttons__cancle">
-              취소
-            </button>
-            <button class="add-cart__list--buttons__put">
-              장바구니 담기
-            </button>
-          </li>
-        </ul>
-      </section>
-
+    <main class="main">
       <!-- 첫번째 swiper -->
       <section class="Main-banner">
         <a href="">
@@ -406,6 +343,69 @@
             </a>
           </div>
         </div>
+      </section>
+
+      <!-- ad 팝업창 -->
+      <section class="popup-ad a11y-hidden">
+        <a href="">
+          <img
+            src="./assets/main-image/popup-ad.svg"
+            alt="마켓 컬리 시작하기 팝업창, 하루종일 닫을건지 그냥 닫을 건지 결정하는 팝업창"
+          />
+        </a>
+        <div class="popup-ad__buttons">
+          <button
+            class="popup-ad__buttons__button popup-ad__buttons__button1"
+          >
+            오늘 하루 안 보기
+          </button>
+          <button class="popup-ad__buttons__button">
+            닫기
+          </button>
+        </div>
+      </section>
+
+      <!-- Add cart 팝업창 -->
+      <section class="add-cart a11y-hidden">
+        <ul class="add-cart__list">
+          <li class="add-cart__list--info">
+            <h3 class="add-cart__list--info__name">
+              [풀무원] 탱탱쫄면 (4개입)
+            </h3>
+            <div class="amount">
+              <div class="amount__price">4,980원</div>
+              <div class="amount__count">
+                <button
+                  class="amount__count__minus"
+                ></button>
+                <div class="amount__count__result">0</div>
+                <button
+                  class="amount__count__plus"
+                ></button>
+              </div>
+            </div>
+          </li>
+          <li class="add-cart__list--price">
+            <div class="total">
+              <div class="total__info">합계</div>
+              <div class="total__price">4,980원</div>
+            </div>
+            <div class="save">
+              <div class="save__info">적립</div>
+              <div class="save__content">
+                구매 시 5원 적립
+              </div>
+            </div>
+          </li>
+          <li class="add-cart__list--buttons">
+            <button class="add-cart__list--buttons__cancle">
+              취소
+            </button>
+            <button class="add-cart__list--buttons__put">
+              장바구니 담기
+            </button>
+          </li>
+        </ul>
       </section>
     </main>
 

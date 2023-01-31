@@ -4,163 +4,9 @@
 
 $main_width: 1050px;
 
-main {
+.main {
   width: 1920px;
   position: relative;
-}
-
-// ad 팝업창
-.popup-ad {
-  position: absolute;
-  width: 440px;
-  height: 672px;
-  top: 34px;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  z-index: 100;
-  display: flex;
-  flex-flow: column wrap;
-  box-shadow: (0px 8px 36px rgba(0, 0, 0, 0.2));
-  // align-items: flex-start;
-  a {
-    height: 586px;
-    img {
-      border-radius: 16px 16px 0 0;
-    }
-  }
-  &__buttons {
-    background-color: $white;
-    height: 86px;
-    display: flex;
-    flex-flow: row nowrap;
-    border-radius: 0 0 16px 16px;
-    &__button {
-      flex: 1;
-      text-align: center;
-      border: 0;
-      background-color: transparent;
-    }
-    &__button1 {
-      border-right: 1px solid $gray-100;
-    }
-  }
-}
-
-//add-cart popup
-.add-cart {
-  width: 396px;
-  border-radius: 16px;
-  display: flex;
-  justify-content: center;
-  box-shadow: (0px 8px 36px rgba(0, 0, 0, 0.2));
-  &__list {
-    width: 356px;
-    margin: 24px 20px;
-    display: flex;
-    flex-direction: column;
-    &--info {
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 150%;
-      &__name {
-        margin-bottom: 12px;
-      }
-      .amount {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        margin-bottom: 28px;
-        &__count {
-          display: flex;
-          flex-flow: row nowrap;
-          border: 1px solid $gray-200;
-          text-align: center;
-          align-items: center;
-          &__minus {
-            width: 30px;
-            height: 30px;
-            cursor: pointer;
-            background-image: url(/client/css/img/Icon/Minus.svg);
-            background-repeat: no-repeat;
-            // 회색 아이콘으로 이동시 top -38px 더 이동
-            background-position: -8px -8px;
-          }
-          &__plus {
-            width: 30px;
-            height: 30px;
-            cursor: pointer;
-            background-image: url(/client/css/img/Icon/Plus.svg);
-            background-repeat: no-repeat;
-            background-position: -8px -8px;
-          }
-        }
-      }
-    }
-    &--price {
-      display: flex;
-      flex-flow: column nowrap;
-      margin-bottom: 28px;
-      .total {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        margin-bottom: 4px;
-        &__info {
-          font-weight: 600;
-          font-size: 16px;
-          display: flex;
-          align-items: flex-end;
-        }
-        &__price {
-          font-size: 28.43px;
-          font-weight: 700px;
-        }
-      }
-      .save {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: flex-end;
-        margin-bottom: 3px;
-        &__info {
-          width: 37px;
-          height: 18px;
-          background-color: $accent-yellow;
-          color: $white;
-          text-align: center;
-          line-height: 20px;
-          border-radius: 9px;
-          font-size: 11px;
-          font-weight: 600;
-        }
-        &__content {
-          font-size: 16px;
-          font-weight: 600;
-          margin-left: 12px;
-        }
-      }
-    }
-    &--buttons {
-      display: flex;
-      justify-content: space-between;
-      &__cancle {
-        width: 174px;
-        height: 54px;
-        border-radius: 4px;
-        font-size: 16px;
-        font-weight: 600;
-        border: 1px solid $gray-400;
-      }
-      &__put {
-        width: 174px;
-        height: 54px;
-        border-radius: 4px;
-        font-size: 16px;
-        font-weight: 600;
-        color: $white;
-        background-color: $primary;
-      }
-    }
-  }
 }
 
 // main banner
@@ -278,6 +124,166 @@ main {
     }
   }
 }
+
+// ad 팝업창
+.popup-ad {
+  position: absolute;
+  width: 440px;
+  height: 672px;
+  top: 34px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 100;
+  display: flex;
+  flex-flow: column wrap;
+  box-shadow: (0px 8px 36px rgba(0, 0, 0, 0.2));
+  // align-items: flex-start;
+  a {
+    height: 586px;
+    img {
+      border-radius: 16px 16px 0 0;
+    }
+  }
+  &__buttons {
+    background-color: $white;
+    height: 86px;
+    display: flex;
+    flex-flow: row nowrap;
+    border-radius: 0 0 16px 16px;
+    &__button {
+      flex: 1;
+      text-align: center;
+      border: 0;
+      background-color: transparent;
+    }
+    &__button1 {
+      border-right: 1px solid $gray-100;
+    }
+  }
+}
+
+//add-cart popup
+.add-cart {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  top: 300px;
+  width: 396px;
+  border-radius: 16px;
+  display: flex;
+  z-index: 100;
+  justify-content: center;
+  box-shadow: (0px 8px 36px rgba(0, 0, 0, 0.2));
+  &__list {
+    width: 356px;
+    margin: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    &--info {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 150%;
+      &__name {
+        margin-bottom: 12px;
+      }
+      .amount {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin-bottom: 28px;
+        &__count {
+          display: flex;
+          flex-flow: row nowrap;
+          border: 1px solid $gray-200;
+          text-align: center;
+          align-items: center;
+          &__minus {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            background-image: url(/client/css/img/Icon/Minus.svg);
+            background-repeat: no-repeat;
+            // 회색 아이콘으로 이동시 top -38px 더 이동
+            background-position: -8px -8px;
+          }
+          &__plus {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            background-image: url(/client/css/img/Icon/Plus.svg);
+            background-repeat: no-repeat;
+            background-position: -8px -8px;
+          }
+        }
+      }
+    }
+    &--price {
+      display: flex;
+      flex-flow: column nowrap;
+      margin-bottom: 28px;
+      .total {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin-bottom: 4px;
+        &__info {
+          font-weight: 600;
+          font-size: 16px;
+          display: flex;
+          align-items: flex-end;
+        }
+        &__price {
+          font-size: 28.43px;
+          font-weight: 700px;
+        }
+      }
+      .save {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        margin-bottom: 3px;
+        &__info {
+          width: 37px;
+          height: 18px;
+          background-color: $accent-yellow;
+          color: $white;
+          text-align: center;
+          line-height: 20px;
+          border-radius: 9px;
+          font-size: 11px;
+          font-weight: 600;
+        }
+        &__content {
+          font-size: 16px;
+          font-weight: 600;
+          margin-left: 12px;
+        }
+      }
+    }
+    &--buttons {
+      display: flex;
+      justify-content: space-between;
+      &__cancle {
+        width: 174px;
+        height: 54px;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 600;
+        border: 1px solid $gray-400;
+      }
+      &__put {
+        width: 174px;
+        height: 54px;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 600;
+        color: $white;
+        background-color: $primary;
+      }
+    }
+  }
+}
+
 /* 푸터 */
 .footer {
   background-color: white;
