@@ -708,6 +708,9 @@ table {
   display: flex;
   flex-flow: row nowrap;
   border-radius: 0 0 16px 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
 }
 .popup-ad__buttons__button {
   flex: 1;

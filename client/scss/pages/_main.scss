@@ -18,6 +18,9 @@ $main_width: 1050px;
   flex-flow: row nowrap;
   // 가운데 정렬
   // justify-content: center;
+  // a {
+  //   display: block;
+  // }
 }
 
 //product slide 1
@@ -150,6 +153,9 @@ $main_width: 1050px;
     display: flex;
     flex-flow: row nowrap;
     border-radius: 0 0 16px 16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
     &__button {
       flex: 1;
       text-align: center;
