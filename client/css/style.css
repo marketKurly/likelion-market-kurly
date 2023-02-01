@@ -824,7 +824,7 @@ table {
   display: flex;
   justify-content: space-between;
 }
-.add-cart__list__buttons--cancle {
+.add-cart__list__buttons__cancle {
   width: 174px;
   height: 54px;
   border-radius: 4px;
@@ -832,7 +832,7 @@ table {
   font-weight: 600;
   border: 1px solid #898989;
 }
-.add-cart__list__buttons--put {
+.add-cart__list__buttons__put {
   width: 174px;
   height: 54px;
   border-radius: 4px;

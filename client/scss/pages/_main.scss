@@ -18,9 +18,6 @@ $main_width: 1050px;
   flex-flow: row nowrap;
   // 가운데 정렬
   // justify-content: center;
-  // a {
-  //   display: block;
-  // }
 }
 
 //product slide 1
@@ -269,7 +266,7 @@ $main_width: 1050px;
     &__buttons {
       display: flex;
       justify-content: space-between;
-      &--cancle {
+      &__cancle {
         width: 174px;
         height: 54px;
         border-radius: 4px;
@@ -277,7 +274,7 @@ $main_width: 1050px;
         font-weight: 600;
         border: 1px solid $gray-400;
       }
-      &--put {
+      &__put {
         width: 174px;
         height: 54px;
         border-radius: 4px;
