@@ -148,6 +148,7 @@ li.lv2:hover a {
 }
 
 .navigation__list__bestitem1 img {
+  position: absolute;
   inset: -100%;
   width: 100%;
   height: 100%;
@@ -156,27 +157,28 @@ li.lv2:hover a {
   transition: all 0.5s ease-in-out 0s;
 }
 
-.carticon {
-  position: absolute;
+.navigation__list__button {
+  position:absolute;
   right: 16px;
-  bottom: 16px;
-  border-radius: 5px;
+  bottom: 16px
 }
 
+.carticon img {
+  cursor: pointer
+  border: 0;
+  vertical-align: top;
+}
+
+
 .navigation__list__bestitem1__text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  width: 250px;
-  height: 177px;
+  padding: 14px 10px 0px 0px;
 }
 
 .badge1 {
   color: $gray-400;
   font-weight: 600;
-  font-size: 12px;
-  line-height: 150%;
+  font-size: 14px;
+  line-height: 19px;
 }
 
 .badge2 {
