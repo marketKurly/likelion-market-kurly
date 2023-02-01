@@ -1,0 +1,285 @@
+.nav {
+  transform: translateY(-25px);
+  display: flow-root;
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 1050px;
+  height: 50px;
+  &__header {
+    float: left;
+    height: 100%;
+    &__button {
+      padding: 10px 0;
+      font-size: 16px;
+      font-weight: 500;
+      height: 100%;
+    }
+    &__button > img {
+      transform: translateY(1.5px);
+      padding-top: 3px;
+      padding-right: 10px;
+    }
+  }
+  &__category {
+    position: absolute;
+    width: 250px;
+    border: 1px solid $gray-200;
+    top: 55px;
+    display: none;
+    li::before {
+      content: '';
+      margin-left: 8px;
+      margin-right: 8px;
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+    }
+    &--gift::before {
+      background: url('../css/img/Icon/MenuIcon.svg')
+        no-repeat -8px -8px;
+    }
+    &--vegetable::before {
+      background: url('../css/img/Icon/MenuIcon.svg')
+        no-repeat -8px -230px;
+    }
+    &--fruit::before {
+      background: url('../css/img/Icon/MenuIcon.svg')
+        no-repeat -8px -405px;
+    }
+    &--fish::before {
+      background: url('../css/img/Icon/MenuIcon.svg')
+        no-repeat -8px -530px;
+    }
+    &--meat::before {
+      background: url('../css/img/Icon/MenuIcon.svg')
+        no-repeat -8px -80px;
+    }
+    &--main-meal::before {
+      background: url('../css/img/Icon/MenuIcon.svg')
+        no-repeat -8px -180px;
+    }
+    &--simple-meal::before {
+      background: url('../css/img/Icon/MenuIcon.svg')
+        no-repeat -8px -355px;
+    }
+    &--nuddle::before {
+      background: url('../css/img/Icon/MenuIcon.svg')
+        no-repeat -8px -180px;
+    }
+    &--beverage::before {
+      background: url('../css/img/Icon/MenuIcon.svg')
+        no-repeat -8px -130px;
+    }
+    &--snack::before {
+      background: url('../css/img/Icon/MenuIcon.svg')
+        no-repeat -8px -305px;
+    }
+    &--bakery::before {
+      background: url('../css/img/Icon/MenuIcon.svg')
+        no-repeat -8px -58px;
+    }
+    &--health-meal::before {
+      background: url('../css/img/Icon/MenuIcon.svg')
+        no-repeat -8px -505px;
+    }
+    &--wine::before {
+      background: url('../css/img/Icon/MenuIcon.svg')
+        no-repeat -8px -455px;
+    }
+    &--traditional-liquor::before {
+      background: url('../css/img/Icon/MenuIcon.svg')
+        no-repeat -8px -33px;
+    }
+    &--daily-supplies::before {
+      background: url('../css/img/Icon/MenuIcon.svg')
+        no-repeat -8px -105px;
+    }
+    &--skin-care::before {
+      background: url('../css/img/Icon/MenuIcon.svg')
+        no-repeat -8px -155px;
+    }
+    &--body::before {
+      background: url('../css/img/Icon/MenuIcon.svg')
+        no-repeat -8px -430px;
+    }
+    &--kitchenware::before {
+      background: url('../css/img/Icon/MenuIcon.svg')
+        no-repeat -8px -205px;
+    }
+    &--home-appliances::before {
+      background: url('../css/img/Icon/MenuIcon.svg')
+        no-repeat -8px -280px;
+    }
+    &--pet::before {
+      background: url('../css/img/Icon/MenuIcon.svg')
+        no-repeat -8px -330px;
+    }
+    &--baby::before {
+      background: url('../css/img/Icon/MenuIcon.svg')
+        no-repeat -8px -380px;
+    }
+    &--travel-ticket::before {
+      background: url('../css/img/Icon/MenuIcon.svg')
+        no-repeat -8px -480px;
+    }
+    li {
+      // background-color: red;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      font-size: 16px;
+      height: 40px;
+    }
+  }
+  &__sub-menu {
+    width: 600px;
+    height: 100%;
+    margin-left: 130px;
+    float: left;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    &__list {
+      padding: 12px 24px;
+      font-size: 18px;
+    }
+  }
+  &__notice {
+    margin-top: 8px;
+    width: 130px;
+    height: 35px;
+    float: right;
+    border: 1px solid $gray-100;
+    border-radius: 100px;
+    text-align: center;
+    padding-top: 7px;
+    font-size: 14px;
+    &__content {
+      &--purple {
+        color: $primary;
+      }
+      &--pure {
+        color: $gray-500;
+      }
+    }
+  }
+}
+.header {
+  height: 160px;
+  box-shadow: 0px 3px 3px $gray-100;
+  &__inner {
+    height: 110px;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0;
+    width: 1050px;
+    display: flow-root;
+    position: relative;
+  }
+  &__logo {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    z-index: 10;
+  }
+  &__member {
+    display: flow-root;
+    float: right;
+    padding: 8px 0px;
+    font-size: 12px;
+    color: $gray-700;
+    &__list:first-child {
+      color: $primary;
+    }
+    &__list {
+      height: 16px;
+      float: left;
+      margin-right: 6px;
+      line-height: 24px;
+      vertical-align: end;
+      &__divider {
+        display: inline-block;
+        margin-right: 6px;
+        transform: translateY(3px);
+      }
+      &__divider:last-child {
+        transform: translateY(0);
+      }
+    }
+    &__list > a {
+      padding: 10px 3px;
+    }
+    &__list:last-child > a {
+      padding-right: 2px;
+    }
+  }
+  &__pannel {
+    position: absolute;
+    top: (45px + 10px);
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 18px;
+    color: $gray-300;
+    &__market {
+      left: (82px + 25px);
+    }
+    &__beauty {
+      left: (82px + 25px + 74px + 12px);
+    }
+    &--active {
+      font-weight: 600;
+      color: $primary;
+    }
+    &--new::after {
+      content: 'N';
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      color: #fa622f;
+      position: absolute;
+      right: -10px;
+      top: -2px;
+    }
+    &__divider {
+      left: (82px + 25px + 74px);
+    }
+  }
+  &__search {
+    &__fieldset {
+      height: 60px;
+      clear: both;
+      text-align: center;
+      position: relative;
+    }
+    &__field {
+      margin-top: 10px;
+      height: 48px;
+      width: 400px;
+      border-radius: 4px;
+      border: 1.2px solid $primary;
+      font-size: 16px;
+      text-indent: 12px;
+    }
+    &__field::placeholder {
+      color: $gray-300;
+    }
+    &__button {
+      position: absolute;
+      padding: 10px 5px 10px 10px;
+      top: 5px;
+      right: 325px;
+    }
+  }
+  &__move {
+    float: right;
+    width: 150px;
+    display: flow-root;
+    transform: translateY(-45px);
+    &__list {
+      float: left;
+      padding: 0 3px;
+      margin-right: 8px;
+    }
+  }
+}
