@@ -1,0 +1,249 @@
+/* 자동 레이아웃 */
+body {
+  // width: 1920px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 1050px;
+  margin: 0 auto;
+}
+
+/* 탑 광고 */
+.topbanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px;
+  gap: 4px;
+  // width: 1920px;
+  height: 50px;
+  background: $primary;
+}
+
+.topbanner__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 72px;
+  isolation: isolate;
+  width: 1050px;
+  height: 42px;
+}
+
+.topbanner a {
+  display: block;
+  width: 284px;
+  height: 26px;
+  font-size: 16px;
+  line-height: 160%;
+  color: $white;
+}
+
+.topbanner__close {
+  right: 22%;
+  position: absolute;
+  z-index: 100;
+  border: none;
+  background-color: inherit;
+}
+
+/* 헤더 */
+
+.header {
+  padding-top: 12px;
+  font-size: 20px;
+  position: relative;
+  height: 125px;
+  justify-content: space-between;
+}
+
+.header__navigation {
+  padding: 0;
+  gap: 12px;
+  font-weight: 600;
+  display: flex;
+  color: $gray-400;
+}
+
+.header__navigation li:first-child {
+  margin-top: 38px;
+}
+.header__navigation li:nth-child(2) {
+  color: $primary;
+}
+.header__navigation li:nth-child(2)::after {
+  margin-left: 12px;
+  color: $gray-100;
+  font-size: 16px;
+  content: 'ㅣ';
+}
+.header li {
+  margin-top: 45px;
+}
+.header__search {
+  display: flew;
+  flex-direction: fow;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  gap: 31px;
+  margin-top: 20px;
+  margin-left: 50px;
+  position: relative;
+}
+.header__search input {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  padding-left: 20px;
+  color: $gray-300;
+  width: 400px;
+  height: 60px;
+  border: 1px solid $primary;
+  border-radius: 5px;
+}
+.header__search input:focus {
+  color: $black;
+}
+.header_searchButton {
+  color: $primary;
+  cursor: pointer;
+  background-color: inherit;
+  top: 24px;
+  border: 0;
+  right: 20px;
+  position: absolute;
+}
+.header__navigation__icon {
+  gap: 12px;
+  display: flex;
+}
+
+.header__navigation__icon__top {
+  font-weight: 400;
+  font-size: 12px;
+  gap: 6px;
+  top: -28px;
+  right: 0;
+  display: flex;
+  position: absolute;
+}
+.header__navigation__icon__top li:first-child {
+  color: $primary;
+  font-weight: 500;
+}
+.header__navigation__icon__top :nth-child(2)::after,
+.header__navigation__icon__top li:first-child::after {
+  color: $gray-50;
+  margin-left: 6px;
+  content: 'ㅣ';
+}
+
+/* 네비게이션 */
+.navigation {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  color: $content;
+  align-items: center;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  box-shadow: rgb(0 0 0 / 4%) 0px 3px 1px 0px;
+  z-index: 10;
+}
+.navigation__menubar {
+  position: relative;
+}
+.navigation__menubutton {
+  font-size: 16px;
+  position: relative;
+  margin: 0;
+  width: 100px;
+  height: 70px;
+}
+
+.icon-menu:before {
+  content: '\f0c9';
+}
+
+.navigation__menubutton:hover {
+  color: $primary;
+}
+
+.navigation__list {
+  margin-right: -1000px;
+  font-size: 16px;
+  position: relative;
+  color: content;
+  background-color: $white;
+  display: none;
+  width: 247px;
+}
+
+.navigation__list__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  line-height: 20px;
+}
+
+.menu1 {
+  font-size: 14px;
+  font-weight: 500;
+  color: $black;
+}
+
+.menu2 {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  left: 250px;
+}
+
+.menu2 li {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 8px;
+  font-size: 14px;
+  color: $gray-300;
+}
+
+.navigation__category {
+  display: flex;
+}
+
+.navigation__category li {
+  display: block;
+  width: 170px;
+}
+
+.navigation__category li a:hover {
+  color: $primary;
+  text-decoration: underline;
+}
+
+.navigation__notice {
+  border: 1px $gray-500 solid;
+  font-size: 12px;
+  border-radius: 50px;
+  padding: 0 8px 0 8px;
+}
+
+.notice-bold {
+  color: $primary;
+  font-weight: 400;
+}
+
+.notice span {
+  color: $primary;
+}

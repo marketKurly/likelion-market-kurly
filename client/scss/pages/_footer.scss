@@ -1,0 +1,218 @@
+/* 자동 레이아웃 */
+body {
+  // width: 1920px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 1050px;
+  margin: 0 auto;
+}
+
+/* 푸터 */
+.footer {
+  padding-top: 30px;
+  border-top: 1px solid $gray-100;
+  height: auto;
+  text-align: left;
+}
+
+.footer__main {
+  width: 1050px;
+  margin: 0 auto;
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.footer__left {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__left__header {
+  padding-bottom: 17px;
+  font-weight: 700px;
+  font-size: 20px;
+  line-height: 29px;
+}
+
+.footer__left__call {
+  display: block;
+  padding-bottom: 20px;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.footer__left__time {
+  margin-left: 8px;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+.footer__left__ask {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 고객행복센터 버튼 */
+.askButton {
+  display: block;
+  width: 120px;
+  height: 40px;
+  border: 1px solid $gray-100;
+  border-radius: 3px;
+  line-height: 35px;
+  text-align: center;
+  margin-right: 16px;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+/* 디바이더 공통 스타일 */
+.divider {
+  margin: 0px 6px;
+}
+
+/* 설명 공통 스타일 */
+.commontext {
+  margin-top: 2px;
+  color: $gray-400;
+  letter-spacing: -0.5px;
+  line-height: 16.8px;
+}
+
+.footer__kakaoquestion {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__servicecenter {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__more {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__otherquestion {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.footer__otherquestion span {
+  color: $gray-300;
+}
+
+.footer__otherquestion a {
+  color: $primary;
+}
+
+.footer__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__right__top {
+  display: flex;
+  width: 100%;
+  padding-bottom: 29px;
+  font-size: 14px;
+}
+
+.liList {
+  margin-left: 14px;
+}
+.innerList1 {
+  margin-left: 0px;
+}
+
+.innerList5 {
+  font-weight: 500;
+}
+
+.footerConfirm {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: $gray-300;
+  margin-bottom: 40px;
+}
+
+.confirm {
+  padding-left: 4px;
+}
+
+.aConfirm {
+  margin-left: 3px;
+  color: $primary;
+}
+
+.footer__imagelink {
+  display: flex;
+}
+
+.footer__imageLink__icon img {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.footer__buttom {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 0px 33px;
+  border-top: 1px solid $gray-100;
+}
+
+.footer_bottom button {
+  overflow: visible;
+  background-color: transparent;
+  border: none;
+}
+
+.footer__bottom__button {
+  display: flex;
+  text-align: left;
+}
+
+.footer__bottom__button img {
+  width: 34px;
+  margin-right: 10px;
+}
+
+.tossButton img {
+  width: 102px;
+  margin-right: 10px;
+}
+
+.footer__button__Text {
+  font-size: 10px;
+  line-height: 14.5px;
+  color: $gray-400;
+  word-break: break-word;
+}
+
+.footer__copyright1 {
+  padding: 20px 0px 30px;
+  font-size: 10px;
+  line-height: 15px;
+  text-align: center;
+  background-color: $gray-50;
+  color: $gray-400;
+}
+
+.footer__copyright2 {
+  display: block;
+  padding-top: 7px;
+  font-style: normal;
+}
