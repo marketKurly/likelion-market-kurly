@@ -740,28 +740,28 @@ table {
   display: flex;
   flex-direction: column;
 }
-.add-cart__list--info {
+.add-cart__list__info {
   font-weight: 600;
   font-size: 16px;
   line-height: 150%;
 }
-.add-cart__list--info__name {
+.add-cart__list__info__name {
   margin-bottom: 12px;
 }
-.add-cart__list--info .amount {
+.add-cart__list__info__amount {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   margin-bottom: 28px;
 }
-.add-cart__list--info .amount__count {
+.add-cart__list__info__amount__count {
   display: flex;
   flex-flow: row nowrap;
   border: 1px solid #c4c4c4;
   text-align: center;
   align-items: center;
 }
-.add-cart__list--info .amount__count__minus {
+.add-cart__list__info__amount__count__minus {
   width: 30px;
   height: 30px;
   cursor: pointer;
@@ -769,7 +769,7 @@ table {
   background-repeat: no-repeat;
   background-position: -8px -8px;
 }
-.add-cart__list--info .amount__count__plus {
+.add-cart__list__info__amount__count__plus {
   width: 30px;
   height: 30px;
   cursor: pointer;
@@ -777,34 +777,34 @@ table {
   background-repeat: no-repeat;
   background-position: -8px -8px;
 }
-.add-cart__list--price {
+.add-cart__list__price {
   display: flex;
   flex-flow: column nowrap;
   margin-bottom: 28px;
 }
-.add-cart__list--price .total {
+.add-cart__list__price__total {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   margin-bottom: 4px;
 }
-.add-cart__list--price .total__info {
+.add-cart__list__price__total__info {
   font-weight: 600;
   font-size: 16px;
   display: flex;
   align-items: flex-end;
 }
-.add-cart__list--price .total__price {
+.add-cart__list__price__total__price {
   font-size: 28.43px;
   font-weight: 700px;
 }
-.add-cart__list--price .save {
+.add-cart__list__price__save {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
   margin-bottom: 3px;
 }
-.add-cart__list--price .save__info {
+.add-cart__list__price__save__info {
   width: 37px;
   height: 18px;
   background-color: #fa622f;
@@ -815,16 +815,16 @@ table {
   font-size: 11px;
   font-weight: 600;
 }
-.add-cart__list--price .save__content {
+.add-cart__list__price__save__content {
   font-size: 16px;
   font-weight: 600;
   margin-left: 12px;
 }
-.add-cart__list--buttons {
+.add-cart__list__buttons {
   display: flex;
   justify-content: space-between;
 }
-.add-cart__list--buttons__cancle {
+.add-cart__list__buttons--cancle {
   width: 174px;
   height: 54px;
   border-radius: 4px;
@@ -832,7 +832,7 @@ table {
   font-weight: 600;
   border: 1px solid #898989;
 }
-.add-cart__list--buttons__put {
+.add-cart__list__buttons--put {
   width: 174px;
   height: 54px;
   border-radius: 4px;

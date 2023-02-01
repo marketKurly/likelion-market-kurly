@@ -185,14 +185,14 @@ $main_width: 1050px;
     margin: 24px 20px;
     display: flex;
     flex-direction: column;
-    &--info {
+    &__info {
       font-weight: 600;
       font-size: 16px;
       line-height: 150%;
       &__name {
         margin-bottom: 12px;
       }
-      .amount {
+      &__amount {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
@@ -223,11 +223,11 @@ $main_width: 1050px;
         }
       }
     }
-    &--price {
+    &__price {
       display: flex;
       flex-flow: column nowrap;
       margin-bottom: 28px;
-      .total {
+      &__total {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
@@ -243,7 +243,7 @@ $main_width: 1050px;
           font-weight: 700px;
         }
       }
-      .save {
+      &__save {
         display: flex;
         flex-flow: row nowrap;
         justify-content: flex-end;
@@ -266,10 +266,10 @@ $main_width: 1050px;
         }
       }
     }
-    &--buttons {
+    &__buttons {
       display: flex;
       justify-content: space-between;
-      &__cancle {
+      &--cancle {
         width: 174px;
         height: 54px;
         border-radius: 4px;
@@ -277,7 +277,7 @@ $main_width: 1050px;
         font-weight: 600;
         border: 1px solid $gray-400;
       }
-      &__put {
+      &--put {
         width: 174px;
         height: 54px;
         border-radius: 4px;
