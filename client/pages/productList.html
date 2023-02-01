@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
+    <title>productList</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="topbanner">
+        <div class="topbanner__inner">
+          <a href="./css/">지금 가입하고 인기상품 <strong>100원</strong>에 받아가세요!</a>
+          <button class="topbanner__close">
+            <img src="../css/img/Icon/Cancel.svg" alt="상단 광고 닫기" />
+          </button>
+        </div>
+      </div>
+
+      <header class="header center">
+        <ul class="header__navigation">
+          <li>
+            <a href="#"><img src="../css/img/Vector.svg" alt="배너 로고" /></a>
+          </li>
+          <li><a href="#">마켓칼리</a></li>
+          <li><a href="#" class="new">뷰티칼리</a></li>
+
+          <form method="post" action="#" class="header__search">
+            <fieldset>
+              <legend>검색영역</legend>
+              <input type="search" placeholder="검색어를 입력해주세요" required />
+              <button type="submit" class="header_searchButton"></button>
+            </fieldset>
+          </form>
+        </ul>
+        <ul class="header__navigation__icon">
+          <li>
+            <a href="#" class="location"
+              ><img src="../css/img/Icon/Location.svg" alt="위치 정보"
+            /></a>
+          </li>
+          <li>
+            <a href="#" class="heart"><img src="../css/img/Icon/Heart.svg" alt="관심 상품" /></a>
+          </li>
+          <li>
+            <a href="#" class="cart"><img src="../css/img/Icon/Cart-1.svg" alt="장바구니" /></a>
+          </li>
+        </ul>
+        <ul class="header__navigation__icon__top">
+          <li><a href="#">회원가입</a></li>
+          <li><a href="./login.html">로그인</a></li>
+          <li>
+            <a href="#" class="CustomerService">고객센터 ▼</a>
+          </li>
+        </ul>
+      </header>
+
+      <nav class="navigation center">
+        <ul class="navigation__menubar">
+          <button class="navigation__menubutton icon-menu">카테고리</button>
+
+          <li>
+            <a href="#" class="navigation__list">1</a>
+          </li>
+          <li>
+            <a href="#" class="navigation__list">2</a>
+          </li>
+          <li>
+            <a href="#" class="navigation__list">3</a>
+          </li>
+          <li>
+            <a href="#" class="navigation__list">4</a>
+          </li>
+          <li>
+            <a href="#" class="navigation__list">5</a>
+          </li>
+        </ul>
+        <ul class="navigation__category">
+          <li><a href="#">신상품</a></li>
+          <li><a href="#">베스트</a></li>
+          <li><a href="#">알뜰쇼핑</a></li>
+          <li><a href="#">특가/혜택</a></li>
+        </ul>
+        <a href="#" class="navigation__notice"><span class="notice-bold">샛별 낮</span> 배송안내</a>
+      </nav>
+
+      <section class="productlist center">
+        <h2 class="productlist__top">베스트</h2>
+        <div class="productlist__main">
+          <nav class="productlist__main__navigator">
+            <ul class="filter">
+              <span>필터</span>
+              <p>초기화</p>
+            </ul>
+            <ul class="category">
+              <li class="lv1">
+                <a href="#">카테고리</a>
+                <ul class="lv2">
+                  <li><a href="#">샐러드·간편식</a></li>
+                  <li><a href="#">국·반찬·메인요리</a></li>
+                  <li><a href="#">정육·계란</a></li>
+                  <li><a href="#">과일·견과·쌀</a></li>
+                  <li><a href="#">수산·해산·건어물</a></li>
+                  <li><a href="#">베이커리·치즈·델리</a></li>
+                  <li><a href="#">간식·과자·떡</a></li>
+                  <li><a href="#">생수·음료·우유·커피</a></li>
+                  <li><a href="#">면·양념·오일</a></li>
+                  <li><a href="#">생활용품·리빙·캠핑</a></li>
+                </ul>
+              </li>
+              <li class="lv1">
+                <a href="#">브랜드</a>
+                <ul class="lv2">
+                  <li><a href="#">가농바이오</a></li>
+                  <li><a href="#">감자밭</a></li>
+                  <li><a href="#">감자면옥</a></li>
+                  <li><a href="#">강창구찹쌀진순대</a></li>
+                  <li><a href="#">거대곰탕</a></li>
+                  <li><a href="#">게방식당</a></li>
+                  <li><a href="#">경기떡집</a></li>
+                  <li><a href="#">경복궁</a></li>
+                  <li><a href="#">고기반찬</a></li>
+                  <li><a href="#">고온어다이어트</a></li>
+                </ul>
+              </li>
+              <li class="lv1">
+                <a href="#">가격</a>
+                <ul class="lv2">
+                  <li><a href="#">7,400원 미만</a></li>
+                  <li><a href="#">7,400원 ~ 10,900원</a></li>
+                  <li><a href="#">10,900원 ~ 17,010원</a></li>
+                  <li><a href="#">17,010원 이상</a></li>
+                </ul>
+              </li>
+              <li class="lv1">
+                <a href="#">혜택</a>
+                <ul class="lv2">
+                  <li><a href="#">할인상품</a></li>
+                  <li><a href="#">한정수량</a></li>
+                </ul>
+              </li>
+              <li class="lv1">
+                <a href="#">유형</a>
+                <ul class="lv2">
+                  <li><a href="#">KurlyOnly</a></li>
+                  <li><a href="#">희소가치 프로젝트</a></li>
+                </ul>
+              </li>
+              <li class="lv1">
+                <a href="#">특정상품 제외</a>
+                <ul class="lv2">
+                  <li><a href="#">반려동물 상품</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="product__main__list">
+            <div class="navigation__list__menu">
+              <div class="menu1">총275건</div>
+              <ul class="menu2">
+                <li><a href="#">추천순</a></li>
+                <li><a href="#">신상품순</a></li>
+                <li><a href="#">판매량순</a></li>
+                <li><a href="#">혜택순</a></li>
+                <li><a href="#">낮은 가격순</a></li>
+                <li><a href="#">높은 가격순</a></li>
+              </ul>
+            </div>
+            <div class="navigation__list__grid">
+              <div class="navigation__list__bestitem">
+                <div class="navigation__list__bestitem1">
+                  <img src="../assets/tangtang/detail_view.jpg" alt="[풀무원]탱탱쫄면 (4개입)" /><a
+                    href="#"
+                  ></a>
+                  <div>
+                    <button type="button" class="carticon">
+                      <img src="../css/img/Icon/Cart.svg" alt="카트아이콘" />
+                    </button>
+                  </div>
+                </div>
+                <div class="navigation__list__bestitem1__text">
+                  <span class="badge1">샛별배송</span>
+                  <span class="badge2">[풀무원] 탱탱쫄면 (4개입)</span>
+                  <span class="badge3">4980원</span>
+                  <span class="badge4">튀기지않아 부담없는 매콤함</span>
+                  <span class="badge5">
+                    <span class="badge5-1">karly only</span>
+                    <span class="badge5-2">한정 수량</span>
+                  </span>
+                </div>
+              </div>
+              <div class="navigation__list__bestitem">
+                <div class="navigation__list__bestitem1">
+                  <img
+                    src="../assets/cica/detail_view.svg"
+                    alt="[온더바디]죠르디 시카 자석 선쿠션"
+                  /><a href="#"></a>
+                  <div>
+                    <button type="button" class="carticon">
+                      <img src="../css/img/Icon/Cart.svg" alt="카트아이콘" />
+                    </button>
+                  </div>
+                </div>
+                <div class="navigation__list__bestitem1__text">
+                  <span class="badge1">샛별배송</span>
+                  <span class="badge2">[온더바디]죠르디 시카 자석 선쿠션</span>
+                  <span class="badge3">32,500원</span>
+                  <span class="badge4">끈적임 없이 보송한 무기자차 선쿠션</span>
+                  </span>
+                </div>
+              </div>
+              <div class="navigation__list__bestitem">
+                <div class="navigation__list__bestitem1">
+                  <img src="../assets/baby/detail_view.svg" alt="[프로쉬]베이비 세탁세" /><a
+                    href="#"
+                  ></a>
+                  <div>
+                    <button type="button" class="carticon">
+                      <img src="../css/img/Icon/Cart.svg" alt="카트아이콘" />
+                    </button>
+                  </div>
+                </div>
+                <div class="navigation__list__bestitem1__text">
+                  <span class="badge1">샛별배송</span>
+                  <span class="badge2">[프로쉬]베이비 세탁세</span>
+                  <span class="badge3">18,900원</span>
+                  <span class="badge4">성분을 꼼꼼히 따져 골라 더욱 편안한</span>
+                  <span class="badge5">
+                    <span class="badge5-1">karly only</span>
+                    <span class="badge5-2">한정 수량</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer center">푸터</footer>
+    </main>
+  </body>
+</html>
