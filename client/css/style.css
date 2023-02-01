@@ -578,8 +578,10 @@ table {
 /* 이미지슬라이드 */
 /* 메인 */
 .main {
-  width: 1920px;
+  display: flex;
+  flex-flow: column wrap;
   position: relative;
+  justify-content: center;
 }
 
 .Main-banner {
