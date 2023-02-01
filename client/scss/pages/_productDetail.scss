@@ -42,34 +42,26 @@
       font-size: 21px;
     }
 
-    &__detail--login1 {
-      padding-top: $spacing-lg;
-      padding-bottom: $spacing-xl;
-      color: $primary;
-      font-size: 16px;
-      font-weight: 600;
-    }
-
     &__detail {
       width: 560px;
 
       &__title {
         display: flex;
         justify-content: space-between;
-        font-size: 24px;
-        font-weight: 500;
+        font-size: 28px;
+        font-weight: 600;
       }
 
       &__subtitle {
-        padding-top: 6px;
-        font-size: 14px;
+        padding-top: 8px;
+        font-size: 16px;
         font-weight: 400;
         color: $gray-400;
       }
 
       &__price {
         padding-top: $spacing-lg;
-        font-weight: bold;
+        font-weight: 600;
         font-size: 28px;
         color: $content;
         display: flex;
@@ -77,8 +69,17 @@
 
         span:last-child {
           font-size: 16px;
+          font-weight: 700;
           padding-left: 4px;
         }
+      }
+
+      &__login1 {
+        padding-top: $spacing-lg;
+        padding-bottom: $spacing-xl;
+        color: $primary;
+        font-size: 16px;
+        font-weight: 600;
       }
 
       &__inform {
@@ -87,7 +88,7 @@
       }
 
       &__dl--border {
-        font-size: 12px;
+        font-size: 14px;
         display: flex;
         flex-flow: row nowrap;
         padding-top: $spacing-xl;
@@ -107,7 +108,7 @@
       }
 
       &__dl {
-        font-size: 12px;
+        font-size: 14px;
         display: flex;
         flex-flow: row nowrap;
         padding-top: $spacing-xl;
@@ -135,6 +136,7 @@
 
             &__number {
               border: 1px solid $gray-100;
+              position: relative;
 
               &--minus {
                 width: 30px;
@@ -145,6 +147,9 @@
                 height: 30px;
                 font-weight: 600;
                 font-size: 16px;
+                position: absolute;
+                top: 6px;
+                left: 27px;
               }
               &--plus {
                 width: 30px;
@@ -252,10 +257,15 @@
       height: 60px;
       display: block;
       flex: 1 1 auto;
+      font-size: 16px;
+      font-weight: 600;
     }
 
     button:nth-child(1) {
-      border-right: 0;
+      border: 0;
+      border-left: 1px solid $gray-100;
+      border-top: 1px solid $gray-100;
+      background: white;
     }
     button:nth-child(2) {
       border-right: 0;
@@ -289,6 +299,7 @@
               font-weight: 700;
               font-size: 50px;
               padding-top: 10px;
+              color: $content;
             }
 
             &:after {
@@ -305,7 +316,7 @@
             color: $content;
             font-size: 16px;
             font-weight: 400;
-            line-height: 1.6;
+            line-height: 1.7;
             padding-bottom: 150px;
           }
         }
@@ -318,7 +329,7 @@
           z-index: 10;
           font-size: 50px;
           font-weight: 600;
-          color: $gray-500;
+          color: $content;
 
           span {
             position: relative;
@@ -380,26 +391,21 @@
 
           &__dl {
             width: 315px;
+            position: relative;
+            padding-top: 60px;
+
+            img {
+              position: absolute;
+              left: 0;
+              margin-left: 141px;
+            }
 
             dt {
               font-weight: 600;
               font-size: 21px;
               color: $primary;
-              padding-top: 66px;
+              padding-top: 60px;
               padding-bottom: 24px;
-              position: relative;
-            }
-
-            dt:before {
-              content: '';
-              border: 2px solid red;
-              background-color: pink;
-              background-image: url('../../assets/productDetail/whyKarly-1.svg');
-              background-position: 0px 0px;
-              display: block;
-              width: 40px;
-              height: 40px;
-              transform: translateY(-10px);
               position: relative;
             }
 
@@ -442,7 +448,7 @@
           font-weight: 600;
           color: $gray-500;
           line-height: 1.8;
-          padding: 15px 0 56px 0;
+          padding: 30px 0 56px 0;
 
           li:before {
             content: 'ㆍ';
@@ -509,7 +515,7 @@
               padding: 20px;
 
               div {
-                font-size: 12px;
+                font-size: 14px;
                 font-weight: 600;
                 width: 225px;
 
@@ -531,7 +537,7 @@
               }
 
               article {
-                font-size: 12px;
+                font-size: 14px;
                 font-weight: 600;
                 color: $gray-400;
 
@@ -589,7 +595,7 @@
           font-weight: 600;
           color: $gray-500;
           line-height: 1.8;
-          padding: 15px 0 56px 0;
+          padding: 30px 0 50px 0;
 
           li:before {
             content: 'ㆍ';
@@ -598,8 +604,6 @@
       }
 
       &__content {
-        padding: 20px;
-
         table {
           width: 100%;
         }
@@ -626,10 +630,6 @@
         }
 
         &__text {
-          padding: 20px;
-          border-bottom: 1px solid $gray-100;
-          font-size: 16px;
-
           &__noti {
             background: $gray-100;
             border-radius: 1px;
@@ -650,18 +650,18 @@
             }
 
             .title {
-              width: 710px;
+              width: 720px;
             }
             .author {
-              width: 100px;
+              width: 110px;
               text-align: center;
             }
             .created-date {
-              width: 100px;
+              width: 110px;
               text-align: center;
             }
             .status {
-              width: 100px;
+              width: 110px;
               text-align: center;
             }
           }
@@ -669,36 +669,47 @@
           &--detailText {
             padding: 20px;
             border-bottom: 1px solid $gray-100;
-            font-size: 12px;
+            font-size: 14px;
             font-weight: 600;
             color: $content;
             line-height: 1.8;
             background-color: $gray-50;
+            position: relative;
 
             td {
               padding: 20px;
             }
 
             .title {
-              width: 710px;
+              width: 720px;
             }
             .author {
-              width: 100px;
+              width: 110px;
               text-align: center;
             }
             .created-date {
-              width: 100px;
+              width: 110px;
               text-align: center;
             }
             .status {
-              width: 100px;
+              width: 110px;
               text-align: center;
             }
 
+            .question-icon {
+              position: absolute;
+              top: 20px;
+            }
             .question {
+              padding-left: 35px;
+            }
+            .answer-icon {
+              position: absolute;
+              top: 85px;
             }
             .answer {
-              padding-top: 30px;
+              padding-top: 40px;
+              padding-left: 35px;
             }
           }
         }

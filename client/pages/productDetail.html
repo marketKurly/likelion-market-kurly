@@ -20,54 +20,6 @@
 
   <body>
     <!-- 헤더 -->
-    <header class="header">
-      <div class="header__ad__top">
-        <a href=""
-          ><img src="" alt="헤더광고" />지금 가입하고
-          인기상품 100원에 받아가세요!</a
-        >
-      </div>
-
-      <ul class="logoSwich">
-        <li>
-          <a href="#"><img src="" alt="배너 로고" /></a>
-        </li>
-        <li><a href="#">마켓칼리</a></li>
-        <li><a href="#">뷰티칼리</a></li>
-      </ul>
-
-      <fieldset>
-        <legend>검색영역</legend>
-      </fieldset>
-      <form method="post" action="#" class="search">
-        <input
-          type="search"
-          placeholder="검색어를 입력해주세요"
-          required
-        />
-        <button type="submit" class="SearchButton">
-          <img src="" alt="검색 버튼" />
-        </button>
-      </form>
-
-      <ul class="topLogin">
-        <li><a href="#">회원가입</a></li>
-        <li><a href="#">로그인</a></li>
-        <li><a href="#">고객센터▼</a></li>
-      </ul>
-
-      <ul class="rightIcon">
-        <li>
-          <a href="#"><img src="" alt="Location" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="" alt="Heart" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="" alt="Cart" /></a>
-        </li>
-      </ul>
-    </header>
 
     <!-- 메인 -->
     <main class="main product-detail">
@@ -106,7 +58,7 @@
             <span>원</span>
           </h2>
           <div
-            class="product-detail__information__detail--login1"
+            class="product-detail__information__detail__login1"
           >
             로그인 후, 적립 혜택이 제공됩니다.
           </div>
@@ -325,6 +277,10 @@
                 <dl
                   class="product-detail__description__content__whykarly__text__dl"
                 >
+                  <img
+                    src="../assets/productDetail/whyKarly-1.svg"
+                    alt="깐깐한 상품위원회"
+                  />
                   <dt>깐깐한 상품위원회</dt>
                   <dd>
                     나와 내 가족이 먹고 쓸 상품을 고르는
@@ -336,6 +292,10 @@
                 <dl
                   class="product-detail__description__content__whykarly__text__dl"
                 >
+                  <img
+                    src="../assets/productDetail/whyKarly-2.svg"
+                    alt="차별화된 Karly Only 상품"
+                  />
                   <dt>차별화된 Karly Only 상품</dt>
                   <dd>
                     전국 각지와 해외의 훌륭한 생산자가 믿고
@@ -347,6 +307,10 @@
                 <dl
                   class="product-detail__description__content__whykarly__text__dl"
                 >
+                  <img
+                    src="../assets/productDetail/whyKarly-3.svg"
+                    alt="신선한 풀콜드체인 배송"
+                  />
                   <dt>신선한 풀콜드체인 배송</dt>
                   <dd>
                     온라인 업계 최초로 산지에서 문 앞까지
@@ -359,6 +323,10 @@
                 <dl
                   class="product-detail__description__content__whykarly__text__dl"
                 >
+                  <img
+                    src="../assets/productDetail/whyKarly-4.svg"
+                    alt="고객, 생산자를 위한 최선의 가격"
+                  />
                   <dt>고객, 생산자를 위한 최선의 가격</dt>
                   <dd>
                     매주 대형 마트와 주요 온라인 마트의
@@ -371,6 +339,10 @@
                 <dl
                   class="product-detail__description__content__whykarly__text__dl"
                 >
+                  <img
+                    src="../assets/productDetail/whyKarly-5.svg"
+                    alt="환경을 생각하는 지속 가능한 유통"
+                  />
                   <dt>환경을 생각하는 지속 가능한 유통</dt>
                   <dd>
                     친환경 포장재부터 생산자가
@@ -575,6 +547,11 @@
                   class="product-detail__description__inquiry__content__text--detailText"
                 >
                   <td>
+                    <img
+                      class="question-icon"
+                      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGc+CiAgICAgICAgICAgIDxnPgogICAgICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQ0NSAtODc2KSB0cmFuc2xhdGUoNDIzIDI3NikgdHJhbnNsYXRlKDIgMzE2KSB0cmFuc2xhdGUoMjAgMjg0KSI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEyIiBmaWxsPSIjQTg2NEQ4Ii8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0xMS45NDYgNy41YzIuNDU2IDAgNC40NDYgMS45OSA0LjQ0NiA0LjQ0NiAwIC45MDctLjI3MSAxLjc1LS43MzcgMi40NTNsLjg0NS44NDMtMS4yNTggMS4yNTgtLjg0My0uODQ1Yy0uNzAzLjQ2Ni0xLjU0Ni43MzctMi40NTMuNzM3LTIuNDU1IDAtNC40NDYtMS45OS00LjQ0Ni00LjQ0NkM3LjUgOS40OTEgOS40OSA3LjUgMTEuOTQ2IDcuNXptMCAxLjc3OGMtMS40NzMgMC0yLjY2OCAxLjE5NS0yLjY2OCAyLjY2OHMxLjE5NSAyLjY2OCAyLjY2OCAyLjY2OGMuNDEyIDAgLjgwMi0uMDk0IDEuMTUtLjI2bC0uMzY5LS4zNyAxLjI1OC0xLjI1Ny4zNjkuMzY5Yy4xNjYtLjM0OC4yNi0uNzM4LjI2LTEuMTUgMC0xLjQ3My0xLjE5NS0yLjY2OC0yLjY2OC0yLjY2OHoiLz4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPgo="
+                      alt="질문 아이콘"
+                    />
                     <div class="question">
                       <span
                         >스티로폼 박스도 손상되어 있어
@@ -582,6 +559,11 @@
                         요청합니다.</span
                       >
                     </div>
+                    <img
+                      class="answer-icon"
+                      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGc+CiAgICAgICAgICAgIDxnPgogICAgICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQ0NSAtMTkxOCkgdHJhbnNsYXRlKDQyMyAyNzYpIHRyYW5zbGF0ZSgyIDE2MjIpIHRyYW5zbGF0ZSgyMCAyMCkiPgogICAgICAgICAgICAgICAgICAgICAgICA8Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMiIgZmlsbD0iIzVGMDA4MCIvPgogICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9Im5vbnplcm8iIGQ9Ik05Ljc2IDE1LjcwOGwuNTQtMS40MDRoMy40NTZsLjU1MiAxLjQwNGgyLjE0OEwxMyA3LjVoLTEuOTMyTDcuNiAxNS43MDhoMi4xNnptMy4zMjQtMy4xMzJoLTIuMTEybDEuMDU2LTIuNzEyIDEuMDU2IDIuNzEyeiIvPgogICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg=="
+                      alt=""
+                    />
                     <div class="answer">
                       <span
                         >안녕하세요. 칼리입니다. 믿고
@@ -620,6 +602,12 @@
                   class="product-detail__description__inquiry__content__text--detailText"
                 >
                   <td>
+                    <img
+                      class="question-icon"
+                      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGc+CiAgICAgICAgICAgIDxnPgogICAgICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQ0NSAtODc2KSB0cmFuc2xhdGUoNDIzIDI3NikgdHJhbnNsYXRlKDIgMzE2KSB0cmFuc2xhdGUoMjAgMjg0KSI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEyIiBmaWxsPSIjQTg2NEQ4Ii8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0xMS45NDYgNy41YzIuNDU2IDAgNC40NDYgMS45OSA0LjQ0NiA0LjQ0NiAwIC45MDctLjI3MSAxLjc1LS43MzcgMi40NTNsLjg0NS44NDMtMS4yNTggMS4yNTgtLjg0My0uODQ1Yy0uNzAzLjQ2Ni0xLjU0Ni43MzctMi40NTMuNzM3LTIuNDU1IDAtNC40NDYtMS45OS00LjQ0Ni00LjQ0NkM3LjUgOS40OTEgOS40OSA3LjUgMTEuOTQ2IDcuNXptMCAxLjc3OGMtMS40NzMgMC0yLjY2OCAxLjE5NS0yLjY2OCAyLjY2OHMxLjE5NSAyLjY2OCAyLjY2OCAyLjY2OGMuNDEyIDAgLjgwMi0uMDk0IDEuMTUtLjI2bC0uMzY5LS4zNyAxLjI1OC0xLjI1Ny4zNjkuMzY5Yy4xNjYtLjM0OC4yNi0uNzM4LjI2LTEuMTUgMC0xLjQ3My0xLjE5NS0yLjY2OC0yLjY2OC0yLjY2OHoiLz4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPgo="
+                      alt="질문 아이콘"
+                    />
+
                     <div class="question">
                       <span
                         >스티로폼 박스도 손상되어 있어
@@ -627,6 +615,11 @@
                         요청합니다.</span
                       >
                     </div>
+                    <img
+                      class="answer-icon"
+                      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGc+CiAgICAgICAgICAgIDxnPgogICAgICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQ0NSAtMTkxOCkgdHJhbnNsYXRlKDQyMyAyNzYpIHRyYW5zbGF0ZSgyIDE2MjIpIHRyYW5zbGF0ZSgyMCAyMCkiPgogICAgICAgICAgICAgICAgICAgICAgICA8Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMiIgZmlsbD0iIzVGMDA4MCIvPgogICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9Im5vbnplcm8iIGQ9Ik05Ljc2IDE1LjcwOGwuNTQtMS40MDRoMy40NTZsLjU1MiAxLjQwNGgyLjE0OEwxMyA3LjVoLTEuOTMyTDcuNiAxNS43MDhoMi4xNnptMy4zMjQtMy4xMzJoLTIuMTEybDEuMDU2LTIuNzEyIDEuMDU2IDIuNzEyeiIvPgogICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg=="
+                      alt=""
+                    />
                     <div class="answer">
                       <span
                         >안녕하세요. 칼리입니다. 믿고
@@ -663,6 +656,5 @@
     </main>
 
     <!-- 푸터 -->
-    <footer class="footer">푸터</footer>
   </body>
 </html>
