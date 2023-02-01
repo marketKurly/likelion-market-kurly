@@ -2,7 +2,8 @@
 
 /* 메인 */
 
-$main_width: 1050px;
+$main_width: 1920px;
+$main_container_width: 1050px;
 
 .main {
   // width: 1920px;
@@ -29,7 +30,7 @@ $main_width: 1050px;
   justify-content: center;
 
   &__inner {
-    width: $main_width;
+    width: $main_container_width;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -42,7 +43,7 @@ $main_width: 1050px;
     &__slider {
       margin-top: 28px;
       margin-bottom: 40px;
-      width: $main_width;
+      width: $main_container_width;
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
@@ -107,7 +108,7 @@ $main_width: 1050px;
   justify-content: center;
 
   &__inner {
-    width: $main_width;
+    width: $main_container_width;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -120,7 +121,7 @@ $main_width: 1050px;
     &__slider {
       margin-top: 28px;
       margin-bottom: 40px;
-      width: $main_width;
+      width: $main_container_width;
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
