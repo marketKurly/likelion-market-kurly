@@ -587,6 +587,7 @@ table {
   height: 370px;
   display: flex;
   flex-flow: row nowrap;
+  justify-content: center;
 }
 
 .today-recomend-product {
