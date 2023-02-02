@@ -4,8 +4,6 @@ body {
 }
 
 // 메인 리스트 전체
-.main {
-}
 
 .container {
   width: 1050px;
@@ -93,7 +91,6 @@ body {
   align-items: center;
   width: 100%;
   height: 52px;
-  overflow: hidden;
 }
 
 .frame70 {
@@ -114,14 +111,10 @@ body {
   justify-content: space-between;
 }
 
-.frame70 img {
-  padding-left: 130px;
-}
-
 // 카테고리 서브 시작
 .accordion--set__body {
-  display: block;
   max-height: 100vh;
+  // display: none;
 }
 
 .accordion__ltem {
@@ -180,7 +173,7 @@ body {
 }
 
 .category-height {
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 // 상품 리스트 전체
@@ -261,9 +254,6 @@ body {
   height: 538px;
   color: rgb(51, 51, 51);
   cursor: pointer;
-}
-
-.product__list__img1 {
 }
 
 .product__list__img2 {
@@ -395,4 +385,12 @@ body {
 
 .limited_quantity {
   color: $black;
+}
+
+// 하단 페이지
+.bottom--page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 36px;
 }
