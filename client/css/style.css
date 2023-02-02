@@ -867,6 +867,140 @@ table {
   background-color: white;
 }
 
+.add-cart {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: 396px;
+  border-radius: 16px;
+  display: flex;
+  z-index: 100;
+  justify-content: center;
+  box-shadow: 0px 8px 36px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+.add-cart-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.add-cart-window {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.add-cart__list {
+  width: 356px;
+  margin: 24px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.add-cart__list__info {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+}
+.add-cart__list__info__name {
+  margin-bottom: 12px;
+}
+.add-cart__list__info__amount {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+.add-cart__list__info__amount__count {
+  display: flex;
+  flex-flow: row nowrap;
+  border: 1px solid #c4c4c4;
+  text-align: center;
+  align-items: center;
+}
+.add-cart__list__info__amount__count__minus {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-image: url(/client/css/img/Icon/Minus.svg);
+  background-repeat: no-repeat;
+  background-position: -8px -8px;
+}
+.add-cart__list__info__amount__count__plus {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-image: url(/client/css/img/Icon/Plus.svg);
+  background-repeat: no-repeat;
+  background-position: -8px -8px;
+}
+.add-cart__list__price {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 28px;
+}
+.add-cart__list__price__total {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+.add-cart__list__price__total__info {
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  align-items: flex-end;
+}
+.add-cart__list__price__total__price {
+  font-size: 28.43px;
+  font-weight: 700px;
+}
+.add-cart__list__price__save {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  margin-bottom: 3px;
+}
+.add-cart__list__price__save__info {
+  width: 37px;
+  height: 18px;
+  background-color: #fa622f;
+  color: #ffffff;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 9px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.add-cart__list__price__save__content {
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 12px;
+}
+.add-cart__list__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.add-cart__list__buttons__cancle {
+  width: 174px;
+  height: 54px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid #898989;
+}
+.add-cart__list__buttons__put {
+  width: 174px;
+  height: 54px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #5f0080;
+}
+
 /* 기본 스타일 */
 *,
 *::before,
