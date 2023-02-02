@@ -22,6 +22,7 @@
     &__item {
       border-bottom: 1.5px solid $gray-400;
       height: 48px;
+      z-index: -1;
       @include flexboxCenter(
         $direction: row,
         $justify: stretch,

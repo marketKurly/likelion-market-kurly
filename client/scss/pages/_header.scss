@@ -22,13 +22,15 @@
   }
   &__category__wrapper {
     width: 250px;
-    height: auto;
+    height: 885px;
     position: absolute;
     border: 1px solid $gray-200;
     top: 55px;
+    background-color: $white;
     display: none;
   }
   &__category {
+    z-index: 101;
     width: 100%;
     li::before {
       content: '';
