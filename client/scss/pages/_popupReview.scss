@@ -1,7 +1,7 @@
-.popup-inquiry {
+.popup-review {
   background: $white;
   width: 790px;
-  height: 630px;
+  height: 655px;
   border-radius: 16px;
   position: absolute;
   top: 50%;
@@ -65,7 +65,7 @@
     }
 
     &__main {
-      padding: 16px 0;
+      padding: 16px 0 56px 0;
       margin-left: 10px;
       font-size: 16px;
       font-weight: 600;
@@ -124,38 +124,6 @@
             overflow: auto;
             resize: none;
             padding: 15px 15px 0px 15px;
-          }
-        }
-      }
-
-      &__secret {
-        margin-left: 85px;
-        padding-top: 16px;
-
-        &--check {
-          position: relative;
-          display: flex;
-          align-content: center;
-
-          input {
-            width: 1px;
-            height: 1px;
-            overflow: hidden;
-            position: absolute;
-          }
-
-          img {
-            display: inline-block;
-            margin-right: 12px;
-            width: 24px;
-            height: 24px;
-          }
-
-          span {
-            font-size: 14px;
-            font-weight: 400;
-            display: flex;
-            align-items: center;
           }
         }
       }
