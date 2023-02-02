@@ -3,19 +3,16 @@ body {
   // width: 1920px;
 }
 
-/* 상품리스트 */
+// 메인 리스트 전체
 .main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  padding: 48px 0 80px;
-  gap: 48px;
-
-  width: 1050px;
-  height: 3132px;
 }
 
+.container {
+  width: 1050px;
+  margin: 0 auto;
+}
+
+// 베스트 탑 문구
 .best {
   margin-top: 50px;
   font-weight: 500;
@@ -26,167 +23,275 @@ body {
   text-align: center;
 }
 
+// 네비게이션과 상품 리스트
 .product {
+  position: relative;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0;
   width: 1050px;
-  height: 2924px;
+  margin-top: 50px;
+  margin-bottom: 75px;
 }
 
+// 네비게이션 시작
 .navigator {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0;
-
-  width: 267px;
-  height: 906px;
-}
-
-.filter {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0;
-
+  position: sticky;
   width: 220px;
-  height: 52px;
-  border-bottom: 1px solid $gray-200;
+  flex-shrink: 0;
+  height: 100%;
+  max-height: calc(100vh - 120px);
+  top: 80px;
+  margin-right: 47px;
+  border-bottom: 1px solid rgb(238, 238, 238);
+  overflow: hidden scroll;
 }
 
-.accordion__head {
+// 필터
+.accordion--filter__head__text {
+  position: sticky;
+  top: 0px;
   display: flex;
-  flex-direction: row;
+  background-color: rgb(255, 255, 255);
+  justify-content: space-between;
   align-items: center;
-  padding: 0;
-  gap: 52px;
-
-  width: 220px;
-  height: 52px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(238, 238, 238);
+  line-height: 20px;
+  padding-left: 5px;
 }
 
-.filter span {
-  font-size: 15px;
+.accordion--filter__head__text button {
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+.filter__text {
   font-weight: 500;
+  font-size: 15px;
   color: $black;
 }
 
-.filter p {
+.reset__text {
+  font-size: 13px;
+  margin-left: 5px;
+  font-weight: 400;
   color: $gray-300;
-  font-size: 12px;
 }
 
-.category {
-  width: 267px;
-  height: 906px;
-}
-.category a {
-  display: block;
-  width: 100%;
-  height: 40px;
-  font-size: 0px;
-  color: $content;
-  text-align: left;
-}
-
-li.lv1 {
-  border-bottom: 1px solid $gray-200;
-}
-li.lv1:nth-child(1) {
-  border-top: 1px solid $content;
-}
-li.lv1 > a {
+// 전체 메뉴
+.accordion--set {
   font-size: 14px;
-  font-weight: 500;
-  line-height: 40px;
-}
-ul.lv2 {
-  display: none;
-}
-li.lv2:hover a {
-  color: $primary;
+  columns: $content;
+  height: 1500px;
 }
 
-.product__main__list {
+// 카테고리 메인 시작
+.accordion--set__head {
+  border-bottom: 1px solid $gray-100;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0;
-  width: 783px;
-  height: 2000px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 52px;
+  overflow: hidden;
 }
 
-.navigation__list__menu {
+.frame70 {
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.frame70 span {
+  width: 200px;
   display: flex;
   align-items: center;
-  -webkit-box-pack: justify;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  columns: $content;
+  justify-content: space-between;
+}
+
+.frame70 img {
+  padding-left: 130px;
+}
+
+// 카테고리 서브 시작
+.accordion--set__body {
+  display: block;
+  max-height: 100vh;
+}
+
+.accordion__ltem {
+  margin-top: 9px;
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.accordion__ltem a {
+  display: flex;
+  align-items: center;
+}
+
+.accordion__ltem button {
+  display: flex;
+  align-items: center;
+}
+
+.accordion__ltem button img {
+  width: 20px;
+  height: 20px;
+  fill: none;
+}
+
+.accordion__ltem__text {
+  margin-right: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: $content;
+  overflow: hidden;
+  word-break: break-all;
+  white-space: normal;
+}
+
+.accordion__ltem__number {
+  flex-shrink: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $gray-300;
+}
+
+.accordion__ltem__viewmore {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(153, 153, 153);
+  font-weight: 500;
+  font-size: 12px;
+  margin-bottom: 11px;
+  margin-top: 20px;
+}
+
+.category-height {
+  margin-top: 20px;
+}
+
+// 상품 리스트 전체
+.group {
+  width: 100%;
+}
+
+// 상품 리스트 탑메뉴
+.menu {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
   padding-bottom: 20px;
   line-height: 20px;
 }
 
-.menu1 {
+.total {
   font-size: 14px;
   font-weight: 500;
   color: $content;
 }
 
-.menu2 {
+.list {
   position: relative;
   display: flex;
   align-items: center;
 }
 
-.menu2 li {
+.list li {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   margin-left: 8px;
   font-size: 14px;
-  color: $content;
 }
 
-.menu2 li::after {
-  padding-left: 10px;
-  color: $gray-100;
-  font-size: 16px;
-  content: 'ㅣ';
+.hot {
+  letter-spacing: -0.3px;
+  font-weight: 500;
+  color: $black;
 }
 
-.navigation__list__grid {
+.sort {
+  letter-spacing: -0.3px;
+  font-weight: 500;
+  color: $gray-300;
+}
+
+.list svg {
+  margin-left: 5px;
+}
+
+.list li::before {
+  content: '';
+  display: flex;
+  width: 1px;
+  height: 10px;
+  margin-right: 8px;
+  background-color: rgb(226, 226, 226);
+}
+
+.list li a {
+  letter-spacing: -0.3px;
+  font-weight: 500;
+}
+
+// 상품 리스트 시작
+.product__list--grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, 249px);
   gap: 31px 18px;
   width: 100%;
 }
 
-.navigation__list__bestitem {
+.product__item {
   display: flex;
   flex-direction: column;
   height: 538px;
+  color: rgb(51, 51, 51);
+  cursor: pointer;
+}
+
+.product__list__img1 {
   color: $content;
   cursor: pointer;
 }
 
-.navigation__list__bestitem__img {
+.product__list__img2 {
   overflow: hidden;
   position: relative;
-  background-color: $white;
+  background-color: rgb(245, 245, 245);
   width: 249px;
   height: 320px;
 }
 
-.navigation__list__bestitem__img img {
+.product__list__img2::before {
+  content: '';
+  position: absolute;
+  inset: 0px;
+}
+
+.product__list__img2 img {
   position: absolute;
   inset: -100%;
   width: 100%;
   height: 100%;
   margin: auto;
   object-fit: cover;
-  background-color: $gray-50;
+  background-color: rgb(238, 238, 238);
   transition: all 0.5s ease-in-out 0s;
+  max-width: 100%;
 }
 
 .cart-icon {
@@ -194,105 +299,25 @@ li.lv2:hover a {
   right: 16px;
   bottom: 16px;
   border-radius: 0;
+  cursor: pointer;
 }
 
 .cart-icon img {
   cursor: pointer;
+  max-width: 100%;
   border: 0;
   vertical-align: top;
-  width: 100%;
 }
 
-.navigation__list__bestitem__text {
+.product__list__txt {
   padding: 14px 10px 0px 0px;
 }
 
 .badge1 {
   display: block;
   padding-bottom: 2px;
-}
-
-.badge2 {
-  max-height: 58px;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: normal;
-  display: -webkit-box;
-  overflow: hidden;
-  word-break: break-all;
-  white-space: normal;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
-
-.badge4 {
-  padding-top: 4px;
-  font-size: 12px;
-  color: $gray-300;
-  line-height: 18px;
-  letter-spacing: normal;
-  display: -webkit-box;
-  overflow: hidden;
-  word-break: break-all;
-  white-space: normal;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
-
-.badge3 {
-  display: flex;
-  flex-direction: column;
-  padding-top: 8px;
-}
-
-.discount {
-  margin-right: 7px;
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 24px;
-  white-space: nowrap;
-  letter-spacing: -0.5px;
-}
-
-.price {
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 24px;
-  white-space: nowrap;
-  letter-spacing: -0.5px;
-}
-
-.out_price {
   font-size: 14px;
-  color: $gray-500;
-  line-height: 20px;
-  text-decoration: line-through;
-}
-
-.badge5 {
-  display: flex;
-  gap: 6px;
-  flex-wrap: wrap;
-  padding: 12px 10px 0px 0px;
-  cursor: default;
-}
-
-.karly_only {
-  color: $primary;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 500;
-  background-color: $gray-100;
-  padding: 2px 8px 4px;
-  border-radius: 4px;
-}
-
-.limited_quantity {
-  color: $content;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 500;
-  background-color: $gray-100;
-  padding: 2px 8px 4px;
-  border-radius: 4px;
+  color: $gray-300;
+  line-height: 19px;
+  letter-spacing: -0.5px;
 }
