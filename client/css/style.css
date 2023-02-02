@@ -1684,11 +1684,11 @@ table {
   padding-bottom: 20px;
   width: 100%;
 }
-.popup-inquiry__container__header__title span {
-  display: inline-block;
+.popup-inquiry__container__header span {
+  display: flex;
+  align-self: flex-start;
   width: 32px;
   height: 32px;
-  background-image: url("");
   background-position: center center;
   background-size: cover;
 }

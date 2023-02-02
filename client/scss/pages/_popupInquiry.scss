@@ -34,15 +34,15 @@
         font-weight: 700;
         padding-bottom: 20px;
         width: 100%;
+      }
 
-        span {
-          display: inline-block;
-          width: 32px;
-          height: 32px;
-          background-image: url('');
-          background-position: center center;
-          background-size: cover;
-        }
+      span {
+        display: flex;
+        align-self: flex-start;
+        width: 32px;
+        height: 32px;
+        background-position: center center;
+        background-size: cover;
       }
     }
 
