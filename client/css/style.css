@@ -1,4 +1,59 @@
 @charset "UTF-8";
+/* fontello web font */
+@font-face {
+  font-family: "fontello";
+  src: url("../font/fontello.eot?38310097");
+  src: url("../font/fontello.eot?38310097#iefix") format("embedded-opentype"), url("../font/fontello.woff2?38310097") format("woff2"), url("../font/fontello.woff?38310097") format("woff"), url("../font/fontello.ttf?38310097") format("truetype"), url("../font/fontello.svg?38310097#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/**
+   * Copyright (c) 2015 Spoqa, Inc.
+   *
+   * Permission is hereby granted, free of charge, to any person obtaining
+   * a copy of this software and associated documentation files (the
+   * "Software"), to deal in the Software without restriction, including
+   * without limitation the rights to use, copy, modify, merge, publish,
+   * distribute, sublicense, and/or sell copies of the Software, and to
+   * permit persons to whom the Software is furnished to do so, subject to
+   * the following conditions:
+   *
+   * The above copyright notice and this permission notice shall be
+   * included in all copies or substantial portions of the Software.
+   *
+   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+   * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+   * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+   * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+   * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+   * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+   * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+   */
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-weight: 700;
+  src: local("Spoqa Han Sans Neo Bold"), url("../font/SpoqaHanSansNeo-Bold.woff2") format("woff2"), url("../font/SpoqaHanSansNeo-Bold.woff") format("woff"), url("../font/SpoqaHanSansNeo-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-weight: 500;
+  src: local("Spoqa Han Sans Neo Medium"), url("../font/SpoqaHanSansNeo-Medium.woff2") format("woff2"), url("../font/SpoqaHanSansNeo-Medium.woff") format("woff"), url("../font/SpoqaHanSansNeo-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-weight: 400;
+  src: local("Spoqa Han Sans Neo Regular"), url("../font/SpoqaHanSansNeo-Regular.woff2") format("woff2"), url("../font/SpoqaHanSansNeo-Regular.woff") format("woff"), url("../font/SpoqaHanSansNeo-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-weight: 300;
+  src: local("Spoqa Han Sans Neo Light"), url("../font/SpoqaHanSansNeo-Light.woff2") format("woff2"), url("../font/SpoqaHanSansNeo-Light.woff") format("woff"), url("../font/SpoqaHanSansNeo-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-weight: 100;
+  src: local("Spoqa Han Sans Neo Thin"), url("../font/SpoqaHanSansNeo-Thin.woff2") format("woff2"), url("../font/SpoqaHanSansNeo-Thin.woff") format("woff"), url("../font/SpoqaHanSansNeo-Thin.ttf") format("truetype");
+}
 @font-face {
   font-family: "fontello";
   src: url("../font/fontello.eot?45169256");
@@ -63,61 +118,6 @@
 .icon-stop:before {
   content: "\e805";
 } /* '' */
-/* fontello web font */
-@font-face {
-  font-family: "fontello";
-  src: url("../font/fontello.eot?38310097");
-  src: url("../font/fontello.eot?38310097#iefix") format("embedded-opentype"), url("../font/fontello.woff2?38310097") format("woff2"), url("../font/fontello.woff?38310097") format("woff"), url("../font/fontello.ttf?38310097") format("truetype"), url("../font/fontello.svg?38310097#fontello") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-/**
-   * Copyright (c) 2015 Spoqa, Inc.
-   *
-   * Permission is hereby granted, free of charge, to any person obtaining
-   * a copy of this software and associated documentation files (the
-   * "Software"), to deal in the Software without restriction, including
-   * without limitation the rights to use, copy, modify, merge, publish,
-   * distribute, sublicense, and/or sell copies of the Software, and to
-   * permit persons to whom the Software is furnished to do so, subject to
-   * the following conditions:
-   *
-   * The above copyright notice and this permission notice shall be
-   * included in all copies or substantial portions of the Software.
-   *
-   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-   * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-   * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-   * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
-   * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
-   * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
-   * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-   */
-@font-face {
-  font-family: "Spoqa Han Sans Neo";
-  font-weight: 700;
-  src: local("Spoqa Han Sans Neo Bold"), url("../font/SpoqaHanSansNeo-Bold.woff2") format("woff2"), url("../font/SpoqaHanSansNeo-Bold.woff") format("woff"), url("../font/SpoqaHanSansNeo-Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Spoqa Han Sans Neo";
-  font-weight: 500;
-  src: local("Spoqa Han Sans Neo Medium"), url("../font/SpoqaHanSansNeo-Medium.woff2") format("woff2"), url("../font/SpoqaHanSansNeo-Medium.woff") format("woff"), url("../font/SpoqaHanSansNeo-Medium.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Spoqa Han Sans Neo";
-  font-weight: 400;
-  src: local("Spoqa Han Sans Neo Regular"), url("../font/SpoqaHanSansNeo-Regular.woff2") format("woff2"), url("../font/SpoqaHanSansNeo-Regular.woff") format("woff"), url("../font/SpoqaHanSansNeo-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Spoqa Han Sans Neo";
-  font-weight: 300;
-  src: local("Spoqa Han Sans Neo Light"), url("../font/SpoqaHanSansNeo-Light.woff2") format("woff2"), url("../font/SpoqaHanSansNeo-Light.woff") format("woff"), url("../font/SpoqaHanSansNeo-Light.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Spoqa Han Sans Neo";
-  font-weight: 100;
-  src: local("Spoqa Han Sans Neo Thin"), url("../font/SpoqaHanSansNeo-Thin.woff2") format("woff2"), url("../font/SpoqaHanSansNeo-Thin.woff") format("woff"), url("../font/SpoqaHanSansNeo-Thin.ttf") format("truetype");
-}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -552,53 +552,472 @@ table {
   border-spacing: 0;
 }
 
-:root {
-  /* -------------------------------------------------------------------------- */
-  /*                                   Primary                                  */
-  /* -------------------------------------------------------------------------- */
-  --primary: #5f0080;
-  --secondary: #bd76ff;
-  /* -------------------------------------------------------------------------- */
-  /*                                   Netural                                  */
-  /* -------------------------------------------------------------------------- */
-  --black: #000000;
-  --white: #ffffff;
-  --content: #333333;
-  --gray-50: #f9f9f9;
-  --gray-100: #e1e1e1;
-  --gray-200: #c4c4c4;
-  --gray-300: #a6a6a6;
-  --gray-400: #898989;
-  --gray-500: #6b6b6b;
-  --gray-600: #565656;
-  --gray-700: #404040;
-  --gray-800: #2b2b2b;
-  --gray-900: #151515;
-  --accent-yellow: #fa622f;
-  --blue-100: #cce0ff;
-  --blue-200: #99c2ff;
-  --blue-300: #66a3ff;
-  --blue-400: #3385ff;
-  --blue-500: #0066ff;
-  --blue-600: #0052cc;
-  --blue-700: #003d99;
-  --blue-800: #002966;
-  --blue-900: #001433;
-  --info-error: #f03f40;
-  /* -------------------------------------------------------------------------- */
-  --spacing-xs: 0.5rem; /* 8px */
-  --spacing-sm: 0.75rem; /* 12px */
-  --spacing-base: 1rem; /* 16px */
-  --spacing-md: 1.25rem; /* 20px */
-  --spacing-lg: 1.5rem; /* 24px */
-  --spacing-xl: 2rem; /* 32px */
-  --text-xs: 0.75rem; /* 12px */
-  --text-sm: 0.875rem; /* 14px */
-  --text-base: 1rem; /* 16px */
-  --text-md: 1.125rem; /* 18px */
-  --text-lg: 1.25rem; /* 20px */
-  --text-xl: 1.5rem; /* 24px */
-  --container-width: 64rem; /* 1024px */
+/* -------------------------------------------------------------------------- */
+/*                                   Primary                                  */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                   Netural                                  */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* 8px */
+/* 12px */
+/* 16px */
+/* 20px */
+/* 24px */
+/* 32px */
+/* 12px */
+/* 14px */
+/* 16px */
+/* 18px */
+/* 20px */
+/* 24px */
+/* 1024px */
+.cart {
+  max-width: 1920px;
+  width: 1050px;
+  margin: 0 auto;
+}
+.cart__head {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 150%;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 44px;
+}
+.cart__selected-list {
+  flex: 0 1 700px;
+  font-size: 16px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: stretch;
+  align-items: stretch;
+}
+.cart__selected-list__item {
+  border-bottom: 1.5px solid #898989;
+  height: 48px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: stretch;
+  align-items: center;
+  position: relative;
+}
+.cart__selected-list__item > span {
+  display: block;
+  width: 100%;
+  padding-left: 40px;
+}
+.cart__selected-list__item > button {
+  padding-left: 40px;
+}
+.cart__selected-list__item > span::before,
+.cart__selected-list__item > button::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 12px;
+  left: 3px;
+}
+.cart__selected-list__item > span::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 12px;
+  right: 0px;
+  background: url("../css/img/Icon/Arrow-2.svg") no-repeat -15px -52px/50px;
+}
+.cart__selected-list__refrigeration::before {
+  background: url("../css/img/Icon/Food.svg") no-repeat -11px -52px;
+}
+.cart__selected-list__frozen::before {
+  background: url("../css/img/Icon/Food.svg") no-repeat -11px -8px;
+}
+.cart__selected-list__room-temperature::before {
+  background: url("../css/img/Icon/Food.svg") no-repeat -11px -96px;
+}
+.cart__selected-list__total::before {
+  background: url("../css/img/Input/Check.svg") no-repeat -6px -7px/35px;
+}
+.cart__order {
+  flex: 0 1 350px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: stretch;
+  align-items: stretch;
+}
+.cart__order__delivery {
+  padding: 20px;
+  flex: 5 1 auto;
+  border: 1.2px solid #e1e1e1;
+}
+.cart__order__delivery > h5 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: stretch;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 12px;
+}
+.cart__order__delivery > p {
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 12px;
+}
+.cart__order__delivery > div {
+  font-size: 12px;
+  font-weight: 500;
+  color: #5f0080;
+  padding-bottom: 12px;
+}
+.cart__order__delivery > button {
+  width: 100%;
+  height: 44px;
+  border: 1px solid #5f0080;
+  font-size: 18px;
+  color: #5f0080;
+  border-radius: 3px;
+}
+.cart__order__price {
+  flex: 7 1 auto;
+  background-color: #f9f9f9;
+  border: 1.2px solid #e1e1e1;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 20px;
+  color: #2b2b2b;
+}
+.cart__order__price__original, .cart__order__price__discount, .cart__order__price__delivery, .cart__order__price__total {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart__order__price__original {
+  padding-bottom: 20px;
+}
+.cart__order__price__discount {
+  padding-bottom: 10px;
+}
+.cart__order__price__delivery {
+  padding-bottom: 20px;
+  border-bottom: 1.5px dotted #c4c4c4;
+}
+.cart__order__price__total {
+  padding: 20px 0;
+}
+.cart__order__price__total__value {
+  font-size: 32px;
+  font-weight: 600;
+}
+.cart__order__price__info {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: end;
+  align-items: center;
+  font-size: 16px;
+}
+.cart__order__price__info span:first-child {
+  color: #ffffff;
+  background-color: #fa622f;
+  padding: 2px 8px;
+  border-radius: 2px;
+  margin-right: 5px;
+}
+.cart__order__price__info span:last-child {
+  font-weight: 400;
+}
+.cart__order__button {
+  flex: 1 1 auto;
+  background-color: #5f0080;
+  color: #ffffff;
+  padding: 14px 0;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 5px;
+  margin: 16px 0;
+}
+.cart__order__term-service {
+  flex: 5 1 auto;
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b6b6b;
+  line-height: 1.2;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: stretch;
+  align-items: stretch;
+  gap: 50px;
+}
+
+.nav {
+  transform: translateY(-25px);
+  display: flow-root;
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 1050px;
+  height: 50px;
+}
+.nav__header {
+  float: left;
+  height: 100%;
+}
+.nav__header__button {
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: 500;
+  height: 100%;
+}
+.nav__header__button > img {
+  transform: translateY(1.5px);
+  padding-top: 3px;
+  padding-right: 10px;
+}
+.nav__category__wrapper {
+  width: 250px;
+  height: auto;
+  position: absolute;
+  border: 1px solid #c4c4c4;
+  top: 55px;
+  display: none;
+}
+.nav__category {
+  width: 100%;
+}
+.nav__category li::before {
+  content: "";
+  margin-left: 8px;
+  margin-right: 8px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+.nav__category--gift::before {
+  background: url("../css/img/Icon/MenuIcon.svg") no-repeat -8px -8px;
+}
+.nav__category--vegetable::before {
+  background: url("../css/img/Icon/MenuIcon.svg") no-repeat -8px -230px;
+}
+.nav__category--fruit::before {
+  background: url("../css/img/Icon/MenuIcon.svg") no-repeat -8px -405px;
+}
+.nav__category--fish::before {
+  background: url("../css/img/Icon/MenuIcon.svg") no-repeat -8px -530px;
+}
+.nav__category--meat::before {
+  background: url("../css/img/Icon/MenuIcon.svg") no-repeat -8px -80px;
+}
+.nav__category--main-meal::before {
+  background: url("../css/img/Icon/MenuIcon.svg") no-repeat -8px -180px;
+}
+.nav__category--simple-meal::before {
+  background: url("../css/img/Icon/MenuIcon.svg") no-repeat -8px -355px;
+}
+.nav__category--nuddle::before {
+  background: url("../css/img/Icon/MenuIcon.svg") no-repeat -8px -180px;
+}
+.nav__category--beverage::before {
+  background: url("../css/img/Icon/MenuIcon.svg") no-repeat -8px -130px;
+}
+.nav__category--snack::before {
+  background: url("../css/img/Icon/MenuIcon.svg") no-repeat -8px -305px;
+}
+.nav__category--bakery::before {
+  background: url("../css/img/Icon/MenuIcon.svg") no-repeat -8px -58px;
+}
+.nav__category--health-meal::before {
+  background: url("../css/img/Icon/MenuIcon.svg") no-repeat -8px -505px;
+}
+.nav__category--wine::before {
+  background: url("../css/img/Icon/MenuIcon.svg") no-repeat -8px -455px;
+}
+.nav__category--traditional-liquor::before {
+  background: url("../css/img/Icon/MenuIcon.svg") no-repeat -8px -33px;
+}
+.nav__category--daily-supplies::before {
+  background: url("../css/img/Icon/MenuIcon.svg") no-repeat -8px -105px;
+}
+.nav__category--skin-care::before {
+  background: url("../css/img/Icon/MenuIcon.svg") no-repeat -8px -155px;
+}
+.nav__category--body::before {
+  background: url("../css/img/Icon/MenuIcon.svg") no-repeat -8px -430px;
+}
+.nav__category--kitchenware::before {
+  background: url("../css/img/Icon/MenuIcon.svg") no-repeat -8px -205px;
+}
+.nav__category--home-appliances::before {
+  background: url("../css/img/Icon/MenuIcon.svg") no-repeat -8px -280px;
+}
+.nav__category--pet::before {
+  background: url("../css/img/Icon/MenuIcon.svg") no-repeat -8px -330px;
+}
+.nav__category--baby::before {
+  background: url("../css/img/Icon/MenuIcon.svg") no-repeat -8px -380px;
+}
+.nav__category--travel-ticket::before {
+  background: url("../css/img/Icon/MenuIcon.svg") no-repeat -8px -480px;
+}
+.nav__category li {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  font-size: 16px;
+  height: 40px;
+}
+.nav__sub-menu {
+  width: 600px;
+  height: 100%;
+  margin-left: 130px;
+  float: left;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav__sub-menu__list {
+  padding: 12px 24px;
+  font-size: 18px;
+}
+.nav__notice {
+  margin-top: 8px;
+  width: 130px;
+  height: 35px;
+  float: right;
+  border: 1px solid #e1e1e1;
+  border-radius: 100px;
+  text-align: center;
+  padding-top: 7px;
+  font-size: 14px;
+}
+.nav__notice__content--purple {
+  color: #5f0080;
+}
+.nav__notice__content--pure {
+  color: #6b6b6b;
+}
+
+.header {
+  height: 160px;
+  box-shadow: 0px 3px 3px #e1e1e1;
+}
+.header__inner {
+  height: 110px;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0;
+  width: 1050px;
+  display: flow-root;
+  position: relative;
+}
+.header__logo {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  z-index: 10;
+}
+.header__member {
+  display: flow-root;
+  float: right;
+  padding: 8px 0px;
+  font-size: 12px;
+  color: #404040;
+}
+.header__member__list:first-child {
+  color: #5f0080;
+}
+.header__member__list {
+  height: 16px;
+  float: left;
+  margin-right: 6px;
+  line-height: 24px;
+  vertical-align: end;
+}
+.header__member__list__divider {
+  display: inline-block;
+  margin-right: 6px;
+  transform: translateY(3px);
+}
+.header__member__list__divider:last-child {
+  transform: translateY(0);
+}
+.header__member__list > a {
+  padding: 10px 3px;
+}
+.header__member__list:last-child > a {
+  padding-right: 2px;
+}
+.header__pannel {
+  position: absolute;
+  top: 55px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #a6a6a6;
+}
+.header__pannel__market {
+  left: 107px;
+}
+.header__pannel__beauty {
+  left: 193px;
+}
+.header__pannel--active {
+  font-weight: 600;
+  color: #5f0080;
+}
+.header__pannel--new::after {
+  content: "N";
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  color: #fa622f;
+  position: absolute;
+  right: -10px;
+  top: -2px;
+}
+.header__pannel__divider {
+  left: 181px;
+}
+.header__search__fieldset {
+  height: 60px;
+  clear: both;
+  text-align: center;
+  position: relative;
+}
+.header__search__field {
+  margin-top: 10px;
+  height: 48px;
+  width: 400px;
+  border-radius: 4px;
+  border: 1.2px solid #5f0080;
+  font-size: 16px;
+  text-indent: 12px;
+}
+.header__search__field::placeholder {
+  color: #a6a6a6;
+}
+.header__search__button {
+  position: absolute;
+  padding: 10px 5px 10px 10px;
+  top: 5px;
+  right: 325px;
+}
+.header__move {
+  float: right;
+  width: 150px;
+  display: flow-root;
+  transform: translateY(-45px);
+}
+.header__move__list {
+  float: left;
+  padding: 0 3px;
+  margin-right: 8px;
 }
 
 /* 이미지슬라이드 */
@@ -619,16 +1038,6 @@ table {
   background-color: beige;
 }
 
-/* 숨김 콘텐츠 */
-.a11y-hidden,
-legend {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip-path: polygon(0 0, 0 0, 0 0);
-}
-
 /* 기본 스타일 */
 *,
 *::before,
@@ -636,8 +1045,22 @@ legend {
   box-sizing: border-box;
 }
 
+li {
+  list-style: none;
+}
+
 html {
   font-size: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  border: 0;
+  background-color: inherit;
+  cursor: pointer;
 }
 
 /* 링크 스타일 */
@@ -646,27 +1069,19 @@ a {
   text-decoration: none;
 }
 
-/* 본문 스타일 */
+/* 공통 */
 body {
-  /* em, rem 단위를 사용해보기 */
-  color: #212121;
-  font-size: 1.4rem;
-  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font: inherit;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
-/* 레이아웃 */
-.header,
-.nav,
-.section,
-.main,
-.footer {
-  width: 1920px;
-  margin: 0 auto;
-  background-color: lightgreen;
+.a11y-hidden,
+legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
 }
-
-/* 헤더 */
-/* 로고 */
-/* 네비 */
 
 /*# sourceMappingURL=style.css.map */
