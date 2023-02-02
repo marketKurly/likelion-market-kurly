@@ -17,21 +17,429 @@
       crossorigin
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css"
     />
-    <link rel="stylesheet" href="/client/css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/main.js" type="module"></script>
     <title>marketKarly</title>
   </head>
 
   <body>
-    <!-- 이미지슬라이드 -->
-    <!-- <section class="imgSlide">
-      <img src="" alt="" />
-    </section> -->
+    <!-- 헤더 -->
+    <header class="header">
+      <div class="header__ad__top">
+        <a href=""
+          ><img src="" alt="헤더광고" />지금 가입하고
+          인기상품 100원에 받아가세요!</a
+        >
+      </div>
+
+      <ul class="logoSwich">
+        <li>
+          <a href="#"><img src="" alt="배너 로고" /></a>
+        </li>
+        <li><a href="#">마켓칼리</a></li>
+        <li><a href="#">뷰티칼리</a></li>
+      </ul>
+
+      <fieldset>
+        <legend>검색영역</legend>
+      </fieldset>
+      <form method="post" action="#" class="search">
+        <input
+          type="search"
+          placeholder="검색어를 입력해주세요"
+          required
+        />
+        <button type="submit" class="SearchButton">
+          <img src="" alt="검색 버튼" />
+        </button>
+      </form>
+
+      <ul class="topLogin">
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">고객센터▼</a></li>
+      </ul>
+
+      <ul class="rightIcon">
+        <li>
+          <a href="#"><img src="" alt="Location" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="" alt="Heart" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="" alt="Cart" /></a>
+        </li>
+      </ul>
+    </header>
+
+    <!-- 네비 -->
+    <nav class="menu">
+      <ul class="mainMenu">
+        <li><a href="#">카테고리</a></li>
+        <ul>
+          <li><a href="#">서브카테고리1</a></li>
+          <li><a href="#">서브카테고리2</a></li>
+          <li><a href="#">서브카테고리3</a></li>
+          <li><a href="#">서브카테고리4</a></li>
+          <li><a href="#">서브카테고리5</a></li>
+        </ul>
+      </ul>
+      <ul class="subMenu">
+        <li><a href="#">신상품</a></li>
+        <li><a href="#">베스트</a></li>
+        <li><a href="#">알뜰쇼핑</a></li>
+        <li><a href="#">특가/혜택</a></li>
+      </ul>
+      <a href="#" class="notice"
+        ><span class="">샛별 낮</span> 배송안내</a
+      >
+    </nav>
 
     <!-- 메인 -->
-    <!-- <main class="main">메인</main> -->
+    <main class="main">
+      <!-- 첫번째 swiper -->
+      <section class="Main-banner">
+        <a href="">
+          <img
+            src="./assets/main-image/banner05.svg"
+            alt="이 주의 특가 한눈에 보기 배너, 클릭시 특가 혜택 창으로 이동"
+          />
+        </a>
+      </section>
 
+      <!-- 두번째 swiper -->
+      <section class="today-recomend-product">
+        <div class="today-recomend-product__inner">
+          <b class="today-recomend-product__inner__heading">
+            이 상품 어때요?
+          </b>
+          <div
+            class="today-recomend-product__inner__slider"
+          >
+            <a href="" class="product tangtang">
+              <div class="product__image-container">
+                <img
+                  class="product__image-container__tumbnail"
+                  src="./assets/tangtang/thumbnail.jpg"
+                  alt="탱탱쫄면"
+                />
+                <button
+                  class="product__image-container__shopping-cart"
+                >
+                  <img
+                    src="./assets/icons/Icon/Cart.svg"
+                    alt="장바구니 아이콘"
+                  />
+                </button>
+              </div>
+              <ul class="product__info">
+                <h3 class="product__info__name">
+                  [풀무원] 탱탱쫄면 (4개입)
+                </h3>
+                <li class="product__info__price">
+                  4,980 원
+                </li>
+              </ul>
+            </a>
+            <a href="" class="product tangtang">
+              <div class="product__image-container">
+                <img
+                  class="product__image-container__tumbnail"
+                  src="./assets/tangtang/thumbnail.jpg"
+                  alt="탱탱쫄면"
+                />
+                <button
+                  class="product__image-container__shopping-cart"
+                >
+                  <img
+                    src="./assets/icons/Icon/Cart.svg"
+                    alt="장바구니 아이콘"
+                  />
+                </button>
+              </div>
+              <ul class="product__info">
+                <h3 class="product__info__name">
+                  [풀무원] 탱탱쫄면 (4개입)
+                </h3>
+                <li class="product__info__price">
+                  4,980 원
+                </li>
+              </ul>
+            </a>
+            <a href="" class="product tangtang">
+              <div class="product__image-container">
+                <img
+                  class="product__image-container__tumbnail"
+                  src="./assets/tangtang/thumbnail.jpg"
+                  alt="탱탱쫄면"
+                />
+                <button
+                  class="product__image-container__shopping-cart"
+                >
+                  <img
+                    src="./assets/icons/Icon/Cart.svg"
+                    alt="장바구니 아이콘"
+                  />
+                </button>
+              </div>
+              <ul class="product__info">
+                <h3 class="product__info__name">
+                  [풀무원] 탱탱쫄면 (4개입)
+                </h3>
+                <li class="product__info__price">
+                  4,980 원
+                </li>
+              </ul>
+            </a>
+            <a href="" class="product tangtang">
+              <div class="product__image-container">
+                <img
+                  class="product__image-container__tumbnail"
+                  src="./assets/tangtang/thumbnail.jpg"
+                  alt="탱탱쫄면"
+                />
+                <button
+                  class="product__image-container__shopping-cart"
+                >
+                  <img
+                    src="./assets/icons/Icon/Cart.svg"
+                    alt="장바구니 아이콘"
+                  />
+                </button>
+              </div>
+              <ul class="product__info">
+                <h3 class="product__info__name">
+                  [풀무원] 탱탱쫄면 (4개입)
+                </h3>
+                <li class="product__info__price">
+                  4,980 원
+                </li>
+              </ul>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10월의 퍼플피크 -->
+
+      <article class="line-banner">
+        <a href="" class="line-banner__inner">
+          <img
+            src="./assets/main-image/line-banner 1.svg"
+            alt="10월의 퍼플피크 이벤트 창 이동 배너"
+          />
+        </a>
+      </article>
+
+      <!-- 마지막 swiper -->
+
+      <section class="good-price-product">
+        <div class="good-price-product__inner">
+          <b class="good-price-product__inner__heading">
+            놓치면 후회할 가격
+          </b>
+          <div class="good-price-product__inner__slider">
+            <a href="" class="product tangtang">
+              <div class="product__image-container">
+                <img
+                  class="product__image-container__tumbnail"
+                  src="./assets/tangtang/thumbnail.jpg"
+                  alt="탱탱쫄면"
+                />
+                <button
+                  class="product__image-container__shopping-cart"
+                >
+                  <img
+                    src="./assets/icons/Icon/Cart.svg"
+                    alt="장바구니 아이콘"
+                  />
+                </button>
+              </div>
+              <ul class="product__info">
+                <h3 class="product__info__name">
+                  [풀무원] 탱탱쫄면 (4개입)
+                </h3>
+                <li class="product__info__price">
+                  4,980 원
+                </li>
+              </ul>
+            </a>
+            <a href="" class="product tangtang">
+              <div class="product__image-container">
+                <img
+                  class="product__image-container__tumbnail"
+                  src="./assets/tangtang/thumbnail.jpg"
+                  alt="탱탱쫄면"
+                />
+                <button
+                  class="product__image-container__shopping-cart"
+                >
+                  <img
+                    src="./assets/icons/Icon/Cart.svg"
+                    alt="장바구니 아이콘"
+                  />
+                </button>
+              </div>
+              <ul class="product__info">
+                <h3 class="product__info__name">
+                  [풀무원] 탱탱쫄면 (4개입)
+                </h3>
+                <li class="product__info__price">
+                  4,980 원
+                </li>
+              </ul>
+            </a>
+            <a href="" class="product tangtang">
+              <div class="product__image-container">
+                <img
+                  class="product__image-container__tumbnail"
+                  src="./assets/tangtang/thumbnail.jpg"
+                  alt="탱탱쫄면"
+                />
+                <button
+                  class="product__image-container__shopping-cart"
+                >
+                  <img
+                    src="./assets/icons/Icon/Cart.svg"
+                    alt="장바구니 아이콘"
+                  />
+                </button>
+              </div>
+              <ul class="product__info">
+                <h3 class="product__info__name">
+                  [풀무원] 탱탱쫄면 (4개입)
+                </h3>
+                <li class="product__info__price">
+                  4,980 원
+                </li>
+              </ul>
+            </a>
+            <a href="" class="product tangtang">
+              <div class="product__image-container">
+                <img
+                  class="product__image-container__tumbnail"
+                  src="./assets/tangtang/thumbnail.jpg"
+                  alt="탱탱쫄면"
+                />
+                <button
+                  class="product__image-container__shopping-cart"
+                >
+                  <img
+                    src="./assets/icons/Icon/Cart.svg"
+                    alt="장바구니 아이콘"
+                  />
+                </button>
+              </div>
+              <ul class="product__info">
+                <h3 class="product__info__name">
+                  [풀무원] 탱탱쫄면 (4개입)
+                </h3>
+                <li class="product__info__price">
+                  4,980 원
+                </li>
+              </ul>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ad 팝업창 -->
+      <section class="popup-ad a11y-hidden">
+        <a href="">
+          <img
+            src="./assets/main-image/popup-ad.svg"
+            alt="마켓 컬리 시작하기 팝업창, 하루종일 닫을건지 그냥 닫을 건지 결정하는 팝업창"
+          />
+        </a>
+        <div class="popup-ad__buttons">
+          <button
+            class="popup-ad__buttons__button popup-ad__buttons__button1"
+          >
+            오늘 하루 안 보기
+          </button>
+          <button class="popup-ad__buttons__button">
+            닫기
+          </button>
+        </div>
+      </section>
+
+      <!-- Add cart 팝업창 -->
+      <div class="add-cart-background">
+        <div class="add-cart-window">
+          <section class="add-cart">
+            <ul class="add-cart__list">
+              <li class="add-cart__list__info">
+                <h3 class="add-cart__list__info__name">
+                  [풀무원] 탱탱쫄면 (4개입)
+                </h3>
+                <div class="add-cart__list__info__amount">
+                  <div
+                    class="add-cart__list__info__amount__price"
+                  >
+                    4,980원
+                  </div>
+                  <div
+                    class="add-cart__list__info__amount__count"
+                  >
+                    <button
+                      class="add-cart__list__info__amount__count__minus"
+                    ></button>
+                    <div
+                      class="add-cart__list__info__amount__count__result"
+                    >
+                      0
+                    </div>
+                    <button
+                      class="add-cart__list__info__amount__count__plus"
+                    ></button>
+                  </div>
+                </div>
+              </li>
+              <li class="add-cart__list__price">
+                <div class="add-cart__list__price__total">
+                  <div
+                    class="add-cart__list__price__total__info"
+                  >
+                    합계
+                  </div>
+                  <div
+                    class="add-cart__list__price__total__price"
+                  >
+                    4,980원
+                  </div>
+                </div>
+                <div class="add-cart__list__price__save">
+                  <div
+                    class="add-cart__list__price__save__info"
+                  >
+                    적립
+                  </div>
+                  <div
+                    class="add-cart__list__price__save__content"
+                  >
+                    구매 시 5원 적립
+                  </div>
+                </div>
+              </li>
+              <li class="add-cart__list__buttons">
+                <button
+                  class="add-cart__list__buttons__cancle"
+                >
+                  취소
+                </button>
+                <button
+                  class="add-cart__list__buttons__put"
+                >
+                  장바구니 담기
+                </button>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </main>
     <!-- 푸터 -->
     <!-- <footer class="footer">푸터</footer> -->
   </body>
