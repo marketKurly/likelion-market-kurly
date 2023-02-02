@@ -779,12 +779,16 @@ table {
   padding-top: 3px;
   padding-right: 10px;
 }
-.nav__category {
-  position: absolute;
+.nav__category__wrapper {
   width: 250px;
+  height: auto;
+  position: absolute;
   border: 1px solid #c4c4c4;
   top: 55px;
   display: none;
+}
+.nav__category {
+  width: 100%;
 }
 .nav__category li::before {
   content: "";

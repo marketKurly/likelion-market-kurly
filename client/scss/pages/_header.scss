@@ -20,12 +20,16 @@
       padding-right: 10px;
     }
   }
-  &__category {
-    position: absolute;
+  &__category__wrapper {
     width: 250px;
+    height: auto;
+    position: absolute;
     border: 1px solid $gray-200;
     top: 55px;
     display: none;
+  }
+  &__category {
+    width: 100%;
     li::before {
       content: '';
       margin-left: 8px;
