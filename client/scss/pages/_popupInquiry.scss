@@ -1,7 +1,7 @@
 .popup-inquiry {
   background: $white;
   width: 790px;
-  height: 640px;
+  height: 655px;
   border-radius: 16px;
   position: absolute;
   top: 50%;
@@ -123,6 +123,7 @@
             line-height: 21px;
             overflow: auto;
             resize: none;
+            padding: 15px 15px 0px 15px;
           }
         }
       }
