@@ -39,6 +39,7 @@
           display: inline-block;
           width: 32px;
           height: 32px;
+          background-image: url('');
           background-position: center center;
           background-size: cover;
         }
@@ -183,6 +184,7 @@
           width: 170px;
           height: 56px;
           border-radius: 4px;
+          cursor: default;
         }
       }
     }
