@@ -646,7 +646,7 @@ table {
 .accordion--set {
   font-size: 14px;
   columns: #333333;
-  height: 1500px;
+  height: 1660px;
 }
 
 .accordion--set__head {
@@ -735,7 +735,7 @@ table {
   margin-top: 20px;
 }
 
-.category-height {
+.category--height {
   margin-top: 5px;
 }
 
