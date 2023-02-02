@@ -264,8 +264,6 @@ body {
 }
 
 .product__list__img1 {
-  color: $content;
-  cursor: pointer;
 }
 
 .product__list__img2 {
@@ -289,7 +287,6 @@ body {
   height: 100%;
   margin: auto;
   object-fit: cover;
-  background-color: rgb(238, 238, 238);
   transition: all 0.5s ease-in-out 0s;
   max-width: 100%;
 }
@@ -298,15 +295,13 @@ body {
   position: absolute;
   right: 16px;
   bottom: 16px;
-  border-radius: 0;
-  cursor: pointer;
+  width: 45px;
+  height: 45px;
 }
 
 .cart-icon img {
   cursor: pointer;
   max-width: 100%;
-  border: 0;
-  vertical-align: top;
 }
 
 .product__list__txt {
@@ -315,9 +310,89 @@ body {
 
 .badge1 {
   display: block;
-  padding-bottom: 2px;
-  font-size: 14px;
+  padding-bottom: 5px;
+  font-size: 12px;
   color: $gray-300;
   line-height: 19px;
   letter-spacing: -0.5px;
+}
+
+.badge2 {
+  max-height: 58px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: normal;
+  display: -webkit-box;
+  overflow: hidden;
+  word-break: break-all;
+  white-space: normal;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.badge3 {
+  margin-top: 10px;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  white-space: nowrap;
+  letter-spacing: -0.5px;
+}
+
+.discount {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  white-space: nowrap;
+  letter-spacing: -0.5px;
+  color: $accent-yellow;
+}
+
+.out_price {
+  padding-top: 15px;
+  font-size: 14px;
+  color: rgb(181, 181, 181);
+  line-height: 20px;
+  text-decoration: line-through;
+}
+
+.badge4 {
+  padding-top: 15px;
+  font-size: 12px;
+  color: rgb(153, 153, 153);
+  line-height: 18px;
+  letter-spacing: normal;
+  display: -webkit-box;
+  overflow: hidden;
+  word-break: break-all;
+  white-space: normal;
+}
+
+.badge5 {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  padding: 12px 20px 0px 0px;
+  cursor: default;
+}
+
+.badge5 span {
+  padding: 2px 8px 4px;
+  border-radius: 4px;
+  background-color: $gray-100;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+}
+
+.karly_only {
+  color: $primary;
+}
+
+.limited_quantity {
+  color: $black;
 }
