@@ -24,141 +24,287 @@
   </head>
 
   <body>
-    <main>
-      <section class="productlist center">
-        <h2 class="productlist__top">베스트</h2>
-        <div class="productlist__main">
-          <nav class="productlist__main__navigator">
-            <ul class="filter">
-              <span>필터</span>
-              <p>초기화</p>
-            </ul>
-            <ul class="category">
-              <li class="lv1">
-                <a href="#">카테고리</a>
-                <ul class="lv2">
-                  <li><a href="#">샐러드·간편식</a></li>
-                  <li><a href="#">국·반찬·메인요리</a></li>
-                  <li><a href="#">정육·계란</a></li>
-                  <li><a href="#">과일·견과·쌀</a></li>
-                  <li><a href="#">수산·해산·건어물</a></li>
-                  <li>
-                    <a href="#">베이커리·치즈·델리</a>
-                  </li>
-                  <li><a href="#">간식·과자·떡</a></li>
-                  <li>
-                    <a href="#">생수·음료·우유·커피</a>
-                  </li>
-                  <li><a href="#">면·양념·오일</a></li>
-                  <li>
-                    <a href="#">생활용품·리빙·캠핑</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="lv1">
-                <a href="#">브랜드</a>
-                <ul class="lv2">
-                  <li><a href="#">가농바이오</a></li>
-                  <li><a href="#">감자밭</a></li>
-                  <li><a href="#">감자면옥</a></li>
-                  <li><a href="#">강창구찹쌀진순대</a></li>
-                  <li><a href="#">거대곰탕</a></li>
-                  <li><a href="#">게방식당</a></li>
-                  <li><a href="#">경기떡집</a></li>
-                  <li><a href="#">경복궁</a></li>
-                  <li><a href="#">고기반찬</a></li>
-                  <li><a href="#">고온어다이어트</a></li>
-                </ul>
-              </li>
-              <li class="lv1">
-                <a href="#">가격</a>
-                <ul class="lv2">
-                  <li><a href="#">7,400원 미만</a></li>
-                  <li>
-                    <a href="#">7,400원 ~ 10,900원</a>
-                  </li>
-                  <li>
-                    <a href="#">10,900원 ~ 17,010원</a>
-                  </li>
-                  <li><a href="#">17,010원 이상</a></li>
-                </ul>
-              </li>
-              <li class="lv1">
-                <a href="#">혜택</a>
-                <ul class="lv2">
-                  <li><a href="#">할인상품</a></li>
-                  <li><a href="#">한정수량</a></li>
-                </ul>
-              </li>
-              <li class="lv1">
-                <a href="#">유형</a>
-                <ul class="lv2">
-                  <li><a href="#">KurlyOnly</a></li>
-                  <li><a href="#">희소가치 프로젝트</a></li>
-                </ul>
-              </li>
-              <li class="lv1">
-                <a href="#">특정상품 제외</a>
-                <ul class="lv2">
-                  <li><a href="#">반려동물 상품</a></li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
-
-          <div class="product__main__list">
-            <div class="navigation__list__menu">
-              <div class="menu1">총275건</div>
-              <ul class="menu2">
-                <li><a href="#">추천순</a></li>
-                <li><a href="#">신상품순</a></li>
-                <li><a href="#">판매량순</a></li>
-                <li><a href="#">혜택순</a></li>
-                <li><a href="#">낮은 가격순</a></li>
-                <li><a href="#">높은 가격순</a></li>
-              </ul>
+    <!-- 메인 리스트 전체 -->
+    <section class="main">
+      <!-- 베스트 탑 문구 -->
+      <h3 class="best">베스트</h3>
+      <!-- 네비게이션과 상품 리스트 -->
+      <div class="productlist">
+        <!-- 네비게이션 시작 -->
+        <div class="product__navigator">
+          <!-- 필터 -->
+          <div class="accordion_filter">
+            <div class="accrdion__head">
+              <div class="frame70">
+                <span>필터</span>
+                <span>초기화</span>
+              </div>
             </div>
-            <div class="navigation__list__grid">
-              <a href="" class="navigation__list__bestitem">
-                <div class="navigation__list__bestitem1">
+          </div>
+          <!-- 전체 메뉴 -->
+          <div class="accordion--set">
+            <!-- 카테고리 메인 시작 -->
+            <button class="accrdion__head">
+              <div class="frame70">
+                <span>카테고리</span>
+                <span>1</span>
+              </div>
+              <img src="" alt="" />
+            </button>
+            <!-- 카테고리 서브 시작-->
+            <ul class="accrdion__body">
+              <li class="accordion_ltem">
+                <a href="#"
+                  ><button>
+                    <span>샐러드·간편식</span>
+                    <span>1</span>
+                  </button>
+                </a>
+              </li>
+              <li class="accordion_ltem">
+                <a href="#"
+                  ><button>
+                    <span>국·반찬·메인요리</span>
+                    <span>1</span>
+                  </button>
+                </a>
+              </li>
+              <li class="accordion_ltem">
+                <a href="#"
+                  ><button>
+                    <span>정육·계란</span>
+                    <span>1</span>
+                  </button>
+                </a>
+              </li>
+              <li class="accordion_ltem">
+                <a href="#"
+                  ><button>
+                    <span>과일·견과·쌀</span>
+                    <span>1</span>
+                  </button>
+                </a>
+              </li>
+              <li class="accordion_ltem">
+                <a href="#"
+                  ><button>
+                    <span>베이커리·치즈·델리</span>
+                    <span>1</span>
+                  </button>
+                </a>
+              </li>
+              <li class="accordion_ltem">
+                <a href="#"
+                  ><button>
+                    <span>간식·과자·떡</span>
+                    <span>1</span>
+                  </button>
+                </a>
+              </li>
+              <li class="accordion_ltem">
+                <a href="#"
+                  ><button>
+                    <span>생수·음료·우유·커피</span>
+                    <span>1</span>
+                  </button>
+                </a>
+              </li>
+              <li class="accordion_ltem">
+                <a href="#"
+                  ><button>
+                    <span>수산·해산·건어물</span>
+                    <span>1</span>
+                  </button>
+                </a>
+              </li>
+              <li class="accordion_ltem">
+                <a href="#"
+                  ><button>
+                    <span>면·양념·오일</span>
+                    <span>1</span>
+                  </button>
+                </a>
+              </li>
+              <li class="accordion_ltem">
+                <a href="#"
+                  ><button>
+                    <span>헤어·바디·구강</span>
+                    <span>1</span>
+                  </button>
+                </a>
+              </li>
+              <button>
+                <span>카테고리 더보기</span>
+                <img src="" alt="" />
+              </button>
+            </ul>
+            <!-- 브랜드 메인 시작-->
+            <button class="accrdion__head">
+              <div class="frame70">
+                <span>브랜드</span>
+                <span>1</span>
+              </div>
+              <img src="" alt="" />
+            </button>
+            <!-- 브랜드 서브 시작-->
+            <ul class="accrdion__body">
+              <li class="accordion_ltem">
+                <a href="#"
+                  ><button>
+                    <span>가농바이오</span>
+                    <span>1</span>
+                  </button>
+                </a>
+              </li>
+              <li class="accordion_ltem">
+                <a href="#"
+                  ><button>
+                    <span>감자밭</span>
+                    <span>1</span>
+                  </button>
+                </a>
+              </li>
+              <li class="accordion_ltem">
+                <a href="#"
+                  ><button>
+                    <span>강남면옥</span>
+                    <span>1</span>
+                  </button>
+                </a>
+              </li>
+              <li class="accordion_ltem">
+                <a href="#"
+                  ><button>
+                    <span>강창구찹쌀진순대</span>
+                    <span>1</span>
+                  </button>
+                </a>
+              </li>
+              <li class="accordion_ltem">
+                <a href="#"
+                  ><button>
+                    <span>거대곰탕</span>
+                    <span>1</span>
+                  </button>
+                </a>
+              </li>
+              <li class="accordion_ltem">
+                <a href="#"
+                  ><button>
+                    <span>게방식당</span>
+                    <span>1</span>
+                  </button>
+                </a>
+              </li>
+              <li class="accordion_ltem">
+                <a href="#"
+                  ><button>
+                    <span>경복궁</span>
+                    <span>1</span>
+                  </button>
+                </a>
+              </li>
+              <li class="accordion_ltem">
+                <a href="#"
+                  ><button>
+                    <span>고기반찬</span>
+                    <span>1</span>
+                  </button>
+                </a>
+              </li>
+              <li class="accordion_ltem">
+                <a href="#"
+                  ><button>
+                    <span>고온어다이어트</span>
+                    <span>1</span>
+                  </button>
+                </a>
+              </li>
+              <li class="accordion_ltem">
+                <a href="#"
+                  ><button>
+                    <span>교토마블</span>
+                    <span>1</span>
+                  </button>
+                </a>
+              </li>
+              <button>
+                <span>브랜드 더보기</span>
+                <img src="" alt="" />
+              </button>
+            </ul>
+            <!-- 가격 메인 시작-->
+            <button class="accrdion__head">
+              <div class="frame70">
+                <span>가격</span>
+              </div>
+              <img src="" alt="" />
+            </button>
+            <!-- 가격 서브 시작-->
+            <ul class="accrdion__body">
+              <li class="accordion_ltem">
+                <a href="#"
+                  ><button>
+                    <span>7,432원 미만</span>
+                    <span>1</span>
+                  </button>
+                </a>
+              </li>
+              <li class="accordion_ltem">
+                <a href="#"
+                  ><button>
+                    <span>7,432원 ~ 10,980원</span>
+                    <span>1</span>
+                  </button>
+                </a>
+              </li>
+              <li class="accordion_ltem">
+                <a href="#"
+                  ><button>
+                    <span>10,980원 ~ 17,820원</span>
+                    <span>1</span>
+                  </button>
+                </a>
+              </li>
+              <li class="accordion_ltem">
+                <a href="#"
+                  ><button>
+                    <span>17,820원 이상</span>
+                    <span>1</span>
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 상품 리스트 전체 -->
+        <div class="group">
+          <!-- 상품 리스트 탑메뉴 -->
+          <div class="menu">
+            <div class="총284건">총278건</div>
+            <ul class="list">
+              <li><a href="#">추천순</a></li>
+              <li><a href="#">신상품순</a></li>
+              <li><a href="#">판매량순</a></li>
+              <li><a href="#">혜택순</a></li>
+              <li><a href="#">낮은 가격순</a></li>
+              <li><a href="#">높은 가격순</a></li>
+            </ul>
+          </div>
+
+          <!-- 상품 리스트 시작 -->
+          <div class="product__list--all">
+            <!-- 상품 1 -->
+            <a href="#" class="product__list__1">
+              <div class="product__list__img1">
+                <div class="product__list__img2">
                   <img
                     src="../assets/tangtang/detail_view.jpg"
                     alt="[풀무원]탱탱쫄면 (4개입)"
-                  /><a href="#"></a>
-                  <div class="navigation__list__button">
-                    <button type="button" class="carticon">
-                      <img
-                        src="../css/img/Icon/Cart.svg"
-                        alt="카트아이콘"
-                      />
-                    </button>
-                  </div>
-                </div>
-                <div
-                  class="navigation__list__bestitem1__text"
-                >
-                  <span class="badge1">샛별배송</span>
-                  <span class="badge2"
-                    >[풀무원] 탱탱쫄면 (4개입)</span
-                  >
-                  <span class="badge3">4980원</span>
-                  <span class="badge4"
-                    >튀기지않아 부담없는 매콤함</span
-                  >
-                  <span class="badge5">
-                    <span class="badge5-1">karly only</span>
-                    <span class="badge5-2">한정 수량</span>
-                  </span>
-                </div>
-              </a>
-              <a href="" class="navigation__list__bestitem">
-                <div class="navigation__list__bestitem1">
-                  <img
-                    src="../assets/cica/detail_view.svg"
-                    alt="[온더바디]죠르디 시카 자석 선쿠션"
-                  /><a href="#"></a>
+                  />
                   <div>
-                    <button type="button" class="carticon">
+                    <button type="button" class="cart-icon">
                       <img
                         src="../css/img/Icon/Cart.svg"
                         alt="카트아이콘"
@@ -166,28 +312,42 @@
                     </button>
                   </div>
                 </div>
-                <div
-                  class="navigation__list__bestitem1__text"
+              </div>
+              <div class="product__list__txt">
+                <span class="badge1">샛별배송</span>
+                <span class="badge2"
+                  >[풀무원] 탱탱쫄면 (4개입)</span
                 >
-                  <span class="badge1">샛별배송</span>
-                  <span class="badge2"
-                    >[온더바디]죠르디 시카 자석 선쿠션</span
-                  >
-                  <span class="badge3">32,500원</span>
-                  <span class="badge4"
-                    >끈적임 없이 보송한 무기자차
-                    선쿠션</span
-                  >
-                </div>
-              </a>
-              <a href="" class="navigation__list__bestitem">
-                <div class="navigation__list__bestitem1">
-                  <img
-                    src="../assets/baby/detail_view.svg"
-                    alt="[프로쉬]베이비 세탁세"
-                  /><a href="#"></a>
+                <div class="badge3">
                   <div>
-                    <button type="button" class="carticon">
+                    <span class="discount">35%</span>
+                    <span class="price">4,980원</span>
+                  </div>
+                  <div>
+                    <span class="out_price">11,900원</span>
+                  </div>
+                </div>
+                <p class="badge4">
+                  튀기지않아 부담없는 매콤함
+                </p>
+                <div class="badge5">
+                  <span class="karly_only">karly only</span>
+                  <span class="limited_quantity"
+                    >한정 수량</span
+                  >
+                </div>
+              </div>
+            </a>
+            <!-- 상품 2 -->
+            <a href="#" class="product__list__1">
+              <div class="product__list__img1">
+                <div class="product__list__img2">
+                  <img
+                    src="../assets/tangtang/detail_view.jpg"
+                    alt="[풀무원]탱탱쫄면 (4개입)"
+                  />
+                  <div>
+                    <button type="button" class="cart-icon">
                       <img
                         src="../css/img/Icon/Cart.svg"
                         alt="카트아이콘"
@@ -195,28 +355,78 @@
                     </button>
                   </div>
                 </div>
-                <div
-                  class="navigation__list__bestitem1__text"
+              </div>
+              <div class="product__list__txt">
+                <span class="badge1">샛별배송</span>
+                <span class="badge2"
+                  >[풀무원] 탱탱쫄면 (4개입)</span
                 >
-                  <span class="badge1">샛별배송</span>
-                  <span class="badge2"
-                    >[프로쉬]베이비 세탁세</span
-                  >
-                  <span class="badge3">18,900원</span>
-                  <span class="badge4"
-                    >성분을 꼼꼼히 따져 골라 더욱
-                    편안한</span
-                  >
-                  <span class="badge5">
-                    <span class="badge5-1">karly only</span>
-                    <span class="badge5-2">한정 수량</span>
-                  </span>
+                <div class="badge3">
+                  <div>
+                    <span class="discount">35%</span>
+                    <span class="price">4,980원</span>
+                  </div>
+                  <div>
+                    <span class="out_price">11,900원</span>
+                  </div>
                 </div>
-              </a>
-            </div>
+                <p class="badge4">
+                  튀기지않아 부담없는 매콤함
+                </p>
+                <div class="badge5">
+                  <span class="karly_only">karly only</span>
+                  <span class="limited_quantity"
+                    >한정 수량</span
+                  >
+                </div>
+              </div>
+            </a>
+            <!-- 상품 3 -->
+            <a href="#" class="product__list__1">
+              <div class="product__list__img1">
+                <div class="product__list__img2">
+                  <img
+                    src="../assets/tangtang/detail_view.jpg"
+                    alt="[풀무원]탱탱쫄면 (4개입)"
+                  />
+                  <div>
+                    <button type="button" class="cart-icon">
+                      <img
+                        src="../css/img/Icon/Cart.svg"
+                        alt="카트아이콘"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__list__txt">
+                <span class="badge1">샛별배송</span>
+                <span class="badge2"
+                  >[풀무원] 탱탱쫄면 (4개입)</span
+                >
+                <div class="badge3">
+                  <div>
+                    <span class="discount">35%</span>
+                    <span class="price">4,980원</span>
+                  </div>
+                  <div>
+                    <span class="out_price">11,900원</span>
+                  </div>
+                </div>
+                <p class="badge4">
+                  튀기지않아 부담없는 매콤함
+                </p>
+                <div class="badge5">
+                  <span class="karly_only">karly only</span>
+                  <span class="limited_quantity"
+                    >한정 수량</span
+                  >
+                </div>
+              </div>
+            </a>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
   </body>
 </html>
