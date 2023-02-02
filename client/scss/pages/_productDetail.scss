@@ -1,3 +1,8 @@
+.width {
+  width: 1050px;
+  margin: 0 auto;
+}
+
 .gray {
   color: $gray-400;
 }
@@ -22,8 +27,6 @@
 /* 상품 상세 페이지 */
 .product-detail {
   padding-top: 40px;
-  background: white;
-
   /* 상품 인포 */
   &__information {
     display: flex;
