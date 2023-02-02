@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
+    <title>marketKarly</title>
+  </head>
+  <body>
+    <!-- 상품 문의하기 popup -->
+    <div class="popup-inquiry-background">
+      <div class="popup-inquiry-window">
+        <section class="popup-inquiry">
+          <div class="popup-inquiry__container">
+            <div class="popup-inquiry__container__header">
+              <!-- 타이틀 -->
+              <div
+                class="popup-inquiry__container__header__title"
+              >
+                후기 작성
+              </div>
+              <span
+                ><img
+                  src="../assets/icons/Icon/exit.svg"
+                  alt="창 닫기"
+                />
+              </span>
+            </div>
+            <!-- 상품 이름 -->
+            <div class="popup-inquiry__container__title">
+              <img
+                src="https://img-cf.kurly.com/shop/data/goods/165303902534l0.jpg"
+                alt="상품 이미지"
+              />
+              <div>[델몬트] 바나나</div>
+            </div>
+            <!-- 메인 -->
+            <div class="popup-inquiry__container__main">
+              <!-- 문의 제목 -->
+              <div
+                class="popup-inquiry__container__main__title"
+              >
+                <div
+                  class="popup-inquiry__container__main__title--title"
+                >
+                  <span>제목</span>
+                </div>
+                <div
+                  class="popup-inquiry__container__main__title--input"
+                >
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="제목을 입력해 주세요"
+                  />
+                </div>
+              </div>
+              <!-- 문의 내용 -->
+              <div
+                class="popup-inquiry__container__main__content"
+              >
+                <div
+                  class="popup-inquiry__container__main__content--title"
+                >
+                  <span>내용</span>
+                </div>
+                <div
+                  class="popup-inquiry__container__main__content--input"
+                >
+                  <textarea
+                    inputmode="text"
+                    name="content"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+            <!-- 취소/등록 버튼 -->
+            <div class="popup-inquiry__container__footer">
+              <div
+                class="popup-inquiry__container__footer__button"
+              >
+                <button type="button">
+                  <span>취소</span>
+                </button>
+                <button type="button">
+                  <span>등록</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
