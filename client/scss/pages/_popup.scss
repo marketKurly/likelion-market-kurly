@@ -1,0 +1,134 @@
+.add-cart {
+  &-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  &-window {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: 396px;
+  border-radius: 16px;
+  display: flex;
+  z-index: 100;
+  justify-content: center;
+  box-shadow: (0px 8px 36px rgba(0, 0, 0, 0.2));
+  background-color: $white;
+  &__list {
+    width: 356px;
+    margin: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    &__info {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 150%;
+      &__name {
+        margin-bottom: 12px;
+      }
+      &__amount {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin-bottom: 28px;
+        &__count {
+          display: flex;
+          flex-flow: row nowrap;
+          border: 1px solid $gray-200;
+          text-align: center;
+          align-items: center;
+          &__minus {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            background-image: url(/client/css/img/Icon/Minus.svg);
+            background-repeat: no-repeat;
+            // 회색 아이콘으로 이동시 top -38px 더 이동
+            background-position: -8px -8px;
+          }
+          &__plus {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            background-image: url(/client/css/img/Icon/Plus.svg);
+            background-repeat: no-repeat;
+            background-position: -8px -8px;
+          }
+        }
+      }
+    }
+    &__price {
+      display: flex;
+      flex-flow: column nowrap;
+      margin-bottom: 28px;
+      &__total {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin-bottom: 4px;
+        &__info {
+          font-weight: 600;
+          font-size: 16px;
+          display: flex;
+          align-items: flex-end;
+        }
+        &__price {
+          font-size: 28.43px;
+          font-weight: 700px;
+        }
+      }
+      &__save {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        margin-bottom: 3px;
+        &__info {
+          width: 37px;
+          height: 18px;
+          background-color: $accent-yellow;
+          color: $white;
+          text-align: center;
+          line-height: 20px;
+          border-radius: 9px;
+          font-size: 11px;
+          font-weight: 600;
+        }
+        &__content {
+          font-size: 16px;
+          font-weight: 600;
+          margin-left: 12px;
+        }
+      }
+    }
+    &__buttons {
+      display: flex;
+      justify-content: space-between;
+      &__cancle {
+        width: 174px;
+        height: 54px;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 600;
+        border: 1px solid $gray-400;
+      }
+      &__put {
+        width: 174px;
+        height: 54px;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 600;
+        color: $white;
+        background-color: $primary;
+      }
+    }
+  }
+}

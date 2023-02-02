@@ -1,5 +1,5 @@
-@import './fontello';
 @import './fonts';
+@import './fontello';
 @import './normalize';
 @import './reset';
 @import './theme';
@@ -12,16 +12,6 @@
 @import './pages/popup';
 @import './pages/productDetail';
 @import './pages/productList';
-
-/* 숨김 콘텐츠 */
-.a11y-hidden,
-legend {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip-path: polygon(0 0, 0 0, 0 0);
-}
 
 /* 기본 스타일 */
 *,
@@ -64,12 +54,11 @@ body {
     sans-serif;
 }
 
-/* 레이아웃 */
-.header,
-.nav,
-.section,
-.main,
-.footer {
-  width: 1050px;
-  margin: 0 auto;
+.a11y-hidden,
+legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
 }
