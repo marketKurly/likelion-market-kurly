@@ -139,6 +139,9 @@ $main_container_width: 1050px;
   display: flex;
   flex-flow: column wrap;
   box-shadow: (0px 8px 36px rgba(0, 0, 0, 0.2));
+  border-radius: 16px;
+  background-color: $white;
+
   // align-items: flex-start;
   a {
     height: 586px;
@@ -147,11 +150,9 @@ $main_container_width: 1050px;
     }
   }
   &__buttons {
-    background-color: $white;
     height: 86px;
     display: flex;
     flex-flow: row nowrap;
-    border-radius: 0 0 16px 16px;
     font-size: 16px;
     font-weight: 400;
     line-height: 160%;
@@ -159,7 +160,6 @@ $main_container_width: 1050px;
       flex: 1;
       text-align: center;
       border: 0;
-      background-color: transparent;
     }
     &__button1 {
       border-right: 1px solid $gray-100;

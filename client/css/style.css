@@ -1358,6 +1358,8 @@ table {
   display: flex;
   flex-flow: column wrap;
   box-shadow: 0px 8px 36px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  background-color: #ffffff;
 }
 .popup-ad a {
   height: 586px;
@@ -1366,11 +1368,9 @@ table {
   border-radius: 16px 16px 0 0;
 }
 .popup-ad__buttons {
-  background-color: #ffffff;
   height: 86px;
   display: flex;
   flex-flow: row nowrap;
-  border-radius: 0 0 16px 16px;
   font-size: 16px;
   font-weight: 400;
   line-height: 160%;
@@ -1379,7 +1379,6 @@ table {
   flex: 1;
   text-align: center;
   border: 0;
-  background-color: transparent;
 }
 .popup-ad__buttons__button1 {
   border-right: 1px solid #e1e1e1;
