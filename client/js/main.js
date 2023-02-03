@@ -1,4 +1,4 @@
-import { getNode, attr } from '../lib/dom/index.js';
+import { getNode, attr } from '../lib/index.js';
 
 const header = getNode('.header');
 const navHeaderButton = getNode('.nav__header__button');

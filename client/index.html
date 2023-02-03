@@ -18,7 +18,13 @@
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/popup.js"></script>
     <script type="module" src="./js/main.js"></script>
     <title>marketKarly</title>
   </head>
@@ -418,7 +424,6 @@
       </section>
 
       <!-- 10월의 퍼플피크 -->
-
       <article class="line-banner">
         <a href="" class="line-banner__inner">
           <img
@@ -429,7 +434,6 @@
       </article>
 
       <!-- 마지막 swiper -->
-
       <section class="good-price-product">
         <div class="good-price-product__inner">
           <b class="good-price-product__inner__heading">
@@ -541,24 +545,32 @@
       </section>
 
       <!-- ad 팝업창 -->
-      <section class="popup-ad a11y-hidden">
-        <a href="">
-          <img
-            src="./assets/main-image/popup-ad.svg"
-            alt="마켓 컬리 시작하기 팝업창, 하루종일 닫을건지 그냥 닫을 건지 결정하는 팝업창"
-          />
-        </a>
-        <div class="popup-ad__buttons">
-          <button
-            class="popup-ad__buttons__button popup-ad__buttons__button1"
-          >
-            오늘 하루 안 보기
-          </button>
-          <button class="popup-ad__buttons__button">
-            닫기
-          </button>
+      <div class="main_popup">
+        <div class="popup-ad">
+          <div class="layer_cont">
+            <div class="img_wrap">
+              <a href="">
+                <img
+                  src="./assets/main-image/popup-ad.svg"
+                  alt="마켓 컬리 시작하기 팝업창, 하루종일 닫을건지 그냥 닫을 건지 결정하는 팝업창"
+                />
+              </a>
+            </div>
+            <div class="btn_wrap popup-ad__buttons">
+              <button
+                class="btn_today_close popup-ad__buttons__button popup-ad__buttons__button1"
+              >
+                오늘 하루 안 보기
+              </button>
+              <button
+                class="btn_close popup-ad__buttons__button"
+              >
+                닫기
+              </button>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
 
       <!-- Add cart 팝업창 -->
       <div class="add-cart-background">
@@ -634,6 +646,21 @@
           </section>
         </div>
       </div>
+
+      <!-- popup demo -->
+      <!-- <section>
+      <div class="main_popup">
+        <div class="layer_cont">
+          <div class="img_wrap">팝업 콘텐츠</div>
+          <div class="btn_wrap">
+            <button class="btn_today_close">
+              <span>오늘 하루 보지 않기</span>
+            </button>
+            <button class="btn_close">close</button>
+          </div>
+        </div>
+      </div>
+    </section> -->
     </main>
 
     <!-- 푸터 -->
