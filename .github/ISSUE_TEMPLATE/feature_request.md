@@ -2,23 +2,19 @@
 name: Feature request
 about: Suggest an idea for this project
 title: ''
-labels: "✨ Feature"
+labels: ''
 assignees: ''
 
 ---
 
-## 개요
-- Issue 번호를 적어주세요.
-- 내용을 적어주세요.
-- [x] aaa
-- [x] bbb
+**Is your feature request related to a problem? Please describe.**
+A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
 
-## 작업사항
-- 내용을 적어주세요.
-- [x] aaa
-- [x] bbb
+**Describe the solution you'd like**
+A clear and concise description of what you want to happen.
 
-## 변경로직(optional)
-- 내용을 적어주세요.
-- [x] aaa
-- [x] bbb
+**Describe alternatives you've considered**
+A clear and concise description of any alternative solutions or features you've considered.
+
+**Additional context**
+Add any other context or screenshots about the feature request here.
