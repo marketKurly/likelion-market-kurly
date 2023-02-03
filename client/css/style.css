@@ -1237,7 +1237,21 @@ table {
   position: relative;
   justify-content: center;
 }
-
+.main__recent-product {
+  display: none;
+  background-color: red;
+  position: fixed;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 154px;
+}
+@media (min-width: 1250px) {
+  .main__recent-product {
+    display: block;
+  }
+}
 .Main-banner {
   width: 100%;
   height: 370px;
@@ -1402,6 +1416,7 @@ table {
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.3);
+  display: none;
 }
 .add-cart-window {
   position: relative;
