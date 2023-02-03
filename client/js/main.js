@@ -10,11 +10,11 @@ document.documentElement.addEventListener(
   'mouseover',
   visibleCategory
 );
-navCategoryWrapper.addEventListener(
+navCategoryWrapper?.addEventListener(
   'mouseout',
   invisibleCategory
 );
-navHeaderButton.addEventListener(
+navHeaderButton?.addEventListener(
   'mouseout',
   invisibleCategory
 );
