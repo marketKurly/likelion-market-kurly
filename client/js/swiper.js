@@ -17,9 +17,13 @@ let mainBannerSwiper = new Swiper('.swiper1', {
 });
 
 // mousehover stop start 설정
-$('.swiper-slide').on('mouseover', function () {
+$('.swiper-slide').on('mouseenter', function () {
   mainBannerSwiper.autoplay.stop();
+  $('.swiper-button-next').addClass('buttonhidden');
+  $('.swiper-button-prev').addClass('buttonhidden');
 });
-$('.swiper-slide').on('mouseout', function () {
+$('.swiper-slide').on('mouseleave', function () {
   mainBannerSwiper.autoplay.start();
+  $('.swiper-button-next').removeClass('buttonhidden');
+  $('.swiper-button-prev').removeClass('buttonhidden');
 });

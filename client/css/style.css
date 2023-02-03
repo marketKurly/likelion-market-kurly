@@ -1292,6 +1292,8 @@ table {
   right: 10%;
   background: url("/client/css/img/Icon/Arrow.svg") 50% 50% no-repeat;
   transform: rotate(180deg);
+  opacity: 0;
+  transition: all ease-in-out 500ms;
 }
 
 .swiper1 .swiper-button-prev {
@@ -1300,6 +1302,12 @@ table {
   height: 52px;
   left: 10%;
   background: url("/client/css/img/Icon/Arrow.svg") 50% 50% no-repeat;
+  opacity: 0;
+  transition: all ease-in-out 500ms;
+}
+
+.buttonhidden {
+  opacity: 1 !important;
 }
 
 .swiper .swiper-pagination {
