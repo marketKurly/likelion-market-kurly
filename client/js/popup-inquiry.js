@@ -51,19 +51,6 @@ const handler = (e) => {
 contents.addEventListener('click', handler);
 
 /* const changeColor = (e) => {
-  let target1 = e.target;
-
-  while (!attr(target1, 'data-name')) {
-    // 부모 찾는 반복문
-    target1 = target1.parentNode;
-
-    if (target1.nodeName === 'BODY') {
-      // 부모 찾다가 부모가 BODY가 될 때 끝내라
-      target1 = null;
-      return;
-    }
-  }
-
   if (target1.dataset.name === 'send') {
     if (
       titleTextField.value != null &&
@@ -82,3 +69,15 @@ contents.addEventListener('input', changeColor); */
 
   counter.text('총' + content.length + '/ 5000');
 }); */
+
+$('#content37').keyup(function (e) {
+  let len = 0;
+
+  let content = $(this).val();
+  $('#counter').text(content.length + '/ 5,000');
+
+  if (content.length > 5000) {
+    $(this).val(content.substring(0, 5000));
+    $('#textLengthCheck').html('(5,000 / 5,000)');
+  }
+});
