@@ -1,0 +1,193 @@
+.popup-inquiry {
+  background: $white;
+  width: 790px;
+  height: 655px;
+  border-radius: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+
+  &-background {
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100vh;
+  }
+
+  &-window {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__container {
+    &__header {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid $gray-100;
+
+      &__title {
+        font-size: 28px;
+        font-weight: 700;
+        padding-bottom: 20px;
+        width: 100%;
+      }
+
+      span {
+        display: flex;
+        align-self: flex-start;
+        width: 32px;
+        height: 32px;
+        background-position: center center;
+        background-size: cover;
+      }
+    }
+
+    &__title {
+      padding: 16px 0;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 600;
+      border-bottom: 1px solid $gray-100;
+
+      img {
+        width: 72px;
+        height: 72px;
+        object-fit: cover;
+        border-radius: 4px;
+        margin-right: 24px;
+      }
+    }
+
+    &__main {
+      padding: 16px 0;
+      margin-left: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      color: $content;
+      border-bottom: 1px solid $gray-100;
+
+      &__title {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+
+        &--title {
+          width: 13%;
+        }
+
+        &--input {
+          width: 100%;
+
+          input {
+            border-radius: 4px;
+            border: 1px solid $gray-300;
+            padding: 0 15px 0 15px;
+            width: 100%;
+            height: 44px;
+            outline: none;
+            font-size: 14px;
+          }
+        }
+      }
+
+      &__content {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        padding-top: 16px;
+
+        &--title {
+          width: 13%;
+          align-self: flex-start;
+          padding-top: 10px;
+        }
+
+        &--input {
+          width: 100%;
+
+          textarea {
+            border-radius: 4px;
+            border: 1px solid $gray-300;
+            width: 100%;
+            height: 100%;
+            outline: none;
+            word-break: break-all;
+            font-size: 14px;
+            background: none;
+            line-height: 21px;
+            overflow: auto;
+            resize: none;
+            padding: 15px 15px 0px 15px;
+          }
+        }
+      }
+
+      &__secret {
+        margin-left: 85px;
+        padding-top: 16px;
+
+        &--check {
+          position: relative;
+          display: flex;
+          align-content: center;
+
+          input {
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            position: absolute;
+          }
+
+          img {
+            display: inline-block;
+            margin-right: 12px;
+            width: 24px;
+            height: 24px;
+          }
+
+          span {
+            font-size: 14px;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+
+    &__footer {
+      display: flex;
+      justify-content: center;
+      padding-top: 20px;
+
+      &__button {
+        display: flex;
+        font-size: 16px;
+        gap: 12px;
+        margin-bottom: 20px;
+
+        button:first-child {
+          border: 1px solid $gray-200;
+          width: 170px;
+          height: 56px;
+          border-radius: 4px;
+        }
+
+        button:last-child {
+          background: $gray-100;
+          color: white;
+          width: 170px;
+          height: 56px;
+          border-radius: 4px;
+          cursor: default;
+        }
+      }
+    }
+  }
+}
