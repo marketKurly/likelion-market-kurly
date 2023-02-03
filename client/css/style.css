@@ -1285,6 +1285,23 @@ table {
   justify-content: center;
 }
 
+.swiper1 .swiper-button-next {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  right: 10%;
+  background: url("/client/css/img/Icon/Arrow.svg") 50% 50% no-repeat;
+  transform: rotate(180deg);
+}
+
+.swiper1 .swiper-button-prev {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  left: 10%;
+  background: url("/client/css/img/Icon/Arrow.svg") 50% 50% no-repeat;
+}
+
 .today-recomend-product {
   display: flex;
   justify-content: center;
