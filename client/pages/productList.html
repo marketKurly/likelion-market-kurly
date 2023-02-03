@@ -25,11 +25,16 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script
+      src="../js/productList.js"
+      type="module"
+    ></script>
     <script src="../js/main.js" type="module"></script>
     <title>productList</title>
   </head>
 
   <body>
+    <!-- 헤더 -->
     <header class="header">
       <div class="header__inner">
         <h1 class="header__logo">
@@ -51,7 +56,7 @@
             >
               <img
                 src="../css/img/Icon/Bar.svg"
-                alt=""
+                alt="회원가입"
                 srcset=""
               />
             </span>
@@ -64,7 +69,7 @@
             >
               <img
                 src="../css/img/Icon/Bar.svg"
-                alt=""
+                alt="로그인"
                 srcset=""
               />
             </span>
@@ -75,7 +80,7 @@
             >
               <img
                 src="../css/img/Icon/Down.svg"
-                alt=""
+                alt="고객센터"
                 srcset=""
               />
             </span>
@@ -297,7 +302,7 @@
       </div>
     </header>
 
-    <!-- 메인 리스트 전체 -->
+    <!-- 메인 -->
     <section class="main">
       <div class="container">
         <!-- 베스트 탑 문구 -->
@@ -305,7 +310,7 @@
         <!-- 네비게이션과 상품 리스트 -->
         <div class="product-list">
           <!-- 네비게이션 시작 -->
-          <div class="navigator">
+          <nav class="navigator">
             <!-- 필터 -->
             <div>
               <div class="accordion--filter__head">
@@ -339,10 +344,11 @@
                 </div>
               </div>
             </div>
+
             <!-- 전체 메뉴 -->
-            <div class="accordion--set">
+            <button class="accordion--set">
               <!-- 카테고리 메인 시작 -->
-              <button class="accordion--set__head">
+              <li class="accordion--set__head">
                 <div class="frame70">
                   <span>카테고리</span>
                   <img
@@ -350,577 +356,175 @@
                     alt="메뉴열기닫기"
                   />
                 </div>
-                <img src="" alt="" />
-              </button>
-              <!-- 카테고리 서브 시작-->
-              <ul class="accordion--set__body">
-                <li class="accordion__ltem">
-                  <a href="#"
-                    ><button>
-                      <img
-                        src="../css/img/Input/Check1.svg"
-                        alt="동그라미 체크표시"
-                      />
-                    </button>
-                    <span class="accordion__ltem__text"
-                      >샐러드·간편식</span
-                    >
-                    <span class="accordion__ltem__number"
-                      >1</span
-                    >
-                  </a>
-                </li>
-                <li class="accordion__ltem">
-                  <a href="#"
-                    ><button>
-                      <img
-                        src="../css/img/Input/Check1.svg"
-                        alt="동그라미 체크표시"
-                      />
-                    </button>
-                    <span class="accordion__ltem__text"
-                      >국·반찬·메인요리</span
-                    >
-                    <span class="accordion__ltem__number"
-                      >1</span
-                    >
-                  </a>
-                </li>
-                <li class="accordion__ltem">
-                  <a href="#"
-                    ><button>
-                      <img
-                        src="../css/img/Input/Check1.svg"
-                        alt="동그라미 체크표시"
-                      />
-                    </button>
-                    <span class="accordion__ltem__text"
-                      >정육·계란</span
-                    >
-                    <span class="accordion__ltem__number"
-                      >1</span
-                    >
-                  </a>
-                </li>
-                <li class="accordion__ltem">
-                  <a href="#"
-                    ><button>
-                      <img
-                        src="../css/img/Input/Check1.svg"
-                        alt="동그라미 체크표시"
-                      />
-                    </button>
-                    <span class="accordion__ltem__text"
-                      >과일·견과·쌀</span
-                    >
-                    <span class="accordion__ltem__number"
-                      >1</span
-                    >
-                  </a>
-                </li>
-                <li class="accordion__ltem">
-                  <a href="#"
-                    ><button>
-                      <img
-                        src="../css/img/Input/Check1.svg"
-                        alt="동그라미 체크표시"
-                      />
-                    </button>
-                    <span class="accordion__ltem__text"
-                      >베이커리·치즈·델리</span
-                    >
-                    <span class="accordion__ltem__number"
-                      >1</span
-                    >
-                  </a>
-                </li>
-                <li class="accordion__ltem">
-                  <a href="#"
-                    ><button>
-                      <img
-                        src="../css/img/Input/Check1.svg"
-                        alt="동그라미 체크표시"
-                      />
-                    </button>
-                    <span class="accordion__ltem__text"
-                      >간식·과자·떡</span
-                    >
-                    <span class="accordion__ltem__number"
-                      >1</span
-                    >
-                  </a>
-                </li>
-                <li class="accordion__ltem">
-                  <a href="#"
-                    ><button>
-                      <img
-                        src="../css/img/Input/Check1.svg"
-                        alt="동그라미 체크표시"
-                      />
-                    </button>
-                    <span class="accordion__ltem__text"
-                      >생수·음료·우유·커피</span
-                    >
-                    <span class="accordion__ltem__number"
-                      >1</span
-                    >
-                  </a>
-                </li>
-                <li class="accordion__ltem">
-                  <a href="#"
-                    ><button>
-                      <img
-                        src="../css/img/Input/Check1.svg"
-                        alt="동그라미 체크표시"
-                      />
-                    </button>
-                    <span class="accordion__ltem__text"
-                      >수산·해산·건어물</span
-                    >
-                    <span class="accordion__ltem__number"
-                      >1</span
-                    >
-                  </a>
-                </li>
-                <li class="accordion__ltem">
-                  <a href="#"
-                    ><button>
-                      <img
-                        src="../css/img/Input/Check1.svg"
-                        alt="동그라미 체크표시"
-                      />
-                    </button>
-                    <span class="accordion__ltem__text"
-                      >면·양념·오일</span
-                    >
-                    <span class="accordion__ltem__number"
-                      >1</span
-                    >
-                  </a>
-                </li>
-                <li class="accordion__ltem">
-                  <a href="#"
-                    ><button>
-                      <img
-                        src="../css/img/Input/Check1.svg"
-                        alt="동그라미 체크표시"
-                      />
-                    </button>
-                    <span class="accordion__ltem__text"
-                      >헤어·바디·구강</span
-                    >
-                    <span class="accordion__ltem__number"
-                      >1</span
-                    >
-                  </a>
-                </li>
-                <button class="accordion__ltem__viewmore">
-                  <span>카테고리 더보기</span>
-                  <img src="" alt="" />
-                </button>
-              </ul>
-              <!-- 브랜드 메인 시작-->
-              <button class="accordion--set__head">
-                <div class="frame70">
-                  <span>브랜드</span>
-                  <img
-                    src="../css/img/Icon/Arrowbottom.svg"
-                    alt="메뉴열기닫기"
-                  />
-                </div>
-                <img src="" alt="" />
-              </button>
-              <!-- 브랜드 서브 시작-->
-              <ul class="accordion--set__body">
-                <li class="accordion__ltem">
-                  <a href="#"
-                    ><button>
-                      <img
-                        src="../css/img/Input/Check1.svg"
-                        alt="동그라미 체크표시"
-                      />
-                    </button>
-                    <span class="accordion__ltem__text"
-                      >가농바이오</span
-                    >
-                    <span class="accordion__ltem__number"
-                      >1</span
-                    >
-                  </a>
-                </li>
-                <li class="accordion__ltem">
-                  <a href="#"
-                    ><button>
-                      <img
-                        src="../css/img/Input/Check1.svg"
-                        alt="동그라미 체크표시"
-                      />
-                    </button>
-                    <span class="accordion__ltem__text"
-                      >감자밭</span
-                    >
-                    <span class="accordion__ltem__number"
-                      >1</span
-                    >
-                  </a>
-                </li>
-                <li class="accordion__ltem">
-                  <a href="#"
-                    ><button>
-                      <img
-                        src="../css/img/Input/Check1.svg"
-                        alt="동그라미 체크표시"
-                      />
-                    </button>
-                    <span class="accordion__ltem__text"
-                      >강남면옥</span
-                    >
-                    <span class="accordion__ltem__number"
-                      >1</span
-                    >
-                  </a>
-                </li>
-                <li class="accordion__ltem">
-                  <a href="#"
-                    ><button>
-                      <img
-                        src="../css/img/Input/Check1.svg"
-                        alt="동그라미 체크표시"
-                      />
-                    </button>
-                    <span class="accordion__ltem__text"
-                      >샐러드·간편식</span
-                    >
-                    <span class="accordion__ltem__number"
-                      >1</span
-                    >
-                  </a>
-                </li>
-                <li class="accordion__ltem">
-                  <a href="#"
-                    ><button>
-                      <img
-                        src="../css/img/Input/Check1.svg"
-                        alt="동그라미 체크표시"
-                      />
-                    </button>
-                    <span class="accordion__ltem__text"
-                      >강창구찹쌀진순대</span
-                    >
-                    <span class="accordion__ltem__number"
-                      >1</span
-                    >
-                  </a>
-                </li>
-                <li class="accordion__ltem">
-                  <a href="#"
-                    ><button>
-                      <img
-                        src="../css/img/Input/Check1.svg"
-                        alt="동그라미 체크표시"
-                      />
-                    </button>
-                    <span class="accordion__ltem__text"
-                      >거대곰탕</span
-                    >
-                    <span class="accordion__ltem__number"
-                      >1</span
-                    >
-                  </a>
-                </li>
-                <li class="accordion__ltem">
-                  <a href="#"
-                    ><button>
-                      <img
-                        src="../css/img/Input/Check1.svg"
-                        alt="동그라미 체크표시"
-                      />
-                    </button>
-                    <span class="accordion__ltem__text"
-                      >게방식당</span
-                    >
-                    <span class="accordion__ltem__number"
-                      >1</span
-                    >
-                  </a>
-                </li>
-                <li class="accordion__ltem">
-                  <a href="#"
-                    ><button>
-                      <img
-                        src="../css/img/Input/Check1.svg"
-                        alt="동그라미 체크표시"
-                      />
-                    </button>
-                    <span class="accordion__ltem__text"
-                      >경복궁</span
-                    >
-                    <span class="accordion__ltem__number"
-                      >1</span
-                    >
-                  </a>
-                </li>
-                <li class="accordion__ltem">
-                  <a href="#"
-                    ><button>
-                      <img
-                        src="../css/img/Input/Check1.svg"
-                        alt="동그라미 체크표시"
-                      />
-                    </button>
-                    <span class="accordion__ltem__text"
-                      >고기반찬</span
-                    >
-                    <span class="accordion__ltem__number"
-                      >1</span
-                    >
-                  </a>
-                </li>
-                <li class="accordion__ltem">
-                  <a href="#"
-                    ><button>
-                      <img
-                        src="../css/img/Input/Check1.svg"
-                        alt="동그라미 체크표시"
-                      />
-                    </button>
-                    <span class="accordion__ltem__text"
-                      >고온어다이어트</span
-                    >
-                    <span class="accordion__ltem__number"
-                      >1</span
-                    >
-                  </a>
-                </li>
-                <li class="accordion__ltem">
-                  <a href="#"
-                    ><button>
-                      <img
-                        src="../css/img/Input/Check1.svg"
-                        alt="동그라미 체크표시"
-                      />
-                    </button>
-                    <span class="accordion__ltem__text"
-                      >교토마블</span
-                    >
-                    <span class="accordion__ltem__number"
-                      >1</span
-                    >
-                  </a>
-                </li>
-                <button class="accordion__ltem__viewmore">
-                  <span>브랜드 더보기</span>
-                  <img src="" alt="" />
-                </button>
-              </ul>
-              <!-- 가격 메인 시작-->
-              <button class="accordion--set__head">
-                <div class="frame70">
-                  <span>가격</span>
-                  <img
-                    src="../css/img/Icon/Arrowbottom.svg"
-                    alt="메뉴열기닫기"
-                  />
-                </div>
-                <img src="" alt="" />
-              </button>
-              <!-- 가격 서브 시작-->
-              <ul class="accordion--set__body">
-                <li class="accordion__ltem">
-                  <a href="#"
-                    ><button>
-                      <img
-                        src="../css/img/Input/Check1.svg"
-                        alt="동그라미 체크표시"
-                      />
-                    </button>
-                    <span class="accordion__ltem__text"
-                      >7,607원 미만</span
-                    >
-                    <span class="accordion__ltem__number"
-                      >1</span
-                    >
-                  </a>
-                </li>
-                <li class="accordion__ltem">
-                  <a href="#"
-                    ><button>
-                      <img
-                        src="../css/img/Input/Check1.svg"
-                        alt="동그라미 체크표시"
-                      />
-                    </button>
-                    <span class="accordion__ltem__text"
-                      >7,607원 ~ 11,600원</span
-                    >
-                    <span class="accordion__ltem__number"
-                      >1</span
-                    >
-                  </a>
-                </li>
-                <li class="accordion__ltem">
-                  <a href="#"
-                    ><button>
-                      <img
-                        src="../css/img/Input/Check1.svg"
-                        alt="동그라미 체크표시"
-                      />
-                    </button>
-                    <span class="accordion__ltem__text"
-                      >11,600원 ~ 18,300원</span
-                    >
-                    <span class="accordion__ltem__number"
-                      >1</span
-                    >
-                  </a>
-                </li>
-                <li class="accordion__ltem">
-                  <a href="#"
-                    ><button>
-                      <img
-                        src="../css/img/Input/Check1.svg"
-                        alt="동그라미 체크표시"
-                      />
-                    </button>
-                    <span class="accordion__ltem__text"
-                      >18,300원 이상</span
-                    >
-                    <span class="accordion__ltem__number"
-                      >1</span
-                    >
-                  </a>
-                </li>
-              </ul>
-              <!-- 혜택 메인 시작-->
-              <button
-                class="accordion--set__head category--height"
-              >
-                <div class="frame70">
-                  <span>혜택</span>
-                  <img
-                    src="../css/img/Icon/Arrowbottom.svg"
-                    alt="메뉴열기닫기"
-                  />
-                </div>
-                <img src="" alt="" />
-              </button>
-              <!-- 혜택 서브 시작-->
-              <ul class="accordion--set__body">
-                <li class="accordion__ltem">
-                  <a href="#"
-                    ><button>
-                      <img
-                        src="../css/img/Input/Check1.svg"
-                        alt="동그라미 체크표시"
-                      />
-                    </button>
-                    <span class="accordion__ltem__text"
-                      >할인상품</span
-                    >
-                    <span class="accordion__ltem__number"
-                      >1</span
-                    >
-                  </a>
-                </li>
-                <li class="accordion__ltem">
-                  <a href="#"
-                    ><button>
-                      <img
-                        src="../css/img/Input/Check1.svg"
-                        alt="동그라미 체크표시"
-                      />
-                    </button>
-                    <span class="accordion__ltem__text"
-                      >한정수량</span
-                    >
-                    <span class="accordion__ltem__number"
-                      >1</span
-                    >
-                  </a>
-                </li>
-              </ul>
-              <!-- 유형 메인 시작-->
-              <button
-                class="accordion--set__head category-height"
-              >
-                <div class="frame70">
-                  <span>유형</span>
-                  <img
-                    src="../css/img/Icon/Arrowbottom.svg"
-                    alt="메뉴열기닫기"
-                  />
-                </div>
-                <img src="" alt="" />
-              </button>
-              <!-- 유형 서브 시작-->
-              <ul class="accordion--set__body">
-                <li class="accordion__ltem">
-                  <a href="#"
-                    ><button>
-                      <img
-                        src="../css/img/Input/Check1.svg"
-                        alt="동그라미 체크표시"
-                      />
-                    </button>
-                    <span class="accordion__ltem__text"
-                      >KurlyOnly</span
-                    >
-                    <span class="accordion__ltem__number"
-                      >1</span
-                    >
-                  </a>
-                </li>
-                <li class="accordion__ltem">
-                  <a href="#"
-                    ><button>
-                      <img
-                        src="../css/img/Input/Check1.svg"
-                        alt="동그라미 체크표시"
-                      />
-                    </button>
-                    <span class="accordion__ltem__text"
-                      >희소가치 프로젝트</span
-                    >
-                    <span class="accordion__ltem__number"
-                      >1</span
-                    >
-                  </a>
-                </li>
-              </ul>
-              <!-- 특정상품 제외 메인 시작-->
-              <button
-                class="accordion--set__head category--height"
-              >
-                <div class="frame70">
-                  <span>특정상품 제외</span>
-                  <img
-                    src="../css/img/Icon/Arrowbottom.svg"
-                    alt="메뉴열기닫기"
-                  />
-                </div>
-                <img src="" alt="" />
-              </button>
-              <!-- 특정상품 제외 서브 시작-->
-              <ul class="accordion--set__body">
-                <li class="accordion__ltem">
-                  <a href="#"
-                    ><button>
-                      <img
-                        src="../css/img/Input/Check1.svg"
-                        alt="동그라미 체크표시"
-                      />
-                    </button>
-                    <span class="accordion__ltem__text"
-                      >반려동물 상품</span
-                    >
-                    <span class="accordion__ltem__number"
-                      >1</span
-                    >
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+                <!-- 카테고리 서브 시작 -->
+                <ul class="accordion--set__body">
+                  <li class="accordion__ltem">
+                    <a href="#"
+                      ><button>
+                        <img
+                          src="../css/img/Input/Check1.svg"
+                          alt="동그라미 체크표시"
+                        />
+                      </button>
+                      <span class="accordion__ltem__text"
+                        >샐러드·간편식</span
+                      >
+                      <span class="accordion__ltem__number"
+                        >1</span
+                      >
+                    </a>
+                  </li>
+                  <li class="accordion__ltem">
+                    <a href="#"
+                      ><button>
+                        <img
+                          src="../css/img/Input/Check1.svg"
+                          alt="동그라미 체크표시"
+                        />
+                      </button>
+                      <span class="accordion__ltem__text"
+                        >국·반찬·메인요리</span
+                      >
+                      <span class="accordion__ltem__number"
+                        >1</span
+                      >
+                    </a>
+                  </li>
+                  <li class="accordion__ltem">
+                    <a href="#"
+                      ><button>
+                        <img
+                          src="../css/img/Input/Check1.svg"
+                          alt="동그라미 체크표시"
+                        />
+                      </button>
+                      <span class="accordion__ltem__text"
+                        >정육·계란</span
+                      >
+                      <span class="accordion__ltem__number"
+                        >1</span
+                      >
+                    </a>
+                  </li>
+                  <li class="accordion__ltem">
+                    <a href="#"
+                      ><button>
+                        <img
+                          src="../css/img/Input/Check1.svg"
+                          alt="동그라미 체크표시"
+                        />
+                      </button>
+                      <span class="accordion__ltem__text"
+                        >과일·견과·쌀</span
+                      >
+                      <span class="accordion__ltem__number"
+                        >1</span
+                      >
+                    </a>
+                  </li>
+                  <li class="accordion__ltem">
+                    <a href="#"
+                      ><button>
+                        <img
+                          src="../css/img/Input/Check1.svg"
+                          alt="동그라미 체크표시"
+                        />
+                      </button>
+                      <span class="accordion__ltem__text"
+                        >베이커리·치즈·델리</span
+                      >
+                      <span class="accordion__ltem__number"
+                        >1</span
+                      >
+                    </a>
+                  </li>
+                  <li class="accordion__ltem">
+                    <a href="#"
+                      ><button>
+                        <img
+                          src="../css/img/Input/Check1.svg"
+                          alt="동그라미 체크표시"
+                        />
+                      </button>
+                      <span class="accordion__ltem__text"
+                        >간식·과자·떡</span
+                      >
+                      <span class="accordion__ltem__number"
+                        >1</span
+                      >
+                    </a>
+                  </li>
+                  <li class="accordion__ltem">
+                    <a href="#"
+                      ><button>
+                        <img
+                          src="../css/img/Input/Check1.svg"
+                          alt="동그라미 체크표시"
+                        />
+                      </button>
+                      <span class="accordion__ltem__text"
+                        >생수·음료·우유·커피</span
+                      >
+                      <span class="accordion__ltem__number"
+                        >1</span
+                      >
+                    </a>
+                  </li>
+                  <li class="accordion__ltem">
+                    <a href="#"
+                      ><button>
+                        <img
+                          src="../css/img/Input/Check1.svg"
+                          alt="동그라미 체크표시"
+                        />
+                      </button>
+                      <span class="accordion__ltem__text"
+                        >수산·해산·건어물</span
+                      >
+                      <span class="accordion__ltem__number"
+                        >1</span
+                      >
+                    </a>
+                  </li>
+                  <li class="accordion__ltem">
+                    <a href="#"
+                      ><button>
+                        <img
+                          src="../css/img/Input/Check1.svg"
+                          alt="동그라미 체크표시"
+                        />
+                      </button>
+                      <span class="accordion__ltem__text"
+                        >면·양념·오일</span
+                      >
+                      <span class="accordion__ltem__number"
+                        >1</span
+                      >
+                    </a>
+                  </li>
+                  <li class="accordion__ltem">
+                    <a href="#"
+                      ><button>
+                        <img
+                          src="../css/img/Input/Check1.svg"
+                          alt="동그라미 체크표시"
+                        />
+                      </button>
+                      <span class="accordion__ltem__text"
+                        >헤어·바디·구강</span
+                      >
+                      <span class="accordion__ltem__number"
+                        >1</span
+                      >
+                    </a>
+                  </li>
+                  <button class="accordion__ltem__viewmore">
+                    <span>카테고리 더보기</span>
+                  </button>
+                </ul>
+              </li>
+            </button>
+          </nav>
 
           <!-- 상품 리스트 전체 -->
           <div class="group">
@@ -1719,6 +1323,7 @@
         </div>
       </div>
     </section>
+
     <!-- 푸터 -->
     <footer class="footer">
       <div class="footer__main">
