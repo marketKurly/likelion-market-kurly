@@ -600,6 +600,7 @@ table {
 .cart__selected-list__item {
   border-bottom: 1.5px solid #898989;
   height: 48px;
+  z-index: -1;
   display: flex;
   flex-flow: row nowrap;
   justify-content: stretch;
@@ -991,13 +992,15 @@ table {
 }
 .nav__category__wrapper {
   width: 250px;
-  height: auto;
+  height: 885px;
   position: absolute;
   border: 1px solid #c4c4c4;
   top: 55px;
+  background-color: #ffffff;
   display: none;
 }
 .nav__category {
+  z-index: 101;
   width: 100%;
 }
 .nav__category li::before {
