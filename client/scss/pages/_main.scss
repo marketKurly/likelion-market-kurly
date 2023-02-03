@@ -304,3 +304,12 @@ $main_container_width: 1050px;
     }
   }
 }
+
+.main_popup {
+  display: none;
+
+  &.on {
+    display: block;
+    // background-color: #fff;
+  }
+}

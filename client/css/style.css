@@ -1519,6 +1519,13 @@ table {
   background-color: #5f0080;
 }
 
+.main_popup {
+  display: none;
+}
+.main_popup.on {
+  display: block;
+}
+
 .add-cart {
   position: absolute;
   left: 50%;

@@ -545,24 +545,32 @@
       </section>
 
       <!-- ad 팝업창 -->
-      <section class="popup-ad">
-        <a href="">
-          <img
-            src="./assets/main-image/popup-ad.svg"
-            alt="마켓 컬리 시작하기 팝업창, 하루종일 닫을건지 그냥 닫을 건지 결정하는 팝업창"
-          />
-        </a>
-        <div class="popup-ad__buttons">
-          <button
-            class="popup-ad__buttons__button popup-ad__buttons__button1"
-          >
-            오늘 하루 안 보기
-          </button>
-          <button class="popup-ad__buttons__button">
-            닫기
-          </button>
+      <div class="main_popup">
+        <div class="popup-ad">
+          <div class="layer_cont">
+            <div class="img_wrap">
+              <a href="">
+                <img
+                  src="./assets/main-image/popup-ad.svg"
+                  alt="마켓 컬리 시작하기 팝업창, 하루종일 닫을건지 그냥 닫을 건지 결정하는 팝업창"
+                />
+              </a>
+            </div>
+            <div class="btn_wrap popup-ad__buttons">
+              <button
+                class="btn_today_close popup-ad__buttons__button popup-ad__buttons__button1"
+              >
+                오늘 하루 안 보기
+              </button>
+              <button
+                class="btn_close popup-ad__buttons__button"
+              >
+                닫기
+              </button>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
 
       <!-- Add cart 팝업창 -->
       <div class="add-cart-background">
