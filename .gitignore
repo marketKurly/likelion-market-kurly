@@ -1,6 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/node,windows,osx,visualstudiocode,webstorm
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,windows,osx,visualstudiocode,webstorm
 
+style.css
+style.css.map
+
 ### Node ###
 # Logs
 logs
