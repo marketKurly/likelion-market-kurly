@@ -25,6 +25,10 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script
+      src="../js/product.List.js"
+      type="module"
+    ></script>
     <script src="../js/main.js" type="module"></script>
     <title>productList</title>
   </head>
@@ -36,7 +40,7 @@
         <!-- 베스트 탑 문구 -->
         <h3 class="best">베스트</h3>
         <!-- 네비게이션과 상품 리스트 -->
-        <div class="product">
+        <div class="product-list">
           <!-- 네비게이션 시작 -->
           <div class="navigator">
             <!-- 필터 -->
@@ -80,10 +84,9 @@
                   <span>카테고리</span>
                   <img
                     src="../css/img/Icon/Arrowbottom.svg"
-                    alt="메뉴열기닫기"
+                    alt="메뉴 열기닫기"
                   />
                 </div>
-                <img src="" alt="" />
               </button>
               <!-- 카테고리 서브 시작-->
               <ul class="accordion--set__body">
