@@ -1249,6 +1249,42 @@ table {
   justify-content: center;
 }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+.Main-banner {
+  width: 100%;
+  height: 370px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
 .today-recomend-product {
   display: flex;
   justify-content: center;
