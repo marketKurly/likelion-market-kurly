@@ -84,23 +84,23 @@ $main_container_width: 1050px;
     no-repeat;
 }
 
-// // swiper pagination
-// .swiper .swiper-pagination {
-//   position: absolute;
-//   color: $white;
-//   background: rgba(0, 0, 0, 0.15);
-//   font-size: 14px;
-//   font-weight: 400;
-//   letter-spacing: 5px;
-//   width: 55px;
-//   height: 23px;
-//   border-radius: 12px;
-//   bottom: 20px;
-//   left: 85%;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }
+// swiper pagination
+.swiper .swiper-pagination {
+  position: absolute;
+  color: $white;
+  background: rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  width: 55px;
+  height: 23px;
+  border-radius: 12px;
+  bottom: 20px;
+  left: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 //product slide 1
 .today-recomend-product {
