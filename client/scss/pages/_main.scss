@@ -1,0 +1,315 @@
+/* 메인 */
+
+$main_width: 1920px;
+$main_container_width: 1050px;
+
+.main {
+  // width: 1920px;
+  display: flex;
+  flex-flow: column wrap;
+  position: relative;
+  justify-content: center;
+}
+
+// main banner
+.Main-banner {
+  width: 100%;
+  height: 370px; // 사용 안하면 a태그의 기본 값 설정이 되어있는 건지 오차가 발생함
+  // swiper 시 가로 나열을 위해 row nowrap 사용
+  display: flex;
+  flex-flow: row nowrap;
+  // 가운데 정렬
+  justify-content: center;
+}
+
+//product slide 1
+.today-recomend-product {
+  display: flex;
+  justify-content: center;
+
+  &__inner {
+    width: $main_container_width;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    &__heading {
+      margin-top: 40px;
+      font-size: 28.43px;
+      font-weight: 700;
+      line-height: 39.8px;
+    }
+    &__slider {
+      margin-top: 28px;
+      margin-bottom: 40px;
+      width: $main_container_width;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+    }
+  }
+}
+
+.swiper-product {
+  display: block;
+  width: 249px;
+  text-decoration: none;
+  &__image-container {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    &__tumbnail {
+      position: absolute;
+      width: 100%;
+    }
+    &__shopping-cart {
+      position: absolute;
+      left: 189px;
+      top: 258px;
+      background-color: inherit;
+      border: 0;
+      cursor: pointer;
+      padding: 0;
+    }
+  }
+  &__info {
+    &__name {
+      height: 26px;
+      font-size: 16px;
+      line-height: 160%;
+      font-weight: 400;
+      margin-bottom: 8px;
+      margin-top: 16px;
+      color: $content;
+    }
+    &__price {
+      font-size: 21.328px;
+      font-weight: 600;
+      line-height: 150%;
+      color: $content;
+    }
+  }
+}
+
+//line benner
+.line-banner {
+  display: flex;
+  justify-content: center;
+  height: 219px; // 사용 안하면 a태그의 기본 값 설정이 되어있는 건지 오차가 발생함
+  &__inner {
+    margin: 40px 0;
+  }
+}
+
+// product slide 2
+.good-price-product {
+  display: flex;
+  justify-content: center;
+
+  &__inner {
+    width: $main_container_width;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    &__heading {
+      margin-top: 40px;
+      font-size: 28.43px;
+      font-weight: 700;
+      line-height: 39.8px;
+    }
+    &__slider {
+      margin-top: 28px;
+      margin-bottom: 40px;
+      width: $main_container_width;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+    }
+  }
+}
+
+// ad 팝업창
+.popup-ad {
+  position: fixed;
+  width: 440px;
+  height: 672px;
+  top: 281px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 100;
+  display: flex;
+  flex-flow: column wrap;
+  box-shadow: (0px 8px 36px rgba(0, 0, 0, 0.2));
+  border-radius: 16px;
+  background-color: $white;
+
+  // align-items: flex-start;
+  a {
+    height: 586px;
+    img {
+      border-radius: 16px 16px 0 0;
+    }
+  }
+  &__buttons {
+    height: 86px;
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    &__button {
+      flex: 1;
+      text-align: center;
+      border: 0;
+    }
+    &__button1 {
+      border-right: 1px solid $gray-100;
+    }
+  }
+}
+
+//add-cart popup
+
+.add-cart {
+  &-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+  }
+  &-window {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: 396px;
+  border-radius: 16px;
+  display: flex;
+  z-index: 100;
+  justify-content: center;
+  box-shadow: (0px 8px 36px rgba(0, 0, 0, 0.2));
+  background-color: $white;
+  &__list {
+    width: 356px;
+    margin: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    &__info {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 150%;
+      &__name {
+        margin-bottom: 12px;
+      }
+      &__amount {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin-bottom: 28px;
+        &__count {
+          display: flex;
+          flex-flow: row nowrap;
+          border: 1px solid $gray-200;
+          text-align: center;
+          align-items: center;
+          &__minus {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            background-image: url(/client/css/img/Icon/Minus.svg);
+            background-repeat: no-repeat;
+            // 회색 아이콘으로 이동시 top -38px 더 이동
+            background-position: -8px -8px;
+          }
+          &__plus {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            background-image: url(/client/css/img/Icon/Plus.svg);
+            background-repeat: no-repeat;
+            background-position: -8px -8px;
+          }
+        }
+      }
+    }
+    &__price {
+      display: flex;
+      flex-flow: column nowrap;
+      margin-bottom: 28px;
+      &__total {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin-bottom: 4px;
+        &__info {
+          font-weight: 600;
+          font-size: 16px;
+          display: flex;
+          align-items: flex-end;
+        }
+        &__price {
+          font-size: 28.43px;
+          font-weight: 700px;
+        }
+      }
+      &__save {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        margin-bottom: 3px;
+        &__info {
+          width: 37px;
+          height: 18px;
+          background-color: $accent-yellow;
+          color: $white;
+          text-align: center;
+          line-height: 20px;
+          border-radius: 9px;
+          font-size: 11px;
+          font-weight: 600;
+        }
+        &__content {
+          font-size: 16px;
+          font-weight: 600;
+          margin-left: 12px;
+        }
+      }
+    }
+    &__buttons {
+      display: flex;
+      justify-content: space-between;
+      &__cancle {
+        width: 174px;
+        height: 54px;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 600;
+        border: 1px solid $gray-400;
+      }
+      &__put {
+        width: 174px;
+        height: 54px;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 600;
+        color: $white;
+        background-color: $primary;
+      }
+    }
+  }
+}
+
+.main_popup {
+  display: none;
+
+  &.on {
+    display: block;
+    // background-color: #fff;
+  }
+}

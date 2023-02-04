@@ -1,26 +1,26 @@
 <svg width="97" height="1797" viewBox="0 0 97 1797" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect x="8" y="8" width="81" height="81" fill="url(#pattern0)"/>
-<rect x="8" y="89" width="81" height="81" fill="url(#pattern1)"/>
-<rect x="8" y="170" width="81" height="81" fill="url(#pattern2)"/>
-<rect x="8" y="251" width="81" height="81" fill="url(#pattern3)"/>
-<rect x="8" y="332" width="81" height="81" fill="url(#pattern4)"/>
-<rect x="8" y="413" width="81" height="81" fill="url(#pattern5)"/>
-<rect x="8" y="494" width="81" height="81" fill="url(#pattern6)"/>
-<rect x="8" y="575" width="81" height="81" fill="url(#pattern7)"/>
-<rect x="8" y="656" width="81" height="81" fill="url(#pattern8)"/>
-<rect x="8" y="737" width="81" height="81" fill="url(#pattern9)"/>
-<rect x="8" y="818" width="81" height="81" fill="url(#pattern10)"/>
-<rect x="8" y="899" width="81" height="81" fill="url(#pattern11)"/>
-<rect x="8" y="980" width="81" height="81" fill="url(#pattern12)"/>
-<rect x="8" y="1061" width="81" height="81" fill="url(#pattern13)"/>
-<rect x="8" y="1142" width="81" height="81" fill="url(#pattern14)"/>
-<rect x="8" y="1223" width="81" height="81" fill="url(#pattern15)"/>
-<rect x="8" y="1304" width="81" height="81" fill="url(#pattern16)"/>
-<rect x="8" y="1385" width="81" height="81" fill="url(#pattern17)"/>
-<rect x="8" y="1466" width="81" height="81" fill="url(#pattern18)"/>
-<rect x="8" y="1547" width="80" height="80" fill="url(#pattern19)"/>
-<rect x="8" y="1627" width="81" height="81" fill="url(#pattern20)"/>
-<rect x="8" y="1708" width="81" height="81" fill="url(#pattern21)"/>
+<rect x="8" y="8" width="25" height="25" fill="url(#pattern0)"/>
+<rect x="8" y="33" width="25" height="25" fill="url(#pattern1)"/>
+<rect x="8" y="58" width="25" height="25" fill="url(#pattern2)"/>
+<rect x="8" y="83" width="25" height="25" fill="url(#pattern3)"/>
+<rect x="8" y="105" width="25" height="25" fill="url(#pattern4)"/>
+<rect x="8" y="130" width="25" height="25" fill="url(#pattern5)"/>
+<rect x="8" y="155" width="25" height="25" fill="url(#pattern6)"/>
+<rect x="8" y="180" width="25" height="25" fill="url(#pattern7)"/>
+<rect x="8" y="205" width="25" height="25" fill="url(#pattern8)"/>
+<rect x="8" y="230" width="25" height="25" fill="url(#pattern9)"/>
+<rect x="8" y="255" width="25" height="25" fill="url(#pattern10)"/>
+<rect x="8" y="280" width="25" height="25" fill="url(#pattern11)"/>
+<rect x="8" y="305" width="25" height="25" fill="url(#pattern12)"/>
+<rect x="8" y="330" width="25" height="25" fill="url(#pattern13)"/>
+<rect x="8" y="355" width="25" height="25" fill="url(#pattern14)"/>
+<rect x="8" y="380" width="25" height="25" fill="url(#pattern15)"/>
+<rect x="8" y="405" width="25" height="25" fill="url(#pattern16)"/>
+<rect x="8" y="430" width="25" height="25" fill="url(#pattern17)"/>
+<rect x="8" y="455" width="25" height="25" fill="url(#pattern18)"/>
+<rect x="8" y="480" width="25" height="25" fill="url(#pattern19)"/>
+<rect x="8" y="505" width="25" height="25" fill="url(#pattern20)"/>
+<rect x="8" y="530" width="25" height="25" fill="url(#pattern21)"/>
 <rect x="0.5" y="0.5" width="96" height="1796" rx="4.5" stroke="#9747FF" stroke-dasharray="10 5"/>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
