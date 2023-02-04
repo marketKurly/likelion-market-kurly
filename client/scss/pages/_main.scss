@@ -110,7 +110,7 @@ $main_container_width: 1050px;
   justify-content: center;
 }
 
-//today-recomend-product slide 2
+//product slide 1
 .today-recomend-product {
   display: flex;
   justify-content: center;
@@ -133,6 +133,7 @@ $main_container_width: 1050px;
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
+      position: relative;
     }
   }
 }
@@ -179,25 +180,26 @@ $main_container_width: 1050px;
 }
 
 //swiper2 화살표 위치
-.swiper2 .swiper-button-next {
+.today-recomend-product .swiper-button-next {
   position: absolute;
   width: 50px;
   height: 50px;
   right: -30px;
-  top: calc(50% - 70px);
-  background: url('/client/css/img/Icon/Arrow.svg') 50% 50%
-    no-repeat;
+  top: calc(50% - 60px);
+  background: url('/client/css/img/Icon/Arrow-white.svg');
+  background-size: contain;
   transform: rotate(180deg);
   margin: 10px 10px;
 }
 
-.swiper2 .swiper-button-prev {
+.today-recomend-product .swiper-button-prev {
   position: absolute;
   width: 50px;
   height: 50px;
   left: -30px;
-  top: calc(50% - 70px);
-  background-image: url('/client/css/img/Icon/Arrow.svg');
+  top: calc(50% - 60px);
+  background: url('/client/css/img/Icon/Arrow-white.svg');
+  background-size: contain;
   margin: 10px 10px;
 }
 
@@ -211,7 +213,7 @@ $main_container_width: 1050px;
   }
 }
 
-// good-price-product swiper 3
+// product slide 2
 .good-price-product {
   display: flex;
   justify-content: center;
@@ -236,28 +238,6 @@ $main_container_width: 1050px;
       justify-content: space-between;
     }
   }
-}
-
-.swiper3 .swiper-button-next {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  right: -30px;
-  top: calc(50% - 70px);
-  background: url('/client/css/img/Icon/Arrow.svg') 50% 50%
-    no-repeat;
-  transform: rotate(180deg);
-  margin: 10px 10px;
-}
-
-.swiper3 .swiper-button-prev {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  left: -30px;
-  top: calc(50% - 70px);
-  background-image: url('/client/css/img/Icon/Arrow.svg');
-  margin: 10px 10px;
 }
 
 // ad 팝업창
