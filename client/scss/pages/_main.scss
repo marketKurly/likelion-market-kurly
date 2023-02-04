@@ -178,29 +178,28 @@ $main_container_width: 1050px;
   }
 }
 
-// //swiper2 화살표 위치
-// .swiper2 .swiper-button-next {
-//   position: absolute;
-//   width: 50px;
-//   height: 50px;
-//   right: -30px;
-//   top: calc(50% - 70px);
-//   background: url('/client/css/img/Icon/Arrow.svg') 50% 50%
-//     no-repeat;
-//   transform: rotate(180deg);
-//   margin: 10px 10px;
-// }
+//swiper2 화살표 위치
+.swiper2 .swiper-button-next {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: -30px;
+  top: calc(50% - 70px);
+  background: url('/client/css/img/Icon/Arrow.svg') 50% 50%
+    no-repeat;
+  transform: rotate(180deg);
+  margin: 10px 10px;
+}
 
-// .swiper2 .swiper-button-prev {
-//   position: absolute;
-//   width: 50px;
-//   height: 50px;
-//   left: -30px;
-//   top: calc(50% - 70px);
-//   background: url('/client/css/img/Icon/Arrow.svg') 50% 50%
-//     no-repeat;
-//   margin: 10px 10px;
-// }
+.swiper2 .swiper-button-prev {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: -30px;
+  top: calc(50% - 70px);
+  background-image: url('/client/css/img/Icon/Arrow.svg');
+  margin: 10px 10px;
+}
 
 //line benner
 .line-banner {

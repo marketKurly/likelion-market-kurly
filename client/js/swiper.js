@@ -26,7 +26,7 @@ $('.swiper1 .swiper-slide').on('mouseenter', function () {
     'buttonhidden'
   );
 });
-$('.swiper1 .swiper-slide').on('mouseleave', function () {
+$('.swiper1').on('mouseleave', function () {
   mainBannerSwiper.autoplay.start();
   $('.swiper1 .swiper-button-next').removeClass(
     'buttonhidden'
