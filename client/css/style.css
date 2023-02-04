@@ -1350,6 +1350,7 @@ table {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  position: relative;
 }
 
 .swiper-product {
@@ -1391,23 +1392,23 @@ table {
   color: #333333;
 }
 
-.swiper2 .swiper-button-next {
+.today-recomend-product .swiper-button-next {
   position: absolute;
   width: 50px;
   height: 50px;
   right: -30px;
-  top: calc(50% - 70px);
-  background: url("/client/css/img/Icon/Arrow.svg") 50% 50% no-repeat;
+  top: calc(50% - 60px);
+  background: url("/client/css/img/Icon/Arrow.svg");
   transform: rotate(180deg);
   margin: 10px 10px;
 }
 
-.swiper2 .swiper-button-prev {
+.today-recomend-product .swiper-button-prev {
   position: absolute;
   width: 50px;
   height: 50px;
   left: -30px;
-  top: calc(50% - 70px);
+  top: calc(50% - 60px);
   background-image: url("/client/css/img/Icon/Arrow.svg");
   margin: 10px 10px;
 }
