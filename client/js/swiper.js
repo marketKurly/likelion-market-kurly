@@ -46,8 +46,8 @@ let todayRecomendProductSwiper = new Swiper('.swiper2', {
     type: 'fraction',
   },
   navigation: {
-    nextEl: '.swiper2 .swiper-button-next',
-    prevEl: '.swiper2 .swiper-button-prev',
+    nextEl: '.today-recomend-product .swiper-button-next',
+    prevEl: '.today-recomend-product .swiper-button-prev',
   },
 });
 
@@ -61,7 +61,7 @@ let googPriceProductSwiper = new Swiper('.swiper3', {
     type: 'fraction',
   },
   navigation: {
-    nextEl: '.swiper3 .swiper-button-next',
-    prevEl: '.swiper3 .swiper-button-prev',
+    nextEl: '.good-price-product .swiper-button-next',
+    prevEl: '.good-price-product .swiper-button-prev',
   },
 });
