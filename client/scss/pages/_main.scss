@@ -50,7 +50,7 @@ $main_container_width: 1050px;
 // swiper-button 에 기본적으로 있는 화살표를 지워준다.
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  // display: none;
+  display: none;
 }
 
 // main banner swiper1
@@ -176,6 +176,30 @@ $main_container_width: 1050px;
       color: $content;
     }
   }
+}
+
+//swiper2 화살표 위치
+.swiper2 .swiper-button-next {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: -30px;
+  top: calc(50% - 70px);
+  background: url('/client/css/img/Icon/Arrow.svg') 50% 50%
+    no-repeat;
+  transform: rotate(180deg);
+  margin: 10px 10px;
+}
+
+.swiper2 .swiper-button-prev {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: -30px;
+  top: calc(50% - 70px);
+  background: url('/client/css/img/Icon/Arrow.svg') 50% 50%
+    no-repeat;
+  margin: 10px 10px;
 }
 
 //line benner
