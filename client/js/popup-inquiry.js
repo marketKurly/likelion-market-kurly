@@ -2,17 +2,30 @@ import {
   getNode,
   attr,
   toggleClass,
+  enableElement,
+  disableElement,
 } from '../lib/index.js';
 
 const title = getNode('.title');
 const contents = getNode('.contents');
 const counter = getNode('#counter');
+const sendButton = getNode('#send');
 const titleTextField = getNode('#content32');
 const contentTextField = getNode('#content37');
 
 function clearText(target) {
   target.value = '';
 }
+
+$('#content37').keyup(function (e) {
+  let content = $(this).val();
+  $('#counter').text(content.length + ' / 5,000');
+
+  if (content.length > 5000) {
+    $(this).val(content.substring(0, 5000));
+    $('#textLengthCheck').html('(5,000 / 5,000)');
+  }
+});
 
 const handler = (e) => {
   let target = e.target;
@@ -50,34 +63,19 @@ const handler = (e) => {
 
 contents.addEventListener('click', handler);
 
-/* const changeColor = (e) => {
-  if (target1.dataset.name === 'send') {
-    if (
-      titleTextField.value != null &&
-      contentTextField.value != null
-    ) {
-      target1.style.background = '#5f0080';
-      enableElement(target1);
-    }
+/* 등록 버튼 색상 바꾸기 */
+$(sendButton).ready(function changeColor(e) {
+  let title = $('#content32').val();
+  let content = $('#content37').val();
+
+  if (title.length >= 1 && content.length >= 1) {
+    sendButton.style.background = '#5f0080';
+    sendButton.style.cursor = 'pointer';
+    enableElement(sendButton);
+  } else {
+    sendButton.style.background = '#e1e1e1';
+    sendButton.style.cursor = 'default';
   }
-};
 
-contents.addEventListener('input', changeColor); */
-
-/* contentTextField.addEventListener('keydown', (e) => {
-  let content = contentTextField.value;
-
-  counter.text('총' + content.length + '/ 5000');
-}); */
-
-$('#content37').keyup(function (e) {
-  let len = 0;
-
-  let content = $(this).val();
-  $('#counter').text(content.length + ' / 5,000');
-
-  if (content.length > 5000) {
-    $(this).val(content.substring(0, 5000));
-    $('#textLengthCheck').html('(5,000 / 5,000)');
-  }
+  contents.addEventListener('change', changeColor);
 });
