@@ -50,7 +50,7 @@ $main_container_width: 1050px;
 // swiper-button 에 기본적으로 있는 화살표를 지워준다.
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  display: none;
+  // display: none;
 }
 
 // main banner swiper1

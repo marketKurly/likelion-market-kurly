@@ -1272,11 +1272,6 @@ table {
   object-fit: cover;
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  display: none;
-}
-
 .Main-banner {
   width: 100%;
   height: 370px;
