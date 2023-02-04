@@ -1398,7 +1398,8 @@ table {
   height: 50px;
   right: -30px;
   top: calc(50% - 60px);
-  background: url("/client/css/img/Icon/Arrow.svg");
+  background: url("/client/css/img/Icon/Arrow-white.svg");
+  background-size: contain;
   transform: rotate(180deg);
   margin: 10px 10px;
 }
@@ -1409,7 +1410,8 @@ table {
   height: 50px;
   left: -30px;
   top: calc(50% - 60px);
-  background-image: url("/client/css/img/Icon/Arrow.svg");
+  background: url("/client/css/img/Icon/Arrow-white.svg");
+  background-size: contain;
   margin: 10px 10px;
 }
 
