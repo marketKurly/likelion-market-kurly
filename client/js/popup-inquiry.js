@@ -74,7 +74,7 @@ $('#content37').keyup(function (e) {
   let len = 0;
 
   let content = $(this).val();
-  $('#counter').text(content.length + '/ 5,000');
+  $('#counter').text(content.length + ' / 5,000');
 
   if (content.length > 5000) {
     $(this).val(content.substring(0, 5000));
