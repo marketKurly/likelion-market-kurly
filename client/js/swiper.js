@@ -38,9 +38,9 @@ $('.swiper1 .swiper-slide').on('mouseleave', function () {
 
 // today-recomend-product swiper2
 let todayRecomendProductSwiper = new Swiper('.swiper2', {
-  // slidesPerView: '4', // 한 슬라이드에 보여줄 갯수
-  // spaceBetween: 10, // 슬라이드 사이 여백
-  // slidesPerGroup: 4, // 그룹으로 묶을 수, slidesPerView 와 같은 값을 지정하는게 좋음
+  slidesPerView: '4', // 한 슬라이드에 보여줄 갯수
+  spaceBetween: 10, // 슬라이드 사이 여백
+  slidesPerGroup: 4, // 그룹으로 묶을 수, slidesPerView 와 같은 값을 지정하는게 좋음
   pagination: {
     el: '.swiper2 .swiper-pagination',
     type: 'fraction',
