@@ -1787,14 +1787,14 @@ table {
 .popup-inquiry__container__main__secret--check input {
   width: 1px;
   height: 1px;
-  overflow: hidden;
-  position: absolute;
+  display: none;
 }
 .popup-inquiry__container__main__secret--check img {
   display: inline-block;
   margin-right: 12px;
   width: 24px;
   height: 24px;
+  background: url("checkbox.svg");
 }
 .popup-inquiry__container__main__secret--check span {
   font-size: 14px;

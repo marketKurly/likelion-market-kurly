@@ -149,8 +149,7 @@
           input {
             width: 1px;
             height: 1px;
-            overflow: hidden;
-            position: absolute;
+            display: none;
           }
 
           img {
@@ -158,6 +157,8 @@
             margin-right: 12px;
             width: 24px;
             height: 24px;
+            background: url('checkbox.svg');
+            //   no-repeat;
           }
 
           span {
