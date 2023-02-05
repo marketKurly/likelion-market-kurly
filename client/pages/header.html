@@ -1,311 +1,271 @@
-<!DOCTYPE html>
-<html lang="ko-KR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      as="style"
-      crossorigin
-      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css"
-    />
-    <link rel="stylesheet" href="../css/style.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.6.3.js"
-      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="../js/popup.js"></script>
-    <script type="module" src="../js/main.js"></script>
-    <title>marketKarly</title>
-  </head>
+<!-- 탑 ad -->
+<div class="topbanner">
+  <div class="topbanner__inner">
+    <a href="../css/"
+      >지금 가입하고 인기상품 <strong>100원</strong>에
+      받아가세요!</a
+    >
+    <button class="topbanner__close">
+      <img
+        src="../css/img/Icon/Cancel.svg"
+        alt="광고 닫기"
+      />
+    </button>
+  </div>
+</div>
 
-  <body>
-    <!-- 탑 ad -->
-    <div class="topbanner">
-      <div class="topbanner__inner">
-        <a href="../css/"
-          >지금 가입하고 인기상품 <strong>100원</strong>에
-          받아가세요!</a
+<!-- header -->
+<header class="header">
+  <div class="header__inner">
+    <h1 class="header__logo">
+      <a href="#">
+        <img
+          src="../../client/css/img/Icon/Main.svg"
+          alt="market kurly"
+        />
+      </a>
+    </h1>
+    <ul class="header__member">
+      <li class="header__member__list">
+        <a href="/">회원가입</a>
+      </li>
+      <li class="header__member__list">
+        <span
+          class="header__member__list__divider"
+          aria-hidden="true"
         >
-        <button class="topbanner__close">
-          <img
-            src="../css/img/Icon/Cancel.svg"
-            alt="광고 닫기"
-          />
-        </button>
-      </div>
-    </div>
-
-    <!-- header -->
-    <header class="header">
-      <div class="header__inner">
-        <h1 class="header__logo">
-          <a href="#">
-            <img
-              src="../../client/css/img/Icon/Main.svg"
-              alt="market kurly"
-            />
-          </a>
-        </h1>
-        <ul class="header__member">
-          <li class="header__member__list">
-            <a href="/">회원가입</a>
-          </li>
-          <li class="header__member__list">
-            <span
-              class="header__member__list__divider"
-              aria-hidden="true"
-            >
-              <img
-                src="../../client/css/img/Icon/Bar.svg"
-                alt=""
-                srcset=""
-              />
-            </span>
-            <a href="/">로그인</a>
-          </li>
-          <li class="header__member__list">
-            <span
-              class="header__member__list__divider"
-              aria-hidden="true"
-            >
-              <img
-                src="../../client/css/img/Icon/Bar.svg"
-                alt=""
-                srcset=""
-              />
-            </span>
-            <a href="/">고객센터</a>
-            <span
-              class="header__member__list__divider"
-              aria-hidden="true"
-            >
-              <img
-                src="../../client/css/img/Icon/Down.svg"
-                alt=""
-                srcset=""
-              />
-            </span>
-          </li>
-        </ul>
-        <h2
-          class="header__pannel header__pannel__market header__pannel--active"
-        >
-          <a href="#">마켓칼리</a>
-        </h2>
-        <div class="header__pannel header__pannel__divider">
           <img
             src="../../client/css/img/Icon/Bar.svg"
             alt=""
             srcset=""
           />
-        </div>
-        <h2
-          class="header__pannel header__pannel__beauty header__pannel--new"
+        </span>
+        <a href="/">로그인</a>
+      </li>
+      <li class="header__member__list">
+        <span
+          class="header__member__list__divider"
+          aria-hidden="true"
         >
-          <a href="#">뷰티칼리</a>
-        </h2>
-
-        <fieldset class="header__search__fieldset">
-          <legend>추가 입력</legend>
-          <label for="header-search" class="a11y-hidden">
-            search 입력란
-          </label>
-          <input
-            type="text"
-            id="header-search"
-            class="header__search__field"
-            placeholder="검색어를 입력해주세요"
+          <img
+            src="../../client/css/img/Icon/Bar.svg"
+            alt=""
+            srcset=""
           />
-          <button class="header__search__button">
-            <img
-              src="../../client/css/img/Icon/Search.svg"
-              alt="search button"
-            />
-          </button>
-        </fieldset>
-        <ul class="header__move">
-          <li class="header__move__list">
-            <a href="#">
-              <img
-                src="../../client/css/img/Icon/Location.svg"
-                alt="배송지 등록하기 "
-              />
-            </a>
-          </li>
-          <li class="header__move__list">
-            <a href="#">
-              <img
-                src="../../client/css/img/Icon/Heart.svg"
-                alt="관심목록"
-              />
-            </a>
-          </li>
-          <li class="header__move__list">
-            <a href="#">
-              <img
-                src="../../client/css/img/Icon/Cart-1.svg"
-                alt="장바구니"
-              />
-            </a>
-          </li>
+        </span>
+        <a href="/">고객센터</a>
+        <span
+          class="header__member__list__divider"
+          aria-hidden="true"
+        >
+          <img
+            src="../../client/css/img/Icon/Down.svg"
+            alt=""
+            srcset=""
+          />
+        </span>
+      </li>
+    </ul>
+    <h2
+      class="header__pannel header__pannel__market header__pannel--active"
+    >
+      <a href="#">마켓칼리</a>
+    </h2>
+    <div class="header__pannel header__pannel__divider">
+      <img
+        src="../../client/css/img/Icon/Bar.svg"
+        alt=""
+        srcset=""
+      />
+    </div>
+    <h2
+      class="header__pannel header__pannel__beauty header__pannel--new"
+    >
+      <a href="#">뷰티칼리</a>
+    </h2>
+
+    <fieldset class="header__search__fieldset">
+      <legend>추가 입력</legend>
+      <label for="header-search" class="a11y-hidden">
+        search 입력란
+      </label>
+      <input
+        type="text"
+        id="header-search"
+        class="header__search__field"
+        placeholder="검색어를 입력해주세요"
+      />
+      <button class="header__search__button">
+        <img
+          src="../../client/css/img/Icon/Search.svg"
+          alt="search button"
+        />
+      </button>
+    </fieldset>
+    <ul class="header__move">
+      <li class="header__move__list">
+        <a href="#">
+          <img
+            src="../../client/css/img/Icon/Location.svg"
+            alt="배송지 등록하기 "
+          />
+        </a>
+      </li>
+      <li class="header__move__list">
+        <a href="#">
+          <img
+            src="../../client/css/img/Icon/Heart.svg"
+            alt="관심목록"
+          />
+        </a>
+      </li>
+      <li class="header__move__list">
+        <a href="#">
+          <img
+            src="../../client/css/img/Icon/Cart-1.svg"
+            alt="장바구니"
+          />
+        </a>
+      </li>
+    </ul>
+    <nav class="nav">
+      <h3 class="nav__header">
+        <button class="nav__header__button">
+          <div class="icon-menu">카테고리</div>
+        </button>
+      </h3>
+      <div class="nav__category__wrapper">
+        <ul class="nav__category">
+          <a href="#"
+            ><li class="nav__category--gift">
+              선물하기
+            </li></a
+          >
+          <a href="#"
+            ><li class="nav__category--vegetable">
+              채소
+            </li></a
+          >
+          <a href="#"
+            ><li class="nav__category--fruit">
+              과일 견과 쌀
+            </li></a
+          >
+          <a href="#"
+            ><li class="nav__category--fish">
+              수산 해산건 어물
+            </li></a
+          >
+          <a href="#"
+            ><li class="nav__category--meat">
+              정육 계란
+            </li></a
+          >
+          <a href="#"
+            ><li class="nav__category--main-meal">
+              국 반찬 메인요리
+            </li></a
+          >
+          <a href="#"
+            ><li class="nav__category--simple-meal">
+              샐러드 간편식
+            </li></a
+          >
+          <a href="#"
+            ><li class="nav__category--nuddle">
+              면 양념 오일
+            </li></a
+          >
+          <a href="#"
+            ><li class="nav__category--beverage">
+              생수 음료 우유 커피
+            </li></a
+          >
+          <a href="#"
+            ><li class="nav__category--snack">
+              간식 과자 떡
+            </li></a
+          >
+          <a href="#"
+            ><li class="nav__category--bakery">
+              베이커리 치즈 델리
+            </li></a
+          >
+          <a href="#"
+            ><li class="nav__category--health-meal">
+              건강식품
+            </li></a
+          >
+          <a href="#"
+            ><li class="nav__category--wine">와인</li></a
+          >
+          <a href="#"
+            ><li class="nav__category--traditional-liquor">
+              전통주
+            </li></a
+          >
+          <a href="#"
+            ><li class="nav__category--daily-supplies">
+              생활용품 리빙 캠핑
+            </li></a
+          >
+          <a href="#"
+            ><li class="nav__category--skin-care">
+              스킨케어 메이크업
+            </li></a
+          >
+          <a href="#"
+            ><li class="nav__category--body">
+              헤어 바디 구강
+            </li></a
+          >
+          <a href="#"
+            ><li class="nav__category--kitchenware">
+              주방용품
+            </li></a
+          >
+          <a href="#"
+            ><li class="nav__category--home-appliances">
+              가전제품
+            </li></a
+          >
+          <a href="#"
+            ><li class="nav__category--pet">반려동물</li></a
+          >
+          <a href="#"
+            ><li class="nav__category--baby">
+              베이비 키즈 완구
+            </li></a
+          >
+          <a href="#"
+            ><li class="nav__category--travel-ticket">
+              여행 티켓
+            </li></a
+          >
         </ul>
-        <nav class="nav">
-          <h3 class="nav__header">
-            <button class="nav__header__button">
-              <div class="icon-menu">카테고리</div>
-            </button>
-          </h3>
-          <div class="nav__category__wrapper">
-            <ul class="nav__category">
-              <a href="#"
-                ><li class="nav__category--gift">
-                  선물하기
-                </li></a
-              >
-              <a href="#"
-                ><li class="nav__category--vegetable">
-                  채소
-                </li></a
-              >
-              <a href="#"
-                ><li class="nav__category--fruit">
-                  과일 견과 쌀
-                </li></a
-              >
-              <a href="#"
-                ><li class="nav__category--fish">
-                  수산 해산건 어물
-                </li></a
-              >
-              <a href="#"
-                ><li class="nav__category--meat">
-                  정육 계란
-                </li></a
-              >
-              <a href="#"
-                ><li class="nav__category--main-meal">
-                  국 반찬 메인요리
-                </li></a
-              >
-              <a href="#"
-                ><li class="nav__category--simple-meal">
-                  샐러드 간편식
-                </li></a
-              >
-              <a href="#"
-                ><li class="nav__category--nuddle">
-                  면 양념 오일
-                </li></a
-              >
-              <a href="#"
-                ><li class="nav__category--beverage">
-                  생수 음료 우유 커피
-                </li></a
-              >
-              <a href="#"
-                ><li class="nav__category--snack">
-                  간식 과자 떡
-                </li></a
-              >
-              <a href="#"
-                ><li class="nav__category--bakery">
-                  베이커리 치즈 델리
-                </li></a
-              >
-              <a href="#"
-                ><li class="nav__category--health-meal">
-                  건강식품
-                </li></a
-              >
-              <a href="#"
-                ><li class="nav__category--wine">
-                  와인
-                </li></a
-              >
-              <a href="#"
-                ><li
-                  class="nav__category--traditional-liquor"
-                >
-                  전통주
-                </li></a
-              >
-              <a href="#"
-                ><li class="nav__category--daily-supplies">
-                  생활용품 리빙 캠핑
-                </li></a
-              >
-              <a href="#"
-                ><li class="nav__category--skin-care">
-                  스킨케어 메이크업
-                </li></a
-              >
-              <a href="#"
-                ><li class="nav__category--body">
-                  헤어 바디 구강
-                </li></a
-              >
-              <a href="#"
-                ><li class="nav__category--kitchenware">
-                  주방용품
-                </li></a
-              >
-              <a href="#"
-                ><li class="nav__category--home-appliances">
-                  가전제품
-                </li></a
-              >
-              <a href="#"
-                ><li class="nav__category--pet">
-                  반려동물
-                </li></a
-              >
-              <a href="#"
-                ><li class="nav__category--baby">
-                  베이비 키즈 완구
-                </li></a
-              >
-              <a href="#"
-                ><li class="nav__category--travel-ticket">
-                  여행 티켓
-                </li></a
-              >
-            </ul>
-          </div>
-          <ul class="nav__sub-menu">
-            <li class="nav__sub-menu__list">
-              <a href="#">신상품</a>
-            </li>
-            <li class="nav__sub-menu__list">
-              <a href="#">베스트</a>
-            </li>
-            <li class="nav__sub-menu__list">
-              <a href="#">알뜰쇼핑</a>
-            </li>
-            <li class="nav__sub-menu__list">
-              <a href="#">특가/혜택</a>
-            </li>
-          </ul>
-          <a href="#" class="nav__notice">
-            <span class="nav__notice__content--purple"
-              >샛별·택배</span
-            >
-            <span class="nav__notice__content--pure"
-              >배송안내</span
-            >
-          </a>
-        </nav>
       </div>
-    </header>
-  </body>
-</html>
+      <ul class="nav__sub-menu">
+        <li class="nav__sub-menu__list">
+          <a href="#">신상품</a>
+        </li>
+        <li class="nav__sub-menu__list">
+          <a href="#">베스트</a>
+        </li>
+        <li class="nav__sub-menu__list">
+          <a href="#">알뜰쇼핑</a>
+        </li>
+        <li class="nav__sub-menu__list">
+          <a href="#">특가/혜택</a>
+        </li>
+      </ul>
+      <a href="#" class="nav__notice">
+        <span class="nav__notice__content--purple"
+          >샛별·택배</span
+        >
+        <span class="nav__notice__content--pure"
+          >배송안내</span
+        >
+      </a>
+    </nav>
+  </div>
+</header>

@@ -19,7 +19,6 @@
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css"
     />
     <script
-      defer
       src="https://code.jquery.com/jquery-3.6.3.js"
       integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
       crossorigin="anonymous"
@@ -34,13 +33,29 @@
   </head>
 
   <body>
-    <!-- 헤더 -->
+    <!-- 탑 ad -->
+    <div class="topbanner">
+      <div class="topbanner__inner">
+        <a href="../css/"
+          >지금 가입하고 인기상품 <strong>100원</strong>에
+          받아가세요!</a
+        >
+        <button class="topbanner__close">
+          <img
+            src="../css/img/Icon/Cancel.svg"
+            alt="광고 닫기"
+          />
+        </button>
+      </div>
+    </div>
+
+    <!-- header -->
     <header class="header">
       <div class="header__inner">
         <h1 class="header__logo">
           <a href="#">
             <img
-              src="../css/img/Icon/Main.svg"
+              src="../../client/css/img/Icon/Main.svg"
               alt="market kurly"
             />
           </a>
@@ -55,8 +70,8 @@
               aria-hidden="true"
             >
               <img
-                src="../css/img/Icon/Bar.svg"
-                alt="회원가입"
+                src="../../client/css/img/Icon/Bar.svg"
+                alt=""
                 srcset=""
               />
             </span>
@@ -68,8 +83,8 @@
               aria-hidden="true"
             >
               <img
-                src="../css/img/Icon/Bar.svg"
-                alt="로그인"
+                src="../../client/css/img/Icon/Bar.svg"
+                alt=""
                 srcset=""
               />
             </span>
@@ -79,8 +94,8 @@
               aria-hidden="true"
             >
               <img
-                src="../css/img/Icon/Down.svg"
-                alt="고객센터"
+                src="../../client/css/img/Icon/Down.svg"
+                alt=""
                 srcset=""
               />
             </span>
@@ -93,7 +108,7 @@
         </h2>
         <div class="header__pannel header__pannel__divider">
           <img
-            src="../css/img/Icon/Bar.svg"
+            src="../../client/css/img/Icon/Bar.svg"
             alt=""
             srcset=""
           />
@@ -117,7 +132,7 @@
           />
           <button class="header__search__button">
             <img
-              src="../css/img/Icon/Search.svg"
+              src="../../client/css/img/Icon/Search.svg"
               alt="search button"
             />
           </button>
@@ -126,7 +141,7 @@
           <li class="header__move__list">
             <a href="#">
               <img
-                src="../css/img/Icon/Location.svg"
+                src="../../client/css/img/Icon/Location.svg"
                 alt="배송지 등록하기 "
               />
             </a>
@@ -134,7 +149,7 @@
           <li class="header__move__list">
             <a href="#">
               <img
-                src="../css/img/Icon/Heart.svg"
+                src="../../client/css/img/Icon/Heart.svg"
                 alt="관심목록"
               />
             </a>
@@ -142,7 +157,7 @@
           <li class="header__move__list">
             <a href="#">
               <img
-                src="../css/img/Icon/Cart-1.svg"
+                src="../../client/css/img/Icon/Cart-1.svg"
                 alt="장바구니"
               />
             </a>
@@ -151,13 +166,7 @@
         <nav class="nav">
           <h3 class="nav__header">
             <button class="nav__header__button">
-              <img
-                src="../css/img/Icon/Hamburger.svg"
-                alt="category"
-                b
-                class="nav__header__button__burger"
-              />
-              카테고리
+              <div class="icon-menu">카테고리</div>
             </button>
           </h3>
           <div class="nav__category__wrapper">
@@ -292,7 +301,7 @@
           </ul>
           <a href="#" class="nav__notice">
             <span class="nav__notice__content--purple"
-              >샛별 택배</span
+              >샛별·택배</span
             >
             <span class="nav__notice__content--pure"
               >배송안내</span
@@ -313,10 +322,10 @@
           <nav class="navigator">
             <!-- 필터 -->
             <div>
-              <div class="accordion--filter__head">
-                <div class="accordion--filter__head__text">
-                  <span class="filter__text">필터</span>
-                  <button>
+              <ul class="accordion--filter__head">
+                <li class="accordion--filter__head__text">
+                  <p>필터</p>
+                  <button class="initialization">
                     <svg
                       width="12"
                       height="12"
@@ -339,10 +348,10 @@
                         stroke-linejoin="round"
                       ></path>
                     </svg>
-                    <span class="reset__text">초기화</span>
+                    초기화
                   </button>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
 
             <!-- 필터 제외한 아코디언 메뉴 -->
@@ -361,167 +370,158 @@
                 </button>
                 <!-- 카테고리 서브 시작 -->
                 <ul class="accordion--set__body">
-                  <li class="accordion__ltem">
-                    <a href="#"
-                      ><button>
-                        <img
-                          src="../css/img/Input/Check1.svg"
-                          alt="동그라미 체크표시"
-                        />
-                      </button>
-                      <span class="accordion__ltem__text"
+                  <li class="accordion__item">
+                    <input
+                      type="checkbox"
+                      name="food"
+                      value="#"
+                      class="check2"
+                      id="category-salad"
+                    />
+                    <label for="category-salad">
+                      <em></em>
+                      <span class="accordion__item__text"
                         >샐러드·간편식</span
                       >
-                      <span class="accordion__ltem__number"
-                        >1</span
-                      >
-                    </a>
+                    </label>
                   </li>
-                  <li class="accordion__ltem">
-                    <a href="#"
-                      ><button>
-                        <img
-                          src="../css/img/Input/Check1.svg"
-                          alt="동그라미 체크표시"
-                        />
-                      </button>
-                      <span class="accordion__ltem__text"
+                  <li class="accordion__item">
+                    <input
+                      type="checkbox"
+                      name="food"
+                      value="#"
+                      class="check2"
+                      id="category-soop"
+                    />
+                    <label for="category-soop">
+                      <em></em>
+                      <span class="accordion__item__text"
                         >국·반찬·메인요리</span
                       >
-                      <span class="accordion__ltem__number"
-                        >1</span
-                      >
-                    </a>
+                    </label>
                   </li>
-                  <li class="accordion__ltem">
-                    <a href="#"
-                      ><button>
-                        <img
-                          src="../css/img/Input/Check1.svg"
-                          alt="동그라미 체크표시"
-                        />
-                      </button>
-                      <span class="accordion__ltem__text"
+                  <li class="accordion__item">
+                    <input
+                      type="checkbox"
+                      name="food"
+                      value="#"
+                      class="check2"
+                      id="category-meat"
+                    />
+                    <label for="category-meat">
+                      <em></em>
+                      <span class="accordion__item__text"
                         >정육·계란</span
                       >
-                      <span class="accordion__ltem__number"
-                        >1</span
-                      >
-                    </a>
+                    </label>
                   </li>
-                  <li class="accordion__ltem">
-                    <a href="#"
-                      ><button>
-                        <img
-                          src="../css/img/Input/Check1.svg"
-                          alt="동그라미 체크표시"
-                        />
-                      </button>
-                      <span class="accordion__ltem__text"
+                  <li class="accordion__item">
+                    <input
+                      type="checkbox"
+                      name="food"
+                      value="#"
+                      class="check2"
+                      id="category-fruit"
+                    />
+                    <label for="category-fruit">
+                      <em></em>
+                      <span class="accordion__item__text"
                         >과일·견과·쌀</span
                       >
-                      <span class="accordion__ltem__number"
-                        >1</span
-                      >
-                    </a>
+                    </label>
                   </li>
-                  <li class="accordion__ltem">
-                    <a href="#"
-                      ><button>
-                        <img
-                          src="../css/img/Input/Check1.svg"
-                          alt="동그라미 체크표시"
-                        />
-                      </button>
-                      <span class="accordion__ltem__text"
+                  <li class="accordion__item">
+                    <input
+                      type="checkbox"
+                      name="food"
+                      value="#"
+                      class="check2"
+                      id="category-bakery"
+                    />
+                    <label for="category-bakery">
+                      <em></em>
+                      <span class="accordion__item__text"
                         >베이커리·치즈·델리</span
                       >
-                      <span class="accordion__ltem__number"
-                        >1</span
-                      >
-                    </a>
+                    </label>
                   </li>
-                  <li class="accordion__ltem">
-                    <a href="#"
-                      ><button>
-                        <img
-                          src="../css/img/Input/Check1.svg"
-                          alt="동그라미 체크표시"
-                        />
-                      </button>
-                      <span class="accordion__ltem__text"
+                  <li class="accordion__item">
+                    <input
+                      type="checkbox"
+                      name="food"
+                      value="#"
+                      class="check2"
+                      id="category-snack"
+                    />
+                    <label for="category-snack">
+                      <em></em>
+                      <span class="accordion__item__text"
                         >간식·과자·떡</span
                       >
-                      <span class="accordion__ltem__number"
-                        >1</span
-                      >
-                    </a>
+                    </label>
                   </li>
-                  <li class="accordion__ltem">
-                    <a href="#"
-                      ><button>
-                        <img
-                          src="../css/img/Input/Check1.svg"
-                          alt="동그라미 체크표시"
-                        />
-                      </button>
-                      <span class="accordion__ltem__text"
+                  <li class="accordion__item">
+                    <input
+                      type="checkbox"
+                      name="food"
+                      value="#"
+                      class="check2"
+                      id="category-water"
+                    />
+                    <label for="category-water">
+                      <em></em>
+                      <span class="accordion__item__text"
                         >생수·음료·우유·커피</span
                       >
-                      <span class="accordion__ltem__number"
-                        >1</span
-                      >
-                    </a>
+                    </label>
                   </li>
-                  <li class="accordion__ltem">
-                    <a href="#"
-                      ><button>
-                        <img
-                          src="../css/img/Input/Check1.svg"
-                          alt="동그라미 체크표시"
-                        />
-                      </button>
-                      <span class="accordion__ltem__text"
+                  <li class="accordion__item">
+                    <input
+                      type="checkbox"
+                      name="food"
+                      value="#"
+                      class="check2"
+                      id="category-seafood"
+                    />
+                    <label for="category-seafood">
+                      <em></em>
+                      <span class="accordion__item__text"
                         >수산·해산·건어물</span
                       >
-                      <span class="accordion__ltem__number"
-                        >1</span
-                      >
-                    </a>
+                    </label>
                   </li>
-                  <li class="accordion__ltem">
-                    <a href="#"
-                      ><button>
-                        <img
-                          src="../css/img/Input/Check1.svg"
-                          alt="동그라미 체크표시"
-                        />
-                      </button>
-                      <span class="accordion__ltem__text"
+                  <li class="accordion__item">
+                    <input
+                      type="checkbox"
+                      name="food"
+                      value="#"
+                      class="check2"
+                      id="category-noodle"
+                    />
+                    <label for="category-noodle">
+                      <em></em>
+                      <span class="accordion__item__text"
                         >면·양념·오일</span
                       >
-                      <span class="accordion__ltem__number"
-                        >1</span
-                      >
-                    </a>
+                    </label>
                   </li>
-                  <li class="accordion__ltem">
-                    <a href="#"
-                      ><button>
-                        <img
-                          src="../css/img/Input/Check1.svg"
-                          alt="동그라미 체크표시"
-                        />
-                      </button>
-                      <span class="accordion__ltem__text"
+
+                  <li class="accordion__item">
+                    <input
+                      type="checkbox"
+                      name="food"
+                      value="#"
+                      class="check2"
+                      id="category-hair"
+                    />
+                    <label for="food-hair">
+                      <em></em>
+                      <span class="accordion__item__text"
                         >헤어·바디·구강</span
                       >
-                      <span class="accordion__ltem__number"
-                        >1</span
-                      >
-                    </a>
+                    </label>
                   </li>
-                  <button class="accordion__ltem__viewmore">
+                  <button class="accordion__item__viewmore">
                     <span>카테고리 더보기</span>
                   </button>
                 </ul>
@@ -541,167 +541,157 @@
                 </button>
                 <!-- 브랜드 서브 시작 -->
                 <ul class="accordion--set__body">
-                  <li class="accordion__ltem">
-                    <a href="#"
-                      ><button>
-                        <img
-                          src="../css/img/Input/Check1.svg"
-                          alt="동그라미 체크표시"
-                        />
-                      </button>
-                      <span class="accordion__ltem__text"
+                  <li class="accordion__item">
+                    <input
+                      type="checkbox"
+                      name="food"
+                      value="#"
+                      class="check2"
+                      id="brand-bio"
+                    />
+                    <label for="brand-bio">
+                      <em></em>
+                      <span class="accordion__item__text"
                         >가농바이오</span
                       >
-                      <span class="accordion__ltem__number"
-                        >1</span
-                      >
-                    </a>
+                    </label>
                   </li>
-                  <li class="accordion__ltem">
-                    <a href="#"
-                      ><button>
-                        <img
-                          src="../css/img/Input/Check1.svg"
-                          alt="동그라미 체크표시"
-                        />
-                      </button>
-                      <span class="accordion__ltem__text"
+                  <li class="accordion__item">
+                    <input
+                      type="checkbox"
+                      name="food"
+                      value="#"
+                      class="check2"
+                      id="brand-potato"
+                    />
+                    <label for="brand-potato">
+                      <em></em>
+                      <span class="accordion__item__text"
                         >감자밭</span
                       >
-                      <span class="accordion__ltem__number"
-                        >1</span
-                      >
-                    </a>
+                    </label>
                   </li>
-                  <li class="accordion__ltem">
-                    <a href="#"
-                      ><button>
-                        <img
-                          src="../css/img/Input/Check1.svg"
-                          alt="동그라미 체크표시"
-                        />
-                      </button>
-                      <span class="accordion__ltem__text"
+                  <li class="accordion__item">
+                    <input
+                      type="checkbox"
+                      name="food"
+                      value="#"
+                      class="check2"
+                      id="brand-gangnam"
+                    />
+                    <label for="brand-gangnam">
+                      <em></em>
+                      <span class="accordion__item__text"
                         >강남면옥</span
                       >
-                      <span class="accordion__ltem__number"
-                        >1</span
-                      >
-                    </a>
+                    </label>
                   </li>
-                  <li class="accordion__ltem">
-                    <a href="#"
-                      ><button>
-                        <img
-                          src="../css/img/Input/Check1.svg"
-                          alt="동그라미 체크표시"
-                        />
-                      </button>
-                      <span class="accordion__ltem__text"
+                  <li class="accordion__item">
+                    <input
+                      type="checkbox"
+                      name="food"
+                      value="#"
+                      class="check2"
+                      id="brand-sundae"
+                    />
+                    <label for="brand-sundae">
+                      <em></em>
+                      <span class="accordion__item__text"
                         >강창구찹쌀진순대</span
                       >
-                      <span class="accordion__ltem__number"
-                        >1</span
-                      >
-                    </a>
+                    </label>
                   </li>
-                  <li class="accordion__ltem">
-                    <a href="#"
-                      ><button>
-                        <img
-                          src="../css/img/Input/Check1.svg"
-                          alt="동그라미 체크표시"
-                        />
-                      </button>
-                      <span class="accordion__ltem__text"
+                  <li class="accordion__item">
+                    <input
+                      type="checkbox"
+                      name="food"
+                      value="#"
+                      class="check2"
+                      id="brand-gomtang"
+                    />
+                    <label for="brand-gomtang">
+                      <em></em>
+                      <span class="accordion__item__text"
                         >거대곰탕</span
                       >
-                      <span class="accordion__ltem__number"
-                        >1</span
-                      >
-                    </a>
+                    </label>
                   </li>
-                  <li class="accordion__ltem">
-                    <a href="#"
-                      ><button>
-                        <img
-                          src="../css/img/Input/Check1.svg"
-                          alt="동그라미 체크표시"
-                        />
-                      </button>
-                      <span class="accordion__ltem__text"
+                  <li class="accordion__item">
+                    <input
+                      type="checkbox"
+                      name="food"
+                      value="#"
+                      class="check2"
+                      id="brand-gebang"
+                    />
+                    <label for="brand-gebang">
+                      <em></em>
+                      <span class="accordion__item__text"
                         >게방식당</span
                       >
-                      <span class="accordion__ltem__number"
-                        >1</span
-                      >
-                    </a>
+                    </label>
                   </li>
-                  <li class="accordion__ltem">
-                    <a href="#"
-                      ><button>
-                        <img
-                          src="../css/img/Input/Check1.svg"
-                          alt="동그라미 체크표시"
-                        />
-                      </button>
-                      <span class="accordion__ltem__text"
+                  <li class="accordion__item">
+                    <input
+                      type="checkbox"
+                      name="food"
+                      value="#"
+                      class="check2"
+                      id="brand-gyeongbokgung"
+                    />
+                    <label for="brand-gyeongbokgung">
+                      <em></em>
+                      <span class="accordion__item__text"
                         >경복궁</span
                       >
-                      <span class="accordion__ltem__number"
-                        >1</span
-                      >
-                    </a>
+                    </label>
                   </li>
-                  <li class="accordion__ltem">
-                    <a href="#"
-                      ><button>
-                        <img
-                          src="../css/img/Input/Check1.svg"
-                          alt="동그라미 체크표시"
-                        />
-                      </button>
-                      <span class="accordion__ltem__text"
+                  <li class="accordion__item">
+                    <input
+                      type="checkbox"
+                      name="food"
+                      value="#"
+                      class="check2"
+                      id="brand-meatsidedish"
+                    />
+                    <label for="brand-meatsidedish">
+                      <em></em>
+                      <span class="accordion__item__text"
                         >고기반찬</span
                       >
-                      <span class="accordion__ltem__number"
-                        >1</span
-                      >
-                    </a>
+                    </label>
                   </li>
-                  <li class="accordion__ltem">
-                    <a href="#"
-                      ><button>
-                        <img
-                          src="../css/img/Input/Check1.svg"
-                          alt="동그라미 체크표시"
-                        />
-                      </button>
-                      <span class="accordion__ltem__text"
+                  <li class="accordion__item">
+                    <input
+                      type="checkbox"
+                      name="food"
+                      value="#"
+                      class="check2"
+                      id="brand-goonadiet"
+                    />
+                    <label for="brand-goonadiet">
+                      <em></em>
+                      <span class="accordion__item__text"
                         >고온어다이어트</span
                       >
-                      <span class="accordion__ltem__number"
-                        >1</span
-                      >
-                    </a>
+                    </label>
                   </li>
-                  <li class="accordion__ltem">
-                    <a href="#"
-                      ><button>
-                        <img
-                          src="../css/img/Input/Check1.svg"
-                          alt="동그라미 체크표시"
-                        />
-                      </button>
-                      <span class="accordion__ltem__text"
+                  <li class="accordion__item">
+                    <input
+                      type="checkbox"
+                      name="food"
+                      value="#"
+                      class="check2"
+                      id="brand-kyotomarble"
+                    />
+                    <label for="brand-kyotomarble">
+                      <em></em>
+                      <span class="accordion__item__text"
                         >교토마블</span
                       >
-                      <span class="accordion__ltem__number"
-                        >1</span
-                      >
-                    </a>
+                    </label>
                   </li>
-                  <button class="accordion__ltem__viewmore">
+                  <button class="accordion__item__viewmore">
                     <span>브랜드 더보기</span>
                   </button>
                 </ul>
@@ -721,69 +711,65 @@
                 </button>
                 <!-- 가격 서브 시작 -->
                 <ul class="accordion--set__body">
-                  <li class="accordion__ltem">
-                    <a href="#"
-                      ><button>
-                        <img
-                          src="../css/img/Input/Check1.svg"
-                          alt="동그라미 체크표시"
-                        />
-                      </button>
-                      <span class="accordion__ltem__text"
-                        >7,607원 미만</span
+                  <li class="accordion__item">
+                    <input
+                      type="checkbox"
+                      name="food"
+                      value="#"
+                      class="check2"
+                      id="price-7500"
+                    />
+                    <label for="price-7500">
+                      <em></em>
+                      <span class="accordion__item__text"
+                        >7,500원미만</span
                       >
-                      <span class="accordion__ltem__number"
-                        >1</span
-                      >
-                    </a>
+                    </label>
                   </li>
-                  <li class="accordion__ltem">
-                    <a href="#"
-                      ><button>
-                        <img
-                          src="../css/img/Input/Check1.svg"
-                          alt="동그라미 체크표시"
-                        />
-                      </button>
-                      <span class="accordion__ltem__text"
-                        >7,607원 ~ 11,600원</span
+                  <li class="accordion__item">
+                    <input
+                      type="checkbox"
+                      name="food"
+                      value="#"
+                      class="check2"
+                      id="price-7500~11500"
+                    />
+                    <label for="price-7500~11500">
+                      <em></em>
+                      <span class="accordion__item__text"
+                        >7,500원 ~ 11,500원</span
                       >
-                      <span class="accordion__ltem__number"
-                        >1</span
-                      >
-                    </a>
+                    </label>
                   </li>
-                  <li class="accordion__ltem">
-                    <a href="#"
-                      ><button>
-                        <img
-                          src="../css/img/Input/Check1.svg"
-                          alt="동그라미 체크표시"
-                        />
-                      </button>
-                      <span class="accordion__ltem__text"
-                        >11,600원 ~ 18,300원</span
+                  <li class="accordion__item">
+                    <input
+                      type="checkbox"
+                      name="food"
+                      value="#"
+                      class="check2"
+                      id="price-11500~18216"
+                    />
+                    <label for="price-11500~18216">
+                      <em></em>
+                      <span class="accordion__item__text"
+                        >11,500원 ~ 18,216원</span
                       >
-                      <span class="accordion__ltem__number"
-                        >1</span
-                      >
-                    </a>
+                    </label>
                   </li>
-                  <li class="accordion__ltem">
-                    <a href="#"
-                      ><button>
-                        <img
-                          src="../css/img/Input/Check1.svg"
-                          alt="동그라미 체크표시"
-                        />
-                      </button>
-                      <span class="accordion__ltem__text"
-                        >18,300원 이상</span
+                  <li class="accordion__item">
+                    <input
+                      type="checkbox"
+                      name="food"
+                      value="#"
+                      class="check2"
+                      id="price-18216"
+                    />
+                    <label for="price-18216">
+                      <em></em>
+                      <span class="accordion__item__text"
+                        >18,216원 이상</span
                       >
-                      <span class="accordion__ltem__number"
-                        >1</span
-                      >
-                    </a>
+                    </label>
                   </li>
                   <button class="etc">
                     <span></span>
@@ -805,37 +791,35 @@
                 </button>
                 <!-- 혜택 서브 시작 -->
                 <ul class="accordion--set__body">
-                  <li class="accordion__ltem">
-                    <a href="#"
-                      ><button>
-                        <img
-                          src="../css/img/Input/Check1.svg"
-                          alt="동그라미 체크표시"
-                        />
-                      </button>
-                      <span class="accordion__ltem__text"
+                  <li class="accordion__item">
+                    <input
+                      type="checkbox"
+                      name="food"
+                      value="#"
+                      class="check2"
+                      id="benefits-discount"
+                    />
+                    <label for="benefits-discount">
+                      <em></em>
+                      <span class="accordion__item__text"
                         >할인상품</span
                       >
-                      <span class="accordion__ltem__number"
-                        >1</span
-                      >
-                    </a>
+                    </label>
                   </li>
-                  <li class="accordion__ltem">
-                    <a href="#"
-                      ><button>
-                        <img
-                          src="../css/img/Input/Check1.svg"
-                          alt="동그라미 체크표시"
-                        />
-                      </button>
-                      <span class="accordion__ltem__text"
+                  <li class="accordion__item">
+                    <input
+                      type="checkbox"
+                      name="food"
+                      value="#"
+                      class="check2"
+                      id="benefits-limited"
+                    />
+                    <label for="benefits-limited">
+                      <em></em>
+                      <span class="accordion__item__text"
                         >한정수량</span
                       >
-                      <span class="accordion__ltem__number"
-                        >1</span
-                      >
-                    </a>
+                    </label>
                   </li>
                   <button class="etc">
                     <span></span>
@@ -857,37 +841,35 @@
                 </button>
                 <!-- 유형 서브 시작 -->
                 <ul class="accordion--set__body">
-                  <li class="accordion__ltem">
-                    <a href="#"
-                      ><button>
-                        <img
-                          src="../css/img/Input/Check1.svg"
-                          alt="동그라미 체크표시"
-                        />
-                      </button>
-                      <span class="accordion__ltem__text"
-                        >Kurly Only</span
+                  <li class="accordion__item">
+                    <input
+                      type="checkbox"
+                      name="food"
+                      value="#"
+                      class="check2"
+                      id="type-kurlyonly"
+                    />
+                    <label for="type-kurlyonly">
+                      <em></em>
+                      <span class="accordion__item__text"
+                        >KurlyOnly</span
                       >
-                      <span class="accordion__ltem__number"
-                        >1</span
-                      >
-                    </a>
+                    </label>
                   </li>
-                  <li class="accordion__ltem">
-                    <a href="#"
-                      ><button>
-                        <img
-                          src="../css/img/Input/Check1.svg"
-                          alt="동그라미 체크표시"
-                        />
-                      </button>
-                      <span class="accordion__ltem__text"
+                  <li class="accordion__item">
+                    <input
+                      type="checkbox"
+                      name="food"
+                      value="#"
+                      class="check2"
+                      id="type-scarcityvalue"
+                    />
+                    <label for="type-scarcityvalue">
+                      <em></em>
+                      <span class="accordion__item__text"
                         >희소가치 프로젝트</span
                       >
-                      <span class="accordion__ltem__number"
-                        >1</span
-                      >
-                    </a>
+                    </label>
                   </li>
                   <button class="etc">
                     <span></span>
@@ -909,21 +891,22 @@
                 </button>
                 <!-- 특정상품 제외 서브 시작 -->
                 <ul class="accordion--set__body">
-                  <li class="accordion__ltem">
-                    <a href="#"
-                      ><button>
-                        <img
-                          src="../css/img/Input/Check1.svg"
-                          alt="동그라미 체크표시"
-                        />
-                      </button>
-                      <span class="accordion__ltem__text"
+                  <li class="accordion__item">
+                    <input
+                      type="checkbox"
+                      name="food"
+                      value="#"
+                      class="check2"
+                      id="Exckudingcertainproduct-pet"
+                    />
+                    <label
+                      for="Exckudingcertainproduct-pet"
+                    >
+                      <em></em>
+                      <span class="accordion__item__text"
                         >반려동물 상품</span
                       >
-                      <span class="accordion__ltem__number"
-                        >1</span
-                      >
-                    </a>
+                    </label>
                   </li>
                   <button class="etc">
                     <span></span>
