@@ -1020,8 +1020,8 @@ table {
 }
 .nav__header__button {
   padding: 10px 0;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 400;
   height: 100%;
 }
 .nav__header__button:hover {
@@ -1134,6 +1134,11 @@ table {
 .nav__sub-menu__list {
   padding: 12px 24px;
   font-size: 18px;
+  font-weight: 400;
+}
+.nav__sub-menu__list a:hover {
+  color: #5f0080;
+  text-decoration: underline;
 }
 .nav__notice {
   margin-top: 8px;
@@ -1148,9 +1153,11 @@ table {
 }
 .nav__notice__content--purple {
   color: #5f0080;
+  font-weight: 500;
 }
 .nav__notice__content--pure {
   color: #6b6b6b;
+  font-weight: 500;
 }
 
 .header {

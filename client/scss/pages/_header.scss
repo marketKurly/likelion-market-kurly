@@ -53,8 +53,8 @@
     height: 100%;
     &__button {
       padding: 10px 0;
-      font-size: 16px;
-      font-weight: 500;
+      font-size: 18px;
+      font-weight: 400;
       height: 100%;
     }
     &__button:hover {
@@ -191,6 +191,11 @@
     &__list {
       padding: 12px 24px;
       font-size: 18px;
+      font-weight: 400;
+    }
+    &__list a:hover {
+      color: $primary;
+      text-decoration: underline;
     }
   }
   &__notice {
@@ -206,9 +211,11 @@
     &__content {
       &--purple {
         color: $primary;
+        font-weight: 500;
       }
       &--pure {
         color: $gray-500;
+        font-weight: 500;
       }
     }
   }
