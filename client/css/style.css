@@ -1757,6 +1757,7 @@ table {
   height: 260px;
   border: 1px solid #a6a6a6;
   border-radius: 4px;
+  position: relative;
 }
 .popup-inquiry__container__main__content--input textarea {
   border: 0;
@@ -1767,6 +1768,46 @@ table {
   line-height: 21px;
   resize: none;
   padding: 15px 15px 20px 15px;
+  z-index: 1;
+}
+.popup-inquiry__container__main__content--input__placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 86%;
+  padding: 15px 15px 32px;
+  cursor: pointer;
+  z-index: 2;
+  color: #898989;
+  line-height: 20px;
+  font-size: 14px;
+  overflow-y: auto;
+  display: "";
+}
+.popup-inquiry__container__main__content--input__placeholder strong {
+  display: block;
+  font-weight: 500;
+  padding-bottom: 8px;
+}
+.popup-inquiry__container__main__content--input__placeholder ul + strong {
+  padding-top: 20px;
+}
+.popup-inquiry__container__main__content--input__placeholder p + strong {
+  padding-top: 20px;
+}
+.popup-inquiry__container__main__content--input__placeholder ul {
+  font-weight: 400;
+}
+.popup-inquiry__container__main__content--input__placeholder ul li:before {
+  content: "·";
+  padding-right: 5px;
+}
+.popup-inquiry__container__main__content--input__placeholder ul li {
+  padding-bottom: 4px;
+}
+.popup-inquiry__container__main__content--input__placeholder p {
+  color: #f03f40;
 }
 .popup-inquiry__container__main__content--input span {
   text-align: right;
@@ -1778,23 +1819,28 @@ table {
 .popup-inquiry__container__main__secret {
   margin-left: 85px;
   padding-top: 16px;
-}
-.popup-inquiry__container__main__secret--check {
-  position: relative;
   display: flex;
+  position: relative;
   align-content: center;
 }
-.popup-inquiry__container__main__secret--check input {
-  width: 1px;
-  height: 1px;
+.popup-inquiry__container__main__secret input[class=check] {
   display: none;
 }
-.popup-inquiry__container__main__secret--check img {
-  display: inline-block;
-  margin-right: 12px;
+.popup-inquiry__container__main__secret input[class=check] + label em {
   width: 24px;
   height: 24px;
-  background: url("checkbox.svg");
+  margin-right: 10px;
+  background: url("/client/css/img/input/Check1.svg") no-repeat;
+}
+.popup-inquiry__container__main__secret input[class=check]:checked + label em {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  background: url("/client/css/img/input/Check2.svg") no-repeat;
+}
+.popup-inquiry__container__main__secret--check {
+  display: flex;
+  align-content: center;
 }
 .popup-inquiry__container__main__secret--check span {
   font-size: 14px;

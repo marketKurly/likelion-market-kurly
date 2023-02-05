@@ -12,6 +12,7 @@ const counter = getNode('#counter');
 const sendButton = getNode('#send');
 const titleTextField = getNode('#content32');
 const contentTextField = getNode('#content37');
+const info = getNode('#info');
 
 function clearText(target) {
   target.value = '';
@@ -41,16 +42,19 @@ const handler = (e) => {
     }
   }
 
-  if (target.dataset.name === 'checkbox') {
-    // let img = (document.getElementById('checkbox').src =
-    //   '/assets/icons/Icon/checkbox_isSecret.svg');
-    // let src = img.src;
-    // console.log(src);
+  if (target.dataset.name === 'info') {
+    console.log('hit');
+    info.style.display = 'none';
+    contentTextField.focus();
+  } else {
+    // info.style.display = '';
   }
 
   if (target.dataset.name === 'send') {
-    console.log(titleTextField.value);
-    console.log(contentTextField.value);
+    // const submit = new Data();
+
+    console.log(titleTextField.data);
+    console.log(contentTextField.data);
   }
 
   if (target.dataset.name === 'cancel') {
@@ -75,7 +79,12 @@ $(sendButton).ready(function changeColor(e) {
   } else {
     sendButton.style.background = '#e1e1e1';
     sendButton.style.cursor = 'default';
+    disableElement(sendButton);
   }
 
   contents.addEventListener('change', changeColor);
 });
+
+function submitData(e) {}
+
+sendButton.addEventListener('submit', submitData);

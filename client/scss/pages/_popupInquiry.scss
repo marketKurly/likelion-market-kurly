@@ -115,6 +115,7 @@
           height: 260px;
           border: 1px solid $gray-300;
           border-radius: 4px;
+          position: relative;
 
           textarea {
             border: 0;
@@ -125,6 +126,54 @@
             line-height: 21px;
             resize: none;
             padding: 15px 15px 20px 15px;
+            z-index: 1;
+          }
+
+          &__placeholder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 86%;
+            padding: 15px 15px 32px;
+            cursor: pointer;
+            z-index: 2;
+            color: $gray-400;
+            line-height: 20px;
+            font-size: 14px;
+            overflow-y: auto;
+            display: '';
+
+            strong {
+              display: block;
+              font-weight: 500;
+              padding-bottom: 8px;
+            }
+
+            ul + strong {
+              padding-top: 20px;
+            }
+
+            p + strong {
+              padding-top: 20px;
+            }
+
+            ul {
+              font-weight: 400;
+
+              li:before {
+                content: '·';
+                padding-right: 5px;
+              }
+
+              li {
+                padding-bottom: 4px;
+              }
+            }
+
+            p {
+              color: $info-error;
+            }
           }
 
           span {
@@ -140,26 +189,33 @@
       &__secret {
         margin-left: 85px;
         padding-top: 16px;
+        display: flex;
+        position: relative;
+        align-content: center;
+
+        input[class='check'] {
+          display: none;
+        }
+
+        input[class='check'] + label em {
+          width: 24px;
+          height: 24px;
+          margin-right: 10px;
+          background: url('/client/css/img/input/Check1.svg')
+            no-repeat;
+        }
+
+        input[class='check']:checked + label em {
+          width: 24px;
+          height: 24px;
+          margin-right: 10px;
+          background: url('/client/css/img/input/Check2.svg')
+            no-repeat;
+        }
 
         &--check {
-          position: relative;
           display: flex;
           align-content: center;
-
-          input {
-            width: 1px;
-            height: 1px;
-            display: none;
-          }
-
-          img {
-            display: inline-block;
-            margin-right: 12px;
-            width: 24px;
-            height: 24px;
-            background: url('checkbox.svg');
-            //   no-repeat;
-          }
 
           span {
             font-size: 14px;
