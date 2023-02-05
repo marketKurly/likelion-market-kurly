@@ -1,0 +1,394 @@
+.register {
+  max-width: 1920px;
+  width: 1050px;
+  margin: 0 auto;
+  padding: 80px 205px;
+  @include flexboxCenter($direction: column);
+  &__header {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  > span {
+    @include flexboxCenter($justify: end, $items: end);
+    padding-bottom: 5px;
+    font-weight: 600;
+    font-size: 10px;
+    padding: 4px;
+    line-height: 150%;
+    width: 100%;
+    height: 44px;
+    position: relative;
+    border-bottom: 2px solid $black;
+  }
+  > span::before {
+    content: '*';
+    position: absolute;
+    font-size: 14px;
+    top: 23px;
+    right: 58px;
+    color: #f03f40;
+  }
+  &__form {
+    width: 100%;
+    border-bottom: 1px solid $black;
+    @include flexboxCenter(
+      $direction: column,
+      $justify: center,
+      $items: space-between
+    );
+    &__gender {
+      height: 84px;
+      padding-top: 20px;
+      @include flexboxCenter(
+        $direction: row,
+        $justify: start
+      );
+      gap: 8px;
+      > label {
+        padding-left: 4px;
+      }
+      &__label {
+        flex: 0 1 139px;
+        height: 44px;
+        font-size: 14px;
+        padding-left: 5px;
+        @include flexboxCenter($justify: start);
+        gap: 80px;
+        &__man,
+        &__woman,
+        &__none {
+          cursor: pointer;
+          width: auto;
+          font-size: 14px;
+          margin-right: 70px;
+        }
+      }
+      &__radio {
+        opacity: 0;
+      }
+      &__radio + label,
+      &__radio:checked + label {
+        position: relative;
+      }
+      &__radio + label::before {
+        content: '';
+        position: absolute;
+        width: 23px;
+        height: 23px;
+        left: -24px;
+        transform: translateY(-0.5px);
+        background: url('../css/img/Input/Radio.svg')
+          no-repeat -4px -6px / 31px;
+      }
+      &__radio:checked + label::before {
+        content: '';
+        position: absolute;
+        width: 23px;
+        height: 23px;
+        left: -24px;
+        background: url('../css/img/Input/Radio.svg')
+          no-repeat -4px -32px / 31px;
+      }
+    }
+    &__birthday {
+      > input[type='text'] {
+        height: 44px;
+        width: 333px;
+        text-align: center;
+      }
+    }
+    &__etc {
+      &__radio {
+        opacity: 0;
+      }
+      &__radio + label,
+      &__radio:checked + label {
+        position: relative;
+        cursor: pointer;
+      }
+      &__radio + label::before {
+        content: '';
+        position: absolute;
+        width: 23px;
+        height: 23px;
+        left: -24px;
+        transform: translateY(2px);
+        background: url('../css/img/Input/Radio.svg')
+          no-repeat -4px -6px / 31px;
+      }
+      &__radio:checked + label::before {
+        content: '';
+        position: absolute;
+        width: 23px;
+        height: 23px;
+        left: -24px;
+        background: url('../css/img/Input/Radio.svg')
+          no-repeat -4px -32px / 31px;
+      }
+    }
+    &__id,
+    &__pw,
+    &__re-pw,
+    &__name,
+    &__email,
+    &__phone,
+    &__address,
+    &__birthday,
+    &__etc {
+      height: 84px;
+      padding-top: 20px;
+      @include flexboxCenter(
+        $direction: row,
+        $justify: start
+      );
+      gap: 8px;
+      > label {
+        flex: 0 1 139px;
+        height: 44px;
+        font-size: 14px;
+        padding-left: 5px;
+        @include flexboxCenter($justify: start);
+      }
+      > input[type='text'],
+      > input[type='password'],
+      .register__form__address__button {
+        flex: 0 1 333px;
+        height: 44px;
+      }
+      > input[type='text'],
+      > input[type='password'],
+      > input[type='text']::placeholder,
+      > input[type='password']::placeholder {
+        font-size: 14px;
+        text-indent: 8px;
+      }
+      > button {
+        flex: 0 1 143px;
+        height: 44px;
+        border: 1.2px solid $primary;
+        border-radius: 3px;
+        color: $primary;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+    &__id,
+    &__pw,
+    &__re-pw,
+    &__name,
+    &__email,
+    &__phone,
+    &__address {
+      &__label {
+        position: relative;
+      }
+      &__label::after {
+        content: '*';
+        position: absolute;
+        font-size: 14px;
+        top: 8px;
+        left: 45px;
+        color: #f03f40;
+      }
+    }
+    &__id__label::after {
+      left: 45px;
+    }
+    &__pw__label::after {
+      left: 56px;
+    }
+    &__re-pw__label::after {
+      left: 83px;
+    }
+    &__name__label::after {
+      left: 33px;
+    }
+    &__email__label::after {
+      left: 45px;
+    }
+    &__phone__label::after {
+      left: 45px;
+    }
+    &__address__label::after {
+      left: 33px;
+    }
+    &__address__button {
+      position: relative;
+    }
+    &__address__button::after {
+      content: '배송지에 따라 상품 정보가 달라질 수 있습니다.';
+      position: absolute;
+      font-size: 10px;
+      font-weight: 400;
+      color: $black;
+      top: 48px;
+      left: 0px;
+    }
+  }
+  &__acceptance {
+    width: 100%;
+    border-bottom: 2px solid $gray-300;
+    padding: 20px 0;
+    display: grid;
+    grid-gap: 8px;
+    grid-template:
+      'label all .' 40px
+      '. agree .' 40px
+      '. private .' 40px
+      '. spam .' 40px
+      '. age .' 40px / 139px auto 60px;
+    &__label {
+      grid-area: label;
+      flex: 0 1 139px;
+      height: 44px;
+      font-size: 14px;
+      padding-left: 5px;
+      @include flexboxCenter($justify: start);
+      position: relative;
+    }
+    &__label::after {
+      content: '*';
+      position: absolute;
+      font-size: 14px;
+      top: 8px;
+      left: 81px;
+      color: #f03f40;
+    }
+    &__all {
+      grid-area: all;
+      font-size: 18px;
+      @include flexboxCenter(
+        $direction: column,
+        $justify: center,
+        $items: stretch
+      );
+      font-weight: 500;
+      padding-left: 32px;
+      position: relative;
+      cursor: pointer;
+      &__add {
+        font-size: 6px;
+        color: $gray-300;
+      }
+    }
+    &__all::before {
+      content: '';
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      left: 0;
+      top: 3px;
+      background: url('../css/img/Input/Check1.svg')
+        no-repeat;
+    }
+    &__agree::before,
+    &__private::before,
+    &__spam::before,
+    &__age::before {
+      content: '';
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      left: 0;
+      top: 6px;
+      background: url('../css/img/Input/Check1.svg')
+        no-repeat;
+    }
+    &__agree,
+    &__private,
+    &__spam,
+    &__age {
+      @include flexboxCenter($justify: space-between);
+      cursor: pointer;
+      position: relative;
+      padding-left: 32px;
+      font-size: 14px;
+      color: $gray-600;
+    }
+    &__agree {
+      grid-area: agree;
+    }
+    &__private {
+      grid-area: private;
+    }
+    &__spam {
+      grid-area: spam;
+    }
+    &__age {
+      grid-area: age;
+    }
+    &__agree > button,
+    &__private > button,
+    &__spam > button,
+    &__age > button {
+      position: relative;
+      font-size: 6px;
+      color: $primary;
+    }
+    &__agree > button::after,
+    &__private > button::after,
+    &__spam > button::after,
+    &__age > button::after {
+      content: '';
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      left: 44px;
+      background: url('../css/img/Icon/Arrow-1.svg')
+        no-repeat;
+    }
+  }
+  &__button {
+    @include flexboxCenter();
+    background-color: $primary;
+    color: $white;
+    width: 340px;
+    height: 54px;
+    margin: 40px 0;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+}
+
+// input[type='checkbox'] {
+// display: none;
+// }
+
+// input[type='checkbox'] + label {
+//   display: inline-block;
+//   cursor: pointer;
+//   position: relative;
+//   padding-left: 25px;
+//   margin-right: 15px;
+//   font-size: 13px;
+// }
+
+// input[type='checkbox'] + label:before {
+//   content: '';
+//   display: inline-block;
+
+//   width: 20px;
+//   height: 20px;
+
+//   margin-right: 10px;
+//   position: absolute;
+//   left: 0;
+//   bottom: 1px;
+//   background-color: #ccc;
+//   border-radius: 2px;
+//   box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.3),
+//     0px 1px 0px 0px rgba(255, 255, 255, 0.8);
+// }
+// input[type='checkbox']:checked + label:before {
+//   content: 'hi'; /* 체크모양 */
+//   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+//   font-size: 18px;
+//   font-weight: 800;
+//   color: #fff;
+//   background: #2f87c1;
+//   text-align: center;
+//   line-height: 18px;
+// }
