@@ -1,7 +1,6 @@
 import {
   getNode,
   attr,
-  toggleClass,
   enableElement,
   disableElement,
 } from '../lib/index.js';
@@ -14,10 +13,12 @@ const titleTextField = getNode('#content32');
 const contentTextField = getNode('#content37');
 const info = getNode('#info');
 
+/* 텍스트 지우는 함수 */
 function clearText(target) {
   target.value = '';
 }
 
+/* 실시간 글자 수 체크 */
 $('#content37').keyup(function (e) {
   let content = $(this).val();
   $('#counter').text(content.length + ' / 5,000');
@@ -28,6 +29,7 @@ $('#content37').keyup(function (e) {
   }
 });
 
+/* 메인 클릭 핸들러 */
 const handler = (e) => {
   let target = e.target;
 
@@ -43,11 +45,9 @@ const handler = (e) => {
   }
 
   if (target.dataset.name === 'info') {
-    console.log('hit');
     info.style.display = 'none';
     contentTextField.focus();
   } else {
-    // info.style.display = '';
   }
 
   if (target.dataset.name === 'send') {
