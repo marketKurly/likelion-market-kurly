@@ -15,13 +15,15 @@ const addCartCancleButton = getNode(
 
 // console.log(addCartPopup);
 
-const onClickshoppingCart = () => {
+const onClickshoppingCart = (e) => {
   // console.log('asd');
   // console.log(css(addCartPopup, 'display'));
   visibleElement(addCartPopup);
+  e.preventDefault();
 };
-const onClickaddCartCancleButton = () => {
+const onClickaddCartCancleButton = (e) => {
   invisibleElement(addCartPopup);
+  e.preventDefault();
 };
 
 shoppingCart.addEventListener('click', onClickshoppingCart);
