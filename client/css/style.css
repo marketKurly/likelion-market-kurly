@@ -967,6 +967,45 @@ table {
   font-style: normal;
 }
 
+.topbanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px;
+  gap: 4px;
+  height: 50px;
+  background: #5f0080;
+}
+
+.topbanner__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 72px;
+  isolation: isolate;
+  width: 1050px;
+  height: 42px;
+}
+
+.topbanner a {
+  display: block;
+  width: 284px;
+  height: 26px;
+  font-size: 16px;
+  line-height: 160%;
+  color: #ffffff;
+}
+
+.topbanner__close {
+  right: 22%;
+  position: absolute;
+  z-index: 100;
+  border: none;
+  background-color: inherit;
+}
+
 .nav {
   transform: translateY(-25px);
   display: flow-root;
@@ -985,10 +1024,8 @@ table {
   font-weight: 500;
   height: 100%;
 }
-.nav__header__button > img {
-  transform: translateY(1.5px);
-  padding-top: 3px;
-  padding-right: 10px;
+.nav__header__button:hover {
+  color: #5f0080;
 }
 .nav__category__wrapper {
   width: 250px;
@@ -1176,9 +1213,14 @@ table {
 }
 .header__pannel__market {
   left: 107px;
+  z-index: 1;
 }
 .header__pannel__beauty {
   left: 193px;
+  z-index: 1;
+}
+.header__pannel__beauty a:hover {
+  color: #5f0080;
 }
 .header__pannel--active {
   font-weight: 600;
@@ -1640,21 +1682,21 @@ table {
   justify-content: space-between;
 }
 
-.product {
+.swiper-product {
   display: block;
   width: 249px;
   text-decoration: none;
 }
-.product__image-container {
+.swiper-product__image-container {
   position: relative;
   width: 100%;
   height: 320px;
 }
-.product__image-container__tumbnail {
+.swiper-product__image-container__tumbnail {
   position: absolute;
   width: 100%;
 }
-.product__image-container__shopping-cart {
+.swiper-product__image-container__shopping-cart {
   position: absolute;
   left: 189px;
   top: 258px;
@@ -1663,7 +1705,7 @@ table {
   cursor: pointer;
   padding: 0;
 }
-.product__info__name {
+.swiper-product__info__name {
   height: 26px;
   font-size: 16px;
   line-height: 160%;
@@ -1672,7 +1714,7 @@ table {
   margin-top: 16px;
   color: #333333;
 }
-.product__info__price {
+.swiper-product__info__price {
   font-size: 21.328px;
   font-weight: 600;
   line-height: 150%;
@@ -1724,6 +1766,8 @@ table {
   display: flex;
   flex-flow: column wrap;
   box-shadow: 0px 8px 36px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  background-color: #ffffff;
 }
 .popup-ad a {
   height: 586px;
@@ -1732,11 +1776,9 @@ table {
   border-radius: 16px 16px 0 0;
 }
 .popup-ad__buttons {
-  background-color: #ffffff;
   height: 86px;
   display: flex;
   flex-flow: row nowrap;
-  border-radius: 0 0 16px 16px;
   font-size: 16px;
   font-weight: 400;
   line-height: 160%;
@@ -1745,7 +1787,6 @@ table {
   flex: 1;
   text-align: center;
   border: 0;
-  background-color: transparent;
 }
 .popup-ad__buttons__button1 {
   border-right: 1px solid #e1e1e1;
@@ -1884,6 +1925,13 @@ table {
   font-weight: 600;
   color: #ffffff;
   background-color: #5f0080;
+}
+
+.main_popup {
+  display: none;
+}
+.main_popup.on {
+  display: block;
 }
 
 .add-cart {
@@ -3000,7 +3048,6 @@ table {
 }
 
 .accordion--filter__head__text {
-  position: sticky;
   top: 0px;
   display: flex;
   background-color: rgb(255, 255, 255);
@@ -3031,41 +3078,44 @@ table {
   color: #a6a6a6;
 }
 
-.accordion--set {
+.accordion--set__item {
   font-size: 14px;
   columns: #333333;
-  height: 1660px;
 }
 
 .accordion--set__head {
   border-bottom: 1px solid #e1e1e1;
+}
+
+.accordion--set__head--button {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 52px;
+  overflow: hidden;
 }
 
-.frame70 {
-  display: block;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.frame70 span {
-  width: 200px;
+.head-name {
   display: flex;
   align-items: center;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  columns: #333333;
-  justify-content: space-between;
+  color: #333333;
+}
+
+.head-icon {
+  transform: rotate(0deg);
+  width: 12px;
+  height: 12px;
+  transition: transform 250ms ease-out 0s;
 }
 
 .accordion--set__body {
   max-height: 100vh;
+  opacity: 1;
+  transition: all 250ms cubic-bezier(0.83, 0, 0.17, 1) 0s;
 }
 
 .accordion__ltem {
@@ -3083,12 +3133,12 @@ table {
 .accordion__ltem button {
   display: flex;
   align-items: center;
+  margin-right: 8px;
 }
 
 .accordion__ltem button img {
-  width: 20px;
-  height: 20px;
-  fill: none;
+  width: 18px;
+  height: 18px;
 }
 
 .accordion__ltem__text {
@@ -3100,6 +3150,10 @@ table {
   overflow: hidden;
   word-break: break-all;
   white-space: normal;
+}
+
+.accordion__ltem__text:hover {
+  color: #5f0080;
 }
 
 .accordion__ltem__number {
@@ -3123,8 +3177,12 @@ table {
   margin-top: 20px;
 }
 
-.category--height {
-  margin-top: 5px;
+.etc {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .group {

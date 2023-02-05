@@ -1,3 +1,46 @@
+// 탑광고
+
+.topbanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px;
+  gap: 4px;
+  // width: 1920px;
+  height: 50px;
+  background: $primary;
+}
+
+.topbanner__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 72px;
+  isolation: isolate;
+  width: 1050px;
+  height: 42px;
+}
+
+.topbanner a {
+  display: block;
+  width: 284px;
+  height: 26px;
+  font-size: 16px;
+  line-height: 160%;
+  color: $white;
+}
+
+.topbanner__close {
+  right: 22%;
+  position: absolute;
+  z-index: 100;
+  border: none;
+  background-color: inherit;
+}
+
+// 네비게이션
 .nav {
   transform: translateY(-25px);
   display: flow-root;
@@ -14,12 +57,11 @@
       font-weight: 500;
       height: 100%;
     }
-    &__button > img {
-      transform: translateY(1.5px);
-      padding-top: 3px;
-      padding-right: 10px;
+    &__button:hover {
+      color: $primary;
     }
   }
+
   &__category__wrapper {
     width: 250px;
     height: 885px;
@@ -171,6 +213,8 @@
     }
   }
 }
+
+// 헤더
 .header {
   height: 160px;
   box-shadow: 0px 3px 3px $gray-100;
@@ -229,9 +273,14 @@
     color: $gray-300;
     &__market {
       left: (82px + 25px);
+      z-index: 1;
     }
     &__beauty {
       left: (82px + 25px + 74px + 12px);
+      z-index: 1;
+    }
+    &__beauty a:hover {
+      color: $primary;
     }
     &--active {
       font-weight: 600;
