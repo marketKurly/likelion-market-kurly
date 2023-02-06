@@ -21,7 +21,9 @@ const count = (type) => {
     resultvalue = parseInt(resultvalue) + 1;
   } else if (type === 'minus') {
     console.log('minus');
-    resultvalue = parseInt(resultvalue) - 1;
+    if (resultvalue > 0) {
+      resultvalue = parseInt(resultvalue) - 1;
+    }
   }
 
   // 결과 출력
