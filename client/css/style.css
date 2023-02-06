@@ -967,6 +967,45 @@ table {
   font-style: normal;
 }
 
+.topbanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px;
+  gap: 4px;
+  height: 50px;
+  background: #5f0080;
+}
+
+.topbanner__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 72px;
+  isolation: isolate;
+  width: 1050px;
+  height: 42px;
+}
+
+.topbanner a {
+  display: block;
+  width: 284px;
+  height: 26px;
+  font-size: 16px;
+  line-height: 160%;
+  color: #ffffff;
+}
+
+.topbanner__close {
+  right: 22%;
+  position: absolute;
+  z-index: 100;
+  border: none;
+  background-color: inherit;
+}
+
 .nav {
   transform: translateY(-25px);
   display: flow-root;
@@ -981,14 +1020,12 @@ table {
 }
 .nav__header__button {
   padding: 10px 0;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 400;
   height: 100%;
 }
-.nav__header__button > img {
-  transform: translateY(1.5px);
-  padding-top: 3px;
-  padding-right: 10px;
+.nav__header__button:hover {
+  color: #5f0080;
 }
 .nav__category__wrapper {
   width: 250px;
@@ -1097,6 +1134,11 @@ table {
 .nav__sub-menu__list {
   padding: 12px 24px;
   font-size: 18px;
+  font-weight: 400;
+}
+.nav__sub-menu__list a:hover {
+  color: #5f0080;
+  text-decoration: underline;
 }
 .nav__notice {
   margin-top: 8px;
@@ -1111,9 +1153,11 @@ table {
 }
 .nav__notice__content--purple {
   color: #5f0080;
+  font-weight: 500;
 }
 .nav__notice__content--pure {
   color: #6b6b6b;
+  font-weight: 500;
 }
 
 .header {
@@ -1176,9 +1220,14 @@ table {
 }
 .header__pannel__market {
   left: 107px;
+  z-index: 1;
 }
 .header__pannel__beauty {
   left: 193px;
+  z-index: 1;
+}
+.header__pannel__beauty a:hover {
+  color: #5f0080;
 }
 .header__pannel--active {
   font-weight: 600;
@@ -1231,6 +1280,83 @@ table {
   float: left;
   padding: 0 3px;
   margin-right: 8px;
+}
+
+.login {
+  max-width: 1920px;
+  width: 1050px;
+  margin: 0 auto;
+  padding: 80px 306px;
+  display: grid;
+  grid-template: "header header header" 1fr "form-id form-id form-id" 55px "form-pw form-pw form-pw" 55px ". find-id find-pw" 55px "button button button" 55px "register register register" 55px/258px 74px 83px;
+  gap: 11px;
+}
+.login__header {
+  grid-area: header;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: center;
+  margin-bottom: 11px;
+}
+.login__form__id {
+  grid-area: form-id;
+}
+.login__form__id__input {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  font-size: 14px;
+  text-indent: 12px;
+  border: 1px solid #c4c4c4;
+  border-radius: 4px;
+}
+.login__form__pw {
+  grid-area: form-pw;
+}
+.login__form__pw__input {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  font-size: 14px;
+  text-indent: 12px;
+  border: 1px solid #c4c4c4;
+  border-radius: 4px;
+}
+.login__find__id {
+  grid-area: find-id;
+  position: relative;
+  font-size: 13px;
+  transform: translateX(10px);
+  z-index: 10;
+}
+.login__find__pw {
+  grid-area: find-pw;
+  font-size: 13px;
+  transform: translateX(-4px);
+  z-index: 10;
+}
+.login__find__pw::before {
+  content: "|";
+  position: absolute;
+  left: -1px;
+  z-index: 110;
+}
+.login__button {
+  grid-area: button;
+  background-color: #5f0080;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+.login__register {
+  grid-area: register;
+  border: 1.2px solid #5f0080;
+  color: #5f0080;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 4px;
 }
 
 .register {
@@ -1606,26 +1732,90 @@ table {
   position: relative;
   justify-content: center;
 }
-.main__recent-product {
-  display: none;
-  background-color: red;
-  position: fixed;
-  top: 50%;
-  right: 15px;
-  transform: translateY(-50%);
-  width: 80px;
-  height: 154px;
-}
-@media (min-width: 1250px) {
-  .main__recent-product {
-    display: block;
-  }
-}
+
 .Main-banner {
   width: 100%;
   height: 370px;
   display: flex;
   flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+.Main-banner {
+  width: 100%;
+  height: 370px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.swiper1 .swiper-button-next {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  right: 10%;
+  background: url("/client/css/img/Icon/Arrow.svg") 50% 50% no-repeat;
+  transform: rotate(180deg);
+  opacity: 0;
+  transition: all ease-in-out 500ms;
+}
+
+.swiper1 .swiper-button-prev {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  left: 10%;
+  background: url("/client/css/img/Icon/Arrow.svg") 50% 50% no-repeat;
+  opacity: 0;
+  transition: all ease-in-out 500ms;
+}
+
+.buttonhidden {
+  opacity: 1 !important;
+}
+
+.swiper .swiper-pagination {
+  position: absolute;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  width: 55px;
+  height: 23px;
+  border-radius: 12px;
+  bottom: 20px;
+  left: 85%;
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
@@ -1652,6 +1842,7 @@ table {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  position: relative;
 }
 
 .swiper-product {
@@ -1676,6 +1867,7 @@ table {
   border: 0;
   cursor: pointer;
   padding: 0;
+  z-index: 100;
 }
 .swiper-product__info__name {
   height: 26px;
@@ -1691,6 +1883,29 @@ table {
   font-weight: 600;
   line-height: 150%;
   color: #333333;
+}
+
+.today-recomend-product .swiper-button-next {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: -30px;
+  top: calc(50% - 60px);
+  background: url("/client/css/img/Icon/Arrow-white.svg");
+  background-size: contain;
+  transform: rotate(180deg);
+  margin: 10px 10px;
+}
+
+.today-recomend-product .swiper-button-prev {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: -30px;
+  top: calc(50% - 60px);
+  background: url("/client/css/img/Icon/Arrow-white.svg");
+  background-size: contain;
+  margin: 10px 10px;
 }
 
 .line-banner {
@@ -1725,6 +1940,30 @@ table {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  position: relative;
+}
+
+.good-price-product .swiper-button-next {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: -30px;
+  top: calc(50% - 60px);
+  background: url("/client/css/img/Icon/Arrow-white.svg");
+  background-size: contain;
+  transform: rotate(180deg);
+  margin: 10px 10px;
+}
+
+.good-price-product .swiper-button-prev {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: -30px;
+  top: calc(50% - 60px);
+  background: url("/client/css/img/Icon/Arrow-white.svg");
+  background-size: contain;
+  margin: 10px 10px;
 }
 
 .popup-ad {
@@ -1784,7 +2023,7 @@ table {
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.3);
-  display: none;
+  z-index: 1000;
 }
 .add-cart-window {
   position: relative;

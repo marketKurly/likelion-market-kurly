@@ -33,20 +33,36 @@
   </head>
 
   <body>
-    <!-- 헤더 -->
+    <!-- 탑 ad -->
+    <div class="topbanner">
+      <div class="topbanner__inner">
+        <a href="../css/"
+          >지금 가입하고 인기상품 <strong>100원</strong>에
+          받아가세요!</a
+        >
+        <button class="topbanner__close">
+          <img
+            src="../css/img/Icon/Cancel.svg"
+            alt="광고 닫기"
+          />
+        </button>
+      </div>
+    </div>
+
+    <!-- header -->
     <header class="header">
       <div class="header__inner">
         <h1 class="header__logo">
-          <a href="#">
+          <a href="../index.html">
             <img
-              src="../css/img/Icon/Main.svg"
+              src="../../client/css/img/Icon/Main.svg"
               alt="market kurly"
             />
           </a>
         </h1>
         <ul class="header__member">
           <li class="header__member__list">
-            <a href="/">회원가입</a>
+            <a href="./register.html">회원가입</a>
           </li>
           <li class="header__member__list">
             <span
@@ -54,12 +70,12 @@
               aria-hidden="true"
             >
               <img
-                src="../css/img/Icon/Bar.svg"
-                alt="회원가입"
+                src="../../client/css/img/Icon/Bar.svg"
+                alt=""
                 srcset=""
               />
             </span>
-            <a href="/">로그인</a>
+            <a href="./login.html">로그인</a>
           </li>
           <li class="header__member__list">
             <span
@@ -67,19 +83,19 @@
               aria-hidden="true"
             >
               <img
-                src="../css/img/Icon/Bar.svg"
-                alt="로그인"
+                src="../../client/css/img/Icon/Bar.svg"
+                alt=""
                 srcset=""
               />
             </span>
-            <a href="/">고객센터</a>
+            <a href="#">고객센터</a>
             <span
               class="header__member__list__divider"
               aria-hidden="true"
             >
               <img
-                src="../css/img/Icon/Down.svg"
-                alt="고객센터"
+                src="../../client/css/img/Icon/Down.svg"
+                alt=""
                 srcset=""
               />
             </span>
@@ -88,11 +104,11 @@
         <h2
           class="header__pannel header__pannel__market header__pannel--active"
         >
-          <a href="#">마켓칼리</a>
+          <a href="../index.html">마켓칼리</a>
         </h2>
         <div class="header__pannel header__pannel__divider">
           <img
-            src="../css/img/Icon/Bar.svg"
+            src="../../client/css/img/Icon/Bar.svg"
             alt=""
             srcset=""
           />
@@ -100,7 +116,7 @@
         <h2
           class="header__pannel header__pannel__beauty header__pannel--new"
         >
-          <a href="#">뷰티칼리</a>
+          <a href="../index.html">뷰티칼리</a>
         </h2>
 
         <fieldset class="header__search__fieldset">
@@ -116,7 +132,7 @@
           />
           <button class="header__search__button">
             <img
-              src="../css/img/Icon/Search.svg"
+              src="../../client/css/img/Icon/Search.svg"
               alt="search button"
             />
           </button>
@@ -125,7 +141,7 @@
           <li class="header__move__list">
             <a href="#">
               <img
-                src="../css/img/Icon/Location.svg"
+                src="../../client/css/img/Icon/Location.svg"
                 alt="배송지 등록하기 "
               />
             </a>
@@ -133,7 +149,7 @@
           <li class="header__move__list">
             <a href="#">
               <img
-                src="../css/img/Icon/Heart.svg"
+                src="../../client/css/img/Icon/Heart.svg"
                 alt="관심목록"
               />
             </a>
@@ -141,7 +157,7 @@
           <li class="header__move__list">
             <a href="#">
               <img
-                src="../css/img/Icon/Cart-1.svg"
+                src="../../client/css/img/Icon/Cart-1.svg"
                 alt="장바구니"
               />
             </a>
@@ -150,13 +166,7 @@
         <nav class="nav">
           <h3 class="nav__header">
             <button class="nav__header__button">
-              <img
-                src="../css/img/Icon/Hamburger.svg"
-                alt="category"
-                b
-                class="nav__header__button__burger"
-              />
-              카테고리
+              <div class="icon-menu">카테고리</div>
             </button>
           </h3>
           <div class="nav__category__wrapper">
@@ -277,21 +287,21 @@
           </div>
           <ul class="nav__sub-menu">
             <li class="nav__sub-menu__list">
-              <a href="#">신상품</a>
+              <a href="./productList.html">신상품</a>
             </li>
             <li class="nav__sub-menu__list">
-              <a href="#">베스트</a>
+              <a href="./productList.html">베스트</a>
             </li>
             <li class="nav__sub-menu__list">
-              <a href="#">알뜰쇼핑</a>
+              <a href="./productList.html">알뜰쇼핑</a>
             </li>
             <li class="nav__sub-menu__list">
-              <a href="#">특가/혜택</a>
+              <a href="./productList.html">특가/혜택</a>
             </li>
           </ul>
           <a href="#" class="nav__notice">
             <span class="nav__notice__content--purple"
-              >샛별 택배</span
+              >샛별·택배</span
             >
             <span class="nav__notice__content--pure"
               >배송안내</span
@@ -952,7 +962,10 @@
             <!-- 상품 리스트 시작 -->
             <div class="product__list--grid">
               <!-- 상품 1 시작 -->
-              <a href="#" class="product__item">
+              <a
+                href="./productDetail.html"
+                class="product__item"
+              >
                 <div class="product__list__img1">
                   <div class="product__list__img2">
                     <img
