@@ -80,5 +80,14 @@
       },
       "stock": 13
     }
+  ],
+
+  "inquiry": [
+    {
+      "id": 1,
+      "title": "팩이 터져서 왔어요",
+      "content": "엉망이네요. 환불 요청합니다.",
+      "isSecret": false
+    }
   ]
 }

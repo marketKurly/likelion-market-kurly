@@ -39,7 +39,7 @@ var toggleMainPopup = function () {
       return value ? value[2] : null;
     },
   };
-  console.log(handleCookie.getCookie('today'));
+  // console.log(handleCookie.getCookie('today'));
 
   // 쿠키 읽고 화면 보이게
   if (handleCookie.getCookie('today') == 'y') {
