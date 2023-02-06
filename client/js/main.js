@@ -1,4 +1,10 @@
-import { getNode, attr } from '../lib/index.js';
+import {
+  getNode,
+  attr,
+  xhrPromise,
+  xhrData,
+  tiger,
+} from '../lib/index.js';
 
 const header = getNode('.header');
 const navHeaderButton = getNode('.nav__header__button');
@@ -40,4 +46,17 @@ function handler() {
   let AD = document.querySelector('.topbanner');
   AD.style.display = 'none';
 }
-button.addEventListener('click', handler);
+button?.addEventListener('click', handler);
+
+// tiger.get('http://localhost:3000/products');
+// xhrPromise
+//   .get('http://localhost:3000/products')
+//   .then((res) => {
+//     console.log(res);
+//   });
+
+// tiger.get('http://localhost:3000/products');
+// xhrPromise({
+// url: 'localhost:3000/products',
+// });
+// xhrPromise

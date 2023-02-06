@@ -1,3 +1,10 @@
+import {
+  getNode,
+  invisibleElement,
+  visibleElement,
+  bindEvent,
+} from '../lib/index.js';
+
 // main banner swiper1
 let mainBannerSwiper = new Swiper('.swiper1', {
   loop: true, // 무한 반복
@@ -48,7 +55,6 @@ let todayRecomendProductSwiper = new Swiper('.swiper2', {
   navigation: {
     nextEl: '.today-recomend-product .swiper-button-next',
     prevEl: '.today-recomend-product .swiper-button-prev',
-
   },
 });
 
@@ -64,6 +70,12 @@ let googPriceProductSwiper = new Swiper('.swiper3', {
   navigation: {
     nextEl: '.good-price-product .swiper-button-next',
     prevEl: '.good-price-product .swiper-button-prev',
-
   },
 });
+
+// 스와이퍼 첫화면 마지막화면 버튼 제어
+// const secondSwiperButton = getNode(
+//   '.swiper2 .swiper-button-next'
+// );
+
+// console.log(secondSwiperButton);

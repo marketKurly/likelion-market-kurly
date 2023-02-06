@@ -1966,6 +1966,14 @@ table {
   margin: 10px 10px;
 }
 
+.today-recomend-product .swiper-button-next.swiper-button-disabled {
+  opacity: 0;
+}
+
+.today-recomend-product .swiper-button-prev.swiper-button-disabled {
+  opacity: 0;
+}
+
 .popup-ad {
   position: fixed;
   width: 440px;
@@ -2143,6 +2151,14 @@ table {
 }
 .main_popup.on {
   display: block;
+}
+
+.good-price-product .swiper-button-next.swiper-button-disabled {
+  opacity: 0;
+}
+
+.good-price-product .swiper-button-prev.swiper-button-disabled {
+  opacity: 0;
 }
 
 .add-cart {
