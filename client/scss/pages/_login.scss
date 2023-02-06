@@ -1,0 +1,82 @@
+.login {
+  max-width: 1920px;
+  width: 1050px;
+  margin: 0 auto;
+  padding: 80px 306px;
+  display: grid;
+  grid-template:
+    'header header header' 1fr
+    'form-id form-id form-id' 55px
+    'form-pw form-pw form-pw' 55px
+    '. find-id find-pw' 55px
+    'button button button' 55px
+    'register register register' 55px / 258px 74px 83px;
+  gap: 11px;
+  &__header {
+    grid-area: header;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: 11px;
+  }
+  &__form__id {
+    grid-area: form-id;
+    &__input {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      font-size: 14px;
+      text-indent: 12px;
+      border: 1px solid $gray-200;
+      border-radius: 4px;
+    }
+  }
+  &__form__pw {
+    grid-area: form-pw;
+    &__input {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      font-size: 14px;
+      text-indent: 12px;
+      border: 1px solid $gray-200;
+      border-radius: 4px;
+    }
+  }
+  &__find__id {
+    grid-area: find-id;
+    position: relative;
+    font-size: 13px;
+    transform: translateX(10px);
+    z-index: 10;
+  }
+  &__find__pw {
+    grid-area: find-pw;
+    font-size: 13px;
+    transform: translateX(-4px);
+    z-index: 10;
+  }
+  &__find__pw::before {
+    content: '|';
+    position: absolute;
+    left: -1px;
+    z-index: 110;
+  }
+  &__button {
+    grid-area: button;
+    background-color: $primary;
+    color: $white;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 4px;
+  }
+  &__register {
+    grid-area: register;
+    border: 1.2px solid $primary;
+    color: $primary;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 4px;
+  }
+}
