@@ -1,7 +1,7 @@
 .popup-inquiry {
   background: $white;
   width: 790px;
-  height: 655px;
+  height: 690px;
   border-radius: 16px;
   position: absolute;
   top: 50%;
@@ -109,21 +109,78 @@
         }
 
         &--input {
+          display: flex;
+          flex-flow: column nowrap;
           width: 100%;
+          height: 260px;
+          border: 1px solid $gray-300;
+          border-radius: 4px;
+          position: relative;
 
           textarea {
-            border-radius: 4px;
-            border: 1px solid $gray-300;
-            width: 100%;
-            height: 100%;
+            border: 0;
             outline: none;
             word-break: break-all;
             font-size: 14px;
             background: none;
             line-height: 21px;
-            overflow: auto;
             resize: none;
-            padding: 15px 15px 0px 15px;
+            padding: 15px 15px 20px 15px;
+            z-index: 1;
+          }
+
+          &__placeholder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 86%;
+            padding: 15px 15px 32px;
+            cursor: pointer;
+            z-index: 2;
+            color: $gray-400;
+            line-height: 20px;
+            font-size: 14px;
+            overflow-y: auto;
+
+            strong {
+              display: block;
+              font-weight: 500;
+              padding-bottom: 8px;
+            }
+
+            ul + strong {
+              padding-top: 20px;
+            }
+
+            p + strong {
+              padding-top: 20px;
+            }
+
+            ul {
+              font-weight: 400;
+
+              li:before {
+                content: '·';
+                padding-right: 5px;
+              }
+
+              li {
+                padding-bottom: 4px;
+              }
+            }
+
+            p {
+              color: $info-error;
+            }
+          }
+
+          span {
+            text-align: right;
+            padding: 0px 16px 16px;
+            font-size: 12px;
+            color: $gray-300;
+            font-weight: 400;
           }
         }
       }
@@ -131,25 +188,33 @@
       &__secret {
         margin-left: 85px;
         padding-top: 16px;
+        display: flex;
+        position: relative;
+        align-content: center;
+
+        input[class='check'] {
+          display: none;
+        }
+
+        input[class='check'] + label em {
+          width: 24px;
+          height: 24px;
+          margin-right: 10px;
+          background: url('/client/css/img/input/Check1.svg')
+            no-repeat;
+        }
+
+        input[class='check']:checked + label em {
+          width: 24px;
+          height: 24px;
+          margin-right: 10px;
+          background: url('/client/css/img/input/Check2.svg')
+            no-repeat;
+        }
 
         &--check {
-          position: relative;
           display: flex;
           align-content: center;
-
-          input {
-            width: 1px;
-            height: 1px;
-            overflow: hidden;
-            position: absolute;
-          }
-
-          img {
-            display: inline-block;
-            margin-right: 12px;
-            width: 24px;
-            height: 24px;
-          }
 
           span {
             font-size: 14px;

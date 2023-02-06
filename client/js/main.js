@@ -39,7 +39,6 @@ function invisibleCategory(e) {
   if (attr(e.target, 'class')?.includes('nav__category'))
     navCategoryWrapper.style.display = 'none';
 }
-
 // 탑 ad광고 창 닫기
 let button = document.querySelector('.topbanner__close');
 function handler() {
