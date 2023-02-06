@@ -72,10 +72,3 @@ let googPriceProductSwiper = new Swiper('.swiper3', {
     prevEl: '.good-price-product .swiper-button-prev',
   },
 });
-
-// 스와이퍼 첫화면 마지막화면 버튼 제어
-// const secondSwiperButton = getNode(
-//   '.swiper2 .swiper-button-next'
-// );
-
-// console.log(secondSwiperButton);
