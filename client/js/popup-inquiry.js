@@ -5,12 +5,13 @@ import {
   disableElement,
 } from '../lib/index.js';
 
-const title = getNode('.title');
+const hidden = getNode('#hidden');
 const contents = getNode('.contents');
 const sendButton = getNode('#send');
 const titleTextField = getNode('#content32');
 const contentTextField = getNode('#content37');
 const info = getNode('#info');
+const cancel = getNode('#popupCancel');
 
 /* 텍스트 지우는 함수 */
 function clearText(target) {
@@ -57,6 +58,9 @@ const handler = (e) => {
     info.style.display = 'none';
     contentTextField.focus();
   }
+  if (contents && target.id !== 'info') {
+    info.style.display = '';
+  }
 
   if (target.dataset.name === 'send') {
     // const submit = new Data();
@@ -66,7 +70,11 @@ const handler = (e) => {
   }
 
   if (target.dataset.name === 'cancel') {
-    console.log('cancle');
+    hidden.style.display = 'none';
+
+    // $('body').off('scroll touchmove mousewheel');
+
+    // console.log('cancle');
 
     clearText(titleTextField);
     clearText(contentTextField);
