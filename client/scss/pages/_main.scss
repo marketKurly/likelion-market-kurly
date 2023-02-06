@@ -22,6 +22,94 @@ $main_container_width: 1050px;
   justify-content: center;
 }
 
+// 공통 swiper
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+// swiper-button 에 기본적으로 있는 화살표를 지워준다.
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+// main banner swiper1
+.Main-banner {
+  width: 100%;
+  height: 370px; // 사용 안하면 a태그의 기본 값 설정이 되어있는 건지 오차가 발생함
+  // swiper 시 가로 나열을 위해 row nowrap 사용
+  display: flex;
+  flex-flow: row nowrap;
+  // 가운데 정렬
+  justify-content: center;
+}
+
+//swiper 화살표 위치
+.swiper1 .swiper-button-next {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  right: 10%;
+  background: url('/client/css/img/Icon/Arrow.svg') 50% 50%
+    no-repeat;
+  transform: rotate(180deg);
+  opacity: 0;
+  transition: all ease-in-out 500ms;
+}
+
+.swiper1 .swiper-button-prev {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  left: 10%;
+  background: url('/client/css/img/Icon/Arrow.svg') 50% 50%
+    no-repeat;
+  opacity: 0;
+  transition: all ease-in-out 500ms;
+}
+
+.buttonhidden {
+  opacity: 1 !important;
+}
+
+// swiper pagination
+.swiper .swiper-pagination {
+  position: absolute;
+  color: $white;
+  background: rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  width: 55px;
+  height: 23px;
+  border-radius: 12px;
+  bottom: 20px;
+  left: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 //product slide 1
 .today-recomend-product {
   display: flex;
@@ -45,6 +133,7 @@ $main_container_width: 1050px;
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
+      position: relative;
     }
   }
 }
@@ -69,6 +158,7 @@ $main_container_width: 1050px;
       border: 0;
       cursor: pointer;
       padding: 0;
+      z-index: 100;
     }
   }
   &__info {
@@ -88,6 +178,30 @@ $main_container_width: 1050px;
       color: $content;
     }
   }
+}
+
+//swiper2 화살표 위치
+.today-recomend-product .swiper-button-next {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: -30px;
+  top: calc(50% - 60px);
+  background: url('/client/css/img/Icon/Arrow-white.svg');
+  background-size: contain;
+  transform: rotate(180deg);
+  margin: 10px 10px;
+}
+
+.today-recomend-product .swiper-button-prev {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: -30px;
+  top: calc(50% - 60px);
+  background: url('/client/css/img/Icon/Arrow-white.svg');
+  background-size: contain;
+  margin: 10px 10px;
 }
 
 //line benner
@@ -123,8 +237,33 @@ $main_container_width: 1050px;
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
+      position: relative;
     }
   }
+}
+
+//swiper2 화살표 위치
+.good-price-product .swiper-button-next {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: -30px;
+  top: calc(50% - 60px);
+  background: url('/client/css/img/Icon/Arrow-white.svg');
+  background-size: contain;
+  transform: rotate(180deg);
+  margin: 10px 10px;
+}
+
+.good-price-product .swiper-button-prev {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: -30px;
+  top: calc(50% - 60px);
+  background: url('/client/css/img/Icon/Arrow-white.svg');
+  background-size: contain;
+  margin: 10px 10px;
 }
 
 // ad 팝업창
@@ -177,7 +316,8 @@ $main_container_width: 1050px;
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.3);
-    display: none;
+    // display: none;
+    z-index: 1000;
   }
   &-window {
     position: relative;
