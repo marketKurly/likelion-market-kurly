@@ -1,4 +1,4 @@
-/* import { getNode, attr } from '../lib/dom/index.js';
+import { getNode, attr } from '../lib/index.js';
 
 const header = getNode('.header');
 const navHeaderButton = getNode('.nav__header__button');
@@ -10,11 +10,11 @@ document.documentElement.addEventListener(
   'mouseover',
   visibleCategory
 );
-navCategoryWrapper.addEventListener(
+navCategoryWrapper?.addEventListener(
   'mouseout',
   invisibleCategory
 );
-navHeaderButton.addEventListener(
+navHeaderButton?.addEventListener(
   'mouseout',
   invisibleCategory
 );
@@ -33,4 +33,10 @@ function invisibleCategory(e) {
   if (attr(e.target, 'class')?.includes('nav__category'))
     navCategoryWrapper.style.display = 'none';
 }
- */
+// 탑 ad광고 창 닫기
+let button = document.querySelector('.topbanner__close');
+function handler() {
+  let AD = document.querySelector('.topbanner');
+  AD.style.display = 'none';
+}
+button.addEventListener('click', handler);
