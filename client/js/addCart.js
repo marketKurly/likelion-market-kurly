@@ -63,7 +63,6 @@ const onClickshoppingCart = (e) => {
 };
 const onClickaddCartCancleButton = (e) => {
   invisibleElement(addCartPopup);
-  console.log('000');
   resultvalue = 0;
   result.innerText = resultvalue;
   e.preventDefault();
@@ -74,3 +73,15 @@ addCartCancleButton.addEventListener(
   'click',
   onClickaddCartCancleButton
 );
+
+// 장바구니에 담기 클릭시 localstorage 에 수량 값 저장
+
+const putButton = getNode('.add-cart__list__buttons__put');
+
+let product1 = window.localStorage;
+
+const onClickPutButton = () => {
+  product1.setItem('resultValue', resultvalue);
+};
+
+putButton.addEventListener('click', onClickPutButton);
