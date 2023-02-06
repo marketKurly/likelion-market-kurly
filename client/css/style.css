@@ -1282,6 +1282,83 @@ table {
   margin-right: 8px;
 }
 
+.login {
+  max-width: 1920px;
+  width: 1050px;
+  margin: 0 auto;
+  padding: 80px 306px;
+  display: grid;
+  grid-template: "header header header" 1fr "form-id form-id form-id" 55px "form-pw form-pw form-pw" 55px ". find-id find-pw" 55px "button button button" 55px "register register register" 55px/258px 74px 83px;
+  gap: 11px;
+}
+.login__header {
+  grid-area: header;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: center;
+  margin-bottom: 11px;
+}
+.login__form__id {
+  grid-area: form-id;
+}
+.login__form__id__input {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  font-size: 14px;
+  text-indent: 12px;
+  border: 1px solid #c4c4c4;
+  border-radius: 4px;
+}
+.login__form__pw {
+  grid-area: form-pw;
+}
+.login__form__pw__input {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  font-size: 14px;
+  text-indent: 12px;
+  border: 1px solid #c4c4c4;
+  border-radius: 4px;
+}
+.login__find__id {
+  grid-area: find-id;
+  position: relative;
+  font-size: 13px;
+  transform: translateX(10px);
+  z-index: 10;
+}
+.login__find__pw {
+  grid-area: find-pw;
+  font-size: 13px;
+  transform: translateX(-4px);
+  z-index: 10;
+}
+.login__find__pw::before {
+  content: "|";
+  position: absolute;
+  left: -1px;
+  z-index: 110;
+}
+.login__button {
+  grid-area: button;
+  background-color: #5f0080;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+.login__register {
+  grid-area: register;
+  border: 1.2px solid #5f0080;
+  color: #5f0080;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
 .register {
   max-width: 1920px;
   width: 1050px;
@@ -3414,7 +3491,7 @@ input[class=check2]:checked + label em {
   color: #000000;
 }
 
-.bottom--page {
+#pagination {
   display: flex;
   justify-content: center;
   align-items: center;

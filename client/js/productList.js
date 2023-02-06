@@ -25,3 +25,38 @@ let han = () => {
 };
 
 initializationButton.addEventListener('click', han);
+
+// 페이지네이션
+
+$(function () {
+  let container = $('#pagination');
+  container.pagination({
+    dataSource: [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+    ],
+    pageSize: 5,
+    callback: function (data, pagination) {
+      var dataHtml;
+
+      $.each(data, function (index, item) {
+        dataHtml + item.name;
+      });
+
+      $('#data-container').html(dataHtml);
+    },
+  });
+});

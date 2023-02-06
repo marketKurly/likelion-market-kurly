@@ -18,17 +18,19 @@
       crossorigin
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css"
     />
-    <script
-      src="https://code.jquery.com/jquery-3.6.3.js"
-      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
-      crossorigin="anonymous"
-    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../js/main.js" type="module"></script>
     <script
       src="../js/productList.js"
       type="module"
     ></script>
-    <script src="../js/main.js" type="module"></script>
     <title>productList</title>
   </head>
 
@@ -62,7 +64,7 @@
         </h1>
         <ul class="header__member">
           <li class="header__member__list">
-            <a href="./productList.html">회원가입</a>
+            <a href="./register.html">회원가입</a>
           </li>
           <li class="header__member__list">
             <span
@@ -1675,42 +1677,9 @@
               <!-- 상품 15 끝 -->
             </div>
             <!-- 하단 페이지 -->
-            <div class="bottom--page">
-              <a href="#"
-                ><img
-                  src="../css/img/page/Lastpage-left.svg"
-                  alt="처음 페이지로 이동하기 아이콘"
-              /></a>
-              <a href="#"
-                ><img
-                  src="../css/img/page/Nextpage-left.svg"
-                  alt="이전 페이지로 이동하기 아이콘"
-              /></a>
-              <a href="#"
-                ><img
-                  src="../css/img/page/numbering-1.svg"
-                  alt="1 페이지로 이동하기 아이콘"
-              /></a>
-              <a href="#"
-                ><img
-                  src="../css/img/page/numbering-2.svg"
-                  alt="2 페이지로 이동하기 아이콘"
-              /></a>
-              <a href="#"
-                ><img
-                  src="../css/img/page/numbering-3.svg"
-                  alt="3 페이지로 이동하기 아이콘"
-              /></a>
-              <a href="#"
-                ><img
-                  src="../css/img/page/Nextpage-right.svg"
-                  alt="다음 페이지로 이동하기 아이콘"
-              /></a>
-              <a href="#"
-                ><img
-                  src="../css/img/page/Lastpage-right.svg"
-                  alt="마지막 페이지로 이동하기 아이콘"
-              /></a>
+            <div>
+              <div id="data-container"></div>
+              <div id="pagination"></div>
             </div>
           </div>
         </div>

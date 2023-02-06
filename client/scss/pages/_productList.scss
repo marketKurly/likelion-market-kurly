@@ -415,7 +415,8 @@ input[class='check2']:checked + label em {
 }
 
 // 하단 페이지
-.bottom--page {
+
+#pagination {
   display: flex;
   justify-content: center;
   align-items: center;
