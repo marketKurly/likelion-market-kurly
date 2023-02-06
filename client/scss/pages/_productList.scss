@@ -140,8 +140,7 @@ body {
 
 input[class='check2'] {
   display: none;
-}
-
+  
 input[class='check2'] + label em {
   display: inline-block;
   width: 24px;
@@ -155,6 +154,7 @@ input[class='check2']:checked + label em {
   background: url('/client/css/img/Input/Check2.svg') 0 0
     no-repeat;
 }
+
 .accordion__item__text {
   margin-left: 5px;
   margin-right: 5px;
@@ -166,7 +166,6 @@ input[class='check2']:checked + label em {
   word-break: break-all;
   white-space: normal;
 }
-
 
 .accordion__item__text:hover {
   color: $primary;
