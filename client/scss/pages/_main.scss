@@ -158,6 +158,7 @@ $main_container_width: 1050px;
       border: 0;
       cursor: pointer;
       padding: 0;
+      z-index: 100;
     }
   }
   &__info {
@@ -315,7 +316,8 @@ $main_container_width: 1050px;
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.3);
-    display: none;
+    // display: none;
+    z-index: 1000;
   }
   &-window {
     position: relative;
