@@ -10,19 +10,53 @@ $main_container_width: 1050px;
   position: relative;
   justify-content: center;
   &__recent-product {
+    border: 1px solid $gray-200;
     display: none;
-    background-color: red;
-    // display: block;
-    position: fixed;
-    top: 50%;
+    position: absolute;
+    top: 478px;
     right: 15px;
-    transform: translateY(-50%);
+    // position: fixed;
+    // transform: translateY(-50%);
+    // top: 50%;
     width: 80px;
     height: 154px;
     @include recentlyProduct {
       display: block;
     }
     &__inner {
+      height: 100%;
+      @include flexboxCenter(
+        $direction: column,
+        $justify: stretch,
+        $items: stretch
+      );
+    }
+    &__header {
+      flex: 0 1 30px;
+      order: 2;
+      @include flexboxCenter();
+      color: $gray-600;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    &__button {
+      &--up {
+        flex: 0 1 20px;
+        order: 1;
+      }
+      &--down {
+        flex: 0 1 20px;
+        order: 4;
+      }
+    }
+    &__swiper {
+      background-color: blue;
+      flex: 1 1 auto;
+      order: 3;
+      // &__wrapper {
+      // &__slide {
+      // }
+      // }
     }
   }
 }
