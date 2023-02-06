@@ -135,6 +135,7 @@ body {
 .accordion__item label {
   display: flex;
   align-items: center;
+
   margin-left: 6px;
 }
 
@@ -168,11 +169,13 @@ input[class='check2']:checked + label em {
   white-space: normal;
 }
 
+
 .accordion__item__text:hover {
   color: $primary;
 }
 
 .accordion__item__number {
+
   flex-shrink: 0;
   font-weight: 400;
   font-size: 12px;
