@@ -1783,7 +1783,6 @@ table {
   line-height: 20px;
   font-size: 14px;
   overflow-y: auto;
-  display: "";
 }
 .popup-inquiry__container__main__content--input__placeholder strong {
   display: block;

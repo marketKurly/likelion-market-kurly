@@ -7,7 +7,6 @@ import {
 
 const title = getNode('.title');
 const contents = getNode('.contents');
-const counter = getNode('#counter');
 const sendButton = getNode('#send');
 const titleTextField = getNode('#content32');
 const contentTextField = getNode('#content37');
@@ -29,6 +28,16 @@ $('#content37').keyup(function (e) {
   }
 });
 
+/* $('contents').click(function (e) {
+  if (
+    $(e.target).hasClass(
+      'popup-inquiry__container__main__content--input'
+    )
+  ) {
+    console.log('hit');
+  }
+}); */
+
 /* 메인 클릭 핸들러 */
 const handler = (e) => {
   let target = e.target;
@@ -44,10 +53,9 @@ const handler = (e) => {
     }
   }
 
-  if (target.dataset.name === 'info') {
+  if (target.id === 'info') {
     info.style.display = 'none';
     contentTextField.focus();
-  } else {
   }
 
   if (target.dataset.name === 'send') {
