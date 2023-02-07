@@ -60,3 +60,9 @@ $(function () {
     },
   });
 });
+
+// 상품 주소 받아오기
+// fetch('http://localhost:3000/products')
+// .then((response) => response.json())
+// .then((data) => console.log(data));
+// .catch((error) => console.error(error));
