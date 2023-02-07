@@ -9,6 +9,54 @@ $main_container_width: 1050px;
   flex-flow: column wrap;
   position: relative;
   justify-content: center;
+  &__recent-product {
+    border: 1px solid $gray-200;
+    display: none;
+    position: absolute;
+    top: 478px;
+    right: 15px;
+    // position: fixed;
+    // transform: translateY(-50%);
+    // top: 50%;
+    width: 80px;
+    height: 154px;
+    @include recentlyProduct {
+      display: block;
+    }
+    &__inner {
+      height: 100%;
+      @include flexboxCenter(
+        $direction: column,
+        $justify: stretch,
+        $items: stretch
+      );
+    }
+    &__header {
+      margin-top: 19px;
+      @include flexboxCenter();
+      height: 40px;
+      font-weight: 500;
+      font-size: 14px;
+    }
+    &__button--up {
+      position: absolute;
+      top: 21px;
+      left: 0;
+      width: 100%;
+      height: 20px;
+    }
+    &__button--down {
+      position: absolute;
+      top: calc(100% + 1px);
+      left: 0;
+      width: 100%;
+      height: 20px;
+    }
+    .main__recent-product__swiper {
+      width: 80%;
+      height: 45%;
+    }
+  }
 }
 
 // main banner
@@ -19,6 +67,94 @@ $main_container_width: 1050px;
   display: flex;
   flex-flow: row nowrap;
   // 가운데 정렬
+  justify-content: center;
+}
+
+// 공통 swiper
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+// swiper-button 에 기본적으로 있는 화살표를 지워준다.
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+// main banner swiper1
+.Main-banner {
+  width: 100%;
+  height: 370px; // 사용 안하면 a태그의 기본 값 설정이 되어있는 건지 오차가 발생함
+  // swiper 시 가로 나열을 위해 row nowrap 사용
+  display: flex;
+  flex-flow: row nowrap;
+  // 가운데 정렬
+  justify-content: center;
+}
+
+//swiper 화살표 위치
+.swiper1 .swiper-button-next {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  right: 10%;
+  background: url('/client/css/img/Icon/Arrow.svg') 50% 50%
+    no-repeat;
+  transform: rotate(180deg);
+  opacity: 0;
+  transition: all ease-in-out 500ms;
+}
+
+.swiper1 .swiper-button-prev {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  left: 10%;
+  background: url('/client/css/img/Icon/Arrow.svg') 50% 50%
+    no-repeat;
+  opacity: 0;
+  transition: all ease-in-out 500ms;
+}
+
+.buttonhidden {
+  opacity: 1 !important;
+}
+
+// swiper pagination
+.swiper .swiper-pagination {
+  position: absolute;
+  color: $white;
+  background: rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  width: 55px;
+  height: 23px;
+  border-radius: 12px;
+  bottom: 20px;
+  left: 85%;
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
@@ -45,6 +181,7 @@ $main_container_width: 1050px;
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
+      position: relative;
     }
   }
 }
@@ -69,6 +206,7 @@ $main_container_width: 1050px;
       border: 0;
       cursor: pointer;
       padding: 0;
+      z-index: 100;
     }
   }
   &__info {
@@ -88,6 +226,30 @@ $main_container_width: 1050px;
       color: $content;
     }
   }
+}
+
+//swiper2 화살표 위치
+.today-recomend-product .swiper-button-next {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: -30px;
+  top: calc(50% - 60px);
+  background: url('/client/css/img/Icon/Arrow-white.svg');
+  background-size: contain;
+  transform: rotate(180deg);
+  margin: 10px 10px;
+}
+
+.today-recomend-product .swiper-button-prev {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: -30px;
+  top: calc(50% - 60px);
+  background: url('/client/css/img/Icon/Arrow-white.svg');
+  background-size: contain;
+  margin: 10px 10px;
 }
 
 //line benner
@@ -123,8 +285,41 @@ $main_container_width: 1050px;
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
+      position: relative;
     }
   }
+}
+
+//swiper2 화살표 위치
+.good-price-product .swiper-button-next {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: -30px;
+  top: calc(50% - 60px);
+  background: url('/client/css/img/Icon/Arrow-white.svg');
+  background-size: contain;
+  transform: rotate(180deg);
+  margin: 10px 10px;
+}
+
+.good-price-product .swiper-button-prev {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: -30px;
+  top: calc(50% - 60px);
+  background: url('/client/css/img/Icon/Arrow-white.svg');
+  background-size: contain;
+  margin: 10px 10px;
+}
+.today-recomend-product
+  .swiper-button-next.swiper-button-disabled {
+  opacity: 0;
+}
+.today-recomend-product
+  .swiper-button-prev.swiper-button-disabled {
+  opacity: 0;
 }
 
 // ad 팝업창
@@ -132,7 +327,7 @@ $main_container_width: 1050px;
   position: fixed;
   width: 440px;
   height: 672px;
-  top: 281px;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, 0%);
   z-index: 100;
@@ -177,7 +372,8 @@ $main_container_width: 1050px;
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.3);
-    display: none;
+    // display: none;
+    z-index: 1000;
   }
   &-window {
     position: relative;
@@ -312,4 +508,15 @@ $main_container_width: 1050px;
     display: block;
     // background-color: #fff;
   }
+}
+
+// 3번째 스와이퍼
+
+.good-price-product
+  .swiper-button-next.swiper-button-disabled {
+  opacity: 0;
+}
+.good-price-product
+  .swiper-button-prev.swiper-button-disabled {
+  opacity: 0;
 }

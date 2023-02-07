@@ -1732,12 +1732,139 @@ table {
   position: relative;
   justify-content: center;
 }
+.main__recent-product {
+  border: 1px solid #c4c4c4;
+  display: none;
+  position: absolute;
+  top: 478px;
+  right: 15px;
+  width: 80px;
+  height: 154px;
+}
+@media (min-width: 1250px) {
+  .main__recent-product {
+    display: block;
+  }
+}
+.main__recent-product__inner {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: stretch;
+  align-items: stretch;
+}
+.main__recent-product__header {
+  margin-top: 19px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.main__recent-product__button--up {
+  position: absolute;
+  top: 21px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+}
+.main__recent-product__button--down {
+  position: absolute;
+  top: calc(100% + 1px);
+  left: 0;
+  width: 100%;
+  height: 20px;
+}
+.main__recent-product .main__recent-product__swiper {
+  width: 80%;
+  height: 45%;
+}
 
 .Main-banner {
   width: 100%;
   height: 370px;
   display: flex;
   flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+.Main-banner {
+  width: 100%;
+  height: 370px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.swiper1 .swiper-button-next {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  right: 10%;
+  background: url("/client/css/img/Icon/Arrow.svg") 50% 50% no-repeat;
+  transform: rotate(180deg);
+  opacity: 0;
+  transition: all ease-in-out 500ms;
+}
+
+.swiper1 .swiper-button-prev {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  left: 10%;
+  background: url("/client/css/img/Icon/Arrow.svg") 50% 50% no-repeat;
+  opacity: 0;
+  transition: all ease-in-out 500ms;
+}
+
+.buttonhidden {
+  opacity: 1 !important;
+}
+
+.swiper .swiper-pagination {
+  position: absolute;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  width: 55px;
+  height: 23px;
+  border-radius: 12px;
+  bottom: 20px;
+  left: 85%;
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
@@ -1764,6 +1891,7 @@ table {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  position: relative;
 }
 
 .swiper-product {
@@ -1788,6 +1916,7 @@ table {
   border: 0;
   cursor: pointer;
   padding: 0;
+  z-index: 100;
 }
 .swiper-product__info__name {
   height: 26px;
@@ -1803,6 +1932,29 @@ table {
   font-weight: 600;
   line-height: 150%;
   color: #333333;
+}
+
+.today-recomend-product .swiper-button-next {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: -30px;
+  top: calc(50% - 60px);
+  background: url("/client/css/img/Icon/Arrow-white.svg");
+  background-size: contain;
+  transform: rotate(180deg);
+  margin: 10px 10px;
+}
+
+.today-recomend-product .swiper-button-prev {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: -30px;
+  top: calc(50% - 60px);
+  background: url("/client/css/img/Icon/Arrow-white.svg");
+  background-size: contain;
+  margin: 10px 10px;
 }
 
 .line-banner {
@@ -1837,13 +1989,37 @@ table {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  position: relative;
+}
+
+.good-price-product .swiper-button-next {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: -30px;
+  top: calc(50% - 60px);
+  background: url("/client/css/img/Icon/Arrow-white.svg");
+  background-size: contain;
+  transform: rotate(180deg);
+  margin: 10px 10px;
+}
+
+.good-price-product .swiper-button-prev {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: -30px;
+  top: calc(50% - 60px);
+  background: url("/client/css/img/Icon/Arrow-white.svg");
+  background-size: contain;
+  margin: 10px 10px;
 }
 
 .popup-ad {
   position: fixed;
   width: 440px;
   height: 672px;
-  top: 281px;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, 0%);
   z-index: 100;
@@ -1896,7 +2072,7 @@ table {
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.3);
-  display: none;
+  z-index: 1000;
 }
 .add-cart-window {
   position: relative;
@@ -2155,7 +2331,7 @@ table {
 .popup-inquiry {
   background: #ffffff;
   width: 790px;
-  height: 655px;
+  height: 690px;
   border-radius: 16px;
   position: absolute;
   top: 50%;
@@ -2250,42 +2426,95 @@ table {
   padding-top: 10px;
 }
 .popup-inquiry__container__main__content--input {
+  display: flex;
+  flex-flow: column nowrap;
   width: 100%;
+  height: 260px;
+  border: 1px solid #a6a6a6;
+  border-radius: 4px;
+  position: relative;
 }
 .popup-inquiry__container__main__content--input textarea {
-  border-radius: 4px;
-  border: 1px solid #a6a6a6;
-  width: 100%;
-  height: 100%;
+  border: 0;
   outline: none;
   word-break: break-all;
   font-size: 14px;
   background: none;
   line-height: 21px;
-  overflow: auto;
   resize: none;
-  padding: 15px 15px 0px 15px;
+  padding: 15px 15px 20px 15px;
+  z-index: 1;
+}
+.popup-inquiry__container__main__content--input__placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 86%;
+  padding: 15px 15px 32px;
+  cursor: pointer;
+  z-index: 2;
+  color: #898989;
+  line-height: 20px;
+  font-size: 14px;
+  overflow-y: auto;
+}
+.popup-inquiry__container__main__content--input__placeholder strong {
+  display: block;
+  font-weight: 500;
+  padding-bottom: 8px;
+}
+.popup-inquiry__container__main__content--input__placeholder ul + strong {
+  padding-top: 20px;
+}
+.popup-inquiry__container__main__content--input__placeholder p + strong {
+  padding-top: 20px;
+}
+.popup-inquiry__container__main__content--input__placeholder ul {
+  font-weight: 400;
+}
+.popup-inquiry__container__main__content--input__placeholder ul li:before {
+  content: "·";
+  padding-right: 5px;
+}
+.popup-inquiry__container__main__content--input__placeholder ul li {
+  padding-bottom: 4px;
+}
+.popup-inquiry__container__main__content--input__placeholder p {
+  color: #f03f40;
+}
+.popup-inquiry__container__main__content--input span {
+  text-align: right;
+  padding: 0px 16px 16px;
+  font-size: 12px;
+  color: #a6a6a6;
+  font-weight: 400;
 }
 .popup-inquiry__container__main__secret {
   margin-left: 85px;
   padding-top: 16px;
-}
-.popup-inquiry__container__main__secret--check {
-  position: relative;
   display: flex;
+  position: relative;
   align-content: center;
 }
-.popup-inquiry__container__main__secret--check input {
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
+.popup-inquiry__container__main__secret input[class=check] {
+  display: none;
 }
-.popup-inquiry__container__main__secret--check img {
-  display: inline-block;
-  margin-right: 12px;
+.popup-inquiry__container__main__secret input[class=check] + label em {
   width: 24px;
   height: 24px;
+  margin-right: 10px;
+  background: url("/client/css/img/input/Check1.svg") no-repeat;
+}
+.popup-inquiry__container__main__secret input[class=check]:checked + label em {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  background: url("/client/css/img/input/Check2.svg") no-repeat;
+}
+.popup-inquiry__container__main__secret--check {
+  display: flex;
+  align-content: center;
 }
 .popup-inquiry__container__main__secret--check span {
   font-size: 14px;

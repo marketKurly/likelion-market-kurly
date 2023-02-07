@@ -1,5 +1,3 @@
-// import { getNode } from '../lib/index.js';
-
 // 팝업창 제어
 var toggleMainPopup = function () {
   /* 쿠키 제어 함수 정의 */
@@ -13,14 +11,14 @@ var toggleMainPopup = function () {
       date.setTime(
         date.getTime() + exp * 24 * 60 * 60 * 1000
       );
-      console.log(
-        name +
-          '=' +
-          val +
-          ';expires=' +
-          date.toUTCString() +
-          ';path=/'
-      );
+      // console.log(
+      //   name +
+      //     '=' +
+      //     val +
+      //     ';expires=' +
+      //     date.toUTCString() +
+      //     ';path=/'
+      // );
 
       // 실제로 쿠키 작성하기
       document.cookie =
@@ -39,7 +37,7 @@ var toggleMainPopup = function () {
       return value ? value[2] : null;
     },
   };
-  console.log(handleCookie.getCookie('today'));
+  // console.log(handleCookie.getCookie('today'));
 
   // 쿠키 읽고 화면 보이게
   if (handleCookie.getCookie('today') == 'y') {
