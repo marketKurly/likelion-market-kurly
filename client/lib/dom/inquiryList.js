@@ -1,13 +1,18 @@
-import { insertLast } from '../index.js';
+import {
+  insertAfter,
+  insertBefore,
+  insertFirst,
+  insertLast,
+} from '../index.js';
 
 const createInquiryList = ({
-  id = '',
   name = '',
   time = '',
   title = '',
   question = '',
   answer = '',
-  isSecret = false,
+  isSecret = '',
+  id = '',
 } = {}) => {
   return /* html */ `
   <article data-index="${id}">
@@ -49,7 +54,6 @@ const createInquiryList = ({
                     </td>
                   </tr>
   </article>
-  
   `;
 };
 

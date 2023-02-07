@@ -1,4 +1,9 @@
-import { getNode, attr } from '../lib/index.js';
+import {
+  getNode,
+  attr,
+  tiger,
+  renderInquiryList,
+} from '../lib/index.js';
 
 const body = getNode('.body');
 const main = getNode('.product-detail');
@@ -22,41 +27,29 @@ const handler = (e) => {
 
   if (target.id === 'send2') {
     hidden.style.display = 'block';
-    // body.classList.add('scrollLock');
-
-    /* $('body').on(
-      'scroll touchmove mousewheel',
-      function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-        return false;
-      }
-    ); */
   }
-
-  /* if (target.dataname.name === 'cancel') {
-    hidden.style.display = 'none';
-  } */
 };
 
 main.addEventListener('click', handler);
 
-const renderInquiryList = async () => {
+const rendingInquiryList = async () => {
   try {
-    // await delayP(2000);
-
-    let response = await hong.get(
+    let response = await tiger.get(
       'http://localhost:3000/inquiry'
     );
-    let userData = response.data;
+    let listData = response.data;
 
+    // console.log(listData);
+
+    // console.log(listData);
     // return이 필요 한 건 map, reduce 사용 | 필요 없는 건 forEach 사용
-    userData.forEach((data) =>
+    listData.forEach((data) =>
       renderInquiryList(userInquiryContainer, data)
     );
   } catch (err) {
+    console.log(err);
     // renderEmptyList(userCardContainer);
   }
 };
 
-renderInquiryList();
+rendingInquiryList();

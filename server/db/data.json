@@ -83,52 +83,40 @@
   ],
   "inquiry": [
     {
-      "id": 1,
-      "title": "팩이 터져서 왔어요",
-      "time": "",
-      "question": "엉망이네요. 환불 요청합니다.",
-      "answer": "안녕하세요. 칼리입니다. 믿고 찾아주신 상품에 불편을 드려 정말 죄송합니다.",
-      "isSecret": false
+      "name": "",
+      "time": "2023.2.7",
+      "title": "테스트제목",
+      "question": "테스트내용",
+      "answer": "",
+      "isSecret": false,
+      "id": 1
     },
     {
-      "id": 2,
       "name": "",
-      "title": "제목",
-      "question": "내용",
+      "time": "2023.2.7",
+      "title": "테스트",
+      "question": "테스트",
       "answer": "",
-      "isSecret": false
+      "isSecret": false,
+      "id": 2
     },
     {
-      "id": 3,
       "name": "",
-      "title": "제목 테스트",
-      "question": "내용 테스트",
+      "time": "2023.2.7",
+      "title": "테스트",
+      "question": "테스트 다시",
       "answer": "",
-      "isSecret": false
+      "isSecret": true,
+      "id": 3
     },
     {
-      "id": 4,
       "name": "",
-      "title": "제목4",
-      "question": "내용4",
+      "time": "2023.2.7",
+      "title": "테스트",
+      "question": "테스트",
       "answer": "",
-      "isSecret": false
-    },
-    {
-      "id": 5,
-      "name": "",
-      "title": "제목5",
-      "question": "내용5",
-      "answer": "",
-      "isSecret": false
-    },
-    {
-      "id": 6,
-      "name": "",
-      "title": "제목6",
-      "question": "내용6",
-      "answer": "",
-      "isSecret": false
+      "isSecret": false,
+      "id": 4
     }
   ]
 }

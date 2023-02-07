@@ -5,6 +5,7 @@ import {
   disableElement,
   tiger,
   renderInquiryList,
+  isNumber,
 } from '../lib/index.js';
 
 const hidden = getNode('#hidden');
@@ -14,6 +15,7 @@ const titleTextField = getNode('#content32');
 const contentTextField = getNode('#content37');
 const info = getNode('#info');
 const cancel = getNode('#popupCancel');
+const checkbox = getNode('#secret');
 
 /* 텍스트 지우는 함수 */
 function clearText(target) {
@@ -30,16 +32,6 @@ $('#content37').keyup(function (e) {
     $('#textLengthCheck').html('(5,000 / 5,000)');
   }
 });
-
-/* $('contents').click(function (e) {
-  if (
-    $(e.target).hasClass(
-      'popup-inquiry__container__main__content--input'
-    )
-  ) {
-    console.log('hit');
-  }
-}); */
 
 /* 메인 클릭 핸들러 */
 const handler = (e) => {
@@ -64,17 +56,9 @@ const handler = (e) => {
     // info.style.display = '';
   }
 
-  if (target.dataset.name === 'send') {
-    // console.log(titleTextField.value);
-    // console.log(contentTextField.value);
-  }
-
   if (target.dataset.name === 'cancel') {
     hidden.style.display = 'none';
-
-    // $('body').off('scroll touchmove mousewheel');
-
-    // console.log('cancle');
+    info.style.display = 'block';
 
     clearText(titleTextField);
     clearText(contentTextField);
@@ -101,20 +85,33 @@ $(sendButton).ready(function changeColor(e) {
   contents.addEventListener('change', changeColor);
 });
 
+/* data.json으로 데이터 보내주기 */
 function submitData() {
+  let today = new Date();
+  let year = today.getFullYear();
+  let month = today.getMonth() + 1;
+  let date = today.getDate();
+
+  const is_checked = checkbox.checked;
+
+  let time = year + '.' + month + '.' + date;
+
   tiger
     .post(`http://localhost:3000/inquiry/`, {
-      id: '',
       name: '',
+      time: time,
       title: titleTextField.value,
       question: contentTextField.value,
       answer: '',
-      isSecret: false,
+      isSecret: is_checked,
     })
-    .then((res) => {
-      console.log(res.json());
-      // renderInquiryList();
-    });
+    .then(() => {});
+
+  hidden.style.display = 'none';
+  info.style.display = 'block';
+
+  clearText(titleTextField);
+  clearText(contentTextField);
 }
 
 sendButton.addEventListener('click', submitData);
