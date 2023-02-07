@@ -4,7 +4,6 @@ import {
   enableElement,
   disableElement,
   tiger,
-  // renderInquiryList,
 } from '../lib/index.js';
 
 const hidden = getNode('#hidden');

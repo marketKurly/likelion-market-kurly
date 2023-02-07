@@ -4,7 +4,6 @@ import {
   enableElement,
   disableElement,
   tiger,
-  // renderInquiryList,
 } from '../lib/index.js';
 
 const hidden = getNode('#hidden');
@@ -90,24 +89,21 @@ function submitData() {
   let month = today.getMonth() + 1;
   let date = today.getDate();
 
-  const is_checked = checkbox.checked;
-
   let time = year + '.' + month + '.' + date;
 
-  tiger.post(`http://localhost:3000/inquiry/`, {
+  tiger.post(`http://localhost:3000/review/`, {
     name: '',
     time: time,
     title: titleTextField.value,
     question: contentTextField.value,
-    answer: '',
-    isSecret: is_checked,
+    answer: '테스트 내용',
   });
 
-  hidden.style.display = 'none';
-  info.style.display = 'block';
+  // hidden.style.display = 'none';
+  // info.style.display = 'block';
 
-  clearText(titleTextField);
-  clearText(contentTextField);
+  // clearText(titleTextField);
+  // clearText(contentTextField);
 }
 
 sendButton.addEventListener('click', submitData);

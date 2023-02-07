@@ -117,6 +117,34 @@
       "answer": "테스트",
       "isSecret": false,
       "id": 4
+    },
+    {
+      "name": "",
+      "time": "2023.2.8",
+      "title": "xptmxm",
+      "question": "xptmxm",
+      "answer": "",
+      "isSecret": false,
+      "id": 5
+    },
+    {
+      "name": "",
+      "time": "2023.2.8",
+      "title": "테스트",
+      "question": "테스트",
+      "answer": "",
+      "isSecret": false,
+      "id": 6
+    }
+  ],
+  "review": [
+    {
+      "name": "",
+      "time": "2023.2.8",
+      "title": "테스트",
+      "question": "테스트",
+      "answer": "테스트 내용",
+      "id": 1
     }
   ]
 }
