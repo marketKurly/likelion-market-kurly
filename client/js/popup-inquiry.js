@@ -4,8 +4,7 @@ import {
   enableElement,
   disableElement,
   tiger,
-  renderInquiryList,
-  isNumber,
+  // renderInquiryList,
 } from '../lib/index.js';
 
 const hidden = getNode('#hidden');
@@ -96,16 +95,14 @@ function submitData() {
 
   let time = year + '.' + month + '.' + date;
 
-  tiger
-    .post(`http://localhost:3000/inquiry/`, {
-      name: '',
-      time: time,
-      title: titleTextField.value,
-      question: contentTextField.value,
-      answer: '',
-      isSecret: is_checked,
-    })
-    .then(() => {});
+  tiger.post(`http://localhost:3000/inquiry/`, {
+    name: '',
+    time: time,
+    title: titleTextField.value,
+    question: contentTextField.value,
+    answer: '',
+    isSecret: is_checked,
+  });
 
   hidden.style.display = 'none';
   info.style.display = 'block';

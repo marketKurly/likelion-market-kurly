@@ -679,11 +679,12 @@
             font-weight: 600;
             color: $content;
             line-height: 1.8;
-            background-color: $gray-50;
             position: relative;
+            background-color: $gray-50;
 
             td {
               padding: 20px;
+              width: auto;
             }
 
             .title {

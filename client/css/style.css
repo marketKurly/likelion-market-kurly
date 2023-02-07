@@ -3234,11 +3234,12 @@ table {
   font-weight: 600;
   color: #333333;
   line-height: 1.8;
-  background-color: #f9f9f9;
   position: relative;
+  background-color: #f9f9f9;
 }
 .product-detail__description__inquiry__content__text--detailText td {
   padding: 20px;
+  width: auto;
 }
 .product-detail__description__inquiry__content__text--detailText .title {
   width: 720px;
