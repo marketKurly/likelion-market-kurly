@@ -484,12 +484,18 @@
                 <button
                   class="product-detail__information__detail__result__add__like"
                 >
-                  좋아요
+                  <img
+                    src="../css/img/Icon/Heart.svg"
+                    alt="좋아요"
+                  />
                 </button>
                 <button
                   class="product-detail__information__detail__result__add__noti"
                 >
-                  알림설정
+                  <img
+                    src="../css/img/Icon/Bell.svg"
+                    alt="알림설정"
+                  />
                 </button>
                 <button
                   class="product-detail__information__detail__result__add__addcart"
@@ -692,7 +698,7 @@
               <div
                 class="product-detail__description__review__list--total"
               >
-                <span>총 2개</span>
+                <span id="review-counter"></span>
                 <div>
                   <button>추천순</button>
                   <button>최근 등록순</button>
@@ -723,7 +729,8 @@
                 <div
                   class="product-detail__description__review__list__content__review"
                 >
-                  <div
+                  <div id="review-inner"></div>
+                  <!-- <div
                     class="product-detail__description__review__list__content__review--div"
                   >
                     <div>
@@ -739,46 +746,22 @@
                       </p>
                       <footer>2022.11.10</footer>
                     </article>
-                  </div>
-                  <div
-                    class="product-detail__description__review__list__content__review--div"
-                  >
-                    <div>
-                      <span>베스트</span>
-                      <span>퍼플</span>
-                      <span>김*식</span>
-                    </div>
-                    <article>
-                      <h3>[풀무원] 탱탱쫄면 (4개입)</h3>
-                      <p>
-                        너무 맛있어여~ 면이 쫄깃하고 양념도
-                        짱맛나요!!
-                      </p>
-                      <footer>2022.11.10</footer>
-                    </article>
-                  </div>
-                  <div
-                    class="product-detail__description__review__list__content__review--div"
-                  >
-                    <div>
-                      <span>베스트</span>
-                      <span>퍼플</span>
-                      <span>김*식</span>
-                    </div>
-                    <article>
-                      <h3>[풀무원] 탱탱쫄면 (4개입)</h3>
-                      <p>
-                        너무 맛있어여~ 면이 쫄깃하고 양념도
-                        짱맛나요!!
-                      </p>
-                      <footer>2022.11.10</footer>
-                    </article>
-                  </div>
+                  </div> -->
                   <div
                     class="product-detail__description__review__list__content__review__button"
                   >
-                    <button><</button>
-                    <button>></button>
+                    <button>
+                      <img
+                        src="../css/img/Icon/Arrow-1.svg"
+                        alt="왼쪽 화살표"
+                      />
+                    </button>
+                    <button>
+                      <img
+                        src="../css/img/Icon/Arrow-1.svg"
+                        alt="오른쪽 화살표"
+                      />
+                    </button>
                   </div>
                 </div>
               </div>
@@ -840,7 +823,7 @@
                     </td>
                     <td class="status gray">-</td>
                   </tr>
-                  <table id="inner">
+                  <table id="inquiry-inner">
                     <!-- <tr
                       class="product-detail__description__inquiry__content__text--text"
                     >
@@ -910,8 +893,18 @@
               <div
                 class="product-detail__description__inquiry__button"
               >
-                <button><</button>
-                <button>></button>
+                <button>
+                  <img
+                    src="../css/img/Icon/Arrow-1.svg"
+                    alt="왼쪽 화살표"
+                  />
+                </button>
+                <button>
+                  <img
+                    src="../css/img/Icon/Arrow-1.svg"
+                    alt="오른쪽 화살표"
+                  />
+                </button>
               </div>
             </section>
           </div>

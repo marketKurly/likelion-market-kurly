@@ -94,8 +94,7 @@ function submitData() {
     name: '',
     time: time,
     title: titleTextField.value,
-    question: contentTextField.value,
-    answer: '테스트 내용',
+    content: contentTextField.value,
   });
 
   hidden.style.display = 'none';

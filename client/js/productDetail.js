@@ -11,7 +11,8 @@ const reviwHidden = getNode('#review-hidden');
 const inquiryHidden = getNode('#inquiry-hidden');
 const userInquiryContainer = getNode('.user-inquiry-inner');
 const userReviewContainer = getNode('.user-inquiry-inner');
-const inner = getNode('#inner');
+const inquiryInner = getNode('#inquiry-inner');
+const reviewInner = getNode('#review-inner');
 
 /* 메인 클릭 핸들러 */
 const handler = (e) => {
@@ -54,7 +55,7 @@ const rendingInquiryList = async (data) => {
 
     for (let i = 0; i < listData.length; i++) {
       // console.log(listData[i].time);
-      inner.innerHTML +=
+      inquiryInner.innerHTML +=
         `<tr class='product-detail__description__inquiry__content__text--text'>
         <td class="title">` +
         listData[i].title +
@@ -91,3 +92,51 @@ const rendingInquiryList = async (data) => {
 };
 
 rendingInquiryList();
+
+const rendingReviewList = async (data) => {
+  try {
+    let response = await tiger.get(
+      'http://localhost:3000/review'
+    );
+    let listData = response.data;
+
+    // console.log(listData);
+
+    // inner.innerHTML = '';
+
+    // listData.forEach((data) => console.log(data));
+
+    $('#review-counter').text(
+      '총 ' + listData.length + '개'
+    );
+
+    for (let i = 0; i < listData.length; i++) {
+      // console.log(listData[i].time);
+      reviewInner.innerHTML += `
+      <div class="product-detail__description__review__list__content__review--div">
+      <div>
+        <span>베스트</span>
+        <span>퍼플</span>
+        <span>${listData[i].name}</span>
+      </div>
+      <article>
+        <h3>[풀무원] 탱탱쫄면 (4개입)</h3>
+        <p>
+          ${listData[i].content}
+        </p>
+        <footer>${listData[i].time}</footer>
+      </article>
+    </div>`;
+    }
+
+    // return이 필요 한 건 map, reduce 사용 | 필요 없는 건 forEach 사용
+    /* listData.forEach((data) =>
+      renderInquiryList(userInquiryContainer, data)
+    ); */
+  } catch (err) {
+    // console.log(err);
+    // renderEmptyList(userCardContainer);
+  }
+};
+
+rendingReviewList();
