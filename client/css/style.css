@@ -1831,7 +1831,7 @@ table {
   width: 52px;
   height: 52px;
   right: 10%;
-  background: url("/client/css/img/Icon/Arrow.svg") 50% 50% no-repeat;
+  background: url("../../css/img/Icon/Arrow.svg") 50% 50% no-repeat;
   transform: rotate(180deg);
   opacity: 0;
   transition: all ease-in-out 500ms;
@@ -1842,7 +1842,7 @@ table {
   width: 52px;
   height: 52px;
   left: 10%;
-  background: url("/client/css/img/Icon/Arrow.svg") 50% 50% no-repeat;
+  background: url("../../css/img/Icon/Arrow.svg") 50% 50% no-repeat;
   opacity: 0;
   transition: all ease-in-out 500ms;
 }
@@ -1940,7 +1940,7 @@ table {
   height: 50px;
   right: -30px;
   top: calc(50% - 60px);
-  background: url("/client/css/img/Icon/Arrow-white.svg");
+  background: url("../../css/img/Icon/Arrow-white.svg");
   background-size: contain;
   transform: rotate(180deg);
   margin: 10px 10px;
@@ -1952,7 +1952,7 @@ table {
   height: 50px;
   left: -30px;
   top: calc(50% - 60px);
-  background: url("/client/css/img/Icon/Arrow-white.svg");
+  background: url("../../css/img/Icon/Arrow-white.svg");
   background-size: contain;
   margin: 10px 10px;
 }
@@ -1998,7 +1998,7 @@ table {
   height: 50px;
   right: -30px;
   top: calc(50% - 60px);
-  background: url("/client/css/img/Icon/Arrow-white.svg");
+  background: url("../..//css/img/Icon/Arrow-white.svg");
   background-size: contain;
   transform: rotate(180deg);
   margin: 10px 10px;
@@ -2010,7 +2010,7 @@ table {
   height: 50px;
   left: -30px;
   top: calc(50% - 60px);
-  background: url("/client/css/img/Icon/Arrow-white.svg");
+  background: url("../../css/img/Icon/Arrow-white.svg");
   background-size: contain;
   margin: 10px 10px;
 }
@@ -2118,7 +2118,7 @@ table {
   width: 30px;
   height: 30px;
   cursor: pointer;
-  background-image: url(/client/css/img/Icon/Minus.svg);
+  background-image: url(../../css/img/Icon/Minus.svg);
   background-repeat: no-repeat;
   background-position: -8px -8px;
 }
@@ -2126,7 +2126,7 @@ table {
   width: 30px;
   height: 30px;
   cursor: pointer;
-  background-image: url(/client/css/img/Icon/Plus.svg);
+  background-image: url(../../css/img/Icon/Plus.svg);
   background-repeat: no-repeat;
   background-position: -8px -8px;
 }
