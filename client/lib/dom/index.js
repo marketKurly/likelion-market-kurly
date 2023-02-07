@@ -8,6 +8,7 @@ export * from './getNode.js';
 // export * from '../../js/partials/userList.js';
 export * from './showAlert.js';
 export * from './bindEvent.js';
+export * from './inquiryList.js';
 export * from './getInputValue.js';
 export * from './clearContents.js';
 export * from './controlElement.js';

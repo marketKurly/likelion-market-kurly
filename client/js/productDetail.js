@@ -3,6 +3,7 @@ import { getNode, attr } from '../lib/index.js';
 const body = getNode('.body');
 const main = getNode('.product-detail');
 const hidden = getNode('#hidden');
+const userInquiryContainer = getNode('.user-inquiry-inner');
 
 /* 메인 클릭 핸들러 */
 const handler = (e) => {
@@ -39,3 +40,23 @@ const handler = (e) => {
 };
 
 main.addEventListener('click', handler);
+
+const renderInquiryList = async () => {
+  try {
+    // await delayP(2000);
+
+    let response = await hong.get(
+      'http://localhost:3000/inquiry'
+    );
+    let userData = response.data;
+
+    // return이 필요 한 건 map, reduce 사용 | 필요 없는 건 forEach 사용
+    userData.forEach((data) =>
+      renderInquiryList(userInquiryContainer, data)
+    );
+  } catch (err) {
+    // renderEmptyList(userCardContainer);
+  }
+};
+
+renderInquiryList();

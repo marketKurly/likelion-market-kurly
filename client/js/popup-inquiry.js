@@ -3,6 +3,8 @@ import {
   attr,
   enableElement,
   disableElement,
+  tiger,
+  renderInquiryList,
 } from '../lib/index.js';
 
 const hidden = getNode('#hidden');
@@ -59,14 +61,12 @@ const handler = (e) => {
     contentTextField.focus();
   }
   if (contents && target.id !== 'info') {
-    info.style.display = '';
+    // info.style.display = '';
   }
 
   if (target.dataset.name === 'send') {
-    // const submit = new Data();
-
-    console.log(titleTextField.data);
-    console.log(contentTextField.data);
+    // console.log(titleTextField.value);
+    // console.log(contentTextField.value);
   }
 
   if (target.dataset.name === 'cancel') {
@@ -101,6 +101,20 @@ $(sendButton).ready(function changeColor(e) {
   contents.addEventListener('change', changeColor);
 });
 
-function submitData(e) {}
+function submitData() {
+  tiger
+    .post(`http://localhost:3000/inquiry/`, {
+      id: '',
+      name: '',
+      title: titleTextField.value,
+      question: contentTextField.value,
+      answer: '',
+      isSecret: false,
+    })
+    .then((res) => {
+      console.log(res.json());
+      // renderInquiryList();
+    });
+}
 
-sendButton.addEventListener('submit', submitData);
+sendButton.addEventListener('click', submitData);
