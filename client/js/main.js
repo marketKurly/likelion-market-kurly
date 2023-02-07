@@ -4,6 +4,9 @@ import {
   saveStorage,
   loadStorage,
   insertFirst,
+  xhrPromise,
+  xhrData,
+  tiger,
 } from '../lib/index.js';
 
 const header = getNode('.header');
@@ -160,3 +163,16 @@ const recentWrapper = getNode(
   );
 })();
 /* -------------------------------------------------------------------------- */
+
+// tiger.get('http://localhost:3000/products');
+// xhrPromise
+//   .get('http://localhost:3000/products')
+//   .then((res) => {
+//     console.log(res);
+//   });
+
+// tiger.get('http://localhost:3000/products');
+// xhrPromise({
+// url: 'localhost:3000/products',
+// });
+// xhrPromise

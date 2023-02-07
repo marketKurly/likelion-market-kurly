@@ -1,6 +1,7 @@
 .width {
   width: 1050px;
   margin: 0 auto;
+  position: relative;
 }
 
 .gray {
@@ -27,6 +28,7 @@
 /* 상품 상세 페이지 */
 .product-detail {
   padding-top: 40px;
+  position: relative;
   /* 상품 인포 */
   &__information {
     display: flex;
@@ -364,6 +366,7 @@
 
     &__content {
       text-align: center;
+      z-index: 1;
 
       &__whykarly {
         padding-bottom: 84px;
@@ -733,4 +736,13 @@
       }
     }
   }
+}
+
+#hidden {
+  display: none;
+}
+
+.scrollLock {
+  overflow: hidden;
+  height: 100%;
 }

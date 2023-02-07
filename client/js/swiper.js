@@ -1,3 +1,10 @@
+import {
+  getNode,
+  invisibleElement,
+  visibleElement,
+  bindEvent,
+} from '../lib/index.js';
+
 // main banner swiper1
 let mainBannerSwiper = new Swiper('.swiper1', {
   loop: true, // 무한 반복
