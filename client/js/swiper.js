@@ -48,7 +48,6 @@ let todayRecomendProductSwiper = new Swiper('.swiper2', {
   navigation: {
     nextEl: '.today-recomend-product .swiper-button-next',
     prevEl: '.today-recomend-product .swiper-button-prev',
-
   },
 });
 
@@ -64,6 +63,19 @@ let googPriceProductSwiper = new Swiper('.swiper3', {
   navigation: {
     nextEl: '.good-price-product .swiper-button-next',
     prevEl: '.good-price-product .swiper-button-prev',
-
   },
 });
+
+const recentlyViewedProduct = new Swiper(
+  '.main__recent-product__swiper',
+  {
+    // slidesPerView: '5'
+    // spaceBetween: 10,
+    // slidesPerGroup: 4
+    direction: 'vertical',
+    navigation: {
+      prevEl: '.main__recent-product__button--up',
+      nextEl: '.main__recent-product__button--down',
+    },
+  }
+);

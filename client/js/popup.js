@@ -1,5 +1,3 @@
-// import { getNode } from '../lib/index.js';
-
 // 팝업창 제어
 var toggleMainPopup = function () {
   /* 쿠키 제어 함수 정의 */
