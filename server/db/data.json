@@ -2,30 +2,30 @@
   "products": [
     {
       "id": "product-aaa",
-      "name": "[사미헌] 갈비탕",
-      "description": "진짜 갈비로 우려낸 전통 갈비탕",
-      "price": 12000,
+      "name": "[풀무원] 탱탱쫄면 (4개입)",
+      "description": "튀기지 않아 부드럽고 매콤한",
+      "price": "",
       "saleRatio": 0,
-      "salePrice": 0,
+      "salePrice": 4980,
       "image": {
-        "thumbnail": "https://img-cf.kurly.com/cdn-cgi/image/quality=85,width=676/shop/data/goods/1648206780555l0.jpeg",
-        "alt": "갈비탕"
+        "thumbnail": "tangtang.webp",
+        "alt": "풀무원 탱탱쫄면"
       },
       "stock": 6,
-      "category": "국·반찬·메인요리",
+      "category": "샐러드·간편식",
       "kalryOnly": "false",
-      "brand": "사미헌",
+      "brand": "풀무원",
       "qnas": []
     },
     {
       "id": "product-bbb",
       "name": "[이연복의 목란] 짬뽕 2인분(맵기선택)",
       "description": "입맛에 맞게 고르는 인기 메뉴",
-      "price": 13500,
+      "price": "",
       "saleRatio": 0,
-      "salePrice": 0,
+      "salePrice": 13500,
       "image": {
-        "thumbnail": "https://img-cf.kurly.com/cdn-cgi/image/quality=85,width=676/shop/data/goods/1657518987370l0.jpg",
+        "thumbnail": "champon.webp",
         "alt": "짬뽕 2인분(맵기선택)"
       },
       "stock": 13,
@@ -79,7 +79,7 @@
       "saleRatio": 0.15,
       "salePrice": 13175,
       "image": {
-        "thumbnail": "https://img-cf.kurly.com/cdn-cgi/image/quality=85,width=676/shop/data/goods/165303917855l0.jpeg",
+        "thumbnail": "brooklyn688.webp",
         "alt": "호주산 목초육 치마살 구이용 300g(냉장)"
       },
       "stock": 3,
@@ -130,10 +130,10 @@
       "name": "유명산지 설향딸기 500g",
       "description": "유명산지에서 전하는 제철 딸기",
       "price": 11900,
-      "saleRatio": 0.07,
+      "saleRatio": 0.1,
       "salePrice": 10990,
       "image": {
-        "thumbnail": "https://img-cf.kurly.com/cdn-cgi/image/quality=85,width=676/shop/data/goods/1608801577622l0.jpg",
+        "thumbnail": "strawberry.webp",
         "alt": "유명산지 설향딸기 500g"
       },
       "stock": 12,
@@ -149,7 +149,7 @@
       "saleRatio": 0.15,
       "salePrice": 29665,
       "image": {
-        "thumbnail": "https://img-cf.kurly.com/cdn-cgi/image/quality=85,width=676/shop/data/goods/1608801577622l0.jpg",
+        "thumbnail": "lagalbi.webp",
         "alt": "양념 LA 갈비 800g"
       },
       "stock": 12,
@@ -161,11 +161,11 @@
       "id": "product-fff",
       "name": "[KF365]한돈 삼겹살 구이용 600g~(냉장)",
       "description": "100g당 판매가:2,590원",
-      "price": 15540,
+      "price": "",
       "saleRatio": 0,
-      "salePrice": 0,
+      "salePrice": 15540,
       "image": {
-        "thumbnail": "https://img-cf.kurly.com/cdn-cgi/image/quality=85,width=676/shop/data/goods/1637147561308l0.jpg",
+        "thumbnail": "handon.webp",
         "alt": "한돈 삼겹살 구이용 600g~(냉장)"
       },
       "stock": 7,
@@ -181,7 +181,7 @@
       "saleRatio": 0.05,
       "salePrice": 18990,
       "image": {
-        "thumbnail": "https://img-cf.kurly.com/cdn-cgi/image/quality=85,width=676/shop/data/goods/165304027922l0.jpg",
+        "thumbnail": "bulgogi.webp",
         "alt": "양념 소불고기 1kg(냉장)"
       },
       "stock": 10,
@@ -193,11 +193,11 @@
       "id": "product-hhh",
       "name": "[강남면옥] 갈비탕",
       "description": "든든하고 푸짐한 한 그릇",
-      "price": 11900,
+      "price": "",
       "saleRatio": 0,
-      "salePrice": 0,
+      "salePrice": 11900,
       "image": {
-        "thumbnail": "https://img-cf.kurly.com/cdn-cgi/image/quality=85,width=676/shop/data/goods/1587346611469l0.jpg",
+        "thumbnail": "gangnamgalbitang.webp",
         "alt": "갈비탕"
       },
       "stock": 8,
@@ -209,11 +209,11 @@
       "id": "product-iii",
       "name": "[Kurly's] 동물복지 유정란 20구",
       "description": "1구 당 판매가:499,5원",
-      "price": 11900,
+      "price": "",
       "saleRatio": 0.0,
-      "salePrice": 0,
+      "salePrice": 11900,
       "image": {
-        "thumbnail": "https://img-cf.kurly.com/cdn-cgi/image/quality=85,width=676/shop/data/goods/1653036825212l0.jpeg",
+        "thumbnail": "animalegg.webp",
         "alt": "동물복지 유정란 20구"
       },
       "stock": 12,
@@ -229,7 +229,7 @@
       "saleRatio": 0.1,
       "salePrice": 8910,
       "image": {
-        "thumbnail": "https://img-cf.kurly.com/cdn-cgi/image/quality=85,width=676/shop/data/goods/1648209410173l0.jpeg",
+        "thumbnail": "fourbbagel.webp",
         "alt": "크림치즈 8종"
       },
       "stock": 4,
@@ -241,11 +241,11 @@
       "id": "product-kkk",
       "name": "[스윗밸런스] 오늘의 샐러드 10종(리뉴얼) (택1)",
       "description": "다채로운 토핑을 얹은 샐러드",
-      "price": 4900,
+      "price": "",
       "saleRatio": 0,
-      "salePrice": 0,
+      "salePrice": 4900,
       "image": {
-        "thumbnail": "https://img-cf.kurly.com/cdn-cgi/image/quality=85,width=676/shop/data/goods/1655775819130l0.jpg",
+        "thumbnail": "sweetbalance.webp",
         "alt": "오늘의 샐러드 10종(리뉴얼) (택1)"
       },
       "stock": 3,
@@ -257,11 +257,11 @@
       "id": "product-lll",
       "name": "[그래놀라 하우스] 그래놀라 5종 (택1)",
       "description": "도톰하게 뭉쳐 만든 수제 그래놀라",
-      "price": 13500,
+      "price": "",
       "saleRatio": 0,
-      "salePrice": 0,
+      "salePrice": 13500,
       "image": {
-        "thumbnail": "https://img-cf.kurly.com/cdn-cgi/image/quality=85,width=676/shop/data/goods/1653035941542l0.jpg",
+        "thumbnail": "granolahouse.webp",
         "alt": "그래놀라 5종"
       },
       "stock": 4,
@@ -277,7 +277,7 @@
       "saleRatio": 0.13,
       "salePrice": 6800,
       "image": {
-        "thumbnail": "https://img-cf.kurly.com/cdn-cgi/image/quality=85,width=676/shop/data/goods/1653034699910l0.jpeg",
+        "thumbnail": "jukkumi.webp",
         "alt": "쭈꾸미 볶음 300g(냉동)"
       },
       "stock": 5,
@@ -293,7 +293,7 @@
       "saleRatio": 0.15,
       "salePrice": 5860,
       "image": {
-        "thumbnail": "https://img-cf.kurly.com/cdn-cgi/image/quality=85,width=676/shop/data/goods/1658128895196l0.jpg",
+        "thumbnail": "ubuho.webp",
         "alt": "유부호만두"
       },
       "stock": 8,
@@ -303,19 +303,19 @@
     },
     {
       "id": "product-ooo",
-      "name": "[풀무원] 탱탱쫄면 (4개입)",
-      "description": "튀기지 않아 부드럽고 매콤한",
-      "price": 4980,
+      "name": "[사미헌] 갈비탕",
+      "description": "진짜 갈비로 우려낸 전통 갈비탕",
+      "price": "",
       "saleRatio": 0,
-      "salePrice": 0,
+      "salePrice": 12000,
       "image": {
-        "thumbnail": "https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/b82195c9-24f5-4b27-a742-d8f0757e68b5.jpg",
-        "alt": "풀무원 탱탱쫄면"
+        "thumbnail": "samihungalbitang.webp",
+        "alt": "갈비탕"
       },
-      "stock": 4,
-      "category": "샐러드·간편식",
+      "stock": 6,
+      "category": "국·반찬·메인요리",
       "kalryOnly": "false",
-      "brand": "풀무원"
+      "brand": "사미헌"
     }
   ],
   "QnAs": [

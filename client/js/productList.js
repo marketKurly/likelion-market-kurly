@@ -39,25 +39,6 @@ tiger.get('http://localhost:3000/products');
 xhrPromise
   .get('http://localhost:3000/products')
   .then((data) => {
-    $(function () {
-      let container = $('#pagination');
-      container.pagination({
-        dataSource: data,
-        pageSize: 5,
-        callback: function (data, pagination) {
-          var dataHtml = '<ul>';
-
-          $.each(data, function (index, item) {
-            dataHtml += '<li>' + item.name + '</li>';
-          });
-
-          dataHtml += '</ul>';
-
-          $('#data-container').html(dataHtml);
-        },
-      });
-    });
-
     data.forEach((item, index) => {
       let id = item.id;
       let name = item.name;
@@ -65,10 +46,9 @@ xhrPromise
         item.saleRatio !== 0
           ? item.saleRatio * 100 + '%'
           : '';
-      let currentPrice =
-        item.price
-          .toString()
-          .replace(/\B(?=(\d{3})+(?!\d))/g, ',') + '원';
+      let currentPrice = item.price
+        .toString()
+        .replace(/\B(?=(\d{3})+(?!\d))/g, ',');
       let salePrice =
         item.salePrice !== 0
           ? item.salePrice
@@ -89,7 +69,7 @@ xhrPromise
         <div class="product__list__img1">
           <div class="product__list__img2">
             <img
-              src="${item.image.thumbnail}"
+              src="../assets/productList/${item.image.thumbnail}"
               alt="${item.image.alt}"
             />
             <div>
@@ -120,7 +100,7 @@ xhrPromise
             </div>
           </div>
           <p class="badge4">
-            튀기지않아 부담없는 매콤함
+            ${description}
           </p>
           <div class="badge5">
             <span class="karly_only"
