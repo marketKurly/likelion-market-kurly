@@ -14,7 +14,6 @@ const titleTextField = getNode('#content32');
 const contentTextField = getNode('#content37');
 const info = getNode('#info');
 const cancel = getNode('#popupCancel');
-const checkbox = getNode('#secret');
 
 /* 텍스트 지우는 함수 */
 function clearText(target) {
