@@ -13,14 +13,14 @@ var toggleMainPopup = function () {
       date.setTime(
         date.getTime() + exp * 24 * 60 * 60 * 1000
       );
-      console.log(
-        name +
-          '=' +
-          val +
-          ';expires=' +
-          date.toUTCString() +
-          ';path=/'
-      );
+      // console.log(
+      //   name +
+      //     '=' +
+      //     val +
+      //     ';expires=' +
+      //     date.toUTCString() +
+      //     ';path=/'
+      // );
 
       // 실제로 쿠키 작성하기
       document.cookie =
