@@ -7,11 +7,11 @@ import {
 } from '../lib/index.js';
 
 const hidden = getNode('#inquiry-hidden');
-const contents = getNode('.contents');
+const contents = getNode('.inquiry');
 const sendButton = getNode('#inquiry-send');
 const titleTextField = getNode('#content32');
 const contentTextField = getNode('#content37');
-const info = getNode('#inquiry-info');
+const info = getNode('#info');
 const checkbox = getNode('#secret');
 
 /* 텍스트 지우는 함수 */
@@ -45,15 +45,15 @@ const handler = (e) => {
     }
   }
 
-  if (target.id === 'inquiry-info') {
+  if (target.id === 'info') {
     info.style.display = 'none';
     contentTextField.focus();
   }
-  if (contents && target.id !== 'inquiry-info') {
+  if (contents && target.id !== 'info') {
     // info.style.display = '';
   }
 
-  if (target.dataset.name === 'inquiry-cancel') {
+  if (target.dataset.name === 'cancel') {
     hidden.style.display = 'none';
     info.style.display = 'block';
 

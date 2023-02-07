@@ -73,7 +73,9 @@ const rendingInquiryList = async (data) => {
         <div><img class="answer-icon"
         src="/css/img/icon/Answer.svg"
         alt="답변 아이콘"/><div class="answer"><span>안녕하세요. 칼리입니다. 믿고 찾아주신 상품에 불편을 드려 정말 죄송합니다. 더불어, 해당 게시판은 실시간으로 상담이 어려워 순차적으로 답변드리고 있는 관계로 신속하게 답변 드리지 못하여 대단히 죄송합니다. </span>
-        <p class="gray padding-t4">2023.2.8</p>
+        <p class="gray padding-t4">` +
+        listData[i].time +
+        `</p>
         </div></div>
         </td></tr>`;
     }

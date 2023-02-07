@@ -919,12 +919,10 @@
 
         <div id="review-hidden">
           <!-- 상품 후기작성 popup -->
-          <div class="popup-review-background contents">
+          <div class="popup-review-background review">
             <div class="popup-review-window">
               <section class="popup-review">
-                <div
-                  class="popup-review__container contents"
-                >
+                <div class="popup-review__container review">
                   <div
                     class="popup-review__container__header"
                   >
@@ -1093,7 +1091,9 @@
                             주의해 주시기 바랍니다.
                           </p>
                         </div>
-                        <span id="counter">0 / 5,000</span>
+                        <span id="review-counter"
+                          >0 / 5,000</span
+                        >
                       </div>
                     </div>
                   </div>
@@ -1130,11 +1130,11 @@
 
         <div id="inquiry-hidden">
           <!-- 상품 문의하기 popup -->
-          <div class="popup-inquiry-background contents">
+          <div class="popup-inquiry-background inquiry">
             <div class="popup-inquiry-window">
               <section class="popup-inquiry">
                 <div
-                  class="popup-inquiry__container contents"
+                  class="popup-inquiry__container inquiry"
                 >
                   <div
                     class="popup-inquiry__container__header"
@@ -1210,8 +1210,8 @@
                         ></textarea>
                         <div
                           class="popup-inquiry__container__main__content--input__placeholder"
-                          data-name="inquiry-info"
-                          id="inquiry-info"
+                          data-name="info"
+                          id="info"
                         >
                           <strong
                             >상품문의 작성 전 확인해
@@ -1338,7 +1338,7 @@
                     >
                       <button
                         type="button"
-                        data-name="inquiry-cancel"
+                        data-name="cancel"
                       >
                         <span>취소</span>
                       </button>

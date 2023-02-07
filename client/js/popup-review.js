@@ -7,11 +7,11 @@ import {
 } from '../lib/index.js';
 
 const hidden = getNode('#review-hidden');
-const contents = getNode('.contents');
+const contents = getNode('.review');
 const sendButton = getNode('#review-send');
 const titleTextField = getNode('#content42');
 const contentTextField = getNode('#content47');
-const info = getNode('#ewview-info');
+const info = getNode('#review-info');
 
 /* 텍스트 지우는 함수 */
 function clearText(target) {
@@ -21,7 +21,7 @@ function clearText(target) {
 /* 실시간 글자 수 체크 */
 $('#content47').keyup(function (e) {
   let content = $(this).val();
-  $('#counter').text(content.length + ' / 5,000');
+  $('#review-counter').text(content.length + ' / 5,000');
 
   if (content.length > 5000) {
     $(this).val(content.substring(0, 5000));
@@ -65,8 +65,8 @@ contents.addEventListener('click', handler);
 
 /* 등록 버튼 색상 바꾸기 */
 $(sendButton).ready(function changeColor(e) {
-  let title = $('#content32').val();
-  let content = $('#content37').val();
+  let title = $('#content42').val();
+  let content = $('#content47').val();
 
   if (title.length >= 1 && content.length >= 1) {
     sendButton.style.background = '#5f0080';
