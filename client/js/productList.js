@@ -13,18 +13,16 @@ $(document).ready(function () {
 });
 
 // 체크 초기화
-const initializationButton = document.querySelector(
-  '.initialization'
-);
+const resetButton = document.querySelector('.check-reset');
 const checkbutton = document.querySelectorAll('.check2');
 
-let han = () => {
+let a = () => {
   checkbutton.forEach((item) => {
     item.checked = false;
   });
 };
 
-initializationButton.addEventListener('click', han);
+resetButton.addEventListener('click', a);
 
 // 페이지네이션
 
@@ -62,7 +60,10 @@ $(function () {
 });
 
 // 상품 주소 받아오기
-// fetch('http://localhost:3000/products')
-// .then((response) => response.json())
-// .then((data) => console.log(data));
-// .catch((error) => console.error(error));
+
+fetch('http://localhost:3000/products')
+  .then((res) => res.json())
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((error) => console.error(error));

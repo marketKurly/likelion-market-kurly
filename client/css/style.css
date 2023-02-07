@@ -3151,7 +3151,7 @@ table {
   margin-right: 5px;
 }
 
-.initialization {
+.check-reset {
   font-size: 12px;
   margin-left: 5px;
   font-weight: 500;
@@ -3228,12 +3228,12 @@ input[class=check2] + label em {
   display: inline-block;
   width: 24px;
   height: 24px;
-  background: url("/client/css/img/Input/Check1.svg") 0 0 no-repeat;
+  background: url("../css/img/Input/Check1.svg") 0 0 no-repeat;
   margin-right: 5px;
 }
 
 input[class=check2]:checked + label em {
-  background: url("/client/css/img/Input/Check2.svg") 0 0 no-repeat;
+  background: url("../css/img/Input/Check2.svg") 0 0 no-repeat;
 }
 
 .accordion__item__text {
