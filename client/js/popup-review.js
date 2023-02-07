@@ -6,13 +6,12 @@ import {
   tiger,
 } from '../lib/index.js';
 
-const hidden = getNode('#hidden');
+const hidden = getNode('#review-hidden');
 const contents = getNode('.contents');
-const sendButton = getNode('#send');
-const titleTextField = getNode('#content32');
-const contentTextField = getNode('#content37');
-const info = getNode('#info');
-const cancel = getNode('#popupCancel');
+const sendButton = getNode('#review-send');
+const titleTextField = getNode('#content42');
+const contentTextField = getNode('#content47');
+const info = getNode('#ewview-info');
 
 /* 텍스트 지우는 함수 */
 function clearText(target) {
@@ -20,7 +19,7 @@ function clearText(target) {
 }
 
 /* 실시간 글자 수 체크 */
-$('#content37').keyup(function (e) {
+$('#content47').keyup(function (e) {
   let content = $(this).val();
   $('#counter').text(content.length + ' / 5,000');
 
@@ -45,15 +44,15 @@ const handler = (e) => {
     }
   }
 
-  if (target.id === 'info') {
+  if (target.id === 'review-info') {
     info.style.display = 'none';
     contentTextField.focus();
   }
-  if (contents && target.id !== 'info') {
+  if (contents && target.id !== 'review-info') {
     // info.style.display = '';
   }
 
-  if (target.dataset.name === 'cancel') {
+  if (target.dataset.name === 'review-cancel') {
     hidden.style.display = 'none';
     info.style.display = 'block';
 
@@ -99,11 +98,11 @@ function submitData() {
     answer: '테스트 내용',
   });
 
-  // hidden.style.display = 'none';
-  // info.style.display = 'block';
+  hidden.style.display = 'none';
+  info.style.display = 'block';
 
-  // clearText(titleTextField);
-  // clearText(contentTextField);
+  clearText(titleTextField);
+  clearText(contentTextField);
 }
 
 sendButton.addEventListener('click', submitData);

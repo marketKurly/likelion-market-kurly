@@ -7,8 +7,10 @@ import {
 
 const body = getNode('.body');
 const main = getNode('.product-detail');
-const hidden = getNode('#hidden');
+const reviwHidden = getNode('#review-hidden');
+const inquiryHidden = getNode('#inquiry-hidden');
 const userInquiryContainer = getNode('.user-inquiry-inner');
+const userReviewContainer = getNode('.user-inquiry-inner');
 const inner = getNode('#inner');
 
 /* 메인 클릭 핸들러 */
@@ -26,8 +28,12 @@ const handler = (e) => {
     }
   }
 
+  if (target.id === 'send1') {
+    reviwHidden.style.display = 'block';
+  }
+
   if (target.id === 'send2') {
-    hidden.style.display = 'block';
+    inquiryHidden.style.display = 'block';
   }
 };
 
@@ -40,11 +46,11 @@ const rendingInquiryList = async (data) => {
     );
     let listData = response.data;
 
-    console.log(listData);
+    // console.log(listData);
 
     // inner.innerHTML = '';
 
-    listData.forEach((data) => console.log(data));
+    // listData.forEach((data) => console.log(data));
 
     for (let i = 0; i < listData.length; i++) {
       // console.log(listData[i].time);
