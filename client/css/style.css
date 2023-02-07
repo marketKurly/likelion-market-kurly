@@ -2015,6 +2015,14 @@ table {
   margin: 10px 10px;
 }
 
+.today-recomend-product .swiper-button-next.swiper-button-disabled {
+  opacity: 0;
+}
+
+.today-recomend-product .swiper-button-prev.swiper-button-disabled {
+  opacity: 0;
+}
+
 .popup-ad {
   position: fixed;
   width: 440px;
@@ -2194,6 +2202,14 @@ table {
   display: block;
 }
 
+.good-price-product .swiper-button-next.swiper-button-disabled {
+  opacity: 0;
+}
+
+.good-price-product .swiper-button-prev.swiper-button-disabled {
+  opacity: 0;
+}
+
 .add-cart {
   position: absolute;
   left: 50%;
@@ -2333,16 +2349,22 @@ table {
   width: 790px;
   height: 690px;
   border-radius: 16px;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 30px;
+  box-shadow: 0px 8px 36px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 .popup-inquiry-background {
+  position: fixed;
   background: rgba(0, 0, 0, 0.3);
   width: 100%;
   height: 100vh;
+  z-index: 100;
+  top: 0;
+  left: 0;
 }
 .popup-inquiry-window {
   position: relative;
@@ -2691,6 +2713,7 @@ table {
 .width {
   width: 1050px;
   margin: 0 auto;
+  position: relative;
 }
 
 .gray {
@@ -2717,6 +2740,7 @@ table {
 /* 상품 상세 페이지 */
 .product-detail {
   padding-top: 40px;
+  position: relative;
   /* 상품 인포 */
   /* 상세 페이지 카테고리 */
   /* 상품 상세 설명 */
@@ -3011,6 +3035,7 @@ table {
 }
 .product-detail__description__content {
   text-align: center;
+  z-index: 1;
 }
 .product-detail__description__content__whykarly {
   padding-bottom: 84px;
@@ -3322,6 +3347,15 @@ table {
   height: 56px;
   border: 1px solid #e1e1e1;
   border-radius: 4px;
+}
+
+#hidden {
+  display: none;
+}
+
+.scrollLock {
+  overflow: hidden;
+  height: 100%;
 }
 
 /* 자동 레이아웃 */
