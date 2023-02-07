@@ -72,3 +72,17 @@ let googPriceProductSwiper = new Swiper('.swiper3', {
     prevEl: '.good-price-product .swiper-button-prev',
   },
 });
+
+const recentlyViewedProduct = new Swiper(
+  '.main__recent-product__swiper',
+  {
+    // slidesPerView: '5'
+    // spaceBetween: 10,
+    // slidesPerGroup: 4
+    direction: 'vertical',
+    navigation: {
+      prevEl: '.main__recent-product__button--up',
+      nextEl: '.main__recent-product__button--down',
+    },
+  }
+);
