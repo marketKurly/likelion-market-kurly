@@ -13,6 +13,9 @@ const userInquiryContainer = getNode('.user-inquiry-inner');
 const userReviewContainer = getNode('.user-inquiry-inner');
 const inquiryInner = getNode('#inquiry-inner');
 const reviewInner = getNode('#review-inner');
+const total = getNode('#total-result');
+const plus = getNode('#plus');
+const minus = getNode('#minus');
 
 /* 메인 클릭 핸들러 */
 const handler = (e) => {
@@ -39,6 +42,27 @@ const handler = (e) => {
 };
 
 main.addEventListener('click', handler);
+
+let resultvalue = total.innerText;
+
+const count = (type) => {
+  if (type === 'plus') {
+    resultvalue = parseInt(resultvalue) + 1;
+  } else if (type === 'minus') {
+    if (resultvalue > 0) {
+      resultvalue = parseInt(resultvalue) - 1;
+    }
+  }
+
+  total.innerText = resultvalue;
+};
+
+minus.addEventListener('click', () => {
+  count('minus');
+});
+plus.addEventListener('click', () => {
+  count('plus');
+});
 
 const rendingInquiryList = async (data) => {
   try {

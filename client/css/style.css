@@ -2841,8 +2841,8 @@ table {
   height: 30px;
 }
 .product-detail__information__detail__dl__select__choice__number--num {
-  width: 30px;
-  height: 30px;
+  width: 1px;
+  height: 1px;
   font-weight: 600;
   font-size: 16px;
   position: absolute;
