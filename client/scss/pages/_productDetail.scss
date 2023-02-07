@@ -4,6 +4,10 @@
   position: relative;
 }
 
+#inner {
+  // width: 100%;
+}
+
 .gray {
   color: $gray-400;
 }
@@ -684,7 +688,6 @@
 
             td {
               padding: 20px;
-              width: auto;
             }
 
             .title {
