@@ -32,14 +32,13 @@ xhrPromise
         item.salePrice !== 0
           ? item.salePrice
               .toString()
-              .replace(/\B(?=(\d{3})+(?!\d))/g, ',') + '원'
+              .replace(/\B(?=(\d{3})+(?!\d))/g, ',') + ' 원'
           : '';
       let img = item.image.thumbnail;
       let alt = item.image.alt;
       let description = item.description;
       let slider = `slider${index}`;
       let slider2 = `slider${index + 15}`;
-
       insertLast(
         secondSwiper,
         `<div class="swiper-slide ${slider}">
@@ -53,7 +52,7 @@ xhrPromise
         >
           <img
             class="swiper-product__image-container__tumbnail"
-            src=${img}
+            src="./assets/productList/${img}"
             alt=${alt}
           />
           <button
@@ -74,7 +73,7 @@ xhrPromise
           <li
             class="swiper-product__info__price"
           >
-            ${currentPrice} 원
+            ${salePrice}
           </li>
         </ul>
       </a>
@@ -93,7 +92,7 @@ xhrPromise
         >
           <img
             class="swiper-product__image-container__tumbnail"
-            src=${img}
+            src="./assets/productList/${img}"
             alt=${alt}
           />
           <button
@@ -114,7 +113,7 @@ xhrPromise
           <li
             class="swiper-product__info__price"
           >
-            ${currentPrice} 원
+            ${salePrice}
           </li>
         </ul>
       </a>
@@ -122,17 +121,25 @@ xhrPromise
       );
 
       aadCart(
+        id,
         slider,
         name,
         item.price,
+        item.salePrice,
+        item.stock,
+        item.category,
         img,
         alt,
         item.saleRatio
       );
       aadCart(
-        slider2,
+        id,
+        slider,
         name,
         item.price,
+        item.salePrice,
+        item.stock,
+        item.category,
         img,
         alt,
         item.saleRatio

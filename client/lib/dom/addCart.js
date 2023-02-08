@@ -8,12 +8,16 @@ import {
 
 //addCartPopupCount
 export function aadCart(
+  id,
   slider,
   name,
   price,
+  salePrice,
+  stock,
+  category,
   img,
   alt,
-  saleRetio
+  saleRatio
 ) {
   // let allPrice = 0;
   const minusCount = getNode(
@@ -59,11 +63,11 @@ export function aadCart(
     );
     infoName.innerText = name;
     infoPrice.innerText =
-      price
+      salePrice
         .toString()
         .replace(/\B(?=(\d{3})+(?!\d))/g, ',') + ' 원';
     sumPrice.innerText =
-      price
+      salePrice
         .toString()
         .replace(/\B(?=(\d{3})+(?!\d))/g, ',') + ' 원';
 
@@ -85,17 +89,20 @@ export function aadCart(
       result.innerText = resultvalue;
       // console.log(resultvalue);
       sumPrice.innerText =
-        (price * resultvalue)
+        (salePrice * resultvalue)
           .toString()
           .replace(/\B(?=(\d{3})+(?!\d))/g, ',') + ' 원';
     };
     let product = {
+      id: id,
       name: name,
-      amount: resultvalue,
       price: price,
-      image: img,
+      salePrice: salePrice,
+      stock: stock,
+      category: category,
+      img: img,
       alt: alt,
-      saleRetio: saleRetio,
+      saleRatio: saleRatio,
     };
 
     minusCount.addEventListener('click', () => {
