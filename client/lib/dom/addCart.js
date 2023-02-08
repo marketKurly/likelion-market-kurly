@@ -8,7 +8,7 @@ import {
 
 //addCartPopupCount
 export function aadCart(slider, name, price) {
-  let allPrice = 0;
+  // let allPrice = 0;
   const minusCount = getNode(
     `.add-cart__list__info__amount__count__minus`
   );
@@ -33,9 +33,8 @@ export function aadCart(slider, name, price) {
 
   // console.log(addCartPopup);
 
+  //클릭 이벤트
   const onClickshoppingCart = (e) => {
-    // console.log('asd');
-    // console.log(css(addCartPopup, 'display'));
     visibleElement(addCartPopup);
     e.preventDefault();
     result = getNode(
@@ -90,7 +89,25 @@ export function aadCart(slider, name, price) {
     plusCount.addEventListener('click', () => {
       count('plus');
     });
+
+    // 장바구니에 담기 클릭시 localstorage 에 수량 값 저장
+
+    const putButton = getNode(
+      '.add-cart__list__buttons__put'
+    );
+
+    let product1 = window.localStorage;
+
+    const onClickPutButton = () => {
+      product1.setItem(`${slider}resultValue`, resultvalue);
+      invisibleElement(addCartPopup);
+      resultvalue = 1;
+      result.innerText = resultvalue;
+    };
+
+    putButton.addEventListener('click', onClickPutButton);
   };
+
   const onClickaddCartCancleButton = (e) => {
     invisibleElement(addCartPopup);
     resultvalue = 1;
@@ -113,21 +130,4 @@ export function aadCart(slider, name, price) {
     'click',
     onClickaddCartCancleButton
   );
-
-  // 장바구니에 담기 클릭시 localstorage 에 수량 값 저장
-
-  const putButton = getNode(
-    '.add-cart__list__buttons__put'
-  );
-
-  let product1 = window.localStorage;
-
-  const onClickPutButton = () => {
-    product1.setItem('resultValue', resultvalue);
-    invisibleElement(addCartPopup);
-    resultvalue = 1;
-    result.innerText = resultvalue;
-  };
-
-  putButton.addEventListener('click', onClickPutButton);
 }
