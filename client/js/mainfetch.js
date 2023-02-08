@@ -37,10 +37,12 @@ xhrPromise
       let img = item.image.thumbnail;
       let alt = item.image.alt;
       let description = item.description;
+      let slider = `slider${index}`;
+      let slider2 = `slider${index + 15}`;
 
       insertLast(
         secondSwiper,
-        `<div class="swiper-slide">
+        `<div class="swiper-slide ${slider}">
         <a
         href="#"
         class="swiper-product"
@@ -55,7 +57,7 @@ xhrPromise
             alt=${alt}
           />
           <button
-            class="swiper-product__image-container__shopping-cart cart${index}"
+            class="swiper-product__image-container__shopping-cart"
           >
             <img
               src="./assets/icons/Icon/Cart.svg"
@@ -80,7 +82,7 @@ xhrPromise
       );
       insertLast(
         thirdSwiper,
-        `<div class="swiper-slide">
+        `<div class="swiper-slide ${slider2}">
         <a
         href="#"
         class="swiper-product"
@@ -95,7 +97,7 @@ xhrPromise
             alt=${alt}
           />
           <button
-            class="swiper-product__image-container__shopping-cart cart${index}"
+            class="swiper-product__image-container__shopping-cart"
           >
             <img
               src="./assets/icons/Icon/Cart.svg"
@@ -119,6 +121,7 @@ xhrPromise
     </div>`
       );
 
-      aadCart();
+      aadCart(slider, name, item.price);
+      aadCart(slider2, name, item.price);
     });
   });
