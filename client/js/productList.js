@@ -32,6 +32,40 @@ let a = () => {
 resetButton.addEventListener('click', a);
 
 // 페이지네이션
+$(function () {
+  let container = $('#pagination');
+  container.pagination({
+    dataSource: [
+      { name: 'hello1' },
+      { name: 'hello2' },
+      { name: 'hello3' },
+      { name: 'hello4' },
+      { name: 'hello5' },
+      { name: 'hello6' },
+      { name: 'hello7' },
+      { name: 'hello8' },
+      { name: 'hello9' },
+      { name: 'hello10' },
+      { name: 'hello11' },
+      { name: 'hello12' },
+      { name: 'hello13' },
+      { name: 'hello14' },
+      { name: 'hello15' },
+    ],
+    pageSize: 5,
+    callback: function (data, pagination) {
+      var dataHtml = '<ul>';
+
+      $.each(data, function (index, item) {
+        dataHtml += '<li>' + item.name + '</li>';
+      });
+
+      dataHtml += '</ul>';
+
+      $('#data-container').html(dataHtml);
+    },
+  });
+});
 
 // 상품 주소 받아오기
 const getItemList = getNode('.product__list--grid');
@@ -115,3 +149,5 @@ xhrPromise
       );
     });
   });
+
+// sort

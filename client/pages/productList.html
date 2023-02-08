@@ -18,7 +18,13 @@
       crossorigin
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="../js/main.js" type="module"></script>
     <script
@@ -913,12 +919,14 @@
           </nav>
 
           <!-- 상품 리스트 전체 -->
-          <div class="group">
+          <div class="product-list__items--section">
             <!-- 상품 리스트 탑메뉴 -->
-            <div class="menu">
-              <div class="total">총278건</div>
-              <ul class="list">
-                <li class="hot"><a href="#">추천순</a></li>
+            <div class="product-list__items--header">
+              <div class="product-list__total-count">
+                총278건
+              </div>
+              <div class="product-list__sort">
+                <span class="hot">추천순</span>
                 <svg
                   width="14"
                   height="20"
@@ -938,27 +946,51 @@
                     fill="#CCCCCC"
                   />
                 </svg>
-
-                <li class="sort">
-                  <a href="#">신상품순</a>
-                </li>
-                <li class="sort">
-                  <a href="#">판매량순</a>
-                </li>
-                <li class="sort"><a href="#">혜택순</a></li>
-                <li class="sort">
-                  <a href="#">낮은 가격순</a>
-                </li>
-                <li class="sort">
-                  <a href="#">높은 가격순</a>
-                </li>
-              </ul>
+                <span
+                  class="divider__sort"
+                  aria-hidden="true"
+                  >|</span
+                >
+                <span class="sort">신상품순</span>
+                <span
+                  class="divider__sort"
+                  aria-hidden="true"
+                  >|</span
+                >
+                <span class="sort">판매량순</span>
+                <span
+                  class="divider__sort"
+                  aria-hidden="true"
+                  >|</span
+                >
+                <span class="sort">혜택순</span>
+                <span
+                  class="divider__sort"
+                  aria-hidden="true"
+                  >|</span
+                >
+                <button class="product-list__sort__button">
+                  <span class="sort-price" data-name="asc"
+                    >낮은 가격순</span
+                  >
+                </button>
+                <span
+                  class="divider__sort"
+                  aria-hidden="true"
+                  >|</span
+                >
+                <button class="product-list__sort__button">
+                  <span class="sort-price" data-name="desc"
+                    >높은 가격순</span
+                  >
+                </button>
+              </div>
             </div>
 
             <!-- 상품 리스트 시작 -->
             <div class="product__list--grid"></div>
             <!-- 하단 페이지 -->
-            <div>
+            <div class="bottom--page">
               <div id="data-container"></div>
               <div id="pagination"></div>
             </div>

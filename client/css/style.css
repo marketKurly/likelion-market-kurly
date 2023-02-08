@@ -3281,11 +3281,11 @@ input[class=check2]:checked + label em {
   margin-top: 20px;
 }
 
-.group {
+.product-list__items--section {
   width: 100%;
 }
 
-.menu {
+.product-list__items--header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -3293,54 +3293,51 @@ input[class=check2]:checked + label em {
   line-height: 20px;
 }
 
-.total {
+.product-list__total-count {
   font-size: 14px;
   font-weight: 500;
   color: #333333;
 }
 
-.list {
+.product-list__sort {
   position: relative;
   display: flex;
   align-items: center;
 }
 
-.list li {
+.product-list__sort span {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-left: 8px;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .hot {
-  letter-spacing: -0.3px;
+  padding-right: 5px;
+  padding-left: 5px;
   font-weight: 500;
   color: #000000;
 }
 
+.divider__sort {
+  color: #e1e1e1;
+}
+
 .sort {
+  padding-right: 5px;
+  padding-left: 5px;
+  font-weight: 500;
+  color: #a6a6a6;
+}
+
+.sort-price {
   letter-spacing: -0.3px;
   font-weight: 500;
   color: #a6a6a6;
 }
 
-.list svg {
-  margin-left: 5px;
-}
-
-.list li::before {
-  content: "";
-  display: flex;
-  width: 1px;
-  height: 10px;
-  margin-right: 8px;
-  background-color: rgb(226, 226, 226);
-}
-
-.list li a {
-  letter-spacing: -0.3px;
-  font-weight: 500;
+.product-list__sort svg {
+  margin-right: 5px;
 }
 
 .product__list--grid {
