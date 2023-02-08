@@ -286,6 +286,7 @@
     font-size: 14px;
 
     button {
+      cursor: default;
       border: 1px solid $gray-300;
       background-color: $gray-50;
       color: $content;
@@ -294,6 +295,10 @@
       flex: 1 1 auto;
       font-size: 16px;
       font-weight: 600;
+
+      a {
+        cursor: default;
+      }
     }
 
     button:nth-child(1) {
