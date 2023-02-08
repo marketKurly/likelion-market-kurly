@@ -24,6 +24,12 @@ const view = getNode('#view');
 const banner = getNode('#banner');
 const infoImg = getNode('#infoImg');
 
+function priceToString(price) {
+  return price
+    .toString()
+    .replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+
 /* 메인 클릭 핸들러 */
 const handler = (e) => {
   let target = e.target;
@@ -59,17 +65,20 @@ const redingProducts = async (data) => {
 
     // console.log(listData.image.view);
 
+    let save = listData.price;
+    let infosave = priceToString(save);
+
     $('#title').text(listData.name);
     $('#subtitle').text(listData.description);
     insertLast(
       infoprice,
       /* html */
       `
-      <span>${listData.price}</span>
+      <span>${infosave}</span>
       <span>원</span>
       `
     );
-    $('#price').text(listData.price + '원');
+    $('#price').text(infosave + '원');
     insertLast(
       view,
       /* html */
@@ -87,7 +96,7 @@ const redingProducts = async (data) => {
         alt="${listData.image.alt}"
       />`
     );
-    $('#choicetitle').text(listData.name);
+    $('#choicetitle').text(listData.name); // 상품선택 칸 제품 이름
     $('#bannersubtitle').text(listData.description);
     $('#bannertitle').text(listData.name);
     insertLast(
@@ -99,39 +108,44 @@ const redingProducts = async (data) => {
         alt="${listData.image.alt}"
       />`
     );
-    $('#reviewtitle').text(listData.name);
+    $('#reviewtitle').text(listData.name); // 리뷰에 보여지는 제품 이름
 
-    let resultvalue = total.innerText;
-    let pricevalue = listData.price;
-    productprice.innerText = listData.price;
+    let resultvalue = total.innerText; // 수량
+
+    let pricevalue = listData.price; // 기본 data.price 값
+
+    let pricesave = listData.price;
+    productprice.innerText = priceToString(pricesave); // 총 상품금액
 
     const count = (type) => {
       if (type === 'plus') {
         resultvalue = parseInt(resultvalue) + 1;
         total.innerText = resultvalue;
-        console.log(resultvalue);
       } else if (type === 'minus') {
         if (resultvalue > 1) {
           resultvalue = parseInt(resultvalue) - 1;
           total.innerText = resultvalue;
-          console.log(resultvalue);
         }
       }
     };
 
+    /* 수량 조절 버튼 이벤트 */
     minus.addEventListener('click', () => {
       count('minus');
-      productprice.innerHTML = pricevalue * resultvalue;
+      let totalsave = pricevalue * resultvalue;
+      productprice.innerHTML = priceToString(totalsave);
     });
     plus.addEventListener('click', () => {
       count('plus');
-      productprice.innerHTML = pricevalue * resultvalue;
+      let totalsave = pricevalue * resultvalue;
+      productprice.innerHTML = priceToString(totalsave);
     });
   } catch (err) {}
 };
 
 redingProducts();
 
+/* 상품문의 */
 const rendingInquiryList = async (data) => {
   try {
     let response = await tiger.get(
@@ -139,12 +153,8 @@ const rendingInquiryList = async (data) => {
     );
     let listData = response.data;
 
-    // console.log(listData);
-
-    // listData.forEach((data) => console.log(data));
-
+    /* listData 값을 순환하며 내보내줌 */
     for (let i = 0; i < listData.length; i++) {
-      // console.log(listData[i].time);
       inquiryInner.innerHTML +=
         `<tr class='product-detail__description__inquiry__content__text--text'>
         <td class="title">` +
@@ -170,19 +180,12 @@ const rendingInquiryList = async (data) => {
         </div></div>
         </td></tr>`;
     }
-
-    // return이 필요 한 건 map, reduce 사용 | 필요 없는 건 forEach 사용
-    /* listData.forEach((data) =>
-      renderInquiryList(userInquiryContainer, data)
-    ); */
-  } catch (err) {
-    // console.log(err);
-    // renderEmptyList(userCardContainer);
-  }
+  } catch (err) {}
 };
 
 rendingInquiryList();
 
+/* 상품후기 */
 const rendingReviewList = async (data) => {
   try {
     let response = await tiger.get(
@@ -191,15 +194,18 @@ const rendingReviewList = async (data) => {
 
     let listData = response.data;
 
+    /* 상품후기 총 갯수 */
     $('#review-counter').text(
       '총 ' + listData.length + '개'
     );
+
+    /* nav 후기 칸 */
     $('#review-counter2').text(
       '후기 (' + listData.length + ')'
     );
 
+    /* listData 값을 순환하며 내보내줌 */
     for (let i = 0; i < listData.length; i++) {
-      // console.log(listData[i].time);
       reviewInner.innerHTML += `
       <div class="product-detail__description__review__list__content__review--div">
       <div>
@@ -217,6 +223,7 @@ const rendingReviewList = async (data) => {
     </div>`;
     }
 
+    /* 후기가 없을 경우 보여줌 */
     if (listData.length == 0) {
       reviewInner.innerHTML += `
       <div class="product-detail__description__review__list__content__review--div">
