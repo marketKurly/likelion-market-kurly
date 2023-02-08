@@ -121,7 +121,7 @@ xhrPromise
     </div>`
       );
 
-      aadCart(slider, name, item.price);
-      aadCart(slider2, name, item.price);
+      aadCart(slider, name, item.price, index);
+      aadCart(slider2, name, item.price, index);
     });
   });

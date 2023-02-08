@@ -8,17 +8,17 @@ import {
 
 //addCartPopupCount
 export function aadCart(slider, name, price) {
+  let allPrice = 0;
   const minusCount = getNode(
     `.add-cart__list__info__amount__count__minus`
   );
   const plusCount = getNode(
     '.add-cart__list__info__amount__count__plus'
   );
-  const result = getNode(
+  let resultvalue = '';
+  let result = getNode(
     '.add-cart__list__info__amount__count__result'
   );
-
-  let resultvalue = result.innerText;
 
   // console.log(resultvalue);
 
@@ -38,6 +38,12 @@ export function aadCart(slider, name, price) {
     // console.log(css(addCartPopup, 'display'));
     visibleElement(addCartPopup);
     e.preventDefault();
+    result = getNode(
+      '.add-cart__list__info__amount__count__result'
+    );
+
+    resultvalue = result.innerText;
+
     const infoName = getNode(`.add-cart__list__info__name`);
     const infoPrice = getNode(
       `.add-cart__list__info__amount__price`
