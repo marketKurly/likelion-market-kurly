@@ -3394,11 +3394,9 @@ table {
   position: sticky;
   width: 220px;
   flex-shrink: 0;
-  height: 100%;
-  max-height: calc(100vh - 120px);
+  height: 1800px;
   top: 80px;
   margin-right: 47px;
-  border-bottom: 1px solid rgb(238, 238, 238);
   overflow: hidden scroll;
 }
 
@@ -3424,7 +3422,7 @@ table {
   margin-right: 5px;
 }
 
-.initialization {
+.check-reset {
   font-size: 12px;
   margin-left: 5px;
   font-weight: 500;
@@ -3501,12 +3499,12 @@ input[class=check2] + label em {
   display: inline-block;
   width: 24px;
   height: 24px;
-  background: url("/client/css/img/Input/Check1.svg") 0 0 no-repeat;
+  background: url("../css/img/Input/Check1.svg") 0 0 no-repeat;
   margin-right: 5px;
 }
 
 input[class=check2]:checked + label em {
-  background: url("/client/css/img/Input/Check2.svg") 0 0 no-repeat;
+  background: url("../css/img/Input/Check2.svg") 0 0 no-repeat;
 }
 
 .accordion__item__text {
@@ -3762,7 +3760,7 @@ input[class=check2]:checked + label em {
   color: #000000;
 }
 
-.bottom--page {
+#pagination {
   display: flex;
   justify-content: center;
   align-items: center;
