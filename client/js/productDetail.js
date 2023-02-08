@@ -53,7 +53,7 @@ main.addEventListener('click', handler);
 const redingProducts = async (data) => {
   try {
     let response = await tiger.get(
-      'http://localhost:3000/products/product-rksk'
+      'http://localhost:3000/products/product-akqk'
     );
     let listData = response.data;
 

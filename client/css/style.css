@@ -2726,13 +2726,13 @@ table {
 }
 
 .button-left {
-  background: url("/client/css/img/Icon/Arrow-2.svg") no-repeat;
+  background: url("/css/img/Icon/Arrow-2.svg") no-repeat;
   background-size: 60px;
   background-position: -3px -94px;
 }
 
 .button-right {
-  background: url("/client/css/img/Icon/Arrow-2.svg") no-repeat;
+  background: url("/css/img/Icon/Arrow-2.svg") no-repeat;
   background-size: 60px;
   background-position: -3px -140px;
 }
@@ -2854,7 +2854,7 @@ table {
   justify-content: space-between;
 }
 .product-detail__information__detail__dl__select__choice__number--minus {
-  background: url("/client/css/img/Icon/Minus.svg") no-repeat;
+  background: url("/css/img/Icon/Minus.svg") no-repeat;
   background-position: -9px -8px;
   width: 28px;
   height: 28px;
@@ -2869,7 +2869,7 @@ table {
   align-items: center;
 }
 .product-detail__information__detail__dl__select__choice__number--plus {
-  background: url("/client/css/img/Icon/Plus.svg") no-repeat;
+  background: url("/css/img/Icon/Plus.svg") no-repeat;
   background-position: -9px -8px;
   width: 28px;
   height: 28px;

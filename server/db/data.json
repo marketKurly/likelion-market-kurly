@@ -99,51 +99,6 @@
       "answer": "테스트",
       "isSecret": false,
       "id": 2
-    },
-    {
-      "name": "",
-      "time": "2023.2.7",
-      "title": "테스트",
-      "question": "테스트 다시",
-      "answer": "테스트",
-      "isSecret": true,
-      "id": 3
-    },
-    {
-      "name": "",
-      "time": "2023.2.7",
-      "title": "테스트",
-      "question": "테스트",
-      "answer": "테스트",
-      "isSecret": false,
-      "id": 4
-    },
-    {
-      "name": "",
-      "time": "2023.2.8",
-      "title": "xptmxm",
-      "question": "xptmxm",
-      "answer": "",
-      "isSecret": false,
-      "id": 5
-    },
-    {
-      "name": "",
-      "time": "2023.2.8",
-      "title": "테스트",
-      "question": "테스트",
-      "answer": "",
-      "isSecret": false,
-      "id": 6
-    },
-    {
-      "name": "",
-      "time": "2023.2.8",
-      "title": "테스트",
-      "question": "테스트",
-      "answer": "",
-      "isSecret": false,
-      "id": 7
     }
   ],
   "review": [
