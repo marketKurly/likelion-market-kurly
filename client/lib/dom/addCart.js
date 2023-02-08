@@ -26,12 +26,12 @@ export function aadCart(
   const plusCount = getNode(
     '.add-cart__list__info__amount__count__plus'
   );
-  let resultvalue = '';
+  let resultValue = '';
   let result = getNode(
     '.add-cart__list__info__amount__count__result'
   );
 
-  // console.log(resultvalue);
+  // console.log(resultValue);
 
   //addcart 팝업
   const shoppingCarts = getNode(
@@ -52,7 +52,7 @@ export function aadCart(
       '.add-cart__list__info__amount__count__result'
     );
 
-    resultvalue = result.innerText;
+    resultValue = result.innerText;
 
     const infoName = getNode(`.add-cart__list__info__name`);
     const infoPrice = getNode(
@@ -74,22 +74,22 @@ export function aadCart(
     const count = (type) => {
       // 현재 화면에 표시된 값
 
-      // resultvalue = parseInt(resultvalue) + 1;
+      // resultValue = parseInt(resultValue) + 1;
       //더하기/빼기
       if (type === 'plus') {
-        resultvalue = parseInt(resultvalue) + 1;
+        resultValue = parseInt(resultValue) + 1;
       } else if (type === 'minus') {
-        if (resultvalue > 1) {
-          resultvalue = parseInt(resultvalue) - 1;
+        if (resultValue > 1) {
+          resultValue = parseInt(resultValue) - 1;
         }
-        // sumPrice.innerText = price * resultvalue;
+        // sumPrice.innerText = price * resultValue;
       }
 
       // 결과 출력
-      result.innerText = resultvalue;
-      // console.log(resultvalue);
+      result.innerText = resultValue;
+      // console.log(resultValue);
       sumPrice.innerText =
-        (salePrice * resultvalue)
+        (salePrice * resultValue)
           .toString()
           .replace(/\B(?=(\d{3})+(?!\d))/g, ',') + ' 원';
     };
@@ -133,8 +133,8 @@ export function aadCart(
       );
       console.log(JSON.parse(localStorageObject));
       invisibleElement(addCartPopup);
-      resultvalue = 1;
-      result.innerText = resultvalue;
+      resultValue = 1;
+      result.innerText = resultValue;
     };
 
     putButton.addEventListener('click', onClickPutButton);
@@ -142,8 +142,8 @@ export function aadCart(
 
   const onClickaddCartCancleButton = (e) => {
     invisibleElement(addCartPopup);
-    resultvalue = 1;
-    result.innerText = resultvalue;
+    resultValue = 1;
+    result.innerText = resultValue;
     e.preventDefault();
   };
   // shoppingCarts.forEach((shoppingCart) => {
