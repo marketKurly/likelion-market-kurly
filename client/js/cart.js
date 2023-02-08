@@ -35,12 +35,6 @@ const handlerChangeAddress = () =>{
 }
 changeAddressBtn.addEventListener('click', handlerChangeAddress);
 
-// 주문 완료 
-const handlerOrderBtn = () =>{
-  alert('주문 완료되었습니다. 내일 새벽에 만나요.')
-}
-orderBtn.addEventListener('click', handlerOrderBtn);
-
 // 결제 예정 금액 산정
 let totalPrice = 0;     // 총 가격
 let totalCount = 0;     // 총 갯수
