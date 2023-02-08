@@ -23,7 +23,9 @@ const price = getNode('#price');
 const view = getNode('#view');
 const banner = getNode('#banner');
 const infoImg = getNode('#infoImg');
+const addCartBtn = getNode('#detailAddCart');
 
+/* 숫자 천단위 콤마 */
 function priceToString(price) {
   return price
     .toString()
@@ -45,6 +47,7 @@ const handler = (e) => {
     }
   }
 
+  /* 팝업 보이기 */
   if (target.id === 'send1') {
     reviwHidden.style.display = 'block';
   }
@@ -111,9 +114,7 @@ const redingProducts = async (data) => {
     $('#reviewtitle').text(listData.name); // 리뷰에 보여지는 제품 이름
 
     let resultvalue = total.innerText; // 수량
-
     let pricevalue = listData.price; // 기본 data.price 값
-
     let pricesave = listData.price;
     productprice.innerText = priceToString(pricesave); // 총 상품금액
 
@@ -134,12 +135,28 @@ const redingProducts = async (data) => {
       count('minus');
       let totalsave = pricevalue * resultvalue;
       productprice.innerHTML = priceToString(totalsave);
+      // onClickAddBtn(listData.id, totalsave);
     });
     plus.addEventListener('click', () => {
       count('plus');
       let totalsave = pricevalue * resultvalue;
       productprice.innerHTML = priceToString(totalsave);
+      // onClickAddBtn(listData.id, totalsave);
     });
+
+    /* 로컬 스토리지 */
+    let localstorage = window.localStorage;
+
+    const onClickAddBtn = (key, value) => {
+      localstorage.setItem(key, value);
+    };
+
+    addCartBtn.addEventListener(
+      'click',
+      function (key, value) {
+        onClickAddBtn(listData.id, productprice.innerHTML);
+      }
+    );
   } catch (err) {}
 };
 
