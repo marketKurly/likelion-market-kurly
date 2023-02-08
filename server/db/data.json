@@ -1,84 +1,358 @@
 {
   "products": [
     {
-      "id": "product-rksk",
-      "name": "[대구 반할만떡] 유부호만두",
-      "description": "유부로 속을 든든히 채운 군만두",
-      "price": 6900,
-      "saleRatio": 0.24,
-      "salePrice": 5244,
-      "image": {
-        "thumbnail": "ubuho/thumbnail.jpg",
-        "view": "ubuho/detail_view.jpg",
-        "banner": "ubuho/detail_banner.jpg",
-        "info": "ubuho/detail_info.jpg",
-        "alt": "유부호 만두"
-      },
-      "stock": 3
-    },
-    {
-      "id": "product-ekfk",
+      "id": "product-aaa",
       "name": "[풀무원] 탱탱쫄면 (4개입)",
       "description": "튀기지 않아 부드럽고 매콤한",
-      "price": 4980,
+      "price": "",
       "saleRatio": 0,
-      "salePrice": 0,
+      "salePrice": 4980,
       "image": {
-        "thumbnail": "tangtang/thumbnail.jpg",
-        "view": "tangtang/detail_view.jpg",
-        "banner": "tangtang/detail_banner.jpg",
-        "info": "tangtang/detail_info.jpg",
+        "thumbnail": "tangtang.webp",
         "alt": "풀무원 탱탱쫄면"
       },
-      "stock": 10
+      "stock": 6,
+      "category": "샐러드·간편식",
+      "kalryOnly": "false",
+      "brand": "풀무원",
+      "qnas": []
     },
     {
-      "id": "product-akqk",
-      "name": "[홍대주꾸미] 주꾸미 볶음 300g (냉동)",
-      "description": "매콤달콤한 마력의 밥도둑",
+      "id": "product-bbb",
+      "name": "[이연복의 목란] 짬뽕 2인분(맵기선택)",
+      "description": "입맛에 맞게 고르는 인기 메뉴",
+      "price": "",
+      "saleRatio": 0,
+      "salePrice": 13500,
+      "image": {
+        "thumbnail": "champon.webp",
+        "alt": "짬뽕 2인분(맵기선택)"
+      },
+      "stock": 13,
+      "category": "면·양념·오일",
+      "kalryOnly": "true",
+      "brand": "이연복의 목란",
+      "qnas": [
+        {
+          "id": 1,
+          "type": "public",
+          "title": "팩이 터져서 왔어요",
+          "writer": "이현우",
+          "contents": "스티로폼 박스도 손상되어 있어 포장이 터져 엉망이네요\n환불 요청합니다.",
+          "questionDatetime": "20230201",
+          "answer": "안녕하세요. 칼리입니다\n믿고 찾아주신 상품에 불편을 드려 정말 죄송합니다.\n\n더불어, 해당 게시판은 실시간으로 어려워 순차적으로 답변드리고 있는 관계로 신속하게 답변 드리지 못하여 대단히 죄송합니다.\n다행히도 고객님의 불편하셨던 사항은 고객행복센터를 통해 안내 받으신 점 확인하였습니다\n\n불편을 드려 정말 죄송할 따름이며, 고객님께 늘 신선하고 최상의 상품을 불편 없이 전달드리기 위해 최선을 다하는 칼리가 되겠습니다.\n\n칼리 드림.",
+          "answerDatetime": "20230202"
+        },
+        {
+          "id": 2,
+          "type": "public",
+          "title": "짬뽕 2인분(맵기선택) 문의글 2 제목",
+          "writer": "홍자영",
+          "contents": "짬뽕 문의글 2 콘텐츠(답변 없음)",
+          "questionDatetime": "20230202"
+        },
+        {
+          "id": 3,
+          "type": "notice",
+          "title": "판매 (일시)중단 제품 안내 (23.02.02 업데이트)",
+          "writer": "컬리",
+          "contents": "안녕하세요. 컬리입니다.\n\n하기와 같은 사유로 인하여 판매(일시)중단 되었음을 안내드립니다. 감사합니다. 컬리드림",
+          "questionDatetime": "20230120"
+        },
+        {
+          "id": 4,
+          "type": "private",
+          "title": "짬뽕 2인분(맵기선택) 문의글 4 제목",
+          "writer": "이정호",
+          "contents": "상품이 언제 배송 되나요?",
+          "questionDatetime": "20230204",
+          "answer": "안녕하세요. 칼리입니다. 배송과 관련된 문의는 고객센터로 전화주시길 바랍니다.",
+          "answerDatetime": "20230204"
+        }
+      ]
+    },
+    {
+      "id": "product-ccc",
+      "name": "[브룩클린688] 호주산 목초육 치마살 구이용 300g(냉장)",
+      "description": "100g당 5166원",
+      "price": 15500,
+      "saleRatio": 0.15,
+      "salePrice": 13175,
+      "image": {
+        "thumbnail": "brooklyn688.webp",
+        "alt": "호주산 목초육 치마살 구이용 300g(냉장)"
+      },
+      "stock": 3,
+      "category": "정육·계란",
+      "kalryOnly": "false",
+      "brand": "브룩클린688",
+      "qnas": [
+        {
+          "id": 1,
+          "type": "public",
+          "title": "팩이 터져서 왔어요",
+          "writer": "이현우",
+          "contents": "스티로폼 박스도 손상되어 있어 포장이 터져 엉망이네요\n환불 요청합니다.",
+          "questionDatetime": "20230201",
+          "answer": "안녕하세요. 칼리입니다\n믿고 찾아주신 상품에 불편을 드려 정말 죄송합니다.\n\n더불어, 해당 게시판은 실시간으로 어려워 순차적으로 답변드리고 있는 관계로 신속하게 답변 드리지 못하여 대단히 죄송합니다.\n다행히도 고객님의 불편하셨던 사항은 고객행복센터를 통해 안내 받으신 점 확인하였습니다\n\n불편을 드려 정말 죄송할 따름이며, 고객님께 늘 신선하고 최상의 상품을 불편 없이 전달드리기 위해 최선을 다하는 칼리가 되겠습니다.\n\n칼리 드림.",
+          "answerDatetime": "20230202"
+        },
+        {
+          "id": 2,
+          "type": "public",
+          "title": "호주산 목초육 치마살 구이용 300g 문의글 2 제목",
+          "writer": "홍자영",
+          "contents": "호주산 목초육 치마살 구이용 300g 문의글 2 콘텐츠(답변 없음)",
+          "questionDatetime": "20230202"
+        },
+        {
+          "id": 3,
+          "type": "notice",
+          "title": "판매 (일시)중단 제품 안내 (23.02.02 업데이트)",
+          "writer": "컬리",
+          "contents": "안녕하세요. 컬리입니다.\n\n하기와 같은 사유로 인하여 판매(일시)중단 되었음을 안내드립니다. 감사합니다. 컬리드림",
+          "questionDatetime": "20230120"
+        },
+        {
+          "id": 4,
+          "type": "private",
+          "title": "호주산 목초육 치마살 구이용 300g 문의글 4 제목",
+          "writer": "이정호",
+          "contents": "상품이 언제 배송 되나요?",
+          "questionDatetime": "20230204",
+          "answer": "안녕하세요. 칼리입니다. 배송과 관련된 문의는 고객센터로 전화주시길 바랍니다.",
+          "answerDatetime": "20230204"
+        }
+      ]
+    },
+    {
+      "id": "product-ddd",
+      "name": "유명산지 설향딸기 500g",
+      "description": "유명산지에서 전하는 제철 딸기",
+      "price": 11900,
+      "saleRatio": 0.1,
+      "salePrice": 10990,
+      "image": {
+        "thumbnail": "strawberry.webp",
+        "alt": "유명산지 설향딸기 500g"
+      },
+      "stock": 12,
+      "category": "과일·견과·쌀",
+      "kalryOnly": "false",
+      "brand": "유명산지"
+    },
+    {
+      "id": "product-eee",
+      "name": "[고기반찬] 양념 LA 갈비 800g",
+      "description": "100g당 가격:4,360원",
+      "price": 34900,
+      "saleRatio": 0.15,
+      "salePrice": 29665,
+      "image": {
+        "thumbnail": "lagalbi.webp",
+        "alt": "양념 LA 갈비 800g"
+      },
+      "stock": 12,
+      "category": "정육·계란",
+      "kalryOnly": "true",
+      "brand": "고기반찬"
+    },
+    {
+      "id": "product-fff",
+      "name": "[KF365]한돈 삼겹살 구이용 600g~(냉장)",
+      "description": "100g당 판매가:2,590원",
+      "price": "",
+      "saleRatio": 0,
+      "salePrice": 15540,
+      "image": {
+        "thumbnail": "handon.webp",
+        "alt": "한돈 삼겹살 구이용 600g~(냉장)"
+      },
+      "stock": 7,
+      "category": "정육·계란",
+      "kalryOnly": "true",
+      "brand": "KF365"
+    },
+    {
+      "id": "product-ggg",
+      "name": "[KF365] 양념 소불고기 1kg(냉장)",
+      "description": "100g당 가격:1,899원",
+      "price": 19990,
+      "saleRatio": 0.05,
+      "salePrice": 18990,
+      "image": {
+        "thumbnail": "bulgogi.webp",
+        "alt": "양념 소불고기 1kg(냉장)"
+      },
+      "stock": 10,
+      "category": "정육·계란",
+      "kalryOnly": "true",
+      "brand": "Kalty's"
+    },
+    {
+      "id": "product-hhh",
+      "name": "[강남면옥] 갈비탕",
+      "description": "든든하고 푸짐한 한 그릇",
+      "price": "",
+      "saleRatio": 0,
+      "salePrice": 11900,
+      "image": {
+        "thumbnail": "gangnamgalbitang.webp",
+        "alt": "갈비탕"
+      },
+      "stock": 8,
+      "category": "국·반찬·메인요리",
+      "kalryOnly": "true",
+      "brand": "강남면옥"
+    },
+    {
+      "id": "product-iii",
+      "name": "[Kurly's] 동물복지 유정란 20구",
+      "description": "1구 당 판매가:499,5원",
+      "price": "",
+      "saleRatio": 0,
+      "salePrice": 11900,
+      "image": {
+        "thumbnail": "animalegg.webp",
+        "alt": "동물복지 유정란 20구"
+      },
+      "stock": 12,
+      "category": "정육·계란",
+      "kalryOnly": "true",
+      "brand": "Kalty's"
+    },
+    {
+      "id": "product-jjj",
+      "name": "[포비베이글] 크림치즈 8종",
+      "description": "집에서 즐기는 녹진한 그 맛",
+      "price": 9900,
+      "saleRatio": 0.1,
+      "salePrice": 8910,
+      "image": {
+        "thumbnail": "fourbbagel.webp",
+        "alt": "크림치즈 8종"
+      },
+      "stock": 4,
+      "category": "베이커리·치즈·델리",
+      "kalryOnly": "false",
+      "brand": "포비베이글"
+    },
+    {
+      "id": "product-kkk",
+      "name": "[스윗밸런스] 오늘의 샐러드 10종(리뉴얼) (택1)",
+      "description": "다채로운 토핑을 얹은 샐러드",
+      "price": "",
+      "saleRatio": 0,
+      "salePrice": 4900,
+      "image": {
+        "thumbnail": "sweetbalance.webp",
+        "alt": "오늘의 샐러드 10종(리뉴얼) (택1)"
+      },
+      "stock": 3,
+      "category": "샐러드·간편식",
+      "kalryOnly": "true",
+      "brand": "스윗밸런스"
+    },
+    {
+      "id": "product-lll",
+      "name": "[그래놀라 하우스] 그래놀라 5종 (택1)",
+      "description": "도톰하게 뭉쳐 만든 수제 그래놀라",
+      "price": "",
+      "saleRatio": 0,
+      "salePrice": 13500,
+      "image": {
+        "thumbnail": "granolahouse.webp",
+        "alt": "그래놀라 5종"
+      },
+      "stock": 4,
+      "category": "간식·과자·떡",
+      "kalryOnly": "true",
+      "brand": "그래놀라 하우스"
+    },
+    {
+      "id": "product-mmm",
+      "name": "[홍대쭈꾸미] 쭈꾸미 볶음 300g(냉동)",
+      "description": "매콤달콤한 매력의 밥도둑",
       "price": 7900,
       "saleRatio": 0.13,
       "salePrice": 6800,
       "image": {
-        "thumbnail": "jukkumi/thumbnail.jpg",
-        "view": "jukkumi/detail_view.jpg",
-        "banner": "jukkumi/detail_banner.jpg",
-        "info": "jukkumi/detail_info.jpg",
-        "alt": "홍대 주꾸미"
+        "thumbnail": "jukkumi.webp",
+        "alt": "쭈꾸미 볶음 300g(냉동)"
       },
-      "stock": 8
+      "stock": 5,
+      "category": "수산·해산·건어물",
+      "kalryOnly": "true",
+      "brand": "홍대쭈꾸미"
     },
     {
-      "id": "product-tkwk",
-      "name": "[강남면옥] 소갈비찜",
-      "description": "보는 맛과 먹는 맛 모두 푸짐",
-      "price": 29800,
+      "id": "product-nnn",
+      "name": "[대구 반할만떡] 유부호만두",
+      "description": "유부로 속을 든든히 채운 군만두",
+      "price": 6900,
+      "saleRatio": 0.15,
+      "salePrice": 5860,
+      "image": {
+        "thumbnail": "ubuho.webp",
+        "alt": "유부호만두"
+      },
+      "stock": 8,
+      "category": "샐러드·간편식",
+      "kalryOnly": "false",
+      "brand": "대구 반할만떡"
+    },
+    {
+      "id": "product-ooo",
+      "name": "[사미헌] 갈비탕",
+      "description": "진짜 갈비로 우려낸 전통 갈비탕",
+      "price": "",
       "saleRatio": 0,
-      "salePrice": 0,
+      "salePrice": 12000,
       "image": {
-        "thumbnail": "kangnam/thumbnail.jpg",
-        "view": "kangnam/detail_view.jpg",
-        "banner": "kangnam/detail_banner.jpg",
-        "info": "kangnam/detail_info.jpg",
-        "alt": "강남면옥 소갈비찜"
+        "thumbnail": "samihungalbitang.webp",
+        "alt": "갈비탕"
       },
-      "stock": 2
+      "stock": 6,
+      "category": "국·반찬·메인요리",
+      "kalryOnly": "false",
+      "brand": "사미헌"
+    }
+  ],
+  "QnAs": [
+    {
+      "id": 1,
+      "type": "public",
+      "title": "김데레사님의 공개 문의글 - 배송일",
+      "writer": "김데레사",
+      "contents": "배송도착 날짜가 궁금해요.",
+      "questionDatetime": "20230201"
     },
     {
-      "id": "product-ckzk",
-      "name": "[Kalry's] 한돈 삼겹 베이컨",
-      "description": "무항생제 한돈 삼겹살의 고소한 풍미 그대로",
-      "price": 4500,
-      "saleRatio": 0.25,
-      "salePrice": 3375,
-      "image": {
-        "thumbnail": "bacon/thumbnail.jpg",
-        "view": "bacon/detail_view.jpg",
-        "banner": "bacon/detail_banner.jpg",
-        "info": "bacon/detail_info.jpg",
-        "alt": "칼리 한돈 삼겹 베이컨"
-      },
-      "stock": 13
+      "id": 2,
+      "type": "public",
+      "title": "심선범님의 공개 문의글 - 상품유통기한",
+      "writer": "심선범",
+      "contents": "유통기한 날짜가 궁금해요.",
+      "questionDatetime": "20230201"
+    },
+    {
+      "id": 3,
+      "type": "private",
+      "title": "김영웅님의 비공개 문의글",
+      "writer": "김영웅",
+      "contents": "질문 내용.",
+      "questionDatetime": "20230202",
+      "answer": "칼리입니다",
+      "answerDatetime": "20230202"
+    }
+  ],
+  "QnANotices": [
+    {
+      "id": 1,
+      "type": "판매 중단 제품 안내",
+      "writer": "칼리",
+      "contents": "안녕하세요. 칼리입니다.\n\n하기와 같은 사유로 인하여 판매(일시)중단 되었음을 안내드립니다. 감사합니다. 컬리드림",
+      "datetime": "20230211"
     }
   ],
   "inquiry": [

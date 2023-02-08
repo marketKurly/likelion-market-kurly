@@ -9,6 +9,54 @@ $main_container_width: 1050px;
   flex-flow: column wrap;
   position: relative;
   justify-content: center;
+  &__recent-product {
+    border: 1px solid $gray-200;
+    display: none;
+    position: absolute;
+    top: 478px;
+    right: 15px;
+    // position: fixed;
+    // transform: translateY(-50%);
+    // top: 50%;
+    width: 80px;
+    height: 154px;
+    @include recentlyProduct {
+      display: block;
+    }
+    &__inner {
+      height: 100%;
+      @include flexboxCenter(
+        $direction: column,
+        $justify: stretch,
+        $items: stretch
+      );
+    }
+    &__header {
+      margin-top: 19px;
+      @include flexboxCenter();
+      height: 40px;
+      font-weight: 500;
+      font-size: 14px;
+    }
+    &__button--up {
+      position: absolute;
+      top: 21px;
+      left: 0;
+      width: 100%;
+      height: 20px;
+    }
+    &__button--down {
+      position: absolute;
+      top: calc(100% + 1px);
+      left: 0;
+      width: 100%;
+      height: 20px;
+    }
+    .main__recent-product__swiper {
+      width: 80%;
+      height: 45%;
+    }
+  }
 }
 
 // main banner
@@ -28,6 +76,9 @@ $main_container_width: 1050px;
   width: 100%;
   height: 100%;
   position: relative;
+  .swiper-wrapper {
+    height: auto;
+  }
 }
 
 .swiper-slide {
@@ -70,7 +121,7 @@ $main_container_width: 1050px;
   width: 52px;
   height: 52px;
   right: 10%;
-  background: url('/client/css/img/Icon/Arrow.svg') 50% 50%
+  background: url('../../css/img/Icon/Arrow.svg') 50% 50%
     no-repeat;
   transform: rotate(180deg);
   opacity: 0;
@@ -82,7 +133,7 @@ $main_container_width: 1050px;
   width: 52px;
   height: 52px;
   left: 10%;
-  background: url('/client/css/img/Icon/Arrow.svg') 50% 50%
+  background: url('../../css/img/Icon/Arrow.svg') 50% 50%
     no-repeat;
   opacity: 0;
   transition: all ease-in-out 500ms;
@@ -162,14 +213,18 @@ $main_container_width: 1050px;
     }
   }
   &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     &__name {
-      height: 26px;
+      // height: 100%;
       font-size: 16px;
       line-height: 160%;
       font-weight: 400;
       margin-bottom: 8px;
       margin-top: 16px;
       color: $content;
+      text-align: left;
     }
     &__price {
       font-size: 21.328px;
@@ -187,7 +242,7 @@ $main_container_width: 1050px;
   height: 50px;
   right: -30px;
   top: calc(50% - 60px);
-  background: url('/client/css/img/Icon/Arrow-white.svg');
+  background: url('../../css/img/Icon/Arrow-white.svg');
   background-size: contain;
   transform: rotate(180deg);
   margin: 10px 10px;
@@ -199,7 +254,7 @@ $main_container_width: 1050px;
   height: 50px;
   left: -30px;
   top: calc(50% - 60px);
-  background: url('/client/css/img/Icon/Arrow-white.svg');
+  background: url('../../css/img/Icon/Arrow-white.svg');
   background-size: contain;
   margin: 10px 10px;
 }
@@ -249,7 +304,7 @@ $main_container_width: 1050px;
   height: 50px;
   right: -30px;
   top: calc(50% - 60px);
-  background: url('/client/css/img/Icon/Arrow-white.svg');
+  background: url('../..//css/img/Icon/Arrow-white.svg');
   background-size: contain;
   transform: rotate(180deg);
   margin: 10px 10px;
@@ -261,9 +316,17 @@ $main_container_width: 1050px;
   height: 50px;
   left: -30px;
   top: calc(50% - 60px);
-  background: url('/client/css/img/Icon/Arrow-white.svg');
+  background: url('../../css/img/Icon/Arrow-white.svg');
   background-size: contain;
   margin: 10px 10px;
+}
+.today-recomend-product
+  .swiper-button-next.swiper-button-disabled {
+  opacity: 0;
+}
+.today-recomend-product
+  .swiper-button-prev.swiper-button-disabled {
+  opacity: 0;
 }
 
 // ad 팝업창
@@ -362,7 +425,7 @@ $main_container_width: 1050px;
             width: 30px;
             height: 30px;
             cursor: pointer;
-            background-image: url(/client/css/img/Icon/Minus.svg);
+            background-image: url('../../css/img/Icon/Minus.svg');
             background-repeat: no-repeat;
             // 회색 아이콘으로 이동시 top -38px 더 이동
             background-position: -8px -8px;
@@ -371,7 +434,7 @@ $main_container_width: 1050px;
             width: 30px;
             height: 30px;
             cursor: pointer;
-            background-image: url(/client/css/img/Icon/Plus.svg);
+            background-image: url('../../css/img/Icon/Plus.svg');
             background-repeat: no-repeat;
             background-position: -8px -8px;
           }
@@ -452,4 +515,15 @@ $main_container_width: 1050px;
     display: block;
     // background-color: #fff;
   }
+}
+
+// 3번째 스와이퍼
+
+.good-price-product
+  .swiper-button-next.swiper-button-disabled {
+  opacity: 0;
+}
+.good-price-product
+  .swiper-button-prev.swiper-button-disabled {
+  opacity: 0;
 }

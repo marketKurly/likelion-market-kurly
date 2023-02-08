@@ -50,7 +50,7 @@
             width: 30px;
             height: 30px;
             cursor: pointer;
-            background-image: url(/client/css/img/Icon/Minus.svg);
+            background-image: url('../../css/img/Icon/Minus.svg');
             background-repeat: no-repeat;
             // 회색 아이콘으로 이동시 top -38px 더 이동
             background-position: -8px -8px;
@@ -59,7 +59,7 @@
             width: 30px;
             height: 30px;
             cursor: pointer;
-            background-image: url(/client/css/img/Icon/Plus.svg);
+            background-image: url('../../css/img/Icon/Plus.svg');
             background-repeat: no-repeat;
             background-position: -8px -8px;
           }

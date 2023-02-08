@@ -1,3 +1,10 @@
+import {
+  getNode,
+  invisibleElement,
+  visibleElement,
+  bindEvent,
+} from '../lib/index.js';
+
 // main banner swiper1
 let mainBannerSwiper = new Swiper('.swiper1', {
   loop: true, // 무한 반복
@@ -48,7 +55,12 @@ let todayRecomendProductSwiper = new Swiper('.swiper2', {
   navigation: {
     nextEl: '.today-recomend-product .swiper-button-next',
     prevEl: '.today-recomend-product .swiper-button-prev',
-
+  },
+  a11y: {
+    prevSlideMessage: '이전 슬라이드',
+    nextSlideMessage: '다음 슬라이드',
+    slideLabelMessage:
+      '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
   },
 });
 
@@ -64,6 +76,31 @@ let googPriceProductSwiper = new Swiper('.swiper3', {
   navigation: {
     nextEl: '.good-price-product .swiper-button-next',
     prevEl: '.good-price-product .swiper-button-prev',
-
+  },
+  a11y: {
+    prevSlideMessage: '이전 슬라이드',
+    nextSlideMessage: '다음 슬라이드',
+    slideLabelMessage:
+      '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
   },
 });
+
+const recentlyViewedProduct = new Swiper(
+  '.main__recent-product__swiper',
+  {
+    // slidesPerView: '5'
+    // spaceBetween: 10,
+    // slidesPerGroup: 4
+    direction: 'vertical',
+    navigation: {
+      prevEl: '.main__recent-product__button--up',
+      nextEl: '.main__recent-product__button--down',
+    },
+    a11y: {
+      prevSlideMessage: '이전 슬라이드',
+      nextSlideMessage: '다음 슬라이드',
+      slideLabelMessage:
+        '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
+    },
+  }
+);
