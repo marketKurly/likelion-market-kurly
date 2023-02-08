@@ -21,7 +21,6 @@ $break: 14px;
   justify-content: $justify;
   align-items: $items;
 }
-
 @mixin recentlyProduct {
   @media (min-width: 1250px) {
     @content;

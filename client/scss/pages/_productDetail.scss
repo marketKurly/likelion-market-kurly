@@ -4,6 +4,10 @@
   position: relative;
 }
 
+#inner {
+  // width: 100%;
+}
+
 .gray {
   color: $gray-400;
 }
@@ -679,8 +683,8 @@
             font-weight: 600;
             color: $content;
             line-height: 1.8;
-            background-color: $gray-50;
             position: relative;
+            background-color: $gray-50;
 
             td {
               padding: 20px;
@@ -738,7 +742,8 @@
   }
 }
 
-#hidden {
+#review-hidden,
+#inquiry-hidden {
   display: none;
 }
 
