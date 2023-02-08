@@ -2847,23 +2847,32 @@ table {
 .product-detail__information__detail__dl__select__choice__number {
   border: 1px solid #e1e1e1;
   position: relative;
+  border-radius: 3px;
+  width: 88px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 }
 .product-detail__information__detail__dl__select__choice__number--minus {
-  width: 30px;
-  height: 30px;
+  background: url("/client/css/img/Icon/Minus.svg") no-repeat;
+  background-position: -9px -8px;
+  width: 28px;
+  height: 28px;
 }
 .product-detail__information__detail__dl__select__choice__number--num {
-  width: 1px;
-  height: 1px;
+  display: flex;
+  width: 28px;
+  height: 28px;
   font-weight: 600;
   font-size: 16px;
-  position: absolute;
-  top: 6px;
-  left: 27px;
+  justify-content: center;
+  align-items: center;
 }
 .product-detail__information__detail__dl__select__choice__number--plus {
-  width: 30px;
-  height: 30px;
+  background: url("/client/css/img/Icon/Plus.svg") no-repeat;
+  background-position: -9px -8px;
+  width: 28px;
+  height: 28px;
 }
 .product-detail__information__detail__dl__select__choice--price {
   font-size: 12px;
@@ -2928,6 +2937,9 @@ table {
   border: 1px solid #e1e1e1;
   border-radius: 4px;
 }
+.product-detail__information__detail__result__add__noti img {
+  opacity: 0.3;
+}
 .product-detail__information__detail__result__add__addcart {
   width: 56px;
   height: 56px;
@@ -2936,6 +2948,7 @@ table {
   background-color: #5f0080;
   color: white;
   font-size: 16px;
+  border-radius: 4px;
 }
 .product-detail__category {
   padding-top: 50px;

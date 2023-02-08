@@ -156,23 +156,34 @@
             &__number {
               border: 1px solid $gray-100;
               position: relative;
+              border-radius: 3px;
+              width: 88px;
+              display: flex;
+              flex-flow: row nowrap;
+              justify-content: space-between;
 
               &--minus {
-                width: 30px;
-                height: 30px;
+                background: url('/client/css/img/Icon/Minus.svg')
+                  no-repeat;
+                background-position: -9px -8px;
+                width: 28px;
+                height: 28px;
               }
               &--num {
-                width: 1px;
-                height: 1px;
+                display: flex;
+                width: 28px;
+                height: 28px;
                 font-weight: 600;
                 font-size: 16px;
-                position: absolute;
-                top: 6px;
-                left: 27px;
+                justify-content: center;
+                align-items: center;
               }
               &--plus {
-                width: 30px;
-                height: 30px;
+                background: url('/client/css/img/Icon/Plus.svg')
+                  no-repeat;
+                background-position: -9px -8px;
+                width: 28px;
+                height: 28px;
               }
             }
 
@@ -247,6 +258,10 @@
             height: 56px;
             border: 1px solid $gray-100;
             border-radius: 4px;
+
+            img {
+              opacity: 0.3;
+            }
           }
 
           &__addcart {
@@ -257,6 +272,7 @@
             background-color: $primary;
             color: white;
             font-size: 16px;
+            border-radius: 4px;
           }
         }
       }
