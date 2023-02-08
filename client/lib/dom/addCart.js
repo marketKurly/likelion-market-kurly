@@ -114,9 +114,12 @@ export function aadCart(
     let product1 = window.localStorage;
 
     const onClickPutButton = () => {
+      // let currentresult = result.innerText;
+      // console.log(currentresult);
       product1.setItem(
         `${slider}resultValue`,
         JSON.stringify(product)
+        // currentresult
       );
       let localStorageObject = localStorage.getItem(
         `${slider}resultValue`
