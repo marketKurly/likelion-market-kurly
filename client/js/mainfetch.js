@@ -43,7 +43,7 @@ xhrPromise
         secondSwiper,
         `<div class="swiper-slide ${slider}">
         <a
-        href="#"
+        href="./pages/productDetail.html"
         class="swiper-product"
         id = ${id}
       >
@@ -83,7 +83,7 @@ xhrPromise
         thirdSwiper,
         `<div class="swiper-slide ${slider2}">
         <a
-        href="#"
+        href="./pages/productDetail.html"
         class="swiper-product"
         id = ${id}
       >
