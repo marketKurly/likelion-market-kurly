@@ -3025,6 +3025,9 @@ table {
   text-align: center;
   z-index: 1;
 }
+.product-detail__description__content #infoImg {
+  padding-bottom: 80px;
+}
 .product-detail__description__content__whykarly {
   padding-bottom: 84px;
   padding-top: 30px;

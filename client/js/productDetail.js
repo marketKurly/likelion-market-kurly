@@ -13,10 +13,16 @@ const userInquiryContainer = getNode('.user-inquiry-inner');
 const userReviewContainer = getNode('.user-inquiry-inner');
 const inquiryInner = getNode('#inquiry-inner');
 const reviewInner = getNode('#review-inner');
+const infoprice = getNode('#infoprice');
 const total = getNode('#total-result');
+const totalprice = getNode('#totalprice');
+const productprice = getNode('#productprice');
 const plus = getNode('#plus');
 const minus = getNode('#minus');
 const price = getNode('#price');
+const view = getNode('#view');
+const banner = getNode('#banner');
+const infoImg = getNode('#infoImg');
 
 /* 메인 클릭 핸들러 */
 const handler = (e) => {
@@ -44,31 +50,89 @@ const handler = (e) => {
 
 main.addEventListener('click', handler);
 
-let resultvalue = total.innerText;
-let pricevalue = price.innerText;
+const redingProducts = async (data) => {
+  try {
+    let response = await tiger.get(
+      'http://localhost:3000/products/product-rksk'
+    );
+    let listData = response.data;
 
-const count = (type) => {
-  if (type === 'plus') {
-    resultvalue = parseInt(resultvalue) + 1;
-    pricevalue = parseInt(price.innerText) * resultvalue;
-    console.log(pricevalue);
-  } else if (type === 'minus') {
-    if (resultvalue > 1) {
-      resultvalue = parseInt(resultvalue) - 1;
-      pricevalue = +price.innerText * +resultvalue;
-    }
-  }
+    // console.log(listData.image.view);
 
-  total.innerText = resultvalue;
-  price.innerText = pricevalue + '원';
+    $('#title').text(listData.name);
+    $('#subtitle').text(listData.description);
+    insertLast(
+      infoprice,
+      /* html */
+      `
+      <span>${listData.price}</span>
+      <span>원</span>
+      `
+    );
+    $('#price').text(listData.price + '원');
+    insertLast(
+      view,
+      /* html */
+      `<img
+        class="product-detail__information__img"
+        src="../assets/${listData.image.view}"
+        alt="${listData.image.alt}"
+      />`
+    );
+    insertLast(
+      banner,
+      /* html */
+      `<img
+        src="../assets/${listData.image.banner}"
+        alt="${listData.image.alt}"
+      />`
+    );
+    $('#choicetitle').text(listData.name);
+    $('#bannersubtitle').text(listData.description);
+    $('#bannertitle').text(listData.name);
+    insertLast(
+      infoImg,
+      /* html */
+      `<img
+        class="product-detail__information__img"
+        src="../assets/${listData.image.view}"
+        alt="${listData.image.alt}"
+      />`
+    );
+    $('#reviewtitle').text(listData.name);
+
+    let resultvalue = total.innerText;
+    let pricevalue = listData.price;
+    productprice.innerText = listData.price;
+
+    const count = (type) => {
+      if (type === 'plus') {
+        resultvalue = parseInt(resultvalue) + 1;
+        total.innerText = resultvalue;
+        console.log(resultvalue);
+      } else if (type === 'minus') {
+        if (resultvalue > 1) {
+          resultvalue = parseInt(resultvalue) - 1;
+          total.innerText = resultvalue;
+          console.log(resultvalue);
+        }
+      }
+    };
+
+    minus.addEventListener('click', () => {
+      count('minus');
+      price.innerText = pricevalue * resultvalue;
+      productprice.innerHTML = price.innerText;
+    });
+    plus.addEventListener('click', () => {
+      count('plus');
+      price.innerText = pricevalue * resultvalue;
+      productprice.innerHTML = price.innerText;
+    });
+  } catch (err) {}
 };
 
-minus.addEventListener('click', () => {
-  count('minus');
-});
-plus.addEventListener('click', () => {
-  count('plus');
-});
+redingProducts();
 
 const rendingInquiryList = async (data) => {
   try {
@@ -78,8 +142,6 @@ const rendingInquiryList = async (data) => {
     let listData = response.data;
 
     // console.log(listData);
-
-    // inner.innerHTML = '';
 
     // listData.forEach((data) => console.log(data));
 
@@ -128,16 +190,14 @@ const rendingReviewList = async (data) => {
     let response = await tiger.get(
       'http://localhost:3000/review'
     );
+
     let listData = response.data;
-
-    // console.log(listData);
-
-    // inner.innerHTML = '';
-
-    // listData.forEach((data) => console.log(data));
 
     $('#review-counter').text(
       '총 ' + listData.length + '개'
+    );
+    $('#review-counter2').text(
+      '후기 (' + listData.length + ')'
     );
 
     for (let i = 0; i < listData.length; i++) {
@@ -150,7 +210,7 @@ const rendingReviewList = async (data) => {
         <span>${listData[i].name}</span>
       </div>
       <article>
-        <h3>[풀무원] 탱탱쫄면 (4개입)</h3>
+        <h3 id="reviewtitle">[풀무원] 탱탱쫄면 (4개입)</h3>
         <p>
           ${listData[i].content}
         </p>
@@ -158,11 +218,6 @@ const rendingReviewList = async (data) => {
       </article>
     </div>`;
     }
-
-    // return이 필요 한 건 map, reduce 사용 | 필요 없는 건 forEach 사용
-    /* listData.forEach((data) =>
-      renderInquiryList(userInquiryContainer, data)
-    ); */
   } catch (err) {
     // console.log(err);
     // renderEmptyList(userCardContainer);

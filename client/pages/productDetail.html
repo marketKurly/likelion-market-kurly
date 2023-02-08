@@ -320,11 +320,14 @@
       <main class="width product-detail">
         <!-- 상품 설명 -->
         <div class="product-detail__information">
-          <img
+          <div id="view">
+            <!-- <img
             class="product-detail__information__img"
             src="../assets/tangtang/detail_view.jpg"
             alt="상품 이미지"
-          />
+          /> -->
+          </div>
+
           <section
             class="product-detail__information__detail"
           >
@@ -336,22 +339,22 @@
             <div>
               <h1
                 class="product-detail__information__detail__title"
+                id="title"
               >
-                [풀무원] 탱탱쫄면 (4개입)
+                <!-- [풀무원] 탱탱쫄면 (4개입) -->
               </h1>
               <h2
                 class="product-detail__information__detail__subtitle"
+                id="subtitle"
               >
-                튀기지 않아 부담 없는 매콤함
+                <!-- 튀기지 않아 부담 없는 매콤함 -->
               </h2>
             </div>
 
             <h2
               class="product-detail__information__detail__price"
-            >
-              <span>15,725</span>
-              <span>원</span>
-            </h2>
+              id="infoprice"
+            ></h2>
             <div
               class="product-detail__information__detail__login1"
             >
@@ -431,7 +434,9 @@
                   <div
                     class="product-detail__information__detail__dl__select"
                   >
-                    <span>[풀무원] 탱탱쫄면 (4개입)</span>
+                    <div id="choicetitle">
+                      <!-- <span>[풀무원] 탱탱쫄면 (4개입)</span> -->
+                    </div>
                     <div
                       class="product-detail__information__detail__dl__select__choice"
                     >
@@ -459,7 +464,7 @@
                       <span
                         class="product-detail__information__detail__dl__select__choice--price"
                         id="price"
-                        >3500<span>원</span>
+                        ><!-- 3500원 -->
                       </span>
                     </div>
                   </div>
@@ -471,9 +476,11 @@
                 <div
                   class="product-detail__information__detail__result__totalprice"
                 >
-                  <span>총 상품금액 : </span>
-                  <span>15,725</span>
-                  <span>원</span>
+                  <div id="totalprice">
+                    <span>총 상품금액 : </span>
+                    <span id="productprice"></span>
+                    <span>원</span>
+                  </div>
                 </div>
                 <div
                   class="product-detail__information__detail__result__login2"
@@ -515,7 +522,7 @@
         <nav class="product-detail__category">
           <button>상품설명</button>
           <button>상세정보</button>
-          <button>후기 (1,000)</button>
+          <button id="review-counter2"></button>
           <button>문의</button>
         </nav>
 
@@ -525,18 +532,19 @@
             <div
               class="product-detail__description__goods__intro"
             >
-              <img
-                src="../assets/tangtang/detail_banner.jpg"
-                alt="상품 사진1"
-              />
+              <div id="banner">
+                <!-- <img
+                  src="../assets/tangtang/detail_banner.jpg"
+                  alt="상품 사진1"
+                /> -->
+              </div>
+
               <div
                 class="product-detail__description__goods__intro__context"
               >
                 <h3>
-                  <small
-                    >튀기지 않아 부담 없는 매콤함</small
-                  >
-                  <p>[풀무원] 탱탱쫄면</p>
+                  <small id="bannersubtitle"></small>
+                  <p id="bannertitle"></p>
                 </h3>
                 <p
                   class="product-detail__description__goods__intro__context--text"
@@ -569,10 +577,8 @@
             </div>
           </div>
           <div class="product-detail__description__content">
-            <img
-              src="../assets/tangtang/detail_info.jpg"
-              alt="탱탱쫄면 영양정보"
-            />
+            <div id="infoImg"></div>
+
             <div
               class="product-detail__description__content__whykarly"
             >
