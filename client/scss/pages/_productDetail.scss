@@ -4,10 +4,6 @@
   position: relative;
 }
 
-#inner {
-  // width: 100%;
-}
-
 .gray {
   color: $gray-400;
 }
@@ -27,6 +23,20 @@
 
 .hr {
   border-top: 1px solid black;
+}
+
+.button-left {
+  background: url('/client/css/img/Icon/Arrow-2.svg')
+    no-repeat;
+  background-size: 60px;
+  background-position: -3px -94px;
+}
+
+.button-right {
+  background: url('/client/css/img/Icon/Arrow-2.svg')
+    no-repeat;
+  background-size: 60px;
+  background-position: -3px -140px;
 }
 
 /* 상품 상세 페이지 */
