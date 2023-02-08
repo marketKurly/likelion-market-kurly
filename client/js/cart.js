@@ -8,7 +8,6 @@ import {
 // 배송지 변경
 const Address = getNode('.cart__order__delivery__address');
 const changeAddressBtn = getNode('.cart__order__delivery__address-change');
-const orderBtn = getNode('.cart__order__button');
 
 const handlerChangeAddress = () =>{
   new daum.Postcode({
