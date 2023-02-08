@@ -16,6 +16,7 @@ const reviewInner = getNode('#review-inner');
 const total = getNode('#total-result');
 const plus = getNode('#plus');
 const minus = getNode('#minus');
+const price = getNode('#price');
 
 /* 메인 클릭 핸들러 */
 const handler = (e) => {
@@ -44,17 +45,22 @@ const handler = (e) => {
 main.addEventListener('click', handler);
 
 let resultvalue = total.innerText;
+let pricevalue = price.innerText;
 
 const count = (type) => {
   if (type === 'plus') {
     resultvalue = parseInt(resultvalue) + 1;
+    pricevalue = parseInt(price.innerText) * resultvalue;
+    console.log(pricevalue);
   } else if (type === 'minus') {
-    if (resultvalue > 0) {
+    if (resultvalue > 1) {
       resultvalue = parseInt(resultvalue) - 1;
+      pricevalue = +price.innerText * +resultvalue;
     }
   }
 
   total.innerText = resultvalue;
+  price.innerText = pricevalue + '원';
 };
 
 minus.addEventListener('click', () => {
