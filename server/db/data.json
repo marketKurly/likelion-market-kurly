@@ -318,6 +318,10 @@
       "brand": "사미헌"
     }
   ],
+  "inquiry": [
+  ],
+  "review": [
+  ],
   "QnAs": [
     {
       "id": 1,
@@ -355,33 +359,4 @@
       "datetime": "20230211"
     }
   ],
-  "inquiry": [
-    {
-      "name": "",
-      "time": "2023.2.7",
-      "title": "테스트제목",
-      "question": "테스트내용",
-      "answer": "테스트",
-      "isSecret": false,
-      "id": 1
-    },
-    {
-      "name": "",
-      "time": "2023.2.7",
-      "title": "테스트",
-      "question": "테스트",
-      "answer": "테스트",
-      "isSecret": false,
-      "id": 2
-    }
-  ],
-  "review": [
-    {
-      "name": "",
-      "time": "2023.2.8",
-      "title": "후기 테스트",
-      "content": "후기 테스트ㅡ",
-      "id": 1
-    }
-  ]
 }
