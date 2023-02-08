@@ -5,6 +5,20 @@ import {
   tiger,
   xhrPromise,
 } from '../lib/index.js';
+import { axios } from './common/axios.js';
+
+// const karlyProduct = getNode('.accordion--set');
+const karlyProductMenu = getNode('.product-list__sort');
+const karlyProductMenuToggle = getNode(
+  '.product-list__sort span'
+);
+const karlyPageControl = getNode(
+  'accordion--set__head--button'
+);
+const karlyProductTotal = getNode(
+  '.product-list__total-count'
+);
+let karlyProductTotalCount = '';
 
 // 슬라이드 기능
 $(document).ready(function () {
