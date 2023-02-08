@@ -7,7 +7,14 @@ import {
 } from '../index.js';
 
 //addCartPopupCount
-export function aadCart(slider, name, price) {
+export function aadCart(
+  slider,
+  name,
+  price,
+  img,
+  alt,
+  saleRetio
+) {
   // let allPrice = 0;
   const minusCount = getNode(
     `.add-cart__list__info__amount__count__minus`
@@ -82,6 +89,14 @@ export function aadCart(slider, name, price) {
           .toString()
           .replace(/\B(?=(\d{3})+(?!\d))/g, ',') + ' 원';
     };
+    let product = {
+      name: name,
+      amount: resultvalue,
+      price: price,
+      image: img,
+      alt: alt,
+      saleRetio: saleRetio,
+    };
 
     minusCount.addEventListener('click', () => {
       count('minus');
@@ -99,7 +114,14 @@ export function aadCart(slider, name, price) {
     let product1 = window.localStorage;
 
     const onClickPutButton = () => {
-      product1.setItem(`${slider}resultValue`, resultvalue);
+      product1.setItem(
+        `${slider}resultValue`,
+        JSON.stringify(product)
+      );
+      let localStorageObject = localStorage.getItem(
+        `${slider}resultValue`
+      );
+      console.log(JSON.parse(localStorageObject));
       invisibleElement(addCartPopup);
       resultvalue = 1;
       result.innerText = resultvalue;

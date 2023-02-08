@@ -121,7 +121,21 @@ xhrPromise
     </div>`
       );
 
-      aadCart(slider, name, item.price, index);
-      aadCart(slider2, name, item.price, index);
+      aadCart(
+        slider,
+        name,
+        item.price,
+        img,
+        alt,
+        item.saleRatio
+      );
+      aadCart(
+        slider2,
+        name,
+        item.price,
+        img,
+        alt,
+        item.saleRatio
+      );
     });
   });
