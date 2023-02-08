@@ -1732,6 +1732,55 @@ table {
   position: relative;
   justify-content: center;
 }
+.main__recent-product {
+  border: 1px solid #c4c4c4;
+  display: none;
+  position: absolute;
+  top: 478px;
+  right: 15px;
+  width: 80px;
+  height: 154px;
+}
+@media (min-width: 1250px) {
+  .main__recent-product {
+    display: block;
+  }
+}
+.main__recent-product__inner {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: stretch;
+  align-items: stretch;
+}
+.main__recent-product__header {
+  margin-top: 19px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.main__recent-product__button--up {
+  position: absolute;
+  top: 21px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+}
+.main__recent-product__button--down {
+  position: absolute;
+  top: calc(100% + 1px);
+  left: 0;
+  width: 100%;
+  height: 20px;
+}
+.main__recent-product .main__recent-product__swiper {
+  width: 80%;
+  height: 45%;
+}
 
 .Main-banner {
   width: 100%;
@@ -1745,6 +1794,9 @@ table {
   width: 100%;
   height: 100%;
   position: relative;
+}
+.swiper .swiper-wrapper {
+  height: auto;
 }
 
 .swiper-slide {
@@ -1782,7 +1834,7 @@ table {
   width: 52px;
   height: 52px;
   right: 10%;
-  background: url("/client/css/img/Icon/Arrow.svg") 50% 50% no-repeat;
+  background: url("../../css/img/Icon/Arrow.svg") 50% 50% no-repeat;
   transform: rotate(180deg);
   opacity: 0;
   transition: all ease-in-out 500ms;
@@ -1793,7 +1845,7 @@ table {
   width: 52px;
   height: 52px;
   left: 10%;
-  background: url("/client/css/img/Icon/Arrow.svg") 50% 50% no-repeat;
+  background: url("../../css/img/Icon/Arrow.svg") 50% 50% no-repeat;
   opacity: 0;
   transition: all ease-in-out 500ms;
 }
@@ -1869,14 +1921,19 @@ table {
   padding: 0;
   z-index: 100;
 }
+.swiper-product__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 .swiper-product__info__name {
-  height: 26px;
   font-size: 16px;
   line-height: 160%;
   font-weight: 400;
   margin-bottom: 8px;
   margin-top: 16px;
   color: #333333;
+  text-align: left;
 }
 .swiper-product__info__price {
   font-size: 21.328px;
@@ -1891,7 +1948,7 @@ table {
   height: 50px;
   right: -30px;
   top: calc(50% - 60px);
-  background: url("/client/css/img/Icon/Arrow-white.svg");
+  background: url("../../css/img/Icon/Arrow-white.svg");
   background-size: contain;
   transform: rotate(180deg);
   margin: 10px 10px;
@@ -1903,7 +1960,7 @@ table {
   height: 50px;
   left: -30px;
   top: calc(50% - 60px);
-  background: url("/client/css/img/Icon/Arrow-white.svg");
+  background: url("../../css/img/Icon/Arrow-white.svg");
   background-size: contain;
   margin: 10px 10px;
 }
@@ -1949,7 +2006,7 @@ table {
   height: 50px;
   right: -30px;
   top: calc(50% - 60px);
-  background: url("/client/css/img/Icon/Arrow-white.svg");
+  background: url("../..//css/img/Icon/Arrow-white.svg");
   background-size: contain;
   transform: rotate(180deg);
   margin: 10px 10px;
@@ -1961,7 +2018,7 @@ table {
   height: 50px;
   left: -30px;
   top: calc(50% - 60px);
-  background: url("/client/css/img/Icon/Arrow-white.svg");
+  background: url("../../css/img/Icon/Arrow-white.svg");
   background-size: contain;
   margin: 10px 10px;
 }
@@ -2069,7 +2126,7 @@ table {
   width: 30px;
   height: 30px;
   cursor: pointer;
-  background-image: url(/client/css/img/Icon/Minus.svg);
+  background-image: url("../../css/img/Icon/Minus.svg");
   background-repeat: no-repeat;
   background-position: -8px -8px;
 }
@@ -2077,7 +2134,7 @@ table {
   width: 30px;
   height: 30px;
   cursor: pointer;
-  background-image: url(/client/css/img/Icon/Plus.svg);
+  background-image: url("../../css/img/Icon/Plus.svg");
   background-repeat: no-repeat;
   background-position: -8px -8px;
 }
@@ -2218,7 +2275,7 @@ table {
   width: 30px;
   height: 30px;
   cursor: pointer;
-  background-image: url(/client/css/img/Icon/Minus.svg);
+  background-image: url("../../css/img/Icon/Minus.svg");
   background-repeat: no-repeat;
   background-position: -8px -8px;
 }
@@ -2226,7 +2283,7 @@ table {
   width: 30px;
   height: 30px;
   cursor: pointer;
-  background-image: url(/client/css/img/Icon/Plus.svg);
+  background-image: url("../../css/img/Icon/Plus.svg");
   background-repeat: no-repeat;
   background-position: -8px -8px;
 }
@@ -3337,11 +3394,9 @@ table {
   position: sticky;
   width: 220px;
   flex-shrink: 0;
-  height: 100%;
-  max-height: calc(100vh - 120px);
+  height: 1800px;
   top: 80px;
   margin-right: 47px;
-  border-bottom: 1px solid rgb(238, 238, 238);
   overflow: hidden scroll;
 }
 
@@ -3367,7 +3422,7 @@ table {
   margin-right: 5px;
 }
 
-.initialization {
+.check-reset {
   font-size: 12px;
   margin-left: 5px;
   font-weight: 500;
@@ -3444,12 +3499,12 @@ input[class=check2] + label em {
   display: inline-block;
   width: 24px;
   height: 24px;
-  background: url("/client/css/img/Input/Check1.svg") 0 0 no-repeat;
+  background: url("../css/img/Input/Check1.svg") 0 0 no-repeat;
   margin-right: 5px;
 }
 
 input[class=check2]:checked + label em {
-  background: url("/client/css/img/Input/Check2.svg") 0 0 no-repeat;
+  background: url("../css/img/Input/Check2.svg") 0 0 no-repeat;
 }
 
 .accordion__item__text {
@@ -3705,7 +3760,7 @@ input[class=check2]:checked + label em {
   color: #000000;
 }
 
-.bottom--page {
+#pagination {
   display: flex;
   justify-content: center;
   align-items: center;
