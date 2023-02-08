@@ -121,13 +121,11 @@ const redingProducts = async (data) => {
 
     minus.addEventListener('click', () => {
       count('minus');
-      price.innerText = pricevalue * resultvalue;
-      productprice.innerHTML = price.innerText;
+      productprice.innerHTML = pricevalue * resultvalue;
     });
     plus.addEventListener('click', () => {
       count('plus');
-      price.innerText = pricevalue * resultvalue;
-      productprice.innerHTML = price.innerText;
+      productprice.innerHTML = pricevalue * resultvalue;
     });
   } catch (err) {}
 };
