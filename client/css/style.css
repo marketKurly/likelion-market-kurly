@@ -1397,7 +1397,7 @@ table {
   font-size: 14px;
   top: 23px;
   right: 58px;
-  color: #f03f40;
+  color: rgb(142, 63, 73);
 }
 .register__form {
   width: 100%;
@@ -1639,7 +1639,7 @@ table {
   font-size: 14px;
   top: 8px;
   left: 81px;
-  color: #f03f40;
+  color: rgb(142, 63, 73);
 }
 .register__acceptance__all {
   grid-area: all;
