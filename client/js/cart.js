@@ -5,6 +5,7 @@ import {
   clearContents
 } from "../lib/index.js";
 
+// 배송지 변경
 const Address = getNode('.cart__order__delivery__address');
 const changeAddressBtn = getNode('.cart__order__delivery__address-change');
 const orderBtn = getNode('.cart__order__button');
@@ -32,9 +33,41 @@ const handlerChangeAddress = () =>{
     }
 }).open();
 }
-const handlerOrderBtn = () =>{
-  alert('주문 완료되었습니다.')
-}
-
 changeAddressBtn.addEventListener('click', handlerChangeAddress);
+
+// 주문 완료 
+const handlerOrderBtn = () =>{
+  alert('주문 완료되었습니다. 내일 새벽에 만나요.')
+}
 orderBtn.addEventListener('click', handlerOrderBtn);
+
+// 결제 예정 금액 산정
+let totalPrice = 0;     // 총 가격
+let totalCount = 0;     // 총 갯수
+let totalKind = 0;      // 총 종류
+let totalDiscount = 0;      // 상품 할인 금액
+let deliveryPrice = 0;      // 배송비
+let finalTotalPrice = 0;      // 최종 가격(총 가격 + 배송비)	
+
+// $(".cart_info_td").each(function(index, element){
+  
+//   // 총 가격
+//   totalPrice += parseInt($(element).find(".individual_totalPrice_input").val());
+//   // 총 갯수
+//   totalCount += parseInt($(element).find(".individual_bookCount_input").val());
+//   // 총 종류
+//   totalKind += 1;
+// });	
+
+
+/* 배송비 결정 */
+if(totalPrice >= 40000){
+  deliveryPrice = 0;
+} else if(totalPrice == 0){
+  deliveryPrice = 0;
+} else {
+  deliveryPrice = 3000;	
+}	
+
+/* 최종 가격 */
+finalTotalPrice = totalPrice + deliveryPrice;
