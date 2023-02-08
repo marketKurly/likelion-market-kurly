@@ -29,6 +29,18 @@
   border-top: 1px solid black;
 }
 
+.button-left {
+  background: url('/css/img/Icon/Arrow-2.svg') no-repeat;
+  background-size: 60px;
+  background-position: -3px -94px;
+}
+
+.button-right {
+  background: url('/css/img/Icon/Arrow-2.svg') no-repeat;
+  background-size: 60px;
+  background-position: -3px -140px;
+}
+
 /* 상품 상세 페이지 */
 .product-detail {
   padding-top: 40px;
@@ -65,7 +77,7 @@
         padding-top: 8px;
         font-size: 16px;
         font-weight: 400;
-        color: $gray-400;
+        color: $gray-600;
       }
 
       &__price {
@@ -146,23 +158,34 @@
             &__number {
               border: 1px solid $gray-100;
               position: relative;
+              border-radius: 3px;
+              width: 88px;
+              display: flex;
+              flex-flow: row nowrap;
+              justify-content: space-between;
 
               &--minus {
-                width: 30px;
-                height: 30px;
+                background: url('/css/img/Icon/Minus.svg')
+                  no-repeat;
+                background-position: -9px -8px;
+                width: 28px;
+                height: 28px;
               }
               &--num {
-                width: 30px;
-                height: 30px;
+                display: flex;
+                width: 28px;
+                height: 28px;
                 font-weight: 600;
                 font-size: 16px;
-                position: absolute;
-                top: 6px;
-                left: 27px;
+                justify-content: center;
+                align-items: center;
               }
               &--plus {
-                width: 30px;
-                height: 30px;
+                background: url('/css/img/Icon/Plus.svg')
+                  no-repeat;
+                background-position: -9px -8px;
+                width: 28px;
+                height: 28px;
               }
             }
 
@@ -237,6 +260,10 @@
             height: 56px;
             border: 1px solid $gray-100;
             border-radius: 4px;
+
+            img {
+              opacity: 0.3;
+            }
           }
 
           &__addcart {
@@ -247,6 +274,7 @@
             background-color: $primary;
             color: white;
             font-size: 16px;
+            border-radius: 4px;
           }
         }
       }
@@ -260,6 +288,7 @@
     font-size: 14px;
 
     button {
+      cursor: default;
       border: 1px solid $gray-300;
       background-color: $gray-50;
       color: $content;
@@ -268,6 +297,10 @@
       flex: 1 1 auto;
       font-size: 16px;
       font-weight: 600;
+
+      a {
+        cursor: default;
+      }
     }
 
     button:nth-child(1) {
@@ -371,6 +404,10 @@
     &__content {
       text-align: center;
       z-index: 1;
+
+      #infoImg {
+        padding-bottom: 80px;
+      }
 
       &__whykarly {
         padding-bottom: 84px;
@@ -555,6 +592,35 @@
                   padding: 25px 0;
                   font-weight: 400;
                   color: black;
+                }
+              }
+
+              .empty {
+                width: 100%;
+
+                article {
+                  display: flex;
+                  flex-flow: column nowrap;
+                  justify-content: center;
+                  width: 100%;
+                  position: relative;
+                  align-items: center;
+
+                  img {
+                    width: 41px;
+                    height: 41px;
+                    opacity: 0.2;
+                  }
+
+                  span {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: center;
+                    font-weight: 400;
+                    color: $gray-300;
+                    font-size: 16px;
+                    padding-top: 15px;
+                  }
                 }
               }
             }

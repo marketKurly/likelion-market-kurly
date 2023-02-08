@@ -12,6 +12,7 @@ const sendButton = getNode('#review-send');
 const titleTextField = getNode('#content42');
 const contentTextField = getNode('#content47');
 const info = getNode('#review-info');
+const reviewtitle = getNode('#reviewtitle');
 
 /* 텍스트 지우는 함수 */
 function clearText(target) {
@@ -80,6 +81,20 @@ $(sendButton).ready(function changeColor(e) {
 
   contents.addEventListener('change', changeColor);
 });
+
+/* const rendingReview = async (data) => {
+  try {
+    let response = await tiger.get(
+      'http://localhost:3000/product-rksk'
+    );
+
+    let listData = response.data;
+
+    $('#review-reviewPopupTitle').text(listData.name);
+  } catch (err) {}
+};
+
+rendingReview(); */
 
 /* data.json으로 데이터 보내주기 */
 function submitData() {
