@@ -1,5 +1,6 @@
-@use "sass:math";
+@use 'sass:math';
 $rootUnit: 14px !default;
+$break: 14px;
 
 @function removeUnit($value) {
   @return math.div($value, $value * 0 + 1);
@@ -19,4 +20,10 @@ $rootUnit: 14px !default;
   flex-flow: $direction $wrap;
   justify-content: $justify;
   align-items: $items;
+}
+
+@mixin recentlyProduct {
+  @media (min-width: 1250px) {
+    @content;
+  }
 }
