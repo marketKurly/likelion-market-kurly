@@ -29,6 +29,7 @@
     ></script>
     <script defer src="./js/popup.js"></script>
     <!-- <script type="module" src="./js/addCart.js"></script> -->
+    <script type="module" src="./js/keyBoard.js"></script>
     <script type="module" src="./js/mainfetch.js"></script>
     <script type="module" src="./js/main.js"></script>
     <script type="module" src="./js/swiper.js"></script>
@@ -340,7 +341,7 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <section class="Main-banner">
-              <a href="">
+              <a href="" tabindex="-1">
                 <img
                   src="./assets/main-image/main-banner-image1.svg"
                   alt="이 주의 특가 한눈에 보기 배너, 클릭시 특가 혜택 창으로 이동"
@@ -350,7 +351,7 @@
           </div>
           <div class="swiper-slide">
             <section class="Main-banner">
-              <a href="">
+              <a href="" tabindex="-1">
                 <img
                   src="./assets/main-image/main-banner-image2.svg"
                   alt="이 주의 특가 한눈에 보기 배너, 클릭시 특가 혜택 창으로 이동"
@@ -360,7 +361,7 @@
           </div>
           <div class="swiper-slide">
             <section class="Main-banner">
-              <a href="">
+              <a href="" tabindex="-1">
                 <img
                   src="./assets/main-image/main-banner-image3.svg"
                   alt="이 주의 특가 한눈에 보기 배너, 클릭시 특가 혜택 창으로 이동"
@@ -370,7 +371,7 @@
           </div>
           <div class="swiper-slide">
             <section class="Main-banner">
-              <a href="">
+              <a href="" tabindex="-1">
                 <img
                   src="./assets/main-image/main-banner-image4.svg"
                   alt="이 주의 특가 한눈에 보기 배너, 클릭시 특가 혜택 창으로 이동"
@@ -380,7 +381,7 @@
           </div>
           <div class="swiper-slide">
             <section class="Main-banner">
-              <a href="">
+              <a href="" tabindex="-1">
                 <img
                   src="./assets/main-image/main-banner-image5.svg"
                   alt="이 주의 특가 한눈에 보기 배너, 클릭시 특가 혜택 창으로 이동"
@@ -390,7 +391,7 @@
           </div>
           <div class="swiper-slide">
             <section class="Main-banner">
-              <a href="">
+              <a href="" tabindex="-1">
                 <img
                   src="./assets/main-image/main-banner-image6.svg"
                   alt="이 주의 특가 한눈에 보기 배너, 클릭시 특가 혜택 창으로 이동"
@@ -400,7 +401,7 @@
           </div>
           <div class="swiper-slide">
             <section class="Main-banner">
-              <a href="">
+              <a href="" tabindex="-1">
                 <img
                   src="./assets/main-image/main-banner-image7.svg"
                   alt="이 주의 특가 한눈에 보기 배너, 클릭시 특가 혜택 창으로 이동"
@@ -410,7 +411,7 @@
           </div>
           <div class="swiper-slide">
             <section class="Main-banner">
-              <a href="">
+              <a href="" tabindex="-1">
                 <img
                   src="./assets/main-image/main-banner-image8.svg"
                   alt="이 주의 특가 한눈에 보기 배너, 클릭시 특가 혜택 창으로 이동"
@@ -420,7 +421,7 @@
           </div>
           <div class="swiper-slide">
             <section class="Main-banner">
-              <a href="">
+              <a href="" tabindex="-1">
                 <img
                   src="./assets/main-image/main-banner-image9.svg"
                   alt="이 주의 특가 한눈에 보기 배너, 클릭시 특가 혜택 창으로 이동"
@@ -759,7 +760,7 @@
           </b>
           <div class="good-price-product__inner__slider">
             <div class="swiper-button-next"></div>
-            <div class="swiper swiper3">
+            <div class="swiper swiper3" tabindex="0">
               <div class="swiper-wrapper">
                 <!-- <div class="swiper-slide">
                   <a
@@ -1057,7 +1058,7 @@
       </section>
 
       <!-- Add cart 팝업창 -->
-      <div class="add-cart-background" hidden>
+      <div class="add-cart-background" hidden tabindex="0">
         <div class="add-cart-window">
           <section class="add-cart">
             <ul class="add-cart__list">
@@ -1460,19 +1461,19 @@
             </p>
           </button>
         </div>
-        <div class="footer__copyright1">
-          컬리에서 판매되는 상품 중에는 컬리에 입점한 개별
-          판매자가 판매하는 마켓플레이스(오픈마켓) 상품이
-          포함되어 있습니다.
-          <br />
-          마켓플레이스(오픈마켓) 상품의 경우 컬리는
-          통신판매중계자로서 통신판매의 당사자가 아닙니다.
-          컬리는 해당 상품의 주문,품절,교환/환불 등 의무와
-          책임을 부담하지 않습니다.
-          <em class="footer__copyright2"
-            >© KURLY CORP. ALL RIGHTS RESERVED</em
-          >
-        </div>
+      </div>
+      <div class="footer__copyright1">
+        컬리에서 판매되는 상품 중에는 컬리에 입점한 개별
+        판매자가 판매하는 마켓플레이스(오픈마켓) 상품이
+        포함되어 있습니다.
+        <br />
+        마켓플레이스(오픈마켓) 상품의 경우 컬리는
+        통신판매중계자로서 통신판매의 당사자가 아닙니다.
+        컬리는 해당 상품의 주문,품절,교환/환불 등 의무와
+        책임을 부담하지 않습니다.
+        <em class="footer__copyright2"
+          >© KURLY CORP. ALL RIGHTS RESERVED</em
+        >
       </div>
     </footer>
   </body>
