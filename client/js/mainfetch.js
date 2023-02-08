@@ -3,34 +3,59 @@ import {
   insertLast,
   tiger,
   xhrPromise,
+  css,
+  visibleElement,
+  invisibleElement,
+  aadCart,
 } from '../lib/index.js';
 
-const secondswiper = getNode('.swiper2 .swiper-wrapper');
+const secondSwiper = getNode('.swiper2 .swiper-wrapper');
+const thirdSwiper = getNode('.swiper3 .swiper-wrapper');
+const addCartPopup = getNode('.add-cart');
 tiger.get('http://localhost:3000/products');
 xhrPromise
   .get('http://localhost:3000/products')
   .then((data) => {
     // console.log(res[0].name);
-    console.log(data);
-    data.forEach((item) => {
+    // console.log(data);
+    data.forEach((item, index) => {
+      let id = item.id;
+      let name = item.name;
+      let saleRatio =
+        item.saleRatio !== 0
+          ? item.saleRatio * 100 + '%'
+          : '';
+      let currentPrice = item.price
+        .toString()
+        .replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+      let salePrice =
+        item.salePrice !== 0
+          ? item.salePrice
+              .toString()
+              .replace(/\B(?=(\d{3})+(?!\d))/g, ',') + '원'
+          : '';
+      let img = item.image.thumbnail;
+      let alt = item.image.alt;
+      let description = item.description;
+
       insertLast(
-        secondswiper,
+        secondSwiper,
         `<div class="swiper-slide">
         <a
         href="#"
         class="swiper-product"
-        id = ${item.id}
+        id = ${id}
       >
         <div
           class="swiper-product__image-container"
         >
           <img
             class="swiper-product__image-container__tumbnail"
-            src=${item.image.thumbnail}
-            alt=${item.image.alt}
+            src=${img}
+            alt=${alt}
           />
           <button
-            class="swiper-product__image-container__shopping-cart"
+            class="swiper-product__image-container__shopping-cart cart${index}"
           >
             <img
               src="./assets/icons/Icon/Cart.svg"
@@ -42,58 +67,58 @@ xhrPromise
           <h3
             class="swiper-product__info__name"
           >
-            ${item.name}
+            ${name}
           </h3>
           <li
             class="swiper-product__info__price"
           >
-            ${item.price} 원
+            ${currentPrice} 원
           </li>
         </ul>
       </a>
     </div>`
       );
+      insertLast(
+        thirdSwiper,
+        `<div class="swiper-slide">
+        <a
+        href="#"
+        class="swiper-product"
+        id = ${id}
+      >
+        <div
+          class="swiper-product__image-container"
+        >
+          <img
+            class="swiper-product__image-container__tumbnail"
+            src=${img}
+            alt=${alt}
+          />
+          <button
+            class="swiper-product__image-container__shopping-cart cart${index}"
+          >
+            <img
+              src="./assets/icons/Icon/Cart.svg"
+              alt="장바구니 아이콘"
+            />
+          </button>
+        </div>
+        <ul class="swiper-product__info">
+          <h3
+            class="swiper-product__info__name"
+          >
+            ${name}
+          </h3>
+          <li
+            class="swiper-product__info__price"
+          >
+            ${currentPrice} 원
+          </li>
+        </ul>
+      </a>
+    </div>`
+      );
+
+      aadCart();
     });
-
-    // console.log(secondswiper);
   });
-
-// insertLast(
-//   secondswiper,
-//   `<div class="swiper-slide">
-//   <a
-//     href="#"
-//     class="swiper-product tangtang"
-//   >
-//     <div
-//       class="swiper-product__image-container"
-//     >
-//       <img
-//         class="swiper-product__image-container__tumbnail"
-//         src="./assets/tangtang/thumbnail.jpg"
-//         alt="탱탱쫄면"
-//       />
-//       <button
-//         class="swiper-product__image-container__shopping-cart"
-//       >
-//         <img
-//           src="./assets/icons/Icon/Cart.svg"
-//           alt="장바구니 아이콘"
-//         />
-//       </button>
-//     </div>
-//     <ul class="swiper-product__info">
-//       <h3
-//         class="swiper-product__info__name"
-//       >
-//         [풀무원] 탱탱쫄면 (4개입)aaaa
-//       </h3>
-//       <li
-//         class="swiper-product__info__price"
-//       >
-//         4,980 원aaaa
-//       </li>
-//     </ul>
-//   </a>
-// </div>`
-// );
