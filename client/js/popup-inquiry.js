@@ -3,6 +3,8 @@ import {
   attr,
   enableElement,
   disableElement,
+  tiger,
+  // renderInquiryList,
 } from '../lib/index.js';
 
 const hidden = getNode('#hidden');
@@ -12,6 +14,7 @@ const titleTextField = getNode('#content32');
 const contentTextField = getNode('#content37');
 const info = getNode('#info');
 const cancel = getNode('#popupCancel');
+const checkbox = getNode('#secret');
 
 /* 텍스트 지우는 함수 */
 function clearText(target) {
@@ -28,16 +31,6 @@ $('#content37').keyup(function (e) {
     $('#textLengthCheck').html('(5,000 / 5,000)');
   }
 });
-
-/* $('contents').click(function (e) {
-  if (
-    $(e.target).hasClass(
-      'popup-inquiry__container__main__content--input'
-    )
-  ) {
-    console.log('hit');
-  }
-}); */
 
 /* 메인 클릭 핸들러 */
 const handler = (e) => {
@@ -59,22 +52,12 @@ const handler = (e) => {
     contentTextField.focus();
   }
   if (contents && target.id !== 'info') {
-    info.style.display = '';
-  }
-
-  if (target.dataset.name === 'send') {
-    // const submit = new Data();
-
-    console.log(titleTextField.data);
-    console.log(contentTextField.data);
+    // info.style.display = '';
   }
 
   if (target.dataset.name === 'cancel') {
     hidden.style.display = 'none';
-
-    // $('body').off('scroll touchmove mousewheel');
-
-    // console.log('cancle');
+    info.style.display = 'block';
 
     clearText(titleTextField);
     clearText(contentTextField);
@@ -101,6 +84,31 @@ $(sendButton).ready(function changeColor(e) {
   contents.addEventListener('change', changeColor);
 });
 
-function submitData(e) {}
+/* data.json으로 데이터 보내주기 */
+function submitData() {
+  let today = new Date();
+  let year = today.getFullYear();
+  let month = today.getMonth() + 1;
+  let date = today.getDate();
 
-sendButton.addEventListener('submit', submitData);
+  const is_checked = checkbox.checked;
+
+  let time = year + '.' + month + '.' + date;
+
+  tiger.post(`http://localhost:3000/inquiry/`, {
+    name: '',
+    time: time,
+    title: titleTextField.value,
+    question: contentTextField.value,
+    answer: '',
+    isSecret: is_checked,
+  });
+
+  hidden.style.display = 'none';
+  info.style.display = 'block';
+
+  clearText(titleTextField);
+  clearText(contentTextField);
+}
+
+sendButton.addEventListener('click', submitData);
