@@ -210,7 +210,7 @@
       "name": "[Kurly's] 동물복지 유정란 20구",
       "description": "1구 당 판매가:499,5원",
       "price": "",
-      "saleRatio": 0.0,
+      "saleRatio": 0,
       "salePrice": 11900,
       "image": {
         "thumbnail": "animalegg.webp",
@@ -355,13 +355,13 @@
       "datetime": "20230211"
     }
   ],
-
-  "inquiry": [
+  "QnANotices": [
     {
       "id": 1,
-      "title": "팩이 터져서 왔어요",
-      "content": "엉망이네요. 환불 요청합니다.",
-      "isSecret": false
+      "type": "판매 중단 제품 안내",
+      "writer": "칼리",
+      "contents": "안녕하세요. 컬리입니다.\n\n하기와 같은 사유로 인하여 판매(일시)중단 되었음을 안내드립니다. 감사합니다. 컬리드림",
+      "datetime": "20230211"
     }
   ]
 }
