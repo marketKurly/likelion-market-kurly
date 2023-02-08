@@ -144,8 +144,8 @@
         @include flexboxCenter($justify: end);
         font-size: 16px;
         span:first-child {
-          color: $white;
-          background-color: #fa622f;
+          color: #2b2b2b;
+          background-color: $accent-yellow;
           padding: 2px 8px;
           border-radius: 2px;
           margin-right: 5px;
