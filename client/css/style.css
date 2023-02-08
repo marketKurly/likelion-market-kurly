@@ -3189,6 +3189,31 @@ table {
   font-weight: 400;
   color: black;
 }
+.product-detail__description__review__list__content__review--div .empty {
+  width: 100%;
+}
+.product-detail__description__review__list__content__review--div .empty article {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  align-items: center;
+}
+.product-detail__description__review__list__content__review--div .empty article img {
+  width: 41px;
+  height: 41px;
+  opacity: 0.2;
+}
+.product-detail__description__review__list__content__review--div .empty article span {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  font-weight: 400;
+  color: #a6a6a6;
+  font-size: 16px;
+  padding-top: 15px;
+}
 .product-detail__description__review__list__content__review__button {
   display: flex;
   flex-flow: row nowrap;

@@ -561,6 +561,35 @@
                   color: black;
                 }
               }
+
+              .empty {
+                width: 100%;
+
+                article {
+                  display: flex;
+                  flex-flow: column nowrap;
+                  justify-content: center;
+                  width: 100%;
+                  position: relative;
+                  align-items: center;
+
+                  img {
+                    width: 41px;
+                    height: 41px;
+                    opacity: 0.2;
+                  }
+
+                  span {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: center;
+                    font-weight: 400;
+                    color: $gray-300;
+                    font-size: 16px;
+                    padding-top: 15px;
+                  }
+                }
+              }
             }
 
             &__button {

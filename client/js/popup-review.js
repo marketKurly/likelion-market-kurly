@@ -82,7 +82,7 @@ $(sendButton).ready(function changeColor(e) {
   contents.addEventListener('change', changeColor);
 });
 
-const rendingReview = async (data) => {
+/* const rendingReview = async (data) => {
   try {
     let response = await tiger.get(
       'http://localhost:3000/product-rksk'
@@ -94,7 +94,7 @@ const rendingReview = async (data) => {
   } catch (err) {}
 };
 
-rendingReview();
+rendingReview(); */
 
 /* data.json으로 데이터 보내주기 */
 function submitData() {
