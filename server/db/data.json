@@ -135,31 +135,24 @@
       "answer": "",
       "isSecret": false,
       "id": 6
+    },
+    {
+      "name": "",
+      "time": "2023.2.8",
+      "title": "테스트",
+      "question": "테스트",
+      "answer": "",
+      "isSecret": false,
+      "id": 7
     }
   ],
   "review": [
     {
       "name": "",
       "time": "2023.2.8",
-      "title": "테스트",
-      "question": "테스트",
-      "answer": "테스트 내용",
+      "title": "후기 테스트",
+      "content": "후기 테스트ㅡ",
       "id": 1
-    },
-    {
-      "name": "",
-      "time": "2023.2.8",
-      "title": "테스틍ㅇ",
-      "content": "테스트용",
-      "answer": "테스트 내용",
-      "id": 2
-    },
-    {
-      "name": "",
-      "time": "2023.2.8",
-      "title": "다시 테스트",
-      "content": "다시",
-      "id": 3
     }
   ]
 }

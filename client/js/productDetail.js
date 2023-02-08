@@ -218,10 +218,24 @@ const rendingReviewList = async (data) => {
       </article>
     </div>`;
     }
-  } catch (err) {
-    // console.log(err);
-    // renderEmptyList(userCardContainer);
-  }
+
+    if (listData.length == 0) {
+      reviewInner.innerHTML += `
+      <div class="product-detail__description__review__list__content__review--div">
+      <section class="empty">
+        <article>
+          <img
+            src="../css/img/Icon/warning.png"
+            alt="후기 없음"
+          />
+          <span>
+            따뜻한 첫 후기를 기다리고 있어요.
+          </span>
+        </article>
+      </section>
+    </div>`;
+    }
+  } catch (err) {}
 };
 
 rendingReviewList();
