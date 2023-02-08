@@ -18,8 +18,9 @@
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="../js/main.js" type="module"></script>
+    <script src="../js/cart.js" defer type="module"></script>
     <title>marketKarly</title>
   </head>
 
@@ -343,11 +344,11 @@
               />
               배송지
             </h5>
-            <p>
+            <p class="cart__order__delivery__address">
               서울 중랑구 면목로 42길 11 (행운빌딩) 603호
             </p>
             <div>샛별배송</div>
-            <button>배송지 변경</button>
+            <button class="cart__order__delivery__address-change">배송지 변경</button>
           </div>
           <div class="cart__order__price">
             <div class="cart__order__price__original">
