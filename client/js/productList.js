@@ -5,33 +5,8 @@ import {
   tiger,
   xhrPromise,
 } from '../lib/index.js';
-import { axios } from './common/axios.js';
 
-const karlyProduct = getNode('.product__list--grid');
-const karlyProductMenu = getNode('.product-list__sort');
-const karlyProductMenuToggle = getNode(
-  '.product-list__sort span'
-);
-const karlyPageControl = getNode(
-  'accordion--set__head--button'
-);
-const karlyProductTotal = getNode(
-  '.product-list__total-count'
-);
-let karlyProductTotalCount = '';
-
-// 슬라이드 기능
-$(document).ready(function () {
-  $('.accordion--set__head>button').click(function () {
-    var submenu = $(this).next('ul');
-
-    if (submenu.is(':visible')) {
-      submenu.slideUp();
-    } else {
-      submenu.slideDown();
-    }
-  });
-});
+let url = 'http://localhost:3000/products';
 
 // 체크 초기화
 const resetButton = document.querySelector('.check-reset');
@@ -45,37 +20,89 @@ let a = () => {
 
 resetButton.addEventListener('click', a);
 
-// 상품 주소 받아오기
+// 페이지네이션
+$(function () {
+  let container = $('#pagination');
+  container.pagination({
+    dataSource: [
+      { name: 1 },
+      { name: 1 },
+      { name: 1 },
+      { name: 1 },
+      { name: 1 },
+      { name: 1 },
+      { name: 1 },
+      { name: 1 },
+      { name: 1 },
+      { name: 1 },
+      { name: 1 },
+      { name: 1 },
+      { name: 1 },
+      { name: 1 },
+      { name: 1 },
+    ],
+    pageSize: 5,
+    callback: function (data, pagination) {
+      var dataHtml;
 
+      $.each(data, function (index, item) {
+        dataHtml += item.name;
+      });
+
+      $('#data-container').html(dataHtml);
+    },
+  });
+});
+
+// 버튼 핸들러
+const group = document.querySelectorAll(
+  '.group-menu__button'
+);
+
+function handleType(e) {
+  e.preventDefault();
+  let isActive = document.querySelector(
+    '.group-menu__button.is-active'
+  );
+  let target = e.target.closest('.group-menu__button');
+
+  if (isActive !== target) {
+    target.classList.add('is-active');
+    isActive.classList.remove('is-active');
+  }
+}
+
+group.forEach((type) =>
+  type.addEventListener('click', handleType)
+);
+
+// 상품 주소 받아오기
 const getItemList = getNode('.product__list--grid');
 
-tiger.get('http://localhost:3000/products');
-xhrPromise
-  .get('http://localhost:3000/products')
-  .then((data) => {
-    data.forEach((item, index) => {
-      let id = item.id;
-      let name = item.name;
-      let saleRatio =
-        item.saleRatio !== 0
-          ? item.saleRatio * 100 + '%'
-          : '';
-      let currentPrice = item.price
-        .toString()
-        .replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-      let salePrice =
-        item.salePrice !== 0
-          ? item.salePrice
-              .toString()
-              .replace(/\B(?=(\d{3})+(?!\d))/g, ',') + '원'
-          : '';
-      let img = item.image.thumbnail;
-      let alt = item.image.alt;
-      let description = item.description;
-      let template = insertLast(
-        getItemList,
-        /* html */
-        `<a
+xhrPromise.get(url).then((data) => {
+  data.forEach((item, index) => {
+    let id = item.id;
+    let name = item.name;
+    let saleRatio =
+      item.saleRatio !== 0
+        ? item.saleRatio * 100 + '%'
+        : '';
+    let currentPrice = item.price
+      .toString()
+      .replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    let salePrice =
+      item.salePrice !== 0
+        ? item.salePrice
+            .toString()
+            .replace(/\B(?=(\d{3})+(?!\d))/g, ',') + '원'
+        : '';
+    let img = item.image.thumbnail;
+    let alt = item.image.alt;
+    let description = item.description;
+    let template = insertLast(
+      getItemList,
+      /* html */
+      `<a
         href="./productDetail.html"
         class="product__item">
         <div class="product__list__img1">
@@ -124,40 +151,38 @@ xhrPromise
           </div>
         </div>
       </a>`
-      );
-    });
+    );
   });
+});
 
-// 페이지네이션
-$(function () {
-  let container = $('#pagination');
-  container.pagination({
-    dataSource: [
-      { name: 1 },
-      { name: 1 },
-      { name: 1 },
-      { name: 1 },
-      { name: 1 },
-      { name: 1 },
-      { name: 1 },
-      { name: 1 },
-      { name: 1 },
-      { name: 1 },
-      { name: 1 },
-      { name: 1 },
-      { name: 1 },
-      { name: 1 },
-      { name: 1 },
-    ],
-    pageSize: 5,
-    callback: function (data, pagination) {
-      var dataHtml;
+// 슬라이드 기능
+$(document).ready(function () {
+  $('.accordion--set__head>button').click(function () {
+    var submenu = $(this).next('ul');
 
-      $.each(data, function (index, item) {
-        dataHtml += item.name;
-      });
+    if (submenu.is(':visible')) {
+      submenu.slideUp();
+    } else {
+      submenu.slideDown();
+    }
+  });
+});
 
-      $('#data-container').html(dataHtml);
-    },
+//
+$(document).ready(function () {
+  $('.base1').click(function () {
+    $('.delete1').hide();
+  });
+});
+
+$(document).ready(function () {
+  $('.base2').click(function () {
+    $('.delete2').hide();
+  });
+});
+
+$(document).ready(function () {
+  $('.base3').click(function () {
+    $('.delete2').hide();
   });
 });

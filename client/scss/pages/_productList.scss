@@ -267,8 +267,7 @@ input[class='check2']:checked + label em {
 .product__list--grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, 249px);
-  gap: 31px 18px;
-  width: 100%;
+  gap: 24px 18px;
 }
 
 .product__item {
