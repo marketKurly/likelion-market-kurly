@@ -22,7 +22,7 @@ function clearText(target) {
 /* 실시간 글자 수 체크 */
 $('#content47').keyup(function (e) {
   let content = $(this).val();
-  $('#review-counter').text(content.length + ' / 5,000');
+  $('#counter1').text(content.length + ' / 5,000');
 
   if (content.length > 5000) {
     $(this).val(content.substring(0, 5000));
