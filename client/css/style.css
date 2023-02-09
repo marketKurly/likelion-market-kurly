@@ -3945,6 +3945,16 @@ input[class=check2]:checked + label em {
   margin-top: 36px;
 }
 
+.section__orderview__article {
+  display: flex;
+  font-size: 28px;
+  font-weight: 700;
+  padding-bottom: 20px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
 /* 기본 스타일 */
 *,
 *::before,
