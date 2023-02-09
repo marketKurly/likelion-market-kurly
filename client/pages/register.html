@@ -14,7 +14,9 @@
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css"
     />
     <link rel="stylesheet" href="../css/style.css" />
-    <script src="../js/main.js" type="module"></script>
+    <!-- <script src="../js/main.js" type="module"></script> -->
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script src="../js/register.js" type="module"></script>
     <title>marketKarly 회원가입</title>
   </head>
 
@@ -304,10 +306,11 @@
             placeholder="아이디를 입력해주세요"
             id="register-id"
             name="id"
+            maxlength="20"
             required
             class="register__form__id__input"
           />
-          <button class="reigster__form__id__button">
+          <button class="register__form__id__button">
             중복확인
           </button>
         </fieldset>
@@ -323,6 +326,7 @@
             placeholder="비밀번호를 입력해주세요"
             id="register-pw"
             name="pw"
+            maxlength="16"
             required
             class="register__form__pw__input"
           />
@@ -340,6 +344,7 @@
             id="register-re-pw"
             name="re-pw"
             required
+            maxlength="16"
             class="register__form__re-pw__input"
           />
         </fieldset>
@@ -355,6 +360,7 @@
             placeholder="이름을 입력해주세요"
             id="register-name"
             name="name"
+            maxlength="40"
             required
             class="register__form__name__input"
           />
@@ -375,7 +381,7 @@
             required
             class="register__form__email__input"
           />
-          <button class="reigster__form__email__button">
+          <button class="register__form__email__button">
             중복확인
           </button>
         </fieldset>
@@ -392,9 +398,10 @@
             id="register-phone"
             name="phone"
             required
+            maxlength="11"
             class="register__form__phone__input"
           />
-          <button class="reigster__form__phone__button">
+          <button class="register__form__phone__button">
             인증번호 받기
           </button>
         </fieldset>
@@ -464,6 +471,7 @@
             type="text"
             id="register-birthday"
             name="birthDay"
+            class="register__form__birthday__input"
             placeholder="YYYY / MM / DD"
             required
           />

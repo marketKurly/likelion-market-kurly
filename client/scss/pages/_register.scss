@@ -138,6 +138,7 @@
     &__address,
     &__birthday,
     &__etc {
+      position: relative;
       height: 84px;
       padding-top: 20px;
       @include flexboxCenter(
@@ -227,6 +228,130 @@
       top: 48px;
       left: 0px;
     }
+
+    // &__id,
+    // &__pw,
+    // &__re-pw,
+    // &__email,
+    // &__phone,
+    // &__birthday {
+    //   &__label::before {
+    //     content: '';
+    //     position: absolute;
+    //     color: red;
+    //     font-size: 8px;
+    //     font-weight: 700;
+    //     top: 50px;
+    //     left: 148px;
+    //     width: 360px;
+    //   }
+    // }
+    // &__id {
+    //   &__warning {
+    //     display: none;
+    //   }
+    // }
+    // &__id,
+    // &__pw {
+    // position: relative;
+    // }
+    &__id,
+    &__email {
+      &__warning {
+        display: none;
+        &--is-active {
+          display: block;
+          position: absolute;
+          color: red;
+          font-size: 8px;
+          font-weight: 700;
+          top: 70px;
+          left: 148px;
+          width: 360px;
+        }
+        &--is-valid {
+          display: block;
+          position: absolute;
+          color: orange;
+          font-size: 8px;
+          font-weight: 700;
+          top: 70px;
+          left: 148px;
+          width: 360px;
+        }
+        &--is-perfect {
+          display: block;
+          position: absolute;
+          color: #27e8a7;
+          font-size: 8px;
+          font-weight: 700;
+          top: 70px;
+          left: 148px;
+          width: 360px;
+        }
+      }
+    }
+    &__re-pw {
+      &__warning {
+        display: none;
+        &--is-active {
+          display: block;
+          position: absolute;
+          color: red;
+          font-size: 8px;
+          font-weight: 700;
+          top: 70px;
+          left: 148px;
+          width: 360px;
+        }
+        &--is-valid {
+          display: block;
+          position: absolute;
+          color: #27e8a7;
+          font-size: 8px;
+          font-weight: 700;
+          top: 70px;
+          left: 148px;
+          width: 360px;
+        }
+      }
+    }
+    &__pw,
+    &__name,
+    &__phone,
+    &__birthday {
+      &__warning {
+        display: none;
+        &--is-active {
+          display: block;
+          position: absolute;
+          color: red;
+          font-size: 8px;
+          font-weight: 700;
+          top: 70px;
+          left: 148px;
+          width: 360px;
+        }
+      }
+    }
+    // &__id__label::before {
+    //   content: '5~20자의 영문 소문자, 숫자와 특수기호 -, _ 만 사용 가능합니다.';
+    // }
+    // &__pw__label::before .invalid {
+    //   content: '8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.';
+    // }
+    // &__re-pw__label::before invalid {
+    //   content: '비밀번호가 일치하지 않습니다.';
+    // }
+    // &__email__label::before invalid {
+    //   content: '이메일 주소를 다시 확인해주세요.';
+    // }
+    // &__phone__label::before invalid {
+    //   content: '휴대번호를 다시 확인해주세요.';
+    // }
+    // &__birthday__label::before invalid {
+    //   content: '생년월일을 다시 확인해주세요.';
+    // }
   }
   &__acceptance {
     width: 100%;
