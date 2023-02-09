@@ -134,7 +134,7 @@ xhrPromise
       );
       aadCart(
         id,
-        slider,
+        slider2,
         name,
         item.price,
         item.salePrice,
