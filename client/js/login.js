@@ -41,8 +41,10 @@ function handlingRegister() {
 
 (function () {
   loadStorage('access-token').then((item) => {
-    if (item) {
-      window.location.href = '../index.html';
-    }
+    // console.log(item);
+    // console.log(item.length);
+    // if (item.length === 0) {
+    //   window.location.href = '../index.html';
+    // }
   });
 })();

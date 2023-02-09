@@ -672,6 +672,8 @@ async function handlingSubmit() {
     userInfo()
   );
   console.log(userInfo());
+  alert('축하합니다! 정상적으로 회워가입이 되었습니다!');
+  window.location.href = './login.html';
 }
 
 const radioFieldset = getNode('.register__form__gender');
