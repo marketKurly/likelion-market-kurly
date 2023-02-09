@@ -56,6 +56,12 @@ let todayRecomendProductSwiper = new Swiper('.swiper2', {
     nextEl: '.today-recomend-product .swiper-button-next',
     prevEl: '.today-recomend-product .swiper-button-prev',
   },
+  a11y: {
+    prevSlideMessage: '이전 슬라이드',
+    nextSlideMessage: '다음 슬라이드',
+    slideLabelMessage:
+      '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
+  },
 });
 
 // good-price-product swiper3
@@ -71,6 +77,12 @@ let googPriceProductSwiper = new Swiper('.swiper3', {
     nextEl: '.good-price-product .swiper-button-next',
     prevEl: '.good-price-product .swiper-button-prev',
   },
+  a11y: {
+    prevSlideMessage: '이전 슬라이드',
+    nextSlideMessage: '다음 슬라이드',
+    slideLabelMessage:
+      '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
+  },
 });
 
 const recentlyViewedProduct = new Swiper(
@@ -83,6 +95,12 @@ const recentlyViewedProduct = new Swiper(
     navigation: {
       prevEl: '.main__recent-product__button--up',
       nextEl: '.main__recent-product__button--down',
+    },
+    a11y: {
+      prevSlideMessage: '이전 슬라이드',
+      nextSlideMessage: '다음 슬라이드',
+      slideLabelMessage:
+        '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
     },
   }
 );
