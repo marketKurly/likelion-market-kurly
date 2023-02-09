@@ -62,13 +62,13 @@ main.addEventListener('click', handler);
 const redingProducts = async (data) => {
   try {
     let response = await tiger.get(
-      'http://localhost:3000/products/product-akqk'
+      `http://localhost:3000/products/product-mmm`
     );
     let listData = response.data;
 
-    // console.log(listData.image.view);
+    // console.log(listData.image.thumbnail);
 
-    let save = listData.price;
+    let save = listData.salePrice;
     let infosave = priceToString(save);
 
     $('#title').text(listData.name);
@@ -107,15 +107,15 @@ const redingProducts = async (data) => {
       /* html */
       `<img
         class="product-detail__information__img"
-        src="../assets/${listData.image.view}"
+        src="../assets/${listData.image.info}"
         alt="${listData.image.alt}"
       />`
     );
     $('#reviewtitle').text(listData.name); // 리뷰에 보여지는 제품 이름
 
     let resultvalue = total.innerText; // 수량
-    let pricevalue = listData.price; // 기본 data.price 값
-    let pricesave = listData.price;
+    let pricevalue = listData.salePrice; // 기본 data.price 값
+    let pricesave = listData.salePrice;
     productprice.innerText = priceToString(pricesave); // 총 상품금액
 
     const count = (type) => {

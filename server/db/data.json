@@ -8,6 +8,9 @@
       "saleRatio": 0,
       "salePrice": 4980,
       "image": {
+        "view": "tangtang.webp",
+        "banner": "tangtang.webp",
+        "info": "tangtang.webp",
         "thumbnail": "tangtang.webp",
         "alt": "풀무원 탱탱쫄면"
       },
@@ -277,7 +280,10 @@
       "saleRatio": 0.13,
       "salePrice": 6800,
       "image": {
-        "thumbnail": "jukkumi.webp",
+        "view": "jukkumi/jukkumi_view.webp",
+        "banner": "jukkumi/jukkumi_banner.webp",
+        "info": "jukkumi/jukkumi_info.webp",
+        "thumbnail": "jukkumi.jpg",
         "alt": "쭈꾸미 볶음 300g(냉동)"
       },
       "stock": 5,
@@ -293,7 +299,10 @@
       "saleRatio": 0.15,
       "salePrice": 5860,
       "image": {
-        "thumbnail": "ubuho.webp",
+        "view": "ubuho/ubuho_view.webp",
+        "banner": "ubuho/ubuho_banner.webp",
+        "info": "ubuho/ubuho_info.webp",
+        "thumbnail": "ubuho.jpg",
         "alt": "유부호만두"
       },
       "stock": 8,
