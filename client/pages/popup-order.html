@@ -18,13 +18,14 @@
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css"
     />
     <link rel="stylesheet" href="../css/style.css" />
-    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="../js/popup-order.js" defer type="module"></script>
-    <script src="../js/cart.js" defer type="module"></script>
+    <script
+      src="../js/popup-order.js"
+      type="module"
+    ></script>
     <title>marketKarly</title>
   </head>
-
   <body>
     <!-- 탑 ad -->
     <div class="topbanner">
@@ -305,123 +306,12 @@
     </header>
 
     <section class="cart">
-      <h3 class="cart__head">장바구니</h3>
-      <div class="flex-container">
-        <article class="cart__selected-list">
-          <h4 class="a11y-hidden">고른 상품</h4>
-          <div class="cart__selected-list__item">
-            <button class="cart__selected-list__total">
-              전체선택 (3/3) | 선택삭제
-            </button>
-          </div>
-          <div class="cart__selected-list__item">
-            <span
-              class="cart__selected-list__refrigeration"
-            >
-              냉장 식품
-            </span>
-          </div>
-          <div class="cart__selected-list__item">
-            <span class="cart__selected-list__frozen">
-              냉동 식품
-            </span>
-          </div>
-          <div class="cart__selected-list__item">
-            <span
-              class="cart__selected-list__room-temperature"
-            >
-              상온 식품
-            </span>
-          </div>
-        </article>
-        <article class="cart__order">
-          <h4 class="a11y-hidden">주문하기</h4>
-          <div class="cart__order__delivery">
-            <h5>
-              <img
-                src="../css/img/Icon/Location.svg"
-                alt=""
-                srcset=""
-              />
-              배송지
-            </h5>
-            <p class="cart__order__delivery__address">
-              서울 중랑구 면목로 42길 11 (행운빌딩) 603호
-            </p>
-            <div>샛별배송</div>
-            <button class="cart__order__delivery__address-change">배송지 변경</button>
-          </div>
-          <div class="cart__order__price">
-            <div class="cart__order__price__original">
-              <span
-                class="cart__order__price__original__key"
-                >상품금액</span
-              >
-              <span
-                class="cart__order__price__original__value"
-                >40,680원</span
-              >
-            </div>
-            <div class="cart__order__price__discount">
-              <span class="cart__order__price__discount"
-                >상품할인금액</span
-              >
-              <span class="cart__order__price__discount"
-                >-4,651원</span
-              >
-            </div>
-            <div class="cart__order__price__delivery">
-              <span
-                class="cart__order__price__delivery__key"
-                >배송비</span
-              >
-              <span
-                class="cart__order__price__delivery__value"
-                >+3,000원</span
-              >
-            </div>
-            <div class="cart__order__price__total">
-              <span class="cart__order__price__total__key"
-                >결제예정금액</span
-              >
-              <span class="cart__order__price__total__value"
-                >40,680원</span
-              >
-            </div>
-            <div class="cart__order__price__info">
-              <span>적립</span>
-              <span>최대 36원 적립 일반 0.1%</span>
-            </div>
-          </div>
-          <button class="cart__order__button">
-            주문하기
-          </button>
-          <p class="cart__order__term-service">
-            <span
-              >쿠폰/적립금은 주문서에서 사용
-              가능합니다.</span
-            >
-            <span
-              >[주문완료] 상태일 경우에만 주문 취소
-              가능합니다.</span
-            >
-            <span
-              >[마이컬리 > 주문내역 상세페이지]에서 직접
-              취소하실 수 있습니다.</span
-            >
-            <span
-              >쿠폰, 적립금 사용 금액을 제외한 실 결제 금액
-              기준으로 최종산정됩니다.</span
-            >
-            <span
-              >상품별로 적립금 지급 기준이 다를 수
-              있습니다.(상품 상세 페이지에서 확인
-              가능합니다.)</span
-            >
-          </p>
-        </article>
+      <div class="section__orderview">
+        <div class="section__orderview__article">
+            <h2 class="section__orderview__article__tit">결제가 완료 되었습니다. 내일 새벽에 만나요.</h2>
+        </div>
       </div>
-    </section>
+      </section>
     <footer class="footer">
       <div class="footer__main">
         <div class="footer__top">
