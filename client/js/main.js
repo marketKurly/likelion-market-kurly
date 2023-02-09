@@ -146,7 +146,7 @@ const recentWrapper = getNode(
 );
 (function () {
   loadStorage('recentlyViewedProduct').then((item) =>
-    item.forEach((product) => {
+    item?.forEach((product) => {
       let template = `
       <div
       class="swiper-slide main__recent-product__swiper__slide"

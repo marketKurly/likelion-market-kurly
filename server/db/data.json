@@ -356,5 +356,134 @@
       "contents": "안녕하세요. 칼리입니다.\n\n하기와 같은 사유로 인하여 판매(일시)중단 되었음을 안내드립니다. 감사합니다. 컬리드림",
       "datetime": "20230211"
     }
+  ],
+  "users": [
+    {
+      "accessToken": "1111111111",
+      "id": "root",
+      "pw": "Root1234!",
+      "name": "관리자",
+      "email": "marketkaly@karly.com",
+      "phone": "01011112222",
+      "address": "서울특별시 강남구 강호동 마이아파트 101동 101호",
+      "gender": "male",
+      "birthday": "19800101",
+      "recommendFriendId": "karly",
+      "event": "",
+      "agree": ""
+    },
+    {
+      "accessToken": "2222222222",
+      "id": "karly",
+      "pw": "Karly1234!",
+      "name": "관리자",
+      "email": "kaly@karly.com",
+      "phone": "01022223333",
+      "address": "서울특별시 강남구 강호동 마이아파트 101동 102호",
+      "gender": "male",
+      "birthday": "19830101",
+      "recommendFriendId": "관리자",
+      "event": "",
+      "agree": ""
+    },
+    {
+      "accessToken": "3333333333",
+      "id": "hyunwlee",
+      "pw": "Hyunwlee1234!",
+      "name": "이현우",
+      "email": "hyunwlee@karly.com",
+      "phone": "01044445555",
+      "address": "서울특별시 강남구 강호동 마이아파트 101동 103호",
+      "gender": "male",
+      "birthday": "19850101",
+      "recommendFriendId": "관리자",
+      "event": "",
+      "agree": ""
+    },
+    {
+      "accessToken": "UWkNLRzQeU",
+      "id": "RTOFG8q",
+      "pw": "",
+      "name": "",
+      "email": "",
+      "phone": "",
+      "address": "",
+      "gender": "male",
+      "birthday": ""
+    },
+    {
+      "accessToken": "UWkNLRzQeU",
+      "address": "",
+      "id": "KUCE5Lg"
+    },
+    {
+      "accessToken": "RjqcLAT2pf",
+      "id": "ML0w_Ea",
+      "pw": "",
+      "name": "",
+      "email": "",
+      "phone": "",
+      "address": "",
+      "gender": "male",
+      "birthday": ""
+    },
+    {
+      "accessToken": "hhPCEXVKot",
+      "id": "zN6IH4O",
+      "pw": "",
+      "name": "",
+      "email": "",
+      "phone": "",
+      "address": "",
+      "gender": "male",
+      "birthday": ""
+    },
+    {
+      "accessToken": "FJWJcgvIqk",
+      "id": "ivUy5qa",
+      "pw": "",
+      "name": "",
+      "email": "",
+      "phone": "",
+      "address": "",
+      "gender": "male",
+      "birthday": ""
+    },
+    {
+      "accessToken": "gYgaugtUeX",
+      "username": "",
+      "pw": "",
+      "name": "",
+      "email": "",
+      "phone": "",
+      "address": "",
+      "gender": "male",
+      "birthday": "",
+      "id": "duDinY5"
+    },
+    {
+      "accessToken": "a3RKPb5TG9",
+      "username": "123123123",
+      "pw": "",
+      "name": "",
+      "email": "",
+      "phone": "",
+      "address": "",
+      "gender": "male",
+      "birthday": "",
+      "id": "0HeIko9"
+    },
+    {
+      "accessToken": "uTQzg8T5uD",
+      "username": "hyunwlee2",
+      "pw": "Dlgusdn123!",
+      "name": "이현우",
+      "email": "hwlee3928@gmail.com",
+      "phone": "01020000300",
+      "address": "",
+      "gender": "female",
+      "birthday": "1995/05/23",
+      "id": "-DE3Vi0"
+    }
   ]
 }
