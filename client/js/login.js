@@ -27,6 +27,7 @@ async function handlingLogin() {
   if (result.data[0].pw === loginPassword.value) {
     saveStorage('access-token', result.data[0].accessToken);
     alert('로그인 되었습니다.');
+    window.location.href = '../index.html';
   } else {
     alert('비밀번호를 확인해주세요.');
   }
