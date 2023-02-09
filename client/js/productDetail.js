@@ -106,7 +106,7 @@ const redingProducts = async (data) => {
       infoImg,
       /* html */
       `<img
-        class="product-detail__information__img"
+        class=""
         src="../assets/${listData.image.info}"
         alt="${listData.image.alt}"
       />`
